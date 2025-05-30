@@ -8,10 +8,14 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 **Goal**: Build **Engram**, a centralized, open-source web application for IPU (Indraprastha University) student notes, featuring a minimal, space-themed dark UI. The app will be desktop and mobile-friendly, built with React, ShadCN, and Tailwind CSS, and will support all engineering branches and 6 semesters. Key features include branch/semester selection with LocalStorage persistence, a subject grid, tabbed subject details, downloadable resources, and contributor attribution.
 
 **Tech Stack**:
-- **Frontend**: React (via CDN), React Router, ShadCN components (mocked), Tailwind CSS (via CDN).
-- **Storage**: LocalStorage for user preferences; **all study materials (notes, PDFs, books, etc.) will be stored directly in the GitHub repository under a structured `/materials` directory**.
-- **Styling**: Space-themed dark UI with animations.
-- **Deployment**: GitHub Pages.
+- **Frontend**: Next.js (React framework), ShadCN UI components, Tailwind CSS.  
+- **Storage**: LocalStorage for user preferences; **all study materials (notes, PDFs, books, etc.) will be stored directly in the GitHub repository under a structured `/materials` directory**.  
+- **Styling**: Space-themed dark UI with animations.  
+- **Deployment**: Vercel (Next.js default) or GitHub Pages (with static export).
+- **Language**: TypeScript (recommended for Next.js and ShadCN UI).
+- **Testing & Linting**: Jest and React Testing Library for unit/integration tests; ESLint and Prettier for code quality and formatting.
+- **CI/CD**: GitHub Actions for automated builds, tests, and deployment.
+- **Project Management**: GitHub Issues and Projects for tracking tasks, bugs, and features.
 
 ---
 
@@ -23,16 +27,22 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 #### Tasks:
 - [ ] **Project Initialization**:
     - [ ] Create project directory: `d:\Projects\ENGRAM-PROJECT`.
-    - [ ] Set up basic file structure: `index.html`, `app.js`, `styles.css`, and a `/materials` directory for all study resources.
-    - [ ] Initialize a basic React app structure within `index.html` using CDN imports.
-    - [ ] **Success Metric**: A blank React app renders "Hello, Engram!" on the browser.
+    - [ ] Set up basic file structure: Next.js app with TypeScript (`npx create-next-app@latest --typescript`), and a `/materials` directory for all study resources.
+    - [ ] Remove default boilerplate and set up a minimal Next.js page that renders "Hello, Engram!".
+    - [ ] **Success Metric**: A blank Next.js app renders "Hello, Engram!" on the browser.
 
-- [ ] **CDN Dependencies Setup**:
-    - [ ] Import React and ReactDOM: `https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js` and `https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js`.
-    - [ ] Import React Router: `https://cdn.jsdelivr.net/npm/react-router-dom@6.3.0/dist/umd/react-router-dom.min.js`.
-    - [ ] Import Tailwind CSS: `https://cdn.tailwindcss.com`.
-    - [ ] Mock ShadCN components (e.g., `<Select>`, `<Card>`, `<Tabs>`, `<Button>`) as custom React components with Tailwind styling, since ShadCN isn't directly available via CDN.
-    - [ ] **Success Metric**: All CDNs load without errors; a basic Tailwind-styled div renders correctly.
+- [ ] **Dependencies Setup**:
+    - [ ] Install Tailwind CSS: `npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`.
+    - [ ] Install ShadCN UI: `npx shadcn-ui@latest init` and add required components.
+    - [ ] Configure Tailwind and ShadCN in the Next.js project.
+    - [ ] Install and configure TypeScript, ESLint, and Prettier.
+    - [ ] **Success Metric**: All dependencies install without errors; a basic Tailwind-styled ShadCN component renders correctly.
+
+- [ ] **Testing & CI/CD Setup**:
+    - [ ] Set up Jest and React Testing Library for unit/integration tests.
+    - [ ] Add sample test for a simple component.
+    - [ ] Set up GitHub Actions for automated builds, linting, and tests on pull requests.
+    - [ ] **Success Metric**: Tests and linting run automatically on GitHub Actions.
 
 - [ ] **Version Control Setup**:
     - [ ] Initialize Git: `git init`.
@@ -41,14 +51,15 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
     - [ ] Push to GitHub: `git push origin main`.
     - [ ] **Success Metric**: GitHub repo is live with initial files.
 
-- [ ] **Documentation**:
+- [ ] **Documentation & Project Management**:
     - [ ] Create `README.md` with project overview, setup instructions, and contribution guidelines, including how to add new materials to the `/materials` directory (file naming, directory structure, etc.).
     - [ ] Add MIT License file (`LICENSE`).
-    - [ ] **Success Metric**: README includes setup steps, project description, and clear instructions for contributing materials.
+    - [ ] Set up GitHub Issues and Projects for tracking tasks and bugs.
+    - [ ] **Success Metric**: README includes setup steps, project description, and clear instructions for contributing materials. Issues and Projects are enabled.
 
 **Dependencies**: None.  
 **Estimated Time**: 8 hours (4 hours/day).  
-**Risks**: CDN availability issues; mitigate by having fallback local copies of scripts.
+**Risks**: Dependency or install issues; mitigate by following official Next.js, Tailwind, and ShadCN docs.
 
 ---
 
@@ -57,39 +68,18 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 #### Tasks:
 - [ ] **Dark Theme Setup**:
-    - [ ] Define color scheme in `styles.css`:
+    - [ ] Define color scheme in `tailwind.config.js` and global CSS:
         - Primary background: `#1a1a1a` (dark gray-black).
         - Primary text: `#ffffff` (white).
         - Secondary text: `#a1a1a1` (light gray).
         - Accent color: `#3b82f6` (blue).
-    - [ ] Apply to the root element: `body { background: #1a1a1a; color: #ffffff; }`.
+    - [ ] Apply to the root element: `body { background: #1a1a1a; color: #ffffff; }` in `globals.css`.
     - [ ] **Success Metric**: Page background and text colors match the dark theme.
 
 - [ ] **Space Theme Implementation**:
     - [ ] Create a starry gradient background: Linear gradient from `#1a1a1a` to `#1e3a8a` (dark blue) with a starry overlay.
-    - [ ] Add twinkling stars using CSS:
-        ```css
-        .stars {
-          position: fixed;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: transparent;
-          z-index: -1;
-        }
-        .star {
-          position: absolute;
-          background: #ffffff;
-          border-radius: 50%;
-          animation: twinkle 3s infinite;
-        }
-        @keyframes twinkle {
-          0%, 100% { opacity: 0.3; }
-          50% { opacity: 1; }
-        }
-        ```
-    - [ ] Dynamically generate 50-100 stars of varying sizes (1px-3px) and positions using JavaScript.
+    - [ ] Add twinkling stars using CSS and Next.js custom components.
+    - [ ] Dynamically generate 50-100 stars of varying sizes (1px-3px) and positions using React/JSX.
     - [ ] **Success Metric**: Background displays a starry gradient with twinkling stars.
 
 - [ ] **Responsive Layout Design**:
@@ -102,26 +92,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
     - [ ] **Success Metric**: Grid layout adjusts correctly across breakpoints.
 
 - [ ] **Animations**:
-    - [ ] Add orbital ring animation for hover effects:
-        ```css
-        .orbital-ring {
-          position: relative;
-          transition: all 0.3s ease;
-        }
-        .orbital-ring:hover::after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          border: 1px solid #3b82f6;
-          border-radius: 12px;
-          animation: orbit 2s infinite linear;
-        }
-        @keyframes orbit {
-          0% { transform: rotate(0deg); }
-          100% { transform: rotate(360deg); }
-        }
-        ```
+    - [ ] Add orbital ring animation for hover effects using CSS modules or global CSS.
     - [ ] Implement fade-in for page loads: `animation: fadeIn 0.5s ease-in`.
     - [ ] **Success Metric**: Hovering on elements triggers orbital animation; page loads with fade-in.
 
@@ -136,30 +107,16 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 #### Tasks:
 - [ ] **Header Section**:
-    - [ ] Create a fixed navigation bar: `fixed top-0 w-full bg-[#1a1a1a]/90 backdrop-blur-md`.
+    - [ ] Create a fixed navigation bar using a Next.js component: `fixed top-0 w-full bg-[#1a1a1a]/90 backdrop-blur-md`.
     - [ ] Add Engram logo (text-based for simplicity: "ENGRAM") on the left: `text-2xl font-bold`.
-    - [ ] Add GitHub link on the right using an SVG icon (mock SVG as `<svg>` tag): Link to `http://github.com/kuberwastaken/engram`.
+    - [ ] Add GitHub link on the right using an SVG icon: Link to `http://github.com/kuberwastaken/engram`.
     - [ ] Add tagline below the nav: "The centralized, No BS Open-Source hub for IP University Material" (`text-center text-lg text-[#a1a1a1]`).
     - [ ] **Success Metric**: Header renders with logo, GitHub link, and tagline.
 
 - [ ] **Main Interface**:
     - [ ] Add space-themed background (from Phase 2).
     - [ ] Create a centered container for dropdowns: `max-w-md mx-auto mt-10`.
-    - [ ] Implement branch dropdown using a mock ShadCN `<Select>` component:
-        ```jsx
-        const Select = ({ options, value, onChange, placeholder }) => (
-          <select
-            value={value}
-            onChange={(e) => onChange(e.target.value)}
-            className="w-full p-2 bg-[#2a2a2a] text-white border border-[#3b82f6] rounded-md focus:outline-none focus:ring-2 focus:ring-[#3b82f6]"
-          >
-            <option value="">{placeholder}</option>
-            {options.map((opt) => (
-              <option key={opt} value={opt}>{opt}</option>
-            ))}
-          </select>
-        );
-        ```
+    - [ ] Implement branch dropdown using ShadCN `<Select>` component.
     - [ ] Options: AIDS, AIML, CIVIL, CSE, ECE, EEE, IT, MECH.
     - [ ] Implement semester dropdown similarly: Options: 1st to 6th.
     - [ ] Style dropdowns for responsiveness: Horizontal on desktop (`flex gap-4`), vertical on mobile (`flex flex-col gap-4 sm:flex-row`).
@@ -176,7 +133,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 #### Tasks:
 - [ ] **Branch & Semester Selection Logic**:
-    - [ ] Create a state for selections in React:
+    - [ ] Create state for selections in React (Next.js page or component):
         ```jsx
         const [branch, setBranch] = React.useState('');
         const [semester, setSemester] = React.useState('');
@@ -186,7 +143,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
     - [ ] **Success Metric**: Selecting a branch and semester updates the state correctly.
 
 - [ ] **LocalStorage Integration**:
-    - [ ] Save selections on change:
+    - [ ] Save selections on change using `useEffect`:
         ```jsx
         React.useEffect(() => {
           if (branch && semester) {
@@ -209,8 +166,8 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
     - [ ] **Success Metric**: Selections persist across page reloads; reset button clears preferences.
 
 - [ ] **Subject Grid Rendering**:
-    - [ ] Create a mock data structure (JSON):
-        ```json
+    - [ ] Create a mock data structure (JSON or JS object):
+        ```js
         const subjectsData = {
           "AIDS": {
             "2nd": [
@@ -224,7 +181,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
           // ... other branches
         };
         ```
-    - [ ] Render subjects as a grid when branch and semester are selected:
+    - [ ] Render subjects as a grid when branch and semester are selected using Tailwind and Next.js components:
         ```jsx
         const subjects = subjectsData[branch]?.[semester] || [];
         return (
@@ -244,27 +201,16 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
     - [ ] **Success Metric**: Subjects render in a responsive grid based on selections.
 
 - [ ] **Resource Linking**:
-    - [ ] All downloadable resources will be stored in the `/materials` directory in the repository, organized by branch, semester, and subject:
-        ```
-        /materials/
-          ├── AIDS/
-          │   ├── 1st/
-          │   │   ├── Applied Chemistry/
-          │   │   │   ├── notes.pdf
-          │   │   │   └── pyqs.pdf
-          │   │   └── ...
-          ├── CSE/
-          └── ...
-        ```
+    - [ ] All downloadable resources will be stored in the `/materials` directory in the repository, organized by branch, semester, and subject.
     - [ ] When rendering downloadable resources, generate links that point to the correct path in the `/materials` directory:
-        ```jsx
+        ```js
         const handleDownload = (fileName) => {
           const url = `/materials/${branch}/${semester}/${subject}/${fileName}`;
           window.open(url, '_blank');
         };
         ```
     - [ ] The mock data for resources should include the actual file names present in the repo.
-    - [ ] **Success Metric**: Download links point to files in the `/materials` directory and work on GitHub Pages.
+    - [ ] **Success Metric**: Download links point to files in the `/materials` directory and work on deployed site.
 
 **Dependencies**: Phase 3 (hero page).  
 **Estimated Time**: 16 hours (4 hours/day).  
@@ -277,46 +223,15 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 #### Tasks:
 - [ ] **Routing Setup**:
-    - [ ] Configure React Router:
-        ```jsx
-        const { BrowserRouter, Routes, Route, Link } = ReactRouterDOM;
-        const App = () => (
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/subject/:name" element={<SubjectDetails />} />
-            </Routes>
-          </BrowserRouter>
-        );
-        ```
-    - [ ] Add navigation from subject cards: `<Link to={`/subject/${subject}`}>`.
+    - [ ] Use Next.js file-based routing for pages (e.g., `/subject/[name].tsx`).
+    - [ ] Add navigation from subject cards using Next.js `<Link>` component.
     - [ ] Add breadcrumb navigation on the subject page: `Home > {subject}`.
     - [ ] **Success Metric**: Clicking a subject card navigates to `/subject/<subject-name>`.
 
 - [ ] **Tabbed Interface**:
-    - [ ] Mock ShadCN `<Tabs>` component:
-        ```jsx
-        const Tabs = ({ tabs, activeTab, onTabChange }) => (
-          <div className="flex gap-4 border-b border-[#3b82f6]">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => onTabChange(tab)}
-                className={`p-2 ${activeTab === tab ? 'border-b-2 border-[#3b82f6] text-[#3b82f6]' : 'text-[#a1a1a1]'}`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        );
-        ```
+    - [ ] Use ShadCN `<Tabs>` component for tabbed navigation.
     - [ ] Define tabs: `["Syllabus", "Notes", "PYQs", "Lab", "Books", "Akash", "Videos"]`.
-    - [ ] Implement tab switching with fade-in animation:
-        ```css
-        .tab-content {
-          animation: fadeIn 0.5s ease-in;
-        }
-        ```
+    - [ ] Implement tab switching with fade-in animation using Tailwind or CSS modules.
     - [ ] **Success Metric**: Tabs render and switch with animation.
 
 - [ ] **Content Implementation**:
@@ -338,9 +253,9 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
               <div key={resource.name} className="flex justify-between items-center p-2 bg-[#2a2a2a] rounded-md mb-2">
                 <span>{resource.name}</span>
                 <div>
-                  <button onClick={() => handleDownload(resource.name)} className="p-2 bg-[#3b82f6] rounded-md hover:ring-2 hover:ring-[#3b82f6] transition-all">
+                  <Button onClick={() => handleDownload(resource.name)} className="p-2 bg-[#3b82f6] rounded-md hover:ring-2 hover:ring-[#3b82f6] transition-all">
                     Download
-                  </button>
+                  </Button>
                   {activeTab !== "Syllabus" && (
                     <p className="text-sm text-[#a1a1a1] mt-1">Contributed by: {resource.contributor}</p>
                   )}
@@ -365,7 +280,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 - [ ] **Download Functionality**:
     - [ ] All resource files are stored in the `/materials` directory in the repository.
     - [ ] Download logic uses direct links to these files:
-        ```jsx
+        ```js
         const handleDownload = (fileName) => {
           const link = document.createElement('a');
           link.href = `/materials/${branch}/${semester}/${subject}/${fileName}`;
@@ -373,12 +288,12 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
           link.click();
         };
         ```
-    - [ ] Add orbiting spinner animation during download.
-    - [ ] Handle errors: Display a toast message if the download fails.
+    - [ ] Add orbiting spinner animation during download using a ShadCN or custom spinner component.
+    - [ ] Handle errors: Display a toast message if the download fails (use ShadCN Toast component).
     - [ ] **Success Metric**: Clicking "Download" triggers a browser download action from the `/materials` directory.
 
 - [ ] **Animations & Interactions**:
-    - [ ] Add slide-in animation for tab content (from Phase 5).
+    - [ ] Add slide-in animation for tab content (from Phase 5) using Tailwind or CSS modules.
     - [ ] Implement loading spinners for page transitions: Use the orbiting spinner style.
     - [ ] Optimize animations: Use `will-change: transform, opacity` to improve performance.
     - [ ] Test on low-end devices (e.g., throttle CPU in Chrome DevTools).
@@ -396,21 +311,27 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 #### Tasks:
 - [ ] **Functionality Testing**:
     - [ ] Test dropdown selections and LocalStorage persistence.
-    - [ ] Verify navigation between pages.
+    - [ ] Verify navigation between pages (Next.js routing).
     - [ ] Test download functionality across tabs.
     - [ ] Check contributor attribution display.
     - [ ] **Success Metric**: All core features work as expected.
 
+- [ ] **Automated Testing & Linting**:
+    - [ ] Run unit and integration tests using Jest and React Testing Library.
+    - [ ] Run ESLint and Prettier to ensure code quality and formatting.
+    - [ ] **Success Metric**: All tests pass and code is linted/formatted on CI.
+
 - [ ] **Browser Compatibility**:
     - [ ] Test on Chrome, Firefox, Safari, Edge.
     - [ ] Test on mobile browsers: iOS Safari, Chrome Mobile.
-    - [ ] Verify CDN dependencies load correctly.
+    - [ ] Verify all dependencies load correctly.
     - [ ] **Success Metric**: App renders consistently across browsers.
 
 - [ ] **Performance & Accessibility**:
     - [ ] Measure page load time: Target < 2 seconds.
     - [ ] Test animation performance: Target 60 FPS.
-    - [ ] Ensure accessibility: Add `aria-label` to buttons, ensure keyboard navigation.
+    - [ ] Ensure accessibility: Add `aria-label` to buttons, ensure keyboard navigation, and use semantic HTML.
+    - [ ] Use tools like axe or Lighthouse for accessibility checks.
     - [ ] **Success Metric**: App meets performance and accessibility standards.
 
 **Dependencies**: Phase 6 (download functionality).  
@@ -425,7 +346,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 #### Tasks:
 - [ ] **Final Polish**:
     - [ ] Review and clean up code: Remove console logs, unused variables.
-    - [ ] Minify CSS/JS: Use an online minifier if needed.
+    - [ ] Minify CSS/JS: Use Next.js build and minification (`next build`).
     - [ ] Final responsive design test.
     - [ ] **Success Metric**: Code is clean and optimized.
 
@@ -437,7 +358,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
     - [ ] **Success Metric**: Documentation is comprehensive and user-friendly, and contributors can easily add new materials.
 
 - [ ] **Deployment**:
-    - [ ] Deploy to GitHub Pages: `gh-pages` branch.
+    - [ ] Deploy to Vercel (recommended for Next.js) or GitHub Pages (using `next export`).
     - [ ] Test the deployed version: Ensure all features work, including resource downloads from `/materials`.
     - [ ] Update GitHub repository with final changes.
     - [ ] Share the live URL with stakeholders.
@@ -445,7 +366,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 **Dependencies**: Phase 7 (testing).  
 **Estimated Time**: 4 hours.  
-**Risks**: Deployment failures; mitigate by following GitHub Pages documentation.
+**Risks**: Deployment failures; mitigate by following Next.js and Vercel documentation.
 
 ---
 
@@ -457,8 +378,9 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 - [ ] Users can navigate, view, and download resources intuitively.
 - [ ] Dark theme and space-themed elements (starry background, cosmic animations) are implemented throughout.
 - [ ] All 8 branches and 6 semesters are supported with mock data.
-- [ ] **All resource downloads work via direct links to files in the `/materials` directory in the GitHub repository.**
+- [ ] **All resource downloads work via direct links to files in the `/materials` directory in the GitHub repository or deployed site.**
 - [ ] GitHub repository link is functional: `http://github.com/kuberwastaken/engram`.
+- [ ] ShadCN UI components are used natively via Next.js, not mocked.
 
 ---
 
