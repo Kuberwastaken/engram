@@ -2,7 +2,7 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 ---
 
-# Engram Project Development Plan
+# Engram Development Plan
 
 ## 📋 Project Overview
 **Goal**: Build **Engram**, a centralized, open-source web application for IPU (Indraprastha University) student notes, featuring a minimal, space-themed dark UI. The app will be desktop and mobile-friendly, built with React, ShadCN, and Tailwind CSS, and will support all engineering branches and 6 semesters. Key features include branch/semester selection with LocalStorage persistence, a subject grid, tabbed subject details, downloadable resources, and contributor attribution.
@@ -25,35 +25,28 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 **Objective**: Establish the project foundation, set up dependencies, and initialize version control.
 
 #### Tasks:
-- [ ] **Project Initialization**:
-    - [ ] Create project directory: `d:\Projects\ENGRAM-PROJECT`.
-    - [ ] Set up basic file structure: Next.js app with TypeScript (`npx create-next-app@latest --typescript`), and a `/materials` directory for all study resources.
-    - [ ] Remove default boilerplate and set up a minimal Next.js page that renders "Hello, Engram!".
-    - [ ] **Success Metric**: A blank Next.js app renders "Hello, Engram!" on the browser.
+- [x] **Project Initialization**:
+    - [x] Create project directory: `d:\\Projects\\ENGRAM-PROJECT`.
+    - [x] Set up basic file structure: Next.js app with TypeScript (`npx create-next-app@latest --typescript`), and a `/materials` directory for all study resources.
+    - [x] Remove default boilerplate and set up a minimal Next.js page that renders "Hello, Engram!".
+    - [x] **Success Metric**: A blank Next.js app renders "Hello, Engram!" on the browser.
 
-- [ ] **Dependencies Setup**:
-    - [ ] Install Tailwind CSS: `npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`.
-    - [ ] Install ShadCN UI: `npx shadcn-ui@latest init` and add required components.
-    - [ ] Configure Tailwind and ShadCN in the Next.js project.
-    - [ ] Install and configure TypeScript, ESLint, and Prettier.
-    - [ ] **Success Metric**: All dependencies install without errors; a basic Tailwind-styled ShadCN component renders correctly.
+- [x] **Dependencies Setup**:
+    - [x] Install Tailwind CSS: `npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`.
+    - [x] Install ShadCN UI: `npx shadcn-ui@latest init` and add required components.
+    - [x] Configure Tailwind and ShadCN in the Next.js project.
+    - [x] Install and configure TypeScript, ESLint, and Prettier.
+    - [x] **Success Metric**: All dependencies install without errors; a basic Tailwind-styled ShadCN component renders correctly.
 
 - [ ] **Testing & CI/CD Setup**:
-    - [ ] Set up Jest and React Testing Library for unit/integration tests.
-    - [ ] Add sample test for a simple component.
-    - [ ] Set up GitHub Actions for automated builds, linting, and tests on pull requests.
+    - [x] Set up Jest and React Testing Library for unit/integration tests.
+    - [x] Add sample test for a simple component.
+    - [x] Set up GitHub Actions for automated builds, linting, and tests on pull requests.
     - [ ] **Success Metric**: Tests and linting run automatically on GitHub Actions.
 
-- [ ] **Version Control Setup**:
-    - [ ] Initialize Git: `git init`.
-    - [ ] Create a GitHub repository: `http://github.com/kuberwastaken/engram`.
-    - [ ] Add initial commit with project structure, including the `/materials` directory.
-    - [ ] Push to GitHub: `git push origin main`.
-    - [ ] **Success Metric**: GitHub repo is live with initial files.
-
 - [ ] **Documentation & Project Management**:
-    - [ ] Create `README.md` with project overview, setup instructions, and contribution guidelines, including how to add new materials to the `/materials` directory (file naming, directory structure, etc.).
-    - [ ] Add MIT License file (`LICENSE`).
+    - [x] Create `README.md` with project overview, setup instructions, and contribution guidelines, including how to add new materials to the `/materials` directory (file naming, directory structure, etc.).
+    - [x] Add MIT License file (`LICENSE`).
     - [ ] Set up GitHub Issues and Projects for tracking tasks and bugs.
     - [ ] **Success Metric**: README includes setup steps, project description, and clear instructions for contributing materials. Issues and Projects are enabled.
 
