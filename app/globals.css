@@ -118,5 +118,101 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Added for page load fade-in */
+    animation: fadeIn 0.5s ease-in-out;
   }
+}
+
+/* Added for page load fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Added for orbital ring animation */
+.orbital-ring::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent; /* Adjust color as needed */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+
+.orbital-ring:hover::before {
+  width: 120%; /* Adjust size as needed */
+  height: 120%; /* Adjust size as needed */
+  opacity: 1;
+  border-color: var(--color-primary); /* Or your desired ring color */
+}
+
+/* Twinkling stars animation (already present, shown for context) */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  animation: twinkle 1.5s infinite;
+}
+
+.star-1 {
+  top: 20%;
+  left: 10%;
+  width: 2px;
+  height: 2px;
+  background-color: var(--color-primary);
+  animation-delay: 0s;
+}
+
+.star-2 {
+  top: 30%;
+  left: 70%;
+  width: 3px;
+  height: 3px;
+  background-color: var(--color-primary);
+  animation-delay: 0.3s;
+}
+
+.star-3 {
+  top: 50%;
+  left: 40%;
+  width: 1.5px;
+  height: 1.5px;
+  background-color: var(--color-primary);
+  animation-delay: 0.6s;
+}
+
+.star-4 {
+  top: 80%;
+  left: 20%;
+  width: 2.5px;
+  height: 2.5px;
+  background-color: var(--color-primary);
+  animation-delay: 0.9s;
+}
+
+.star-5 {
+  top: 70%;
+  left: 80%;
+  width: 1px;
+  height: 1px;
+  background-color: var(--color-primary);
+  animation-delay: 1.2s;
 }
