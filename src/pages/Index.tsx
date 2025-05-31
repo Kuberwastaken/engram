@@ -144,21 +144,19 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="pb-16 px-6 pt-20">
-        <div className="container mx-auto max-w-7xl">
-          {/* Hero Section */}
-          <div className="text-center mb-20 animate-fade-in max-w-5xl mx-auto">
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent tracking-tight">
-              ENGRAM
+      </header>      {/* Main Content */}
+      <main className="pb-16 px-6 pt-32">
+        <div className="container mx-auto max-w-7xl">          {/* Hero Section */}
+          <div className="text-center mb-20 animate-fade-in w-full mx-auto mt-16 px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-6">
+              <span className="block">
+                The Centralized, No BS hub for
+              </span>
+              <span className="block">
+                IP University Resources
+              </span>
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-light mb-4">
-              The centralized, No BS Open-Source hub for IP University study materials.
-            </p>
-            <p className="text-lg md:text-xl text-gray-500 max-w-3xl mx-auto">
-              Built for students, by students. Access notes, previous year questions, lab manuals, and more.
+            <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto">
+              Built for students, by students. No Trackers, No Ads and Open Source
             </p>
           </div>
 
