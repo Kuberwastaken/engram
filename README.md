@@ -369,11 +369,6 @@ materials/
 
 ENGRAM's success isn't measured by GitHub stars or code quality alone - it's measured by how many IPU students can access quality study materials when they need them most. **Your contribution, no matter how small, directly impacts thousands of students.**
 
-<table>
-<tr>
-<td width="50%">
-
-
 ### **The Collective Ownership Model**
 
 ENGRAM operates on a simple principle: **Everyone benefits, everyone contributes.**
