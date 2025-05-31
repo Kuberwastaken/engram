@@ -33,16 +33,10 @@ Here’s an improved, highly detailed, and structured step-by-step plan for the 
 
 - [x] **Dependencies Setup**:
     - [x] Install Tailwind CSS: `npm install -D tailwindcss postcss autoprefixer && npx tailwindcss init -p`.
-    - [x] Install ShadCN UI: `npx shadcn-ui@latest init` and add required components.
+    - [x] Install ShadCN UI: `npx shadcn@latest init` and add required components.
     - [x] Configure Tailwind and ShadCN in the Next.js project.
     - [x] Install and configure TypeScript, ESLint, and Prettier.
     - [x] **Success Metric**: All dependencies install without errors; a basic Tailwind-styled ShadCN component renders correctly.
-
-- [ ] **Testing & CI/CD Setup**:
-    - [x] Set up Jest and React Testing Library for unit/integration tests.
-    - [x] Add sample test for a simple component.
-    - [x] Set up GitHub Actions for automated builds, linting, and tests on pull requests.
-    - [ ] **Success Metric**: Tests and linting run automatically on GitHub Actions.
 
 - [ ] **Documentation & Project Management**:
     - [x] Create `README.md` with project overview, setup instructions, and contribution guidelines, including how to add new materials to the `/materials` directory (file naming, directory structure, etc.).
