@@ -12,7 +12,7 @@
 
 **ENGRAM** is a modern, open source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
 
-ENGRAM is free and will be free with no ads no trackers, it provides instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
+ENGRAM is free and will **alyways stay free with no ads and no trackers**. It aims to provide instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
 
 This project emerged from my frustration of scattered study materials across different websites, whatsapp groups, drive links making exam preparation unnecessarily difficult for IPU students.
 
@@ -43,30 +43,17 @@ This project emerged from my frustration of scattered study materials across dif
 </tr>
 </table>
 
-### **The Vision: Community-Powered Excellence**
+### **The Vision for ENGRAM is**
 
-**Imagine ENGRAM as:**
 - 🎯 **The First Stop** - Every IPU student's go-to resource for any subject
+
 - 🏆 **Quality Guaranteed** - Peer-reviewed content that students trust
+
 - 🚀 **Always Current** - Real-time updates as syllabi change
+
 - 🤝 **Student-Led** - Decisions made by and for the community
 
 <div align="center">
-<strong>💡 ENGRAM becomes powerful only when WE make it powerful together</strong>
-</div>
-
-## Why This Project Matters
-
-### **The Problem with Current Academic Resources**
-
-> "Finding quality study materials for IPU subjects is like searching for stars in a cloudy sky - they're out there, but scattered and hard to find."
-
-Current academic resource platforms suffer from:
-- **Fragmented Sources** - Materials scattered across multiple platforms
-- **Poor Organization** - No systematic categorization by branch/semester
-- **Access Barriers** - Registration walls and premium restrictions
-- **Outdated Content** - Resources not updated with current syllabus
-- **No Community** - Lack of student contribution and verification
 
 ### **ENGRAM's Solution:**
 
@@ -92,7 +79,7 @@ Current academic resource platforms suffer from:
 </table>
 
 <div align="center">
-<strong>✨ The study materials hub that actually understands student needs ✨</strong>
+<strong>💡 ENGRAM becomes powerful only when WE make it powerful together</strong>
 </div>
 
 ## Key Features
@@ -105,7 +92,7 @@ Current academic resource platforms suffer from:
 - **8 Engineering Branches** - AIDS, AIML, CIVIL, CSE, ECE, EEE, IT, MECH
 - **8 Semester Range** - Complete undergraduate coverage
 - **Comprehensive Resources** - Syllabus, Notes, PYQs, Lab materials, Books
-- **Special Collections** - Akash notes and video lectures
+- **Special Collections** - Akash notes and actually decent youtube lectures
 
 </td>
 <td width="50%">
@@ -139,22 +126,6 @@ Current academic resource platforms suffer from:
 </td>
 </tr>
 </table>
-
-### Current Coverage
-
-<div align="center">
-
-| Branch | Semesters | Subject Count | Resource Types |
-|--------|-----------|---------------|----------------|
-| 🤖 **AIDS** | 1st - 6th | 30+ | Notes, PYQs, Lab, Books |
-| 🧠 **AIML** | 1st - 6th | 30+ | Notes, PYQs, Lab, Books |
-| 🏗️ **CIVIL** | 1st - 6th | 35+ | Notes, PYQs, Lab, Books |
-| 💻 **CSE** | 1st - 6th | 40+ | Notes, PYQs, Lab, Books |
-| ⚡ **ECE** | 1st - 6th | 35+ | Notes, PYQs, Lab, Books |
-| 🔌 **EEE** | 1st - 6th | 35+ | Notes, PYQs, Lab, Books |
-| 🖥️ **IT** | 1st - 6th | 35+ | Notes, PYQs, Lab, Books |
-| ⚙️ **MECH** | 1st - 6th | 35+ | Notes, PYQs, Lab, Books |
-
 </div>
 
 ## System Architecture
@@ -348,19 +319,6 @@ materials/
 
 ### For Students
 
-```mermaid
-flowchart LR
-    A[Visit ENGRAM] --> B[Select Branch]
-    B --> C[Choose Semester]
-    C --> D[Browse Subjects]
-    D --> E[Access Resources]
-    E --> F[Download Materials]
-    
-    style A fill:#9f1239
-    style E fill:#0369a1
-    style F fill:#dc2626
-```
-
 1. **🎓 Select Your Academic Path**
    - Choose your engineering branch from the dropdown
    - Pick your current semester
@@ -382,7 +340,7 @@ flowchart LR
      - **VIDEOS** - Video lectures and tutorials
 
 4. **⬇️ Download & Study**
-   - Download materials instantly with one click
+   - Download materials instantly with one click or just view it
    - Preview documents before downloading (when available)
    - All resources are free and require no registration
 
@@ -415,40 +373,6 @@ ENGRAM's success isn't measured by GitHub stars or code quality alone - it's mea
 <tr>
 <td width="50%">
 
-### **🚨 Critical Needs Right Now**
-
-**Content Gaps We Need to Fill:**
-- 📝 **Recent PYQs** - 2024-2025 question papers
-- 🧪 **Updated Lab Manuals** - New experiments and procedures  
-- 📚 **Branch-Specific Notes** - Especially for newer branches like AIDS/AIML
-- 🎥 **Video Explanations** - Student-made tutorials for difficult topics
-- ✅ **Quality Reviews** - Verify and improve existing materials
-
-**Why This Can't Wait:**
-- Exam seasons create urgent demand for materials
-- Outdated content misleads students and wastes study time
-- Missing resources force students back to scattered, unreliable sources
-
-</td>
-<td width="50%">
-
-### **🎯 Long-term Sustainability Goals**
-
-**Community Infrastructure:**
-- 👥 **Branch Maintainers** - Students who ensure their branch stays updated
-- 🔄 **Regular Review Cycles** - Quarterly content audits and updates
-- 📊 **Quality Metrics** - Community-driven rating and verification systems
-- 🚀 **Feature Development** - New tools to make studying more effective
-
-**Why We Need Structure:**
-- Prevents knowledge loss when contributors graduate
-- Ensures consistent quality across all branches
-- Creates reliable processes for continuous improvement
-- Builds institutional memory within the community
-
-</td>
-</tr>
-</table>
 
 ### **The Collective Ownership Model**
 
@@ -518,37 +442,12 @@ We welcome contributions from the IPU community and beyond! Here's how you can h
 </tr>
 </table>
 
-### Step-by-Step Contribution Process
-
-```bash
-# 1. Fork and clone the repository
-git clone https://github.com/your-username/engram.git
-cd engram
-
-# 2. Create a new feature branch
-git checkout -b feature/amazing-new-feature
-
-# 3. Make your changes and test
-npm run dev  # Test your changes locally
-
-# 4. Commit your changes
-git add .
-git commit -m "Add amazing new feature that does X"
-
-# 5. Push to your fork
-git push origin feature/amazing-new-feature
-
-# 6. Create a Pull Request
-# Visit GitHub and create a PR with detailed description
-```
-
 ### **Making ENGRAM Truly Ours**
 
-**Current Status:** 🌱 **Early Stage** - We have the foundation, now we need the community
+**Current Status:** 🌱 **Pre Alpha** - We have the foundation, now we need the community
 
 **What Success Looks Like:**
 - 🎯 **90%+ Coverage** - Every IPU subject has quality materials
-- ⚡ **Real-time Updates** - New PYQs uploaded within 24 hours of exams
 - 🏆 **Student Recognition** - Top contributors become campus legends
 - 📱 **Platform Evolution** - Features requested and built by students
 - 🌍 **Beyond IPU** - Model adopted by other universities
@@ -611,89 +510,9 @@ git push origin feature/amazing-new-feature
 </tr>
 </table>
 
-## 🚀 Deployment & Production
-
-### Environment Setup
-
-```bash
-# Build for production
-npm run build
-
-# Preview production build
-npm run preview
-
-# Deploy to Vercel (recommended)
-vercel --prod
-
-# Deploy to Netlify
-netlify deploy --prod --dir=dist
-```
-
-### Performance Optimizations
-
-- **Code Splitting** - Lazy loading of route components
-- **Asset Optimization** - Compressed images and fonts
-- **Bundle Analysis** - Regular bundle size monitoring
-- **CDN Integration** - Fast global content delivery
-
-## 📈 Project Roadmap
-
-- [ ] **Phase 1: Foundation** ✅
-  - [x] Basic React application setup
-  - [x] Responsive cosmic UI design
-  - [x] Branch/semester selection system
-  - [x] Subject grid implementation
-
-- [ ] **Phase 2: Core Features** 🚧
-  - [x] Resource organization system
-  - [x] Download functionality
-  - [x] Preview capabilities
-  - [ ] Search and filter system
-
-- [ ] **Phase 3: Enhanced Experience** 📋
-  - [ ] Advanced search with filters
-  - [ ] User favorites and bookmarks
-  - [ ] Contribution tracking system
-  - [ ] Mobile app development
-
-- [ ] **Phase 4: Community Features** 📋
-  - [ ] User authentication and profiles
-  - [ ] Ratings and reviews system
-  - [ ] Discussion forums for subjects
-  - [ ] Study groups and collaboration
-
-- [ ] **Phase 5: Advanced Features** 📋
-  - [ ] AI-powered content recommendations
-  - [ ] Automated content organization
-  - [ ] Real-time notifications
-  - [ ] Analytics dashboard
-
-## 📊 Statistics & Impact
-
-<div align="center">
-
-### **Current Metrics**
-| Metric | Value |
-|--------|-------|
-| 🎓 **Branches Covered** | 8 Engineering Branches |
-| 📚 **Semesters** | 6 Complete Semesters |
-| 📖 **Total Subjects** | 280+ Subjects |
-| 📄 **Resources Available** | 1,000+ Study Materials |
-| ⭐ **Resource Types** | 7 Different Categories |
-| 🌟 **Always Free** | ∞ Forever |
-
-</div>
-
 ## 📜 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-**What this means:**
-- ✅ **Free to use** - Personal and commercial use allowed
-- ✅ **Free to modify** - Adapt and customize as needed
-- ✅ **Free to distribute** - Share with others freely
-- ✅ **No warranties** - Use at your own risk
-- ✅ **Attribution appreciated** - Credit is nice but not required
+This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -701,10 +520,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### 🌟 **Star this repository if you find it helpful!**
 
-**Built with ❤️ by [Kuber Mehta](https://x.com/Kuberwastaken) and the entire IPU student community**
-
-*This project belongs to all of us. Every student who contributes makes it stronger.*
-
-**🎓 Join the movement to make academic resources accessible, current, and community-owned**
+**Built with ❤️ by [Kuber Mehta](https://kuber.studio/) and the entire IPU student community**
 
 </div>
