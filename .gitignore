@@ -22,3 +22,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Materials - too large for Git
+materials/
+public/materials/
+
+# Development files
+scripts/
+extraction-reports/
