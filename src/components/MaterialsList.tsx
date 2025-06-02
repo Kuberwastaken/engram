@@ -1,6 +1,7 @@
 import React from 'react';
 import PDFViewer from './PDFViewer';
-import { GoogleDriveFile, studyXDataService } from '@/services/studyXDataService';
+import { GoogleDriveFile } from '@/services/unifiedDataService';
+import { studyXDataService } from '@/services/studyXDataService';
 
 interface MaterialsListProps {
   materials: GoogleDriveFile[];
@@ -30,11 +31,15 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
     );
   }
 
+  // Material types that should show source tags
+  const shouldShowSourceTags = ['notes', 'pyqs', 'lab'].includes(materialType.toLowerCase());
+
   return (
     <div className={`space-y-3 ${className}`}>
       {title && (
         <h3 className="text-lg font-semibold text-gray-300 mb-4">{title}</h3>
-      )}      {materials.map((file, index) => {
+      )}
+      {materials.map((file, index) => {
         const fileId = studyXDataService.getFileId(file);
         const fileName = studyXDataService.getFileName(file);
         const isPdf = studyXDataService.isPdfFile(fileName);
@@ -45,6 +50,7 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
             showPreview={isPdf}
             subjectName={subjectName}
             materialType={materialType}
+            showSourceTag={shouldShowSourceTags}
           />
         );
       })}

@@ -8,7 +8,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { ArrowLeft, Github, BookOpen, FileText, Loader2, Download, ExternalLink, Eye } from 'lucide-react';
 import { StarField } from '@/components/StarField';
 import { toast } from '@/hooks/use-toast';
-import { studyXDataService, GoogleDriveFile } from '@/services/studyXDataService';
+import { unifiedDataService } from '@/services/unifiedDataService';
+import type { GoogleDriveFile } from '@/services/unifiedDataService';
 import MaterialsList from '@/components/MaterialsList';
 import { formatSubjectName } from '@/lib/utils';
 
@@ -48,7 +49,7 @@ const Subject = () => {
         setLoading(true);
         console.log('Loading materials for:', { branch, semester, subjectName });
         
-        const organizedMaterials = await studyXDataService.getOrganizedMaterials(
+        const organizedMaterials = await unifiedDataService.getOrganizedMaterials(
           branch, 
           semester, 
           subjectName

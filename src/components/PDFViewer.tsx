@@ -3,7 +3,8 @@ import { createPortal } from 'react-dom';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Card, CardContent } from '@/components/ui/card';
 import { FileText, Loader2, X, ArrowLeft } from 'lucide-react';
-import { GoogleDriveFile, studyXDataService } from '@/services/studyXDataService';
+import { GoogleDriveFile } from '@/services/unifiedDataService';
+import { studyXDataService } from '@/services/studyXDataService';
 import { toast } from '@/hooks/use-toast';
 import { formatSubjectName } from '@/lib/utils';
 
@@ -13,9 +14,10 @@ interface PDFViewerProps {
   className?: string;
   subjectName?: string;
   materialType?: string;
+  showSourceTag?: boolean;
 }
 
-const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, className = "", subjectName = "", materialType = "" }) => {
+const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, className = "", subjectName = "", materialType = "", showSourceTag = false }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [embedError, setEmbedError] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -171,9 +173,8 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               className="px-3 py-1 bg-gray-800/50 hover:bg-gray-700/70 border border-gray-600/50 rounded text-gray-300 text-sm transition-colors"
             >
               Download
-            </button>
-            <div className="text-xs text-gray-400">
-              By StudyX
+            </button>            <div className="text-xs text-gray-400">
+              {showSourceTag && file.source ? `By ${file.source}` : 'Press ESC to close'}
             </div>
           </div>
         </div>        {/* PDF content area - maximized for readability */}
@@ -258,9 +259,13 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               <div className="flex items-center mb-2">
                 <FileText className="w-4 h-4 text-blue-400 mr-2" />
                 <h4 className="text-gray-300 font-medium group-hover:text-white transition-colors">{fileName}</h4>
-              </div>
-              <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
+              </div>              <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
                 PDF Document • Click to open fullscreen reader
+                {showSourceTag && file.source && (
+                  <span className="ml-2 px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
+                    {file.source}
+                  </span>
+                )}
               </p>
             </div>
             <div className="flex items-center gap-3 ml-4" onClick={(e) => e.stopPropagation()}>

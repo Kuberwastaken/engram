@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
-import { studyXDataService } from '@/services/studyXDataService';
+import { unifiedDataService } from '@/services/unifiedDataService';
 import { Loader2 } from 'lucide-react';
 import { formatSubjectName } from '@/lib/utils';
 
@@ -48,7 +48,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
           semesterKey = semester.replace(/sem-?/i, 'SEM').toUpperCase();
         }
         
-        const availableSubjects = await studyXDataService.getAvailableSubjects(branch, semesterKey);
+        const availableSubjects = await unifiedDataService.getAvailableSubjects(branch, semesterKey);
         setSubjects(availableSubjects);
       } catch (err) {
         console.error('Error loading subjects:', err);
