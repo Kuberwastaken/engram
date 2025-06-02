@@ -1,7 +1,9 @@
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
+import { studyXDataService } from '@/services/studyXDataService';
+import { Loader2 } from 'lucide-react';
 
 interface SubjectGridProps {
   branch: string;
@@ -10,86 +12,87 @@ interface SubjectGridProps {
 
 export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) => {
   const navigate = useNavigate();
+  const [subjects, setSubjects] = useState<string[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
-  // Mock subject data for all branches and semesters
-  const subjectsData: Record<string, Record<string, string[]>> = {
-    AIDS: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Programming Fundamentals', 'Workshop Practice'],
-      '3rd': ['Data Structures', 'Digital Logic Design', 'Computer Organization', 'Discrete Mathematics', 'Operating Systems'],
-      '4th': ['Database Management Systems', 'Computer Networks', 'Software Engineering', 'Theory of Computation', 'Machine Learning'],
-      '5th': ['Artificial Intelligence', 'Deep Learning', 'Natural Language Processing', 'Computer Vision', 'Data Science'],
-      '6th': ['Big Data Analytics', 'Intelligent Systems', 'Robotics', 'IoT Applications', 'Capstone Project']
-    },
-    AIML: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Programming Fundamentals', 'Workshop Practice'],
-      '3rd': ['Data Structures', 'Digital Logic Design', 'Computer Organization', 'Statistics & Probability', 'Linear Algebra'],
-      '4th': ['Machine Learning', 'Database Management Systems', 'Computer Networks', 'Software Engineering', 'Pattern Recognition'],
-      '5th': ['Deep Learning', 'Natural Language Processing', 'Computer Vision', 'Reinforcement Learning', 'Neural Networks'],
-      '6th': ['Advanced ML Algorithms', 'AI Ethics', 'Intelligent Agents', 'Research Methodology', 'Major Project']
-    },
-    CSE: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Programming Fundamentals', 'Workshop Practice'],
-      '3rd': ['Data Structures', 'Digital Logic Design', 'Computer Organization', 'Discrete Mathematics', 'Operating Systems'],
-      '4th': ['Database Management Systems', 'Computer Networks', 'Software Engineering', 'Theory of Computation', 'Web Technologies'],
-      '5th': ['Compiler Design', 'Computer Graphics', 'Distributed Systems', 'Information Security', 'Mobile Computing'],
-      '6th': ['Cloud Computing', 'Blockchain Technology', 'Advanced Algorithms', 'Research Project', 'Industry Training']
-    },
-    ECE: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Electronic Devices', 'Network Analysis'],
-      '3rd': ['Analog Electronics', 'Digital Electronics', 'Signals & Systems', 'Electromagnetic Theory', 'Electronic Measurements'],
-      '4th': ['Microprocessors', 'Communication Systems', 'Control Systems', 'VLSI Design', 'Digital Signal Processing'],
-      '5th': ['Embedded Systems', 'Antenna Theory', 'Microwave Engineering', 'Optical Communication', 'Power Electronics'],
-      '6th': ['Wireless Communication', 'Satellite Communication', 'Advanced Electronics', 'Project Work', 'Industrial Training']
-    },
-    EEE: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Circuit Analysis', 'Electrical Machines I'],
-      '3rd': ['Electrical Machines II', 'Power Systems I', 'Electrical Measurements', 'Control Systems', 'Power Electronics'],
-      '4th': ['Power Systems II', 'Switchgear & Protection', 'Electrical Drives', 'Utilization of Electrical Energy', 'Economic Operation'],
-      '5th': ['High Voltage Engineering', 'Power System Analysis', 'Renewable Energy', 'Smart Grid Technology', 'Energy Management'],
-      '6th': ['Power Quality', 'Electric Vehicles', 'Industrial Automation', 'Major Project', 'Electrical Safety']
-    },
-    IT: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Programming Fundamentals', 'Workshop Practice'],
-      '3rd': ['Data Structures', 'Digital Logic Design', 'Computer Organization', 'Database Systems', 'Object Oriented Programming'],
-      '4th': ['Computer Networks', 'Software Engineering', 'Web Technologies', 'Information Security', 'System Administration'],
-      '5th': ['Cloud Computing', 'Mobile Application Development', 'Big Data Analytics', 'DevOps', 'Enterprise Systems'],
-      '6th': ['Cyber Security', 'IT Project Management', 'Emerging Technologies', 'Capstone Project', 'Industry Internship']
-    },
-    MECH: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Engineering Mechanics', 'Workshop Practice'],
-      '3rd': ['Strength of Materials', 'Thermodynamics', 'Fluid Mechanics', 'Manufacturing Processes', 'Material Science'],
-      '4th': ['Heat Transfer', 'Machine Design', 'Internal Combustion Engines', 'Production Technology', 'Mechanical Vibrations'],
-      '5th': ['Refrigeration & Air Conditioning', 'Automobile Engineering', 'Industrial Engineering', 'CAD/CAM', 'Finite Element Analysis'],
-      '6th': ['Robotics', 'Renewable Energy Systems', 'Advanced Manufacturing', 'Project Management', 'Major Project']
-    },
-    CIVIL: {
-      '1st': ['Applied Mathematics I', 'Applied Physics I', 'Applied Chemistry I', 'Engineering Graphics', 'Basic Electrical Engineering'],
-      '2nd': ['Applied Mathematics II', 'Applied Physics II', 'Applied Chemistry II', 'Engineering Mechanics', 'Building Materials'],
-      '3rd': ['Strength of Materials', 'Fluid Mechanics', 'Surveying', 'Concrete Technology', 'Structural Analysis I'],
-      '4th': ['Structural Analysis II', 'Soil Mechanics', 'Water Resources Engineering', 'Transportation Engineering', 'Design of Structures'],
-      '5th': ['Foundation Engineering', 'Environmental Engineering', 'Construction Management', 'Earthquake Engineering', 'Steel Structures'],
-      '6th': ['Advanced Concrete Design', 'Bridge Engineering', 'Town Planning', 'Project Work', 'Quantity Surveying']
+  useEffect(() => {
+    const loadSubjects = async () => {
+      try {
+        setLoading(true);
+        setError(null);
+        
+        // Convert semester format to StudyX format
+        // URL format: 1st -> SEM1, 2nd -> SEM2, 3rd -> SEM3, etc.
+        // URL format: sem-1 -> SEM1, sem-2 -> SEM2, etc.
+        let semesterKey = semester.toUpperCase();
+        if (semesterKey.includes('1ST') || semesterKey.includes('SEM-1')) {
+          semesterKey = 'SEM1';
+        } else if (semesterKey.includes('2ND') || semesterKey.includes('SEM-2')) {
+          semesterKey = 'SEM2';
+        } else if (semesterKey.includes('3RD') || semesterKey.includes('SEM-3')) {
+          semesterKey = 'SEM3';
+        } else if (semesterKey.includes('4TH') || semesterKey.includes('SEM-4')) {
+          semesterKey = 'SEM4';
+        } else if (semesterKey.includes('5TH') || semesterKey.includes('SEM-5')) {
+          semesterKey = 'SEM5';
+        } else if (semesterKey.includes('6TH') || semesterKey.includes('SEM-6')) {
+          semesterKey = 'SEM6';
+        } else if (semesterKey.includes('7TH') || semesterKey.includes('SEM-7')) {
+          semesterKey = 'SEM7';
+        } else if (semesterKey.includes('8TH') || semesterKey.includes('SEM-8')) {
+          semesterKey = 'SEM8';
+        } else {
+          // Fallback for direct SEM format
+          semesterKey = semester.replace(/sem-?/i, 'SEM').toUpperCase();
+        }
+        
+        const availableSubjects = await studyXDataService.getAvailableSubjects(branch, semesterKey);
+        setSubjects(availableSubjects);
+      } catch (err) {
+        console.error('Error loading subjects:', err);
+        setError('Failed to load subjects');
+        setSubjects([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    if (branch && semester) {
+      loadSubjects();
     }
-  };
-
-  const subjects = subjectsData[branch]?.[semester] || [];
+  }, [branch, semester]);
 
   const handleSubjectClick = (subject: string) => {
     const encodedSubject = encodeURIComponent(subject);
     navigate(`/subject/${encodedSubject}?branch=${branch}&semester=${semester}`);
   };
 
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center py-12">
+        <div className="text-center">
+          <Loader2 className="w-8 h-8 animate-spin text-blue-400 mx-auto mb-4" />
+          <p className="text-gray-400">Loading subjects...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="text-center py-8">
+        <p className="text-gray-400">Error loading subjects: {error}</p>
+        <p className="text-gray-500 text-sm mt-2">Please try refreshing the page.</p>
+      </div>
+    );
+  }
+
   if (subjects.length === 0) {
     return (
       <div className="text-center py-8">
         <p className="text-gray-400">No subjects found for this combination.</p>
+        <p className="text-gray-500 text-sm mt-2">Materials for {branch} - {semester} semester are not yet available.</p>
       </div>
     );
   }
