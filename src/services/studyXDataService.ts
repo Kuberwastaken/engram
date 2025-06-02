@@ -141,28 +141,37 @@ class StudyXDataService {
     return semesterKey;
   }/**
    * Get the appropriate branch data (common for SEM1-2, branch-specific for SEM3-8)
-   */
-  private getBranchData(data: StudyXData, branchName: string, semesterKey: string): StudyXBranch | null {
+   */  private getBranchData(data: StudyXData, branchName: string, semesterKey: string): StudyXBranch | null {
+    console.log(`[getBranchData] Called with: branch=${branchName}, semester=${semesterKey}`);
+    
     // First check if this semester exists in common materials
     if (data.materials.common && data.materials.common[semesterKey]) {
+      console.log(`[getBranchData] Found semester ${semesterKey} in common materials`);
       return data.materials.common;
     }
     
     // Then check branch-specific semesters
     const branchKey = branchName.toUpperCase();
-    const branchInfo = data.branches[branchKey];
+    console.log(`[getBranchData] Looking for branch-specific data with key: ${branchKey}`);
+    
+    const branchInfo = data.materials.branches[branchKey];
+    console.log(`[getBranchData] Branch info found:`, !!branchInfo);
     
     // Check if the branch exists and has semester data
+    // Fixed: The branches structure is { "CSE": { "semesters": { ... } } }
     if (branchInfo && branchInfo.semesters && branchInfo.semesters[semesterKey]) {
+      console.log(`[getBranchData] Found semester ${semesterKey} in branch ${branchKey} specific data`);
       return branchInfo.semesters;
     }
     
     // As a fallback, return common data if the branch-specific data isn't found
     // This helps with cases where higher semesters might still be in common
     if (data.materials.common) {
+      console.log(`[getBranchData] Falling back to common materials`);
       return data.materials.common;
     }
     
+    console.log(`[getBranchData] No data found, returning null`);
     return null;
   }
 
@@ -237,18 +246,26 @@ class StudyXDataService {
 
   /**
    * Get all materials organized by type for a subject
-   */
-  async getOrganizedMaterials(branchName: string, semester: string, subjectName: string) {
+   */  async getOrganizedMaterials(branchName: string, semester: string, subjectName: string) {
+    console.log(`[getOrganizedMaterials] Called with: branch=${branchName}, semester=${semester}, subject=${subjectName}`);
+    
     const data = await this.loadStudyXData();
     const semesterKey = this.normalizeSemesterKey(semester);
+    console.log(`[getOrganizedMaterials] Normalized semester key: ${semesterKey}`);
+    
     const branchData = this.getBranchData(data, branchName, semesterKey);
+    console.log(`[getOrganizedMaterials] Branch data found:`, !!branchData);
     
     if (!branchData) {
+      console.log(`[getOrganizedMaterials] No branch data found, returning empty materials`);
       return this.getEmptyOrganizedMaterials();
     }
 
     const semesterData = branchData[semesterKey];
+    console.log(`[getOrganizedMaterials] Semester data found:`, !!semesterData);
+    
     if (!semesterData) {
+      console.log(`[getOrganizedMaterials] No semester data found, returning empty materials`);
       return this.getEmptyOrganizedMaterials();
     }
 
@@ -256,15 +273,29 @@ class StudyXDataService {
     const subjectKey = Object.keys(semesterData.subjects).find(
       key => key.toLowerCase() === subjectName.toLowerCase()
     );
+    
+    console.log(`[getOrganizedMaterials] Available subjects:`, Object.keys(semesterData.subjects));
+    console.log(`[getOrganizedMaterials] Looking for subject: ${subjectName.toLowerCase()}`);
+    console.log(`[getOrganizedMaterials] Found subject key:`, subjectKey);
 
     if (!subjectKey) {
+      console.log(`[getOrganizedMaterials] Subject not found, returning empty materials`);
       return this.getEmptyOrganizedMaterials();
     }
 
     const subject = semesterData.subjects[subjectKey];
+    console.log(`[getOrganizedMaterials] Subject materials:`, {
+      notes: (subject.materials.notes || []).length,
+      pyqs: (subject.materials.pyqs || []).length,
+      books: (subject.materials.books || []).length,
+      lab: (subject.materials.lab || []).length,
+      akash: (subject.materials.akash || []).length,
+      syllabus: (subject.materials.syllabus || []).length,
+      videos: (subject.materials.videos || []).length
+    });
     
     // Convert StudyX materials to GoogleDriveFile format
-    return {
+    const result = {
       notes: (subject.materials.notes || []).map(m => this.convertMaterialToGoogleDriveFile(m)),
       pyqs: (subject.materials.pyqs || []).map(m => this.convertMaterialToGoogleDriveFile(m)),
       books: (subject.materials.books || []).map(m => this.convertMaterialToGoogleDriveFile(m)),
@@ -273,6 +304,18 @@ class StudyXDataService {
       syllabus: (subject.materials.syllabus || []).map(m => this.convertMaterialToGoogleDriveFile(m)),
       videos: (subject.materials.videos || []).map(m => this.convertMaterialToGoogleDriveFile(m))
     };
+    
+    console.log(`[getOrganizedMaterials] Returning organized materials:`, {
+      notes: result.notes.length,
+      pyqs: result.pyqs.length,
+      books: result.books.length,
+      lab: result.lab.length,
+      akash: result.akash.length,
+      syllabus: result.syllabus.length,
+      videos: result.videos.length
+    });
+    
+    return result;
   }
 
   private getEmptyOrganizedMaterials() {
@@ -364,7 +407,7 @@ class StudyXDataService {
    */
   async getAvailableBranches(): Promise<string[]> {
     const data = await this.loadStudyXData();
-    return Object.keys(data.branches);
+    return Object.keys(data.materials.branches);
   }
   /**
    * Get available semesters for a branch
@@ -377,7 +420,7 @@ class StudyXDataService {
     const commonSemesters = Object.keys(data.materials.common);
     
     // Branch-specific semesters
-    const branchInfo = data.branches[branchKey];
+    const branchInfo = data.materials.branches[branchKey];
     const branchSpecificSemesters = branchInfo ? Object.keys(branchInfo.semesters) : [];
     
     return [...commonSemesters, ...branchSpecificSemesters].sort();
@@ -444,8 +487,8 @@ class StudyXDataService {
     });
 
     // Search in branch-specific materials
-    Object.keys(data.branches).forEach(branchKey => {
-      const branchInfo = data.branches[branchKey];
+    Object.keys(data.materials.branches).forEach(branchKey => {
+      const branchInfo = data.materials.branches[branchKey];
       Object.keys(branchInfo.semesters).forEach(semester => {
         const semesterData = branchInfo.semesters[semester];
         Object.keys(semesterData.subjects).forEach(subjectKey => {

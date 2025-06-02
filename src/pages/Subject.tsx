@@ -46,11 +46,20 @@ const Subject = () => {
 
       try {
         setLoading(true);
+        console.log('Loading materials for:', { branch, semester, subjectName });
+        
         const organizedMaterials = await studyXDataService.getOrganizedMaterials(
           branch, 
           semester, 
           subjectName
         );
+        
+        console.log('Organized materials received:', organizedMaterials);
+        
+        // Log each material type and count
+        Object.keys(organizedMaterials).forEach(type => {
+          console.log(`${type}: ${organizedMaterials[type].length} files`);
+        });
         
         setMaterials(organizedMaterials);
         setError(null);
