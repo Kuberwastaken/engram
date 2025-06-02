@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
 import { studyXDataService } from '@/services/studyXDataService';
 import { Loader2 } from 'lucide-react';
+import { formatSubjectName } from '@/lib/utils';
 
 interface SubjectGridProps {
   branch: string;
@@ -107,7 +108,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
           onClick={() => handleSubjectClick(subject)}
         >
           <CardContent className="p-6">
-            <h3 className="text-lg font-semibold text-gray-300 mb-2">{subject}</h3>
+            <h3 className="text-lg font-semibold text-gray-300 mb-2">{formatSubjectName(subject)}</h3>
             <p className="text-gray-500 text-sm">
               Click to access notes, PYQs, and more resources
             </p>

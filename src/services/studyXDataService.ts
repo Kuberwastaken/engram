@@ -104,48 +104,66 @@ class StudyXDataService {
       throw error;
     }
   }
-
   /**
    * Convert semester format from URL format to data format
    */
   private normalizeSemesterKey(semester: string): string {
-    let semesterKey = semester.toUpperCase();
+    if (!semester) return '';
+    
+    let semesterKey = semester.trim().toUpperCase();
     
     // Handle common semester mappings
-    if (semesterKey.includes('1ST') || semesterKey === 'SEM1') {
+    if (semesterKey.includes('1ST') || semesterKey.includes('SEM-1') || semesterKey === 'SEM1') {
       return 'SEM1';
-    } else if (semesterKey.includes('2ND') || semesterKey === 'SEM2') {
+    } else if (semesterKey.includes('2ND') || semesterKey.includes('SEM-2') || semesterKey === 'SEM2') {
       return 'SEM2';
-    } else if (semesterKey.includes('3RD') || semesterKey === 'SEM3') {
+    } else if (semesterKey.includes('3RD') || semesterKey.includes('SEM-3') || semesterKey === 'SEM3') {
       return 'SEM3';
-    } else if (semesterKey.includes('4TH') || semesterKey === 'SEM4') {
+    } else if (semesterKey.includes('4TH') || semesterKey.includes('SEM-4') || semesterKey === 'SEM4') {
       return 'SEM4';
-    } else if (semesterKey.includes('5TH') || semesterKey === 'SEM5') {
+    } else if (semesterKey.includes('5TH') || semesterKey.includes('SEM-5') || semesterKey === 'SEM5') {
       return 'SEM5';
-    } else if (semesterKey.includes('6TH') || semesterKey === 'SEM6') {
+    } else if (semesterKey.includes('6TH') || semesterKey.includes('SEM-6') || semesterKey === 'SEM6') {
       return 'SEM6';
-    } else if (semesterKey.includes('7TH') || semesterKey === 'SEM7') {
+    } else if (semesterKey.includes('7TH') || semesterKey.includes('SEM-7') || semesterKey === 'SEM7') {
       return 'SEM7';
-    } else if (semesterKey.includes('8TH') || semesterKey === 'SEM8') {
+    } else if (semesterKey.includes('8TH') || semesterKey.includes('SEM-8') || semesterKey === 'SEM8') {
       return 'SEM8';
     }
     
-    // Handle existing SEM format
-    return semester.replace(/sem-?/i, 'SEM').toUpperCase();
-  }
-  /**
+    // Handle existing SEM format (with any prefix or separator removed)
+    const match = semesterKey.match(/SEM[- ]?(\d)/i);
+    if (match && match[1]) {
+      return `SEM${match[1]}`;
+    }
+    
+    // Return original if no patterns matched
+    return semesterKey;
+  }/**
    * Get the appropriate branch data (common for SEM1-2, branch-specific for SEM3-8)
    */
   private getBranchData(data: StudyXData, branchName: string, semesterKey: string): StudyXBranch | null {
-    // SEM1 and SEM2 are in common
-    if (semesterKey === 'SEM1' || semesterKey === 'SEM2') {
+    // First check if this semester exists in common materials
+    if (data.materials.common && data.materials.common[semesterKey]) {
       return data.materials.common;
     }
     
-    // SEM3-8 are branch-specific
+    // Then check branch-specific semesters
     const branchKey = branchName.toUpperCase();
     const branchInfo = data.branches[branchKey];
-    return branchInfo ? branchInfo.semesters : null;
+    
+    // Check if the branch exists and has semester data
+    if (branchInfo && branchInfo.semesters && branchInfo.semesters[semesterKey]) {
+      return branchInfo.semesters;
+    }
+    
+    // As a fallback, return common data if the branch-specific data isn't found
+    // This helps with cases where higher semesters might still be in common
+    if (data.materials.common) {
+      return data.materials.common;
+    }
+    
+    return null;
   }
 
   /**
@@ -364,21 +382,35 @@ class StudyXDataService {
     
     return [...commonSemesters, ...branchSpecificSemesters].sort();
   }
-
   /**
    * Get available subjects for a branch and semester
    */
   async getAvailableSubjects(branchName: string, semester: string): Promise<string[]> {
-    const data = await this.loadStudyXData();
-    const semesterKey = this.normalizeSemesterKey(semester);
-    const branchData = this.getBranchData(data, branchName, semesterKey);
-    
-    if (!branchData) return [];
+    try {
+      const data = await this.loadStudyXData();
+      const semesterKey = this.normalizeSemesterKey(semester);
+      console.log(`Looking for subjects in branch: ${branchName}, semester: ${semesterKey}`);
+      
+      const branchData = this.getBranchData(data, branchName, semesterKey);
+      
+      if (!branchData) {
+        console.warn(`No branch data found for ${branchName}, semester ${semesterKey}`);
+        return [];
+      }
 
-    const semesterData = branchData[semesterKey];
-    if (!semesterData) return [];
+      const semesterData = branchData[semesterKey];
+      if (!semesterData) {
+        console.warn(`No semester data found for ${branchName}, semester ${semesterKey}`);
+        return [];
+      }
 
-    return Object.keys(semesterData.subjects);
+      const subjects = Object.keys(semesterData.subjects);
+      console.log(`Found ${subjects.length} subjects for ${branchName}, semester ${semesterKey}`);
+      return subjects;
+    } catch (error) {
+      console.error(`Error fetching subjects for ${branchName}, semester ${semester}:`, error);
+      return [];
+    }
   }
 
   /**

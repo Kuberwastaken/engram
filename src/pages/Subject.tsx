@@ -10,6 +10,7 @@ import { StarField } from '@/components/StarField';
 import { toast } from '@/hooks/use-toast';
 import { studyXDataService, GoogleDriveFile } from '@/services/studyXDataService';
 import MaterialsList from '@/components/MaterialsList';
+import { formatSubjectName } from '@/lib/utils';
 
 const Subject = () => {
   const { name } = useParams<{ name: string }>();
@@ -173,7 +174,7 @@ const Subject = () => {
     return (
       <MaterialsList 
         materials={tabMaterials} 
-        subjectName={subjectName}
+        subjectName={formatSubjectName(subjectName)}
         materialType={tabId}
       />
     );
@@ -220,7 +221,7 @@ const Subject = () => {
           {/* Subject Header */}
           <div className="text-center mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">
-              {subjectName}
+              {formatSubjectName(subjectName)}
             </h1>
           </div>
 

@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { FileText, Loader2, X, ArrowLeft } from 'lucide-react';
 import { GoogleDriveFile, studyXDataService } from '@/services/studyXDataService';
 import { toast } from '@/hooks/use-toast';
+import { formatSubjectName } from '@/lib/utils';
 
 interface PDFViewerProps {
   file: GoogleDriveFile;
@@ -147,9 +148,8 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               className="p-1.5 rounded bg-gray-900/50 hover:bg-gray-800/70 transition-colors border border-gray-700/50"
             >
               <ArrowLeft className="w-4 h-4 text-gray-300" />
-            </button>
-            <div className="text-sm text-gray-300">
-              <span className="opacity-60">{subjectName}</span>
+            </button>            <div className="text-sm text-gray-300">
+              <span className="opacity-60">{formatSubjectName(subjectName)}</span>
               {materialType && (
                 <>
                   <span className="mx-2 opacity-40">/</span>
