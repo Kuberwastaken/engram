@@ -102,7 +102,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
       {subjects.map((subject, index) => (
         <Card
           key={subject}
-          className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300 cursor-pointer orbital-ring animate-fade-in"
+          className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300 cursor-pointer cosmic-hover animate-fade-in"
           style={{ animationDelay: `${index * 0.1}s` }}
           onClick={() => handleSubjectClick(subject)}
         >

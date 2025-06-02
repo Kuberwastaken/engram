@@ -15,7 +15,7 @@ const Subject = () => {
   const { name } = useParams<{ name: string }>();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState('notes');
+  const [activeTab, setActiveTab] = useState('syllabus');
   const [materials, setMaterials] = useState<Record<string, GoogleDriveFile[]>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -25,12 +25,12 @@ const Subject = () => {
   const subjectName = decodeURIComponent(name || '');
 
   const tabs = [
+    { id: 'syllabus', label: 'SYLLABUS' },
     { id: 'notes', label: 'NOTES' },
     { id: 'pyqs', label: 'PYQS' },
     { id: 'books', label: 'BOOKS' },
     { id: 'lab', label: 'LAB' },
     { id: 'akash', label: 'AKASH' },
-    { id: 'syllabus', label: 'SYLLABUS' },
     { id: 'videos', label: 'VIDEOS' },
   ];
 

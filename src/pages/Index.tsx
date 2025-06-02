@@ -104,16 +104,15 @@ const Index = () => {
                     : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
                   }`
                 }
-              >
-              {/* Logo */}
+              >              {/* Logo */}
               <div className="flex items-center">
-                <span 
-                  className={`font-bold text-white transition-all duration-500 ease-out
-                    ${isScrolled ? 'text-lg' : 'text-xl'}
+                <img 
+                  src="/assets/web-app-manifest-192x192.png" 
+                  alt="ENGRAM" 
+                  className={`transition-all duration-500 ease-out
+                    ${isScrolled ? 'h-7' : 'h-8'}
                   `}
-                >
-                  ENGRAM
-                </span>
+                />
               </div>
               
               {/* Centered Navigation */}
