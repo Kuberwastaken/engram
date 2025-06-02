@@ -170,7 +170,13 @@ const Subject = () => {
 
     // Render materials from Google Drive
     const tabMaterials = materials[tabId] || [];
-    return <MaterialsList materials={tabMaterials} />;
+    return (
+      <MaterialsList 
+        materials={tabMaterials} 
+        subjectName={subjectName}
+        materialType={tabId}
+      />
+    );
   };
 
   return (
@@ -216,7 +222,6 @@ const Subject = () => {
             <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">
               {subjectName}
             </h1>
-            <p className="text-gray-400">{branch} - {semester} Semester</p>
           </div>
 
           {/* Tabbed Interface */}

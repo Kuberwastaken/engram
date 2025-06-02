@@ -7,13 +7,17 @@ interface MaterialsListProps {
   title?: string;
   emptyMessage?: string;
   className?: string;
+  subjectName?: string;
+  materialType?: string;
 }
 
 const MaterialsList: React.FC<MaterialsListProps> = ({ 
   materials, 
   title, 
   emptyMessage = "No materials available for this section yet.",
-  className = ""
+  className = "",
+  subjectName = "",
+  materialType = ""
 }) => {
   if (materials.length === 0) {
     return (
@@ -34,12 +38,13 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
         const fileId = studyXDataService.getFileId(file);
         const fileName = studyXDataService.getFileName(file);
         const isPdf = studyXDataService.isPdfFile(fileName);
-        
-        return (
+          return (
           <PDFViewer
             key={fileId ? fileId : `${file.downloadUrl}-${index}`}
             file={file}
             showPreview={isPdf}
+            subjectName={subjectName}
+            materialType={materialType}
           />
         );
       })}
