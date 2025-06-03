@@ -1,0 +1,1023 @@
+{
+  "metadata": {
+    "source": "FifteenFourteen Collection (Scraped)",
+    "generatedAt": "2025-06-03T21:22:44.431Z",
+    "version": "1.0.0",
+    "description": "B.Tech First Year (Sem 1 & 2) study materials scraped from fifteenforteen.vercel.app",
+    "totalSubjects": 11,
+    "heroPage": "https://fifteenforteen.vercel.app/html/content.html",
+    "coverage": "First Year Only (SEM1 & SEM2)",
+    "note": "Real Google Drive links scraped from the website",
+    "scrapedAt": "2025-06-03T21:22:44.432Z"
+  },
+  "branches": {
+    "COMMON": {
+      "SEM1": {
+        "APC": {
+          "name": "Applied Chemistry",
+          "url": "https://fifteenforteen.vercel.app/html/contents/applied_chemistry.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1LvpqpkvmQVvC-pK-XXAfErYHYFOMFbh6",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LvpqpkvmQVvC-pK-XXAfErYHYFOMFbh6",
+              "viewUrl": "https://drive.google.com/file/d/1LvpqpkvmQVvC-pK-XXAfErYHYFOMFbh6/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1LvpqpkvmQVvC-pK-XXAfErYHYFOMFbh6/view"
+            },
+            {
+              "id": "10lWJREUuStdggSxWfLMhQp2RvBU_GGy-",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=10lWJREUuStdggSxWfLMhQp2RvBU_GGy-",
+              "viewUrl": "https://drive.google.com/file/d/10lWJREUuStdggSxWfLMhQp2RvBU_GGy-/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/10lWJREUuStdggSxWfLMhQp2RvBU_GGy-/view"
+            },
+            {
+              "id": "1cV0YxJuV-k1XBBRzmE_n73lX9roPb_Bn",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1cV0YxJuV-k1XBBRzmE_n73lX9roPb_Bn",
+              "viewUrl": "https://drive.google.com/file/d/1cV0YxJuV-k1XBBRzmE_n73lX9roPb_Bn/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1cV0YxJuV-k1XBBRzmE_n73lX9roPb_Bn/view"
+            },
+            {
+              "id": "15iD-9OSxVpWXpbHMg-2u1wL_KvYiKvmi",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=15iD-9OSxVpWXpbHMg-2u1wL_KvYiKvmi",
+              "viewUrl": "https://drive.google.com/file/d/15iD-9OSxVpWXpbHMg-2u1wL_KvYiKvmi/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/15iD-9OSxVpWXpbHMg-2u1wL_KvYiKvmi/view"
+            },
+            {
+              "id": "1QtRhCAKw4NB4zhS6D9ktz159AUrnojPU",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1QtRhCAKw4NB4zhS6D9ktz159AUrnojPU",
+              "viewUrl": "https://drive.google.com/file/d/1QtRhCAKw4NB4zhS6D9ktz159AUrnojPU/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1QtRhCAKw4NB4zhS6D9ktz159AUrnojPU/view"
+            },
+            {
+              "id": "1GLrMmGHWA2T1EYNWP1sCHoPPrDDaDcVJ",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1GLrMmGHWA2T1EYNWP1sCHoPPrDDaDcVJ",
+              "viewUrl": "https://drive.google.com/file/d/1GLrMmGHWA2T1EYNWP1sCHoPPrDDaDcVJ/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1GLrMmGHWA2T1EYNWP1sCHoPPrDDaDcVJ/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1vyn7EdId6lw8nyvCIj3psMW9P6jZQY9Z",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1vyn7EdId6lw8nyvCIj3psMW9P6jZQY9Z",
+              "viewUrl": "https://drive.google.com/file/d/1vyn7EdId6lw8nyvCIj3psMW9P6jZQY9Z/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1vyn7EdId6lw8nyvCIj3psMW9P6jZQY9Z/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "PIC": {
+          "name": "Programming in C",
+          "url": "https://fifteenforteen.vercel.app/html/contents/programming_in_c.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "16qtyJND8VcJx7Y5iPpiUu9GGJ7Hz05JR",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=16qtyJND8VcJx7Y5iPpiUu9GGJ7Hz05JR",
+              "viewUrl": "https://drive.google.com/file/d/16qtyJND8VcJx7Y5iPpiUu9GGJ7Hz05JR/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/16qtyJND8VcJx7Y5iPpiUu9GGJ7Hz05JR/view"
+            },
+            {
+              "id": "1i776eBq2yJsG2yuzzyOEDfxrunIR8vmp",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1i776eBq2yJsG2yuzzyOEDfxrunIR8vmp",
+              "viewUrl": "https://drive.google.com/file/d/1i776eBq2yJsG2yuzzyOEDfxrunIR8vmp/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1i776eBq2yJsG2yuzzyOEDfxrunIR8vmp/view"
+            },
+            {
+              "id": "1GIpvNQ3RDZQ8WRD1puWi_QrmyDUygKJy",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1GIpvNQ3RDZQ8WRD1puWi_QrmyDUygKJy",
+              "viewUrl": "https://drive.google.com/file/d/1GIpvNQ3RDZQ8WRD1puWi_QrmyDUygKJy/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1GIpvNQ3RDZQ8WRD1puWi_QrmyDUygKJy/view"
+            },
+            {
+              "id": "14YXl-ZVNEhzXsrMReQgIc9aiLJc1AKyd",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14YXl-ZVNEhzXsrMReQgIc9aiLJc1AKyd",
+              "viewUrl": "https://drive.google.com/file/d/14YXl-ZVNEhzXsrMReQgIc9aiLJc1AKyd/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/14YXl-ZVNEhzXsrMReQgIc9aiLJc1AKyd/view"
+            },
+            {
+              "id": "13TxPhPDomEflcpX9DdHzRropIhsZ8wEX",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=13TxPhPDomEflcpX9DdHzRropIhsZ8wEX",
+              "viewUrl": "https://drive.google.com/file/d/13TxPhPDomEflcpX9DdHzRropIhsZ8wEX/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/13TxPhPDomEflcpX9DdHzRropIhsZ8wEX/view"
+            },
+            {
+              "id": "1am__YrIyVn2eehybgYnLsRPXbumFIqRW",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1am__YrIyVn2eehybgYnLsRPXbumFIqRW",
+              "viewUrl": "https://drive.google.com/file/d/1am__YrIyVn2eehybgYnLsRPXbumFIqRW/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1am__YrIyVn2eehybgYnLsRPXbumFIqRW/view"
+            },
+            {
+              "id": "1eQ3uQFuGW97cNjLONU5VDxXVp1VKc3Hj",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1eQ3uQFuGW97cNjLONU5VDxXVp1VKc3Hj",
+              "viewUrl": "https://drive.google.com/file/d/1eQ3uQFuGW97cNjLONU5VDxXVp1VKc3Hj/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1eQ3uQFuGW97cNjLONU5VDxXVp1VKc3Hj/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1UBSfRO_HIxKVH_282aB8gc_fLpjUjTlh",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1UBSfRO_HIxKVH_282aB8gc_fLpjUjTlh",
+              "viewUrl": "https://drive.google.com/file/d/1UBSfRO_HIxKVH_282aB8gc_fLpjUjTlh/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1UBSfRO_HIxKVH_282aB8gc_fLpjUjTlh/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "CS": {
+          "name": "Communication Skills",
+          "url": "https://fifteenforteen.vercel.app/html/contents/communication_skills.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "181Lu3ZMCvw35EvwZpm33ZFPTnHQ43Phu",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=181Lu3ZMCvw35EvwZpm33ZFPTnHQ43Phu",
+              "viewUrl": "https://drive.google.com/file/d/181Lu3ZMCvw35EvwZpm33ZFPTnHQ43Phu/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/181Lu3ZMCvw35EvwZpm33ZFPTnHQ43Phu/view"
+            },
+            {
+              "id": "1jiHTKV63_dRVm_lBvJIbW0X9qOR5k8R_",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1jiHTKV63_dRVm_lBvJIbW0X9qOR5k8R_",
+              "viewUrl": "https://drive.google.com/file/d/1jiHTKV63_dRVm_lBvJIbW0X9qOR5k8R_/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1jiHTKV63_dRVm_lBvJIbW0X9qOR5k8R_/view"
+            },
+            {
+              "id": "1pwm4Hlgi9XKWnilhamD8n-MIDpPPjQoO",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1pwm4Hlgi9XKWnilhamD8n-MIDpPPjQoO",
+              "viewUrl": "https://drive.google.com/file/d/1pwm4Hlgi9XKWnilhamD8n-MIDpPPjQoO/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1pwm4Hlgi9XKWnilhamD8n-MIDpPPjQoO/view"
+            },
+            {
+              "id": "1U4dRoBZ55U9aYiYaJrcJo5ncokXz6766",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1U4dRoBZ55U9aYiYaJrcJo5ncokXz6766",
+              "viewUrl": "https://drive.google.com/file/d/1U4dRoBZ55U9aYiYaJrcJo5ncokXz6766/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1U4dRoBZ55U9aYiYaJrcJo5ncokXz6766/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1y_ctVTxz8JumJz6t0yv4CgLp0nQsvUHo",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1y_ctVTxz8JumJz6t0yv4CgLp0nQsvUHo",
+              "viewUrl": "https://drive.google.com/file/d/1y_ctVTxz8JumJz6t0yv4CgLp0nQsvUHo/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1y_ctVTxz8JumJz6t0yv4CgLp0nQsvUHo/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "APP1": {
+          "name": "Applied Physics - 1",
+          "url": "https://fifteenforteen.vercel.app/html/contents/applied_physics-1.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1g3dPwskjwpe87OWSb1IOY1ll3ML2wybj",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1g3dPwskjwpe87OWSb1IOY1ll3ML2wybj",
+              "viewUrl": "https://drive.google.com/file/d/1g3dPwskjwpe87OWSb1IOY1ll3ML2wybj/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1g3dPwskjwpe87OWSb1IOY1ll3ML2wybj/view"
+            },
+            {
+              "id": "12jgBCyyHK3QywnJPA5Ns4HRR0s4bU9lD",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=12jgBCyyHK3QywnJPA5Ns4HRR0s4bU9lD",
+              "viewUrl": "https://drive.google.com/file/d/12jgBCyyHK3QywnJPA5Ns4HRR0s4bU9lD/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/12jgBCyyHK3QywnJPA5Ns4HRR0s4bU9lD/view"
+            },
+            {
+              "id": "1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4",
+              "viewUrl": "https://drive.google.com/file/d/1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4/view"
+            },
+            {
+              "id": "12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV",
+              "viewUrl": "https://drive.google.com/file/d/12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV/view"
+            },
+            {
+              "id": "1HPftQgRWtc7D_2HPShkcHd_63VFlBAIL",
+              "name": "files",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1HPftQgRWtc7D_2HPShkcHd_63VFlBAIL",
+              "viewUrl": "https://drive.google.com/file/d/1HPftQgRWtc7D_2HPShkcHd_63VFlBAIL/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1HPftQgRWtc7D_2HPShkcHd_63VFlBAIL/view"
+            },
+            {
+              "id": "1P8AuKiygaje724ige4aqaT9_XSUxHaeF",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1P8AuKiygaje724ige4aqaT9_XSUxHaeF",
+              "viewUrl": "https://drive.google.com/file/d/1P8AuKiygaje724ige4aqaT9_XSUxHaeF/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1P8AuKiygaje724ige4aqaT9_XSUxHaeF/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1Yc2Kw7EnDXS0ZzA6Xv3xKqk8v3-6aomE",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Yc2Kw7EnDXS0ZzA6Xv3xKqk8v3-6aomE",
+              "viewUrl": "https://drive.google.com/file/d/1Yc2Kw7EnDXS0ZzA6Xv3xKqk8v3-6aomE/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1Yc2Kw7EnDXS0ZzA6Xv3xKqk8v3-6aomE/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "MP": {
+          "name": "Manufacturing Processes",
+          "url": "https://fifteenforteen.vercel.app/html/contents/manufacturing_processes.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1PoofkfuWTfOJk-CrJw2uoUWuFFVnXp2H",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1PoofkfuWTfOJk-CrJw2uoUWuFFVnXp2H",
+              "viewUrl": "https://drive.google.com/file/d/1PoofkfuWTfOJk-CrJw2uoUWuFFVnXp2H/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1PoofkfuWTfOJk-CrJw2uoUWuFFVnXp2H/view"
+            },
+            {
+              "id": "1pUyF6zcoKODUYzO_fF0pPKSvXSoRzQvx",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1pUyF6zcoKODUYzO_fF0pPKSvXSoRzQvx",
+              "viewUrl": "https://drive.google.com/file/d/1pUyF6zcoKODUYzO_fF0pPKSvXSoRzQvx/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1pUyF6zcoKODUYzO_fF0pPKSvXSoRzQvx/view"
+            },
+            {
+              "id": "1ENVXBIt1zdYdBAFosWIwGRhMUwAFEIgb",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ENVXBIt1zdYdBAFosWIwGRhMUwAFEIgb",
+              "viewUrl": "https://drive.google.com/file/d/1ENVXBIt1zdYdBAFosWIwGRhMUwAFEIgb/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1ENVXBIt1zdYdBAFosWIwGRhMUwAFEIgb/view"
+            },
+            {
+              "id": "1EM5DHL9CDrbfHMUCLaoNOwBuZj08fUhb",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EM5DHL9CDrbfHMUCLaoNOwBuZj08fUhb",
+              "viewUrl": "https://drive.google.com/file/d/1EM5DHL9CDrbfHMUCLaoNOwBuZj08fUhb/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1EM5DHL9CDrbfHMUCLaoNOwBuZj08fUhb/view"
+            },
+            {
+              "id": "13TxPhPDomEflcpX9DdHzRropIhsZ8wEX",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=13TxPhPDomEflcpX9DdHzRropIhsZ8wEX",
+              "viewUrl": "https://drive.google.com/file/d/13TxPhPDomEflcpX9DdHzRropIhsZ8wEX/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/13TxPhPDomEflcpX9DdHzRropIhsZ8wEX/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1Eh3F64_-jAHdhuXLyAjce5rJGJo0jrxx",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Eh3F64_-jAHdhuXLyAjce5rJGJo0jrxx",
+              "viewUrl": "https://drive.google.com/file/d/1Eh3F64_-jAHdhuXLyAjce5rJGJo0jrxx/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1Eh3F64_-jAHdhuXLyAjce5rJGJo0jrxx/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "ES": {
+          "name": "Electrical Science",
+          "url": "https://fifteenforteen.vercel.app/html/contents/electrical_science.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1u8KeQc3uuf_5wQdzJGwjnPFH91DhlFaL",
+              "name": "NOTES",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1u8KeQc3uuf_5wQdzJGwjnPFH91DhlFaL",
+              "viewUrl": "https://drive.google.com/file/d/1u8KeQc3uuf_5wQdzJGwjnPFH91DhlFaL/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1u8KeQc3uuf_5wQdzJGwjnPFH91DhlFaL/view"
+            },
+            {
+              "id": "1RG7eC9_D6dS80pnh2Oh9UdrNMTyo3SMD",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1RG7eC9_D6dS80pnh2Oh9UdrNMTyo3SMD",
+              "viewUrl": "https://drive.google.com/file/d/1RG7eC9_D6dS80pnh2Oh9UdrNMTyo3SMD/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1RG7eC9_D6dS80pnh2Oh9UdrNMTyo3SMD/view"
+            },
+            {
+              "id": "1kIlhTdBEK6HFhWXPQQmzj5eQ5avSHgYV",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1kIlhTdBEK6HFhWXPQQmzj5eQ5avSHgYV",
+              "viewUrl": "https://drive.google.com/file/d/1kIlhTdBEK6HFhWXPQQmzj5eQ5avSHgYV/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1kIlhTdBEK6HFhWXPQQmzj5eQ5avSHgYV/view"
+            },
+            {
+              "id": "1eQ1GqMNKDKDD3AKDdN8op_wqRSU9tcR7",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1eQ1GqMNKDKDD3AKDdN8op_wqRSU9tcR7",
+              "viewUrl": "https://drive.google.com/file/d/1eQ1GqMNKDKDD3AKDdN8op_wqRSU9tcR7/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1eQ1GqMNKDKDD3AKDdN8op_wqRSU9tcR7/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1xzyxjfWg5zq1Zo-IOpEpmpymFhArDatC",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xzyxjfWg5zq1Zo-IOpEpmpymFhArDatC",
+              "viewUrl": "https://drive.google.com/file/d/1xzyxjfWg5zq1Zo-IOpEpmpymFhArDatC/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1xzyxjfWg5zq1Zo-IOpEpmpymFhArDatC/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        }
+      },
+      "SEM2": {
+        "APP2": {
+          "name": "Applied Physics - 2",
+          "url": "https://fifteenforteen.vercel.app/html/contents/applied_physics-2.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1JWmGgUzJPhj5_AZpXYiZOxAZSb-FPPUl",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1JWmGgUzJPhj5_AZpXYiZOxAZSb-FPPUl",
+              "viewUrl": "https://drive.google.com/file/d/1JWmGgUzJPhj5_AZpXYiZOxAZSb-FPPUl/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1JWmGgUzJPhj5_AZpXYiZOxAZSb-FPPUl/view"
+            },
+            {
+              "id": "1WY4mIlC0lin09iagOOc6GHBvmkVPd3xv",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1WY4mIlC0lin09iagOOc6GHBvmkVPd3xv",
+              "viewUrl": "https://drive.google.com/file/d/1WY4mIlC0lin09iagOOc6GHBvmkVPd3xv/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1WY4mIlC0lin09iagOOc6GHBvmkVPd3xv/view"
+            },
+            {
+              "id": "1HqWgM5U72J_Zkiwmn6M5ILpKfQ15bSzA",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1HqWgM5U72J_Zkiwmn6M5ILpKfQ15bSzA",
+              "viewUrl": "https://drive.google.com/file/d/1HqWgM5U72J_Zkiwmn6M5ILpKfQ15bSzA/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1HqWgM5U72J_Zkiwmn6M5ILpKfQ15bSzA/view"
+            },
+            {
+              "id": "1r2URN_jtp1Y74PjBeCVWs_AElQyt9ABn",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1r2URN_jtp1Y74PjBeCVWs_AElQyt9ABn",
+              "viewUrl": "https://drive.google.com/file/d/1r2URN_jtp1Y74PjBeCVWs_AElQyt9ABn/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1r2URN_jtp1Y74PjBeCVWs_AElQyt9ABn/view"
+            },
+            {
+              "id": "1UQDWTx5ve3_IBZBs8-7f638DjMI1VnxF",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1UQDWTx5ve3_IBZBs8-7f638DjMI1VnxF",
+              "viewUrl": "https://drive.google.com/file/d/1UQDWTx5ve3_IBZBs8-7f638DjMI1VnxF/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1UQDWTx5ve3_IBZBs8-7f638DjMI1VnxF/view"
+            },
+            {
+              "id": "1sXYiKWi60l-j52XELKCNz8YHO5Lahi1B",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1sXYiKWi60l-j52XELKCNz8YHO5Lahi1B",
+              "viewUrl": "https://drive.google.com/file/d/1sXYiKWi60l-j52XELKCNz8YHO5Lahi1B/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1sXYiKWi60l-j52XELKCNz8YHO5Lahi1B/view"
+            },
+            {
+              "id": "1P8AuKiygaje724ige4aqaT9_XSUxHaeF",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1P8AuKiygaje724ige4aqaT9_XSUxHaeF",
+              "viewUrl": "https://drive.google.com/file/d/1P8AuKiygaje724ige4aqaT9_XSUxHaeF/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1P8AuKiygaje724ige4aqaT9_XSUxHaeF/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1IqOupzoqdRIDdLA6pvBbN4iSX4dYJnBB",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1IqOupzoqdRIDdLA6pvBbN4iSX4dYJnBB",
+              "viewUrl": "https://drive.google.com/file/d/1IqOupzoqdRIDdLA6pvBbN4iSX4dYJnBB/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1IqOupzoqdRIDdLA6pvBbN4iSX4dYJnBB/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "APM1": {
+          "name": "Applied Mathematics - 1",
+          "url": "https://fifteenforteen.vercel.app/html/contents/applied_mathematics-1.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "172WfsMXvWPx7_d4_TAajqJ82xS5d_KcF",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=172WfsMXvWPx7_d4_TAajqJ82xS5d_KcF",
+              "viewUrl": "https://drive.google.com/file/d/172WfsMXvWPx7_d4_TAajqJ82xS5d_KcF/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/172WfsMXvWPx7_d4_TAajqJ82xS5d_KcF/view"
+            },
+            {
+              "id": "1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG",
+              "viewUrl": "https://drive.google.com/file/d/1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG/view"
+            },
+            {
+              "id": "13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm",
+              "viewUrl": "https://drive.google.com/file/d/13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm/view"
+            },
+            {
+              "id": "1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI",
+              "viewUrl": "https://drive.google.com/file/d/1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1oXuWRinT01cIK_Q6tCpg_-MAReXdV_sv",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1oXuWRinT01cIK_Q6tCpg_-MAReXdV_sv",
+              "viewUrl": "https://drive.google.com/file/d/1oXuWRinT01cIK_Q6tCpg_-MAReXdV_sv/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1oXuWRinT01cIK_Q6tCpg_-MAReXdV_sv/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "APM2": {
+          "name": "Applied Mathematics - 2",
+          "url": "https://fifteenforteen.vercel.app/html/contents/applied_mathematics-2.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1MFPcr5r_hw-UVWenRaVHyVVCJwfU8FCf",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1MFPcr5r_hw-UVWenRaVHyVVCJwfU8FCf",
+              "viewUrl": "https://drive.google.com/file/d/1MFPcr5r_hw-UVWenRaVHyVVCJwfU8FCf/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1MFPcr5r_hw-UVWenRaVHyVVCJwfU8FCf/view"
+            },
+            {
+              "id": "1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG",
+              "viewUrl": "https://drive.google.com/file/d/1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1IEfb4rQJuAAL7ICL8jw0vCBQ1Yv4J-kG/view"
+            },
+            {
+              "id": "13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm",
+              "viewUrl": "https://drive.google.com/file/d/13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/13EeTwY3rCtGMaiN8Dc7a-pASCLQgmHPm/view"
+            },
+            {
+              "id": "1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI",
+              "viewUrl": "https://drive.google.com/file/d/1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1CSeJ_VJU2Jlegs33bEhjes-f7wWsWqUI/view"
+            },
+            {
+              "id": "1sWucuhzSvNNr-8blp0rz4RmBTJx9bH1I",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1sWucuhzSvNNr-8blp0rz4RmBTJx9bH1I",
+              "viewUrl": "https://drive.google.com/file/d/1sWucuhzSvNNr-8blp0rz4RmBTJx9bH1I/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1sWucuhzSvNNr-8blp0rz4RmBTJx9bH1I/view"
+            },
+            {
+              "id": "1dyoowutqTCGM7HtK1REmNhN3bTTFO8_P",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1dyoowutqTCGM7HtK1REmNhN3bTTFO8_P",
+              "viewUrl": "https://drive.google.com/file/d/1dyoowutqTCGM7HtK1REmNhN3bTTFO8_P/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1dyoowutqTCGM7HtK1REmNhN3bTTFO8_P/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1gFk2AU2qVq5auVu17mJ5LQjGSGZDSlUm",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1gFk2AU2qVq5auVu17mJ5LQjGSGZDSlUm",
+              "viewUrl": "https://drive.google.com/file/d/1gFk2AU2qVq5auVu17mJ5LQjGSGZDSlUm/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1gFk2AU2qVq5auVu17mJ5LQjGSGZDSlUm/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "EM": {
+          "name": "Engineering Mechanics",
+          "url": "https://fifteenforteen.vercel.app/html/contents/engineering_mechanics.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "167AILhkLtRxR17Wzn9bf5tRJQQI7mfM4",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=167AILhkLtRxR17Wzn9bf5tRJQQI7mfM4",
+              "viewUrl": "https://drive.google.com/file/d/167AILhkLtRxR17Wzn9bf5tRJQQI7mfM4/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/167AILhkLtRxR17Wzn9bf5tRJQQI7mfM4/view"
+            },
+            {
+              "id": "12NSiOpfGinSQklvw7XLlGZS-f4odAy6r",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=12NSiOpfGinSQklvw7XLlGZS-f4odAy6r",
+              "viewUrl": "https://drive.google.com/file/d/12NSiOpfGinSQklvw7XLlGZS-f4odAy6r/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/12NSiOpfGinSQklvw7XLlGZS-f4odAy6r/view"
+            },
+            {
+              "id": "1qAgmIFtkoys0jo2unIlAK7BB3ublSXp6",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1qAgmIFtkoys0jo2unIlAK7BB3ublSXp6",
+              "viewUrl": "https://drive.google.com/file/d/1qAgmIFtkoys0jo2unIlAK7BB3ublSXp6/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1qAgmIFtkoys0jo2unIlAK7BB3ublSXp6/view"
+            },
+            {
+              "id": "1thY4G0FkA6vvIgYDsEpDVjizWRiHt2js",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1thY4G0FkA6vvIgYDsEpDVjizWRiHt2js",
+              "viewUrl": "https://drive.google.com/file/d/1thY4G0FkA6vvIgYDsEpDVjizWRiHt2js/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1thY4G0FkA6vvIgYDsEpDVjizWRiHt2js/view"
+            },
+            {
+              "id": "1R7p-0ySDq8135-kO1FcQA3aTHBuZ2fSy",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1R7p-0ySDq8135-kO1FcQA3aTHBuZ2fSy",
+              "viewUrl": "https://drive.google.com/file/d/1R7p-0ySDq8135-kO1FcQA3aTHBuZ2fSy/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1R7p-0ySDq8135-kO1FcQA3aTHBuZ2fSy/view"
+            },
+            {
+              "id": "1ugwH9YoYWOeckCqRlQ-pE6cq3QvDygeW",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ugwH9YoYWOeckCqRlQ-pE6cq3QvDygeW",
+              "viewUrl": "https://drive.google.com/file/d/1ugwH9YoYWOeckCqRlQ-pE6cq3QvDygeW/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1ugwH9YoYWOeckCqRlQ-pE6cq3QvDygeW/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1AZcS1QqfLm3U-Y7e_lTD1YwlumxeIZF9",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1AZcS1QqfLm3U-Y7e_lTD1YwlumxeIZF9",
+              "viewUrl": "https://drive.google.com/file/d/1AZcS1QqfLm3U-Y7e_lTD1YwlumxeIZF9/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1AZcS1QqfLm3U-Y7e_lTD1YwlumxeIZF9/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "EVS": {
+          "name": "Environmental Science",
+          "url": "https://fifteenforteen.vercel.app/html/contents/environmental_science.html",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1ewLwo1QzMU2fbXlHi1cEugFryjJEOkXZ",
+              "name": "Notes 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ewLwo1QzMU2fbXlHi1cEugFryjJEOkXZ",
+              "viewUrl": "https://drive.google.com/file/d/1ewLwo1QzMU2fbXlHi1cEugFryjJEOkXZ/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1ewLwo1QzMU2fbXlHi1cEugFryjJEOkXZ/view"
+            },
+            {
+              "id": "1nFi2mct2FvL1P9acJFM5wjfP25He_yWU",
+              "name": "Notes 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1nFi2mct2FvL1P9acJFM5wjfP25He_yWU",
+              "viewUrl": "https://drive.google.com/file/d/1nFi2mct2FvL1P9acJFM5wjfP25He_yWU/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1nFi2mct2FvL1P9acJFM5wjfP25He_yWU/view"
+            },
+            {
+              "id": "1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4",
+              "name": "Notes 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4",
+              "viewUrl": "https://drive.google.com/file/d/1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1STPFItb6wKANlfGkWpJ5yjMPxE9wMcr4/view"
+            },
+            {
+              "id": "12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV",
+              "name": "Notes 4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV",
+              "viewUrl": "https://drive.google.com/file/d/12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/12jzh5Pk-ufWQnws_qjvwaGOzthZqTojV/view"
+            },
+            {
+              "id": "1zregCUYNlB3bpqtAEbhxjYNdqKMdPudo",
+              "name": "LINK",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1zregCUYNlB3bpqtAEbhxjYNdqKMdPudo",
+              "viewUrl": "https://drive.google.com/file/d/1zregCUYNlB3bpqtAEbhxjYNdqKMdPudo/preview",
+              "originalFolder": "Notes",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1zregCUYNlB3bpqtAEbhxjYNdqKMdPudo/view"
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1mGlplTwuihLj_J8KSHFT0-42VclASSq-",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1mGlplTwuihLj_J8KSHFT0-42VclASSq-",
+              "viewUrl": "https://drive.google.com/file/d/1mGlplTwuihLj_J8KSHFT0-42VclASSq-/preview",
+              "originalFolder": "Pyqs",
+              "source": "fifteenforteen",
+              "originalUrl": "https://drive.google.com/file/d/1mGlplTwuihLj_J8KSHFT0-42VclASSq-/view"
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        }
+      }
+    }
+  }
+}
