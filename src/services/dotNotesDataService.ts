@@ -440,26 +440,44 @@ class DotNotesDataService {
   }
   isPdfFile(fileName: string): boolean {
     return fileName.toLowerCase().endsWith('.pdf');
-  }
-  /**
+  }  /**
    * Fetch syllabus data for a specific subject
    */
   async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
     try {
       console.log(`[DotNotes] Fetching syllabus from consolidated data for ${branchName} ${semester} ${subjectName}`);
-      return await consolidatedDataService.getSyllabusData(branchName, semester, subjectName);
+      
+      // Import and use subject mapper to get the correct DotNotes subject code
+      const { EnhancedSubjectMapper } = await import('../utils/subjectMapper.js');
+      const subjectMapper = new EnhancedSubjectMapper();
+      
+      const mapping = subjectMapper.mapStudyXToDotNotes(subjectName, branchName, semester);
+      const dotNotesSubjectCode = mapping.dotNotesCode || subjectName;
+      
+      console.log(`[DotNotes] Mapped "${subjectName}" to "${dotNotesSubjectCode}" for syllabus`);
+      
+      return await consolidatedDataService.getSyllabusData(branchName, semester, dotNotesSubjectCode);
     } catch (error) {
       console.error(`[DotNotes] Error fetching syllabus for ${branchName} ${semester} ${subjectName}:`, error);
       return null;
     }
-  }
-  /**
+  }/**
    * Fetch videos data for a specific subject
    */
   async fetchVideosData(branchName: string, semester: string, subjectName: string): Promise<VideoData[]> {
     try {
       console.log(`[DotNotes] Fetching videos from consolidated data for ${branchName} ${semester} ${subjectName}`);
-      return await consolidatedDataService.getVideosData(branchName, semester, subjectName);
+      
+      // Import and use subject mapper to get the correct DotNotes subject code
+      const { EnhancedSubjectMapper } = await import('../utils/subjectMapper.js');
+      const subjectMapper = new EnhancedSubjectMapper();
+      
+      const mapping = subjectMapper.mapStudyXToDotNotes(subjectName, branchName, semester);
+      const dotNotesSubjectCode = mapping.dotNotesCode || subjectName;
+      
+      console.log(`[DotNotes] Mapped "${subjectName}" to "${dotNotesSubjectCode}" for videos`);
+      
+      return await consolidatedDataService.getVideosData(branchName, semester, dotNotesSubjectCode);
     } catch (error) {
       console.error(`[DotNotes] Error fetching videos for ${branchName} ${semester} ${subjectName}:`, error);
       return [];
