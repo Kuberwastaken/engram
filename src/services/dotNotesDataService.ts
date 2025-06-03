@@ -1,4 +1,5 @@
 // DotNotes Data Service for accessing DotNotes materials from dotnotes.in
+import { contentFetchingService, SyllabusData, VideoData, type ContentFile } from './contentFetchingService';
 
 export interface DotNotesMaterial {
   id: string;
@@ -199,12 +200,35 @@ class DotNotesDataService {
     if (!semesterData) {
       console.log(`[DotNotes][getOrganizedMaterials] No semester data found, returning empty materials`);
       return this.getEmptyOrganizedMaterials();
-    }
-
-    // Find the subject (case-insensitive search)
-    const subjectKey = Object.keys(semesterData).find(
+    }    // Find the subject (case-insensitive search first)
+    let subjectKey = Object.keys(semesterData).find(
       key => key.toLowerCase() === subjectName.toLowerCase()
     );
+    
+    // If not found directly, try subject mapping
+    if (!subjectKey) {
+      console.log(`[DotNotes][getOrganizedMaterials] Direct match not found, trying subject mapping...`);
+      
+      // Import the subject mapper
+      const { EnhancedSubjectMapper } = await import('../utils/subjectMapper.js');
+      const subjectMapper = new EnhancedSubjectMapper();
+      
+      // Try to map the subject name to DotNotes format
+      const mapping = subjectMapper.mapStudyXToDotNotes(subjectName, branchName);
+      
+      console.log(`[DotNotes][getOrganizedMaterials] Mapping result:`, mapping);
+      
+      if (mapping.dotNotesCode) {
+        // Check if the mapped code exists in the data
+        subjectKey = Object.keys(semesterData).find(
+          key => key.toLowerCase() === mapping.dotNotesCode.toLowerCase()
+        );
+        
+        if (subjectKey) {
+          console.log(`[DotNotes][getOrganizedMaterials] Found subject using mapping: "${subjectName}" -> "${mapping.dotNotesCode}" -> "${subjectKey}"`);
+        }
+      }
+    }
     
     console.log(`[DotNotes][getOrganizedMaterials] Available subjects:`, Object.keys(semesterData));
     console.log(`[DotNotes][getOrganizedMaterials] Looking for subject: ${subjectName.toLowerCase()}`);
@@ -280,12 +304,35 @@ class DotNotesDataService {
     if (!semesterData) {
       console.warn(`[DotNotes] Semester ${semesterKey} not found`);
       return null;
-    }
-
-    // Find the subject (case-insensitive search)
-    const subjectKey = Object.keys(semesterData).find(
+    }    // Find the subject (case-insensitive search first)
+    let subjectKey = Object.keys(semesterData).find(
       key => key.toLowerCase() === subjectName.toLowerCase()
     );
+
+    // If not found directly, try subject mapping
+    if (!subjectKey) {
+      console.log(`[DotNotes][getSubjectMaterials] Direct match not found, trying subject mapping...`);
+      
+      // Import the subject mapper
+      const { EnhancedSubjectMapper } = await import('../utils/subjectMapper.js');
+      const subjectMapper = new EnhancedSubjectMapper();
+      
+      // Try to map the subject name to DotNotes format
+      const mapping = subjectMapper.mapStudyXToDotNotes(subjectName, branchName);
+      
+      console.log(`[DotNotes][getSubjectMaterials] Mapping result:`, mapping);
+      
+      if (mapping.dotNotesCode) {
+        // Check if the mapped code exists in the data
+        subjectKey = Object.keys(semesterData).find(
+          key => key.toLowerCase() === mapping.dotNotesCode.toLowerCase()
+        );
+        
+        if (subjectKey) {
+          console.log(`[DotNotes][getSubjectMaterials] Found subject using mapping: "${subjectName}" -> "${mapping.dotNotesCode}" -> "${subjectKey}"`);
+        }
+      }
+    }
 
     if (!subjectKey) {
       console.warn(`[DotNotes] Subject ${subjectName} not found in ${semesterKey}`);
@@ -390,9 +437,48 @@ class DotNotesDataService {
     const fileId = this.getFileId(file);
     return fileId ? `Document_${fileId.substring(0, 8)}.pdf` : 'Untitled Document.pdf';
   }
-
   isPdfFile(fileName: string): boolean {
     return fileName.toLowerCase().endsWith('.pdf');
+  }
+
+  /**
+   * Fetch syllabus data for a specific subject
+   */
+  async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
+    try {
+      const materials = await this.getOrganizedMaterials(branchName, semester, subjectName);
+      const syllabusFiles = materials.syllabus as ContentFile[];
+      
+      if (!syllabusFiles || syllabusFiles.length === 0) {
+        console.log(`[DotNotes] No syllabus files found for ${branchName} ${semester} ${subjectName}`);
+        return null;
+      }
+
+      return await contentFetchingService.fetchSyllabusData(syllabusFiles);
+    } catch (error) {
+      console.error(`[DotNotes] Error fetching syllabus for ${branchName} ${semester} ${subjectName}:`, error);
+      return null;
+    }
+  }
+
+  /**
+   * Fetch videos data for a specific subject
+   */
+  async fetchVideosData(branchName: string, semester: string, subjectName: string): Promise<VideoData[]> {
+    try {
+      const materials = await this.getOrganizedMaterials(branchName, semester, subjectName);
+      const videosFiles = materials.videos as ContentFile[];
+      
+      if (!videosFiles || videosFiles.length === 0) {
+        console.log(`[DotNotes] No videos files found for ${branchName} ${semester} ${subjectName}`);
+        return [];
+      }
+
+      return await contentFetchingService.fetchVideosData(videosFiles);
+    } catch (error) {
+      console.error(`[DotNotes] Error fetching videos for ${branchName} ${semester} ${subjectName}:`, error);
+      return [];
+    }
   }
 }
 

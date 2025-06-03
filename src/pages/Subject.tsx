@@ -5,11 +5,12 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ArrowLeft, Github, BookOpen, FileText, Loader2, Download, ExternalLink, Eye } from 'lucide-react';
+import { ArrowLeft, Github, BookOpen, FileText, Loader2, Download, ExternalLink, Eye, Play } from 'lucide-react';
 import { StarField } from '@/components/StarField';
 import { toast } from '@/hooks/use-toast';
 import { unifiedDataService } from '@/services/unifiedDataService';
 import type { GoogleDriveFile } from '@/services/unifiedDataService';
+import { type SyllabusData, type VideoData } from '@/services/contentFetchingService';
 import MaterialsList from '@/components/MaterialsList';
 import { formatSubjectName } from '@/lib/utils';
 
@@ -21,6 +22,14 @@ const Subject = () => {
   const [materials, setMaterials] = useState<Record<string, GoogleDriveFile[]>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  
+  // State for syllabus and videos data
+  const [syllabusData, setSyllabusData] = useState<SyllabusData | null>(null);
+  const [videosData, setVideosData] = useState<VideoData[] | null>(null);
+  const [syllabusLoading, setSyllabusLoading] = useState(false);
+  const [videosLoading, setVideosLoading] = useState(false);
+  const [syllabusError, setSyllabusError] = useState<string | null>(null);
+  const [videosError, setVideosError] = useState<string | null>(null);
 
   const branch = searchParams.get('branch');
   const semester = searchParams.get('semester');
@@ -80,32 +89,73 @@ const Subject = () => {
     loadMaterials();
   }, [branch, semester, subjectName]);
 
-  // Mock syllabus data (since syllabus isn't available in Google Drive data)
-  const mockSyllabus = {
-    units: [
-      {
-        title: "Unit I - Fundamentals",
-        content: "Introduction to basic concepts, historical background, and fundamental principles. This unit covers the foundational knowledge required for understanding the subject."
-      },
-      {
-        title: "Unit II - Core Concepts", 
-        content: "Detailed study of core methodologies, theories, and practical applications. Advanced problem-solving techniques and analytical methods."
-      },
-      {
-        title: "Unit III - Advanced Topics",
-        content: "Advanced concepts, modern developments, and research trends. Contemporary applications and emerging technologies in the field."
-      },
-      {
-        title: "Unit IV - Applications",
-        content: "Real-world applications, case studies, and industry practices. Project-based learning and practical implementations."
+  // Load syllabus data when syllabus tab is active
+  useEffect(() => {
+    const loadSyllabusData = async () => {
+      if (activeTab !== 'syllabus' || !branch || !semester || !subjectName) {
+        return;
       }
-    ],
-    assessment: {
-      internal: "30 marks",
-      endSem: "70 marks", 
-      practical: "As applicable"
-    }
-  };
+
+      if (syllabusData) {
+        return; // Already loaded
+      }
+
+      try {
+        setSyllabusLoading(true);
+        setSyllabusError(null);
+        console.log('Loading syllabus data for:', { branch, semester, subjectName });
+        
+        const data = await unifiedDataService.fetchSyllabusData(branch, semester, subjectName);
+        setSyllabusData(data);
+      } catch (err) {
+        console.error('Error loading syllabus:', err);
+        setSyllabusError('Failed to load syllabus data');
+        toast({
+          title: "Error",
+          description: "Failed to load syllabus. Please try again later.",
+          variant: "destructive"
+        });
+      } finally {
+        setSyllabusLoading(false);
+      }
+    };
+
+    loadSyllabusData();
+  }, [activeTab, branch, semester, subjectName, syllabusData]);
+
+  // Load videos data when videos tab is active
+  useEffect(() => {
+    const loadVideosData = async () => {
+      if (activeTab !== 'videos' || !branch || !semester || !subjectName) {
+        return;
+      }
+
+      if (videosData) {
+        return; // Already loaded
+      }
+
+      try {
+        setVideosLoading(true);
+        setVideosError(null);
+        console.log('Loading videos data for:', { branch, semester, subjectName });
+        
+        const data = await unifiedDataService.fetchVideosData(branch, semester, subjectName);
+        setVideosData(data);
+      } catch (err) {
+        console.error('Error loading videos:', err);
+        setVideosError('Failed to load videos data');
+        toast({
+          title: "Error",
+          description: "Failed to load videos. Please try again later.",
+          variant: "destructive"
+        });
+      } finally {
+        setVideosLoading(false);
+      }
+    };
+
+    loadVideosData();
+  }, [activeTab, branch, semester, subjectName, videosData]);
 
   const renderTabContent = (tabId: string) => {
     if (loading) {
@@ -137,44 +187,178 @@ const Subject = () => {
       );
     }
 
-    // Handle syllabus separately since it's not in Google Drive data
+    // Handle syllabus separately with real data
     if (tabId === 'syllabus') {
+      if (syllabusLoading) {
+        return (
+          <div className="flex items-center justify-center py-12">
+            <div className="text-center">
+              <Loader2 className="w-8 h-8 animate-spin text-blue-400 mx-auto mb-4" />
+              <p className="text-gray-400">Loading syllabus...</p>
+            </div>
+          </div>
+        );
+      }
+
+      if (syllabusError || !syllabusData) {
+        return (
+          <div className="text-center py-12">
+            <div className="text-center">
+              <FileText className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+              <h3 className="text-lg font-medium text-gray-300 mb-2">Unable to load syllabus</h3>
+              <p className="text-gray-500 mb-4">{syllabusError || 'No syllabus data available'}</p>
+              <Button 
+                onClick={() => {
+                  setSyllabusData(null);
+                  setSyllabusError(null);
+                }} 
+                className="bg-blue-600 hover:bg-blue-700"
+              >
+                Try Again
+              </Button>
+            </div>
+          </div>
+        );
+      }
+
+      // Render real syllabus data
+      const units = Object.entries(syllabusData);
+      
       return (
         <div className="space-y-6">
           <Accordion type="single" collapsible className="w-full">
-            {mockSyllabus.units.map((unit: any, index: number) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-gray-800/30">
+            {units.map(([unitKey, unitContent], index) => (
+              <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
                 <AccordionTrigger className="text-gray-300 hover:text-white hover:no-underline">
-                  {unit.title}
+                  {unitKey}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-400 leading-relaxed">
-                  {unit.content}
+                <AccordionContent className="text-gray-400 leading-relaxed whitespace-pre-line">
+                  {unitContent}
                 </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
           
-          <div className="mt-8 p-6 bg-gray-900/30 rounded-lg border border-gray-800/30">
-            <h4 className="text-lg font-semibold text-gray-300 mb-4">Assessment Pattern</h4>
-            <div className="space-y-2 text-gray-400">
-              <p>• Internal Assessment: {mockSyllabus.assessment.internal}</p>
-              <p>• End Semester Exam: {mockSyllabus.assessment.endSem}</p>
-              <p>• Practical/Lab: {mockSyllabus.assessment.practical}</p>
+          {units.length === 0 && (
+            <div className="text-center py-8">
+              <FileText className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+              <p className="text-gray-400">No syllabus content available</p>
             </div>
-          </div>
+          )}
         </div>
       );
     }
 
-    // Handle videos separately (not implemented yet)
+    // Handle videos with real data
     if (tabId === 'videos') {
+      if (videosLoading) {
+        return (
+          <div className="flex items-center justify-center py-12">
+            <div className="text-center">
+              <Loader2 className="w-8 h-8 animate-spin text-blue-400 mx-auto mb-4" />
+              <p className="text-gray-400">Loading videos...</p>
+            </div>
+          </div>
+        );
+      }
+
+      if (videosError || !videosData) {
+        return (
+          <div className="text-center py-12">
+            <div className="text-center">
+              <Play className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+              <h3 className="text-lg font-medium text-gray-300 mb-2">Unable to load videos</h3>
+              <p className="text-gray-500 mb-4">{videosError || 'No video data available'}</p>
+              <Button 
+                onClick={() => {
+                  setVideosData(null);
+                  setVideosError(null);
+                }} 
+                className="bg-blue-600 hover:bg-blue-700"
+              >
+                Try Again
+              </Button>
+            </div>
+          </div>
+        );
+      }
+
+      // Render real videos data
+      if (videosData.length === 0) {
+        return (
+          <div className="text-center py-8">
+            <Play className="w-16 h-16 text-gray-600 mx-auto mb-4" />
+            <p className="text-gray-400">No video content available for this subject</p>
+          </div>
+        );
+      }
+
       return (
-        <div className="text-center py-8">
-          <BookOpen className="w-16 h-16 text-gray-600 mx-auto mb-4" />
-          <p className="text-gray-400">Video materials coming soon!</p>
-          <p className="text-sm text-gray-500 mt-2">
-            We're working on integrating video content.
-          </p>
+        <div className="space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {videosData.map((video, index) => (
+              <Card key={index} className="bg-gray-900/30 border border-gray-800/30 hover:border-gray-700/50 transition-all duration-300 hover:scale-105">
+                <CardContent className="p-4">
+                  <div className="space-y-3">
+                    {/* Video Thumbnail */}
+                    {video.thumbnailUrl && (
+                      <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
+                        <img 
+                          src={video.thumbnailUrl} 
+                          alt={video.title}
+                          className="w-full h-full object-cover"
+                          onError={(e) => {
+                            const target = e.target as HTMLImageElement;
+                            target.style.display = 'none';
+                          }}
+                        />
+                        <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                          <Play className="w-12 h-12 text-white opacity-80" />
+                        </div>
+                      </div>
+                    )}
+                    
+                    {/* Video Info */}
+                    <div>
+                      <h3 className="font-semibold text-gray-200 text-sm mb-1 line-clamp-2">
+                        {video.title}
+                      </h3>
+                      {video.author && (
+                        <p className="text-xs text-gray-400 mb-2">
+                          by {video.author}
+                        </p>
+                      )}
+                    </div>
+                    
+                    {/* Action Buttons */}
+                    <div className="flex gap-2">
+                      {video.embedUrl && (
+                        <Button 
+                          size="sm" 
+                          className="flex-1 bg-red-600 hover:bg-red-700 text-xs"
+                          onClick={() => window.open(video.embedUrl, '_blank')}
+                        >
+                          <Play className="w-3 h-3 mr-1" />
+                          Watch
+                        </Button>
+                      )}
+                      {video.playlistUrl && (
+                        <Button 
+                          size="sm" 
+                          variant="outline" 
+                          className="flex-1 border-gray-600 text-gray-300 hover:bg-gray-800 text-xs"
+                          onClick={() => window.open(video.playlistUrl, '_blank')}
+                        >
+                          <ExternalLink className="w-3 h-3 mr-1" />
+                          Playlist
+                        </Button>
+                      )}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       );
     }

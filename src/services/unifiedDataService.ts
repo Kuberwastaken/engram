@@ -2,6 +2,7 @@
 import { studyXDataService, GoogleDriveFile as BaseGoogleDriveFile, SubjectData } from './studyXDataService';
 import { dotNotesDataService } from './dotNotesDataService';
 import { EnhancedSubjectMapper } from '../utils/subjectMapper';
+import { type SyllabusData, type VideoData } from './contentFetchingService';
 
 // Enhanced GoogleDriveFile with source attribution
 export interface GoogleDriveFile extends BaseGoogleDriveFile {
@@ -230,36 +231,64 @@ class UnifiedDataService {
 
   /**
    * Get all materials organized by type for a subject from both sources with material type rules
-   */
-  async getOrganizedMaterials(branchName: string, semester: string, subjectName: string): Promise<Record<string, GoogleDriveFile[]>> {
+   */  async getOrganizedMaterials(branchName: string, semester: string, subjectName: string): Promise<Record<string, GoogleDriveFile[]>> {
     console.log(`[Unified][getOrganizedMaterials] Called with: branch=${branchName}, semester=${semester}, subject=${subjectName}`);
     
     try {
-      // Need to get original subject names from both sources
+      // First, try to map the incoming subject name to DotNotes format
+      const dotNotesMapping = this.subjectMapper.mapStudyXToDotNotes(subjectName, branchName, semester);
+      console.log(`[Unified] Direct mapping attempt for "${subjectName}":`, dotNotesMapping);
+
+      // Get available subjects from both sources
       const [studyXSubjects, dotNotesSubjects] = await Promise.all([
         studyXDataService.getAvailableSubjects(branchName, semester),
         dotNotesDataService.getAvailableSubjects(branchName, semester)
-      ]);      // Find the actual subject names in each source
-      const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, branchName);
-      
-      // Find mapping info for the requested subject
-      let mappingInfo = subjectMap.get(subjectName);
-      
-      // If not found directly, search through the map values
-      if (!mappingInfo) {
-        for (const [key, value] of subjectMap) {
-          if (value.studyX === subjectName || value.dotNotes === subjectName || key === subjectName) {
-            mappingInfo = value;
-            break;
+      ]);
+
+      console.log(`[Unified] Available subjects - StudyX: ${studyXSubjects.length}, DotNotes: ${dotNotesSubjects.length}`);
+      console.log(`[Unified] DotNotes subjects:`, dotNotesSubjects);
+
+      // Determine the actual subject names to use for each source
+      let studyXSubjectName: string | undefined;
+      let dotNotesSubjectName: string | undefined;
+      let confidence = 0;
+
+      // Check if we have a direct DotNotes mapping and the subject exists in DotNotes
+      if (dotNotesMapping.dotNotesCode && dotNotesSubjects.includes(dotNotesMapping.dotNotesCode)) {
+        dotNotesSubjectName = dotNotesMapping.dotNotesCode;
+        confidence = dotNotesMapping.confidence || 0;
+        console.log(`[Unified] Using direct DotNotes mapping: "${subjectName}" -> "${dotNotesSubjectName}" (confidence: ${confidence})`);
+      }
+
+      // Check if the subject name exists directly in StudyX
+      if (studyXSubjects.includes(subjectName)) {
+        studyXSubjectName = subjectName;
+        console.log(`[Unified] Found direct StudyX match: "${subjectName}"`);
+      }
+
+      // If we haven't found a match yet, fall back to the comprehensive mapping approach
+      if (!studyXSubjectName && !dotNotesSubjectName) {
+        const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, branchName);
+        
+        // Find mapping info for the requested subject
+        let mappingInfo = subjectMap.get(subjectName);
+        
+        // If not found directly, search through the map values
+        if (!mappingInfo) {
+          for (const [key, value] of subjectMap) {
+            if (value.studyX === subjectName || value.dotNotes === subjectName || key === subjectName) {
+              mappingInfo = value;
+              break;
+            }
           }
         }
+        
+        studyXSubjectName = mappingInfo?.studyX;
+        dotNotesSubjectName = mappingInfo?.dotNotes;
+        confidence = mappingInfo?.confidence || 0;
       }
-      
-      const studyXSubjectName = mappingInfo?.studyX;
-      const dotNotesSubjectName = mappingInfo?.dotNotes;
-      const confidence = mappingInfo?.confidence || 0;
 
-      console.log(`[Unified] Subject mapping for "${subjectName}": StudyX="${studyXSubjectName}", DotNotes="${dotNotesSubjectName}", confidence=${confidence}`);
+      console.log(`[Unified] Final subject mapping for "${subjectName}": StudyX="${studyXSubjectName}", DotNotes="${dotNotesSubjectName}", confidence=${confidence}`);
 
       // Get materials from both sources using the correct subject names
       const materialPromises: Promise<Record<string, BaseGoogleDriveFile[]>>[] = [];
@@ -424,9 +453,39 @@ class UnifiedDataService {
   getFileName(file: GoogleDriveFile): string {
     return studyXDataService.getFileName(file);
   }
-
   isPdfFile(fileName: string): boolean {
     return studyXDataService.isPdfFile(fileName);
+  }
+
+  /**
+   * Fetch syllabus data for a subject (DotNotes only as per material type rules)
+   */
+  async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
+    try {
+      console.log(`[Unified] Fetching syllabus for ${branchName} ${semester} ${subjectName}`);
+      
+      // Syllabus comes from DotNotes only as per material type rules
+      return await dotNotesDataService.fetchSyllabusData(branchName, semester, subjectName);
+    } catch (error) {
+      console.error(`[Unified] Error fetching syllabus for ${branchName} ${semester} ${subjectName}:`, error);
+      return null;
+    }
+  }
+
+  /**
+   * Fetch videos data for a subject (both sources as per material type rules)
+   */
+  async fetchVideosData(branchName: string, semester: string, subjectName: string): Promise<VideoData[]> {
+    try {
+      console.log(`[Unified] Fetching videos for ${branchName} ${semester} ${subjectName}`);
+      
+      // For now, videos come from DotNotes only since StudyX doesn't have structured video data
+      // In the future, this could be expanded to include both sources
+      return await dotNotesDataService.fetchVideosData(branchName, semester, subjectName);
+    } catch (error) {
+      console.error(`[Unified] Error fetching videos for ${branchName} ${semester} ${subjectName}:`, error);
+      return [];
+    }
   }
 }
 
