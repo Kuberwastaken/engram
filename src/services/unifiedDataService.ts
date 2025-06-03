@@ -90,8 +90,8 @@ class UnifiedDataService {
   /**
    * Apply material type specific filtering rules:
    * - Syllabus: DotNotes only
-   * - Books: DotNotes only  
-   * - Akash: StudyX only
+   * - Books: Both sources with source tags
+   * - Akash: Both sources with source tags
    * - Notes/PYQs/Lab: Both sources with source tags
    * - Videos: Both sources without source labels
    */
@@ -103,16 +103,27 @@ class UnifiedDataService {
       // Syllabus: DotNotes only
       syllabus: this.addSourceToMaterials(dotNotesMaterials.syllabus || [], 'DotNotes'),
       
-      // Books: DotNotes only
-      books: this.addSourceToMaterials(dotNotesMaterials.books || [], 'DotNotes'),
+      // Books: Both sources with source tags
+      books: [
+        ...this.addSourceToMaterials(studyXMaterials.books || [], 'StudyX'),
+        ...this.addSourceToMaterials(dotNotesMaterials.books || [], 'DotNotes')
+      ],
       
-      // Akash: StudyX only
-      akash: this.addSourceToMaterials(studyXMaterials.akash || [], 'StudyX'),
+      // Akash: Both sources with source tags
+      akash: [
+        ...this.addSourceToMaterials(studyXMaterials.akash || [], 'StudyX'),
+        ...this.addSourceToMaterials(dotNotesMaterials.akash || [], 'DotNotes')
+      ],
       
-      // Notes: Both sources with source tags
+      // Notes: Both sources with source tags, merged and sorted alphabetically by filename
       notes: [
-        ...this.addSourceToMaterials(studyXMaterials.notes || [], 'StudyX'),
-        ...this.addSourceToMaterials(dotNotesMaterials.notes || [], 'DotNotes')
+        ...[...this.addSourceToMaterials(studyXMaterials.notes || [], 'StudyX'),
+            ...this.addSourceToMaterials(dotNotesMaterials.notes || [], 'DotNotes')]
+          .sort((a, b) => {
+            const nameA = (a.name || '').toLowerCase();
+            const nameB = (b.name || '').toLowerCase();
+            return nameA.localeCompare(nameB);
+          })
       ],
       
       // PYQs: Both sources with source tags
