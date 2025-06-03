@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
@@ -226,7 +225,7 @@ const Subject = () => {
       
       return (
         <div className="space-y-6">
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="multiple" collapsible className="w-full">
             {units.map(([unitKey, unitContent], index) => (
               <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
                 <AccordionTrigger className="text-gray-300 hover:text-white hover:no-underline">
