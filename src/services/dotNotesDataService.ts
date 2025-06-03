@@ -1,5 +1,6 @@
 // DotNotes Data Service for accessing DotNotes materials from dotnotes.in
 import { contentFetchingService, SyllabusData, VideoData, type ContentFile } from './contentFetchingService';
+import { consolidatedDataService } from './consolidatedDataService';
 
 export interface DotNotesMaterial {
   id: string;
@@ -440,41 +441,25 @@ class DotNotesDataService {
   isPdfFile(fileName: string): boolean {
     return fileName.toLowerCase().endsWith('.pdf');
   }
-
   /**
    * Fetch syllabus data for a specific subject
    */
   async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
     try {
-      const materials = await this.getOrganizedMaterials(branchName, semester, subjectName);
-      const syllabusFiles = materials.syllabus as ContentFile[];
-      
-      if (!syllabusFiles || syllabusFiles.length === 0) {
-        console.log(`[DotNotes] No syllabus files found for ${branchName} ${semester} ${subjectName}`);
-        return null;
-      }
-
-      return await contentFetchingService.fetchSyllabusData(syllabusFiles);
+      console.log(`[DotNotes] Fetching syllabus from consolidated data for ${branchName} ${semester} ${subjectName}`);
+      return await consolidatedDataService.getSyllabusData(branchName, semester, subjectName);
     } catch (error) {
       console.error(`[DotNotes] Error fetching syllabus for ${branchName} ${semester} ${subjectName}:`, error);
       return null;
     }
   }
-
   /**
    * Fetch videos data for a specific subject
    */
   async fetchVideosData(branchName: string, semester: string, subjectName: string): Promise<VideoData[]> {
     try {
-      const materials = await this.getOrganizedMaterials(branchName, semester, subjectName);
-      const videosFiles = materials.videos as ContentFile[];
-      
-      if (!videosFiles || videosFiles.length === 0) {
-        console.log(`[DotNotes] No videos files found for ${branchName} ${semester} ${subjectName}`);
-        return [];
-      }
-
-      return await contentFetchingService.fetchVideosData(videosFiles);
+      console.log(`[DotNotes] Fetching videos from consolidated data for ${branchName} ${semester} ${subjectName}`);
+      return await consolidatedDataService.getVideosData(branchName, semester, subjectName);
     } catch (error) {
       console.error(`[DotNotes] Error fetching videos for ${branchName} ${semester} ${subjectName}:`, error);
       return [];

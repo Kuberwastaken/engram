@@ -1,6 +1,7 @@
 // Unified Data Service that combines StudyX and DotNotes sources
 import { studyXDataService, GoogleDriveFile as BaseGoogleDriveFile, SubjectData } from './studyXDataService';
 import { dotNotesDataService } from './dotNotesDataService';
+import { consolidatedDataService } from './consolidatedDataService';
 import { EnhancedSubjectMapper } from '../utils/subjectMapper';
 import { type SyllabusData, type VideoData } from './contentFetchingService';
 
@@ -453,19 +454,30 @@ class UnifiedDataService {
   getFileName(file: GoogleDriveFile): string {
     return studyXDataService.getFileName(file);
   }
-  isPdfFile(fileName: string): boolean {
+    isPdfFile(fileName: string): boolean {
     return studyXDataService.isPdfFile(fileName);
   }
 
   /**
-   * Fetch syllabus data for a subject (DotNotes only as per material type rules)
+   * Fetch syllabus data for a subject (from consolidated syllabus.json)
    */
   async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
     try {
       console.log(`[Unified] Fetching syllabus for ${branchName} ${semester} ${subjectName}`);
       
-      // Syllabus comes from DotNotes only as per material type rules
-      return await dotNotesDataService.fetchSyllabusData(branchName, semester, subjectName);
+      // Get the subject mapping to find the DotNotes subject code
+      const mapping = this.subjectMapper.mapStudyXToDotNotes(subjectName, branchName, semester);
+      const dotNotesSubjectCode = mapping.dotNotesCode;
+      
+      if (!dotNotesSubjectCode) {
+        console.log(`[Unified] No DotNotes subject code found for ${subjectName}`);
+        return null;
+      }
+      
+      console.log(`[Unified] Using DotNotes subject code "${dotNotesSubjectCode}" for syllabus`);
+      
+      // Fetch syllabus directly from consolidated data using the mapped subject code
+      return await consolidatedDataService.getSyllabusData(branchName, semester, dotNotesSubjectCode);
     } catch (error) {
       console.error(`[Unified] Error fetching syllabus for ${branchName} ${semester} ${subjectName}:`, error);
       return null;
