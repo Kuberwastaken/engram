@@ -377,3 +377,34 @@ body.pdf-fullscreen-open {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+/* Mobile menu slide-in animations */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.slide-in-right {
+  animation: slideInFromRight 0.3s ease-out forwards;
+}
+
+.slide-out-right {
+  animation: slideOutToRight 0.3s ease-in forwards;
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Button } from '@/components/ui/button';
-import { Github, BookOpen, Users, Download, Star, Code, ExternalLink, AlertCircle, Heart } from 'lucide-react';
+import { Github, BookOpen, Users, Download, Star, Code, ExternalLink, AlertCircle, Heart, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { StarField } from '@/components/StarField';
 
@@ -10,6 +10,8 @@ const Index = () => {
   const [branch, setBranch] = useState('');
   const [semester, setSemester] = useState('');
   const [isScrolled, setIsScrolled] = useState(false); // New state for scroll detection
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false); // Mobile menu state
+  const [isMenuClosing, setIsMenuClosing] = useState(false); // Animation state
   const navigate = useNavigate();
 
   const branches = [
@@ -17,6 +19,15 @@ const Index = () => {
   ];
 
   const semesters = ['1st', '2nd', '3rd', '4th', '5th', '6th'];
+
+  // Function to handle smooth menu closing
+  const closeMobileMenu = () => {
+    setIsMenuClosing(true);
+    setTimeout(() => {
+      setIsMobileMenuOpen(false);
+      setIsMenuClosing(false);
+    }, 300); // Match CSS animation duration
+  };
 
   // Load preferences from localStorage on mount
   useEffect(() => {
@@ -48,7 +59,6 @@ const Index = () => {
       navigate(`/${branchSlug}/${semesterSlug}`);
     }
   }, [branch, semester, navigate]);
-
   // Effect for scroll detection with debouncing for smoother performance
   useEffect(() => {
     let ticking = false;
@@ -68,6 +78,30 @@ const Index = () => {
     handleScroll(); // Initial check
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  // Effect for mobile menu behavior
+  useEffect(() => {
+    const handleResize = () => {
+      // Close mobile menu on desktop resize
+      if (window.innerWidth >= 768) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Prevent body scroll when menu is open
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+      // Reset body scroll on cleanup
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
   const resetPreferences = () => {
     localStorage.removeItem('engram-preferences');
     setBranch('');
@@ -113,7 +147,9 @@ const Index = () => {
                     ${isScrolled ? 'h-7' : 'h-8'}
                   `}
                 />
-              </div>                {/* Centered Navigation */}
+              </div>
+
+              {/* Centered Navigation - Desktop Only */}
               <nav className="hidden md:flex items-center space-x-8">
                 <span 
                   className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
@@ -141,11 +177,11 @@ const Index = () => {
                 </span>
               </nav>
               
-              {/* GitHub Button */}
+              {/* Desktop GitHub Button */}
               <Button
                 variant="ghost"
                 size="icon"
-                className={`rounded-full transition-all duration-300 ease-out hover:scale-105
+                className={`hidden md:flex rounded-full transition-all duration-300 ease-out hover:scale-105
                   ${isScrolled 
                     ? 'w-9 h-9 bg-gray-800/60 hover:bg-gray-700/60 border border-gray-700/30' 
                     : 'w-10 h-10 hover:bg-gray-800/40'
@@ -156,13 +192,160 @@ const Index = () => {
                 <Github 
                   className={`text-gray-300 transition-all duration-300 ease-out
                     ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}
-                  `}                />
+                  `}
+                />
               </Button>
-              </div>
+
+              {/* Mobile Hamburger Menu */}
+              <Button
+                variant="ghost"
+                size="icon"
+                className={`md:hidden rounded-full transition-all duration-300 ease-out hover:scale-105
+                  ${isScrolled 
+                    ? 'w-9 h-9 bg-gray-800/60 hover:bg-gray-700/60 border border-gray-700/30' 
+                    : 'w-10 h-10 hover:bg-gray-800/40'
+                  }`
+                }
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                {isMobileMenuOpen ? (
+                  <X 
+                    className={`text-gray-300 transition-all duration-300 ease-out
+                      ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}
+                    `}
+                  />
+                ) : (
+                  <Menu 
+                    className={`text-gray-300 transition-all duration-300 ease-out
+                      ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}
+                    `}
+                  />
+                )}
+              </Button>              </div>
             </div>
           </div>
         </div>
-      </header>      {/* Main Content */}
+      </header>      {/* Mobile Menu Overlay */}
+      {isMobileMenuOpen && (
+        <>
+          {/* Dark Backdrop Overlay */}
+          <div 
+            className="md:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-40 animate-fade-in"
+            onClick={closeMobileMenu}
+          />
+            {/* Slide-in Menu Panel */}
+          <div 
+            className={`md:hidden fixed right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-black/90 backdrop-blur-xl border-l border-gray-800/50 z-50 ${
+              isMenuClosing ? 'slide-out-right' : 'slide-in-right'
+            }`}
+            data-mobile-menu
+          >            {/* Menu Header */}
+            <div className="flex items-center justify-end p-4 border-b border-gray-800/50">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="rounded-full bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700/30 transition-all duration-300 hover:scale-105"
+                onClick={closeMobileMenu}
+              >
+                <X className="w-5 h-5 text-gray-300" />
+              </Button>
+            </div>{/* Menu Items */}
+            <nav className="p-6 space-y-2">
+              <div 
+                className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
+                onClick={() => {
+                  navigate('/');
+                  closeMobileMenu();
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-gray-700/30 flex items-center justify-center group-hover:bg-gray-600/40 transition-colors">
+                  <BookOpen className="w-5 h-5 text-gray-300" />
+                </div>
+                <div>
+                  <span className="text-white font-medium block">Home</span>
+                  <span className="text-gray-400 text-sm">Main dashboard</span>
+                </div>
+              </div>
+              
+              <div 
+                className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
+                onClick={() => {
+                  navigate('/about');
+                  closeMobileMenu();
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-gray-700/30 flex items-center justify-center group-hover:bg-gray-600/40 transition-colors">
+                  <Heart className="w-5 h-5 text-gray-300" />
+                </div>
+                <div>
+                  <span className="text-white font-medium block">About</span>
+                  <span className="text-gray-400 text-sm">Our story & mission</span>
+                </div>
+              </div>
+              
+              <div 
+                className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
+                onClick={() => {
+                  navigate('/resources');
+                  closeMobileMenu();
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-gray-700/30 flex items-center justify-center group-hover:bg-gray-600/40 transition-colors">
+                  <Code className="w-5 h-5 text-gray-300" />
+                </div>
+                <div>
+                  <span className="text-white font-medium block">Resources</span>
+                  <span className="text-gray-400 text-sm">Data sources & info</span>
+                </div>
+              </div>
+              
+              <div 
+                className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
+                onClick={() => {
+                  navigate('/privacy');
+                  closeMobileMenu();
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-gray-700/30 flex items-center justify-center group-hover:bg-gray-600/40 transition-colors">
+                  <AlertCircle className="w-5 h-5 text-gray-300" />
+                </div>
+                <div>
+                  <span className="text-white font-medium block">Privacy</span>
+                  <span className="text-gray-400 text-sm">Privacy policy</span>
+                </div>
+              </div>
+              
+              {/* Separator */}
+              <div className="border-t border-gray-700/50 my-6"></div>
+              
+              {/* GitHub Link */}
+              <div 
+                className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
+                onClick={() => {
+                  window.open('https://github.com/kuberwastaken/engram', '_blank');
+                  closeMobileMenu();
+                }}
+              >
+                <div className="w-10 h-10 rounded-lg bg-gray-700/30 flex items-center justify-center group-hover:bg-gray-600/40 transition-colors">
+                  <Github className="w-5 h-5 text-gray-300" />
+                </div>
+                <div className="flex-1">
+                  <span className="text-white font-medium block">GitHub Repository</span>
+                  <span className="text-gray-400 text-sm">Contribute & star ⭐</span>
+                </div>
+                <ExternalLink className="w-4 h-4 text-gray-500" />
+              </div>
+            </nav>            {/* Menu Footer */}
+            <div className="absolute bottom-0 left-0 right-0 p-6 border-t border-gray-800/50 bg-gradient-to-t from-black/50 to-transparent">
+              <p className="text-center text-gray-400 text-sm">
+                Made with ❤️ for IPU students
+              </p>
+            </div>
+          </div>
+        </>
+      )}
+
+      {/* Main Content */}
       <main className="pb-16 px-6 pt-32">
         <div className="container mx-auto max-w-7xl">          {/* Hero Section */}
           <div className="text-center mb-20 animate-fade-in w-full mx-auto mt-16 px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-6">
