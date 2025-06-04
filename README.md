@@ -12,7 +12,7 @@
 
 **ENGRAM** is a modern, open source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
 
-ENGRAM is free and will **alyways stay free with no ads and no trackers**. It aims to provide instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
+ENGRAM is free and will **alyways stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
 
 This project emerged from my frustration of scattered study materials across different websites, whatsapp groups, drive links making exam preparation unnecessarily difficult for IPU students.
 

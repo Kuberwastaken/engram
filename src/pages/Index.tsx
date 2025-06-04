@@ -113,13 +113,32 @@ const Index = () => {
                     ${isScrolled ? 'h-7' : 'h-8'}
                   `}
                 />
-              </div>
-              
-              {/* Centered Navigation */}
+              </div>                {/* Centered Navigation */}
               <nav className="hidden md:flex items-center space-x-8">
-                <span className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200">Home</span>
-                <span className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200">Resources</span>
-                <span className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200">About</span>
+                <span 
+                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                  onClick={() => navigate('/')}
+                >
+                  Home
+                </span>
+                <span 
+                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                  onClick={() => navigate('/about')}
+                >
+                  About
+                </span>
+                <span 
+                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                  onClick={() => navigate('/resources')}
+                >
+                  Resources
+                </span>
+                <span 
+                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                  onClick={() => navigate('/privacy')}
+                >
+                  Privacy
+                </span>
               </nav>
               
               {/* GitHub Button */}
@@ -307,12 +326,12 @@ const Index = () => {
                 <div className="text-gray-400 text-sm">Semesters Covered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-white mb-2">100+</div>
+                <div className="text-3xl font-bold text-white mb-2">10,000+</div>
                 <div className="text-gray-400 text-sm">Study Materials</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-white mb-2">∞</div>
-                <div className="text-gray-400 text-sm">Always Free</div>
+                <div className="text-gray-400 text-sm">No Ads, Open Source</div>
               </div>
             </div>
           </div>
@@ -329,16 +348,29 @@ const Index = () => {
               <p className="text-gray-400 text-sm leading-relaxed">
                 The centralized hub for IP University study materials. Built by students, for students.
               </p>
-            </div>
-
-            {/* Quick Links */}
+            </div>            {/* Quick Links */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <a href="/" className="block text-gray-400 hover:text-white transition-colors text-sm">Home</a>
-                <a href="/resources" className="block text-gray-400 hover:text-white transition-colors text-sm">Resources</a>
-                <a href="/about" className="block text-gray-400 hover:text-white transition-colors text-sm">About</a>
-                <a href="/privacy" className="block text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+                <span 
+                  className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
+                  onClick={() => navigate('/')}
+                >
+                  Home
+                </span>
+                <span 
+                  className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
+                  onClick={() => navigate('/resources')}
+                >
+                  Resources
+                </span>
+                <span className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer">About</span>
+                <span 
+                  className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
+                  onClick={() => navigate('/privacy')}
+                >
+                  Privacy Policy
+                </span>
               </div>
             </div>
 
