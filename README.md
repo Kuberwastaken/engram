@@ -1,28 +1,80 @@
 
+<div align="center">
+   <img src="public/assets/web-app-manifest-512x512.png" alt="ENGRAM Logo" width="128" height="128">
+</div>
+
 <h1 align="center">E N G R A M</h1>
 <h3 align="center">The Centralized, No BS Open-Source Hub for IP University Study Materials</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Built%20for-IPU%20Students-black?logo=graduation-cap" alt="Built for IPU Students">
-  <img src="https://img.shields.io/badge/Version-Alpha-black" alt="Status Active">
-  <img src="https://img.shields.io/badge/License-Apache 2.0-black" alt="License MIT">
+   <img src="https://img.shields.io/badge/Built%20for-IPU%20Students-black?logo=graduation-cap" alt="Built for IPU Students">
+   <img src="https://img.shields.io/badge/Version-Pre--Alpha-black" alt="Version Pre-Alpha">
+   <img src="https://img.shields.io/badge/License-Apache 2.0-black" alt="License Apache 2.0">
 </p>
+
+<div align="center">
+   <table>
+      <tr>
+         <td align="center" width="60%">
+            <img src="public/assets/pc-screenshot.png" alt="ENGRAM Desktop Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
+            <br><em>Desktop Experience</em>
+         </td>
+         <td align="center" width="40%">
+            <img src="public/assets/mobile-screenshot.png" alt="ENGRAM Mobile Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
+            <br><em>Mobile Experience</em>
+         </td>
+      </tr>
+   </table>
+</div>
 
 ## Project Overview
 
-**ENGRAM** is a modern, open source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
+**ENGRAM** is a modern, open-source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
 
-ENGRAM is free and will **alyways stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
+ENGRAM is and will **always stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
 
-This project emerged from my frustration of scattered study materials across different websites, whatsapp groups, drive links making exam preparation unnecessarily difficult for IPU students.
+**Born from Frustration, Built for (potential) Solutions**
 
-## Why This Project NEEDS You
+> *"I don't know about you, but during exam prep, I don't like having to open 4 different websites, 2 drive links and 4 WhatsApp groups just to get good material. Sometimes the websites are down, have bad UI and are filled with ads, half the notes are outdated or just confusing. This was me literally two days before our last exam and I honestly had it. That's why I started making ENGRAM."*
 
-### **This Isn't Just Another Study Platform**
+<div align="center">
+    <img src="https://img.shields.io/badge/TRY_ENGRAM_NOW-000000?style=for-the-badge&labelColor=000000&font=Space+Mono" alt="Try ENGRAM Now" width="300" height="45">
+    </a>
+</div>
 
-> "ENGRAM isn't my project, or anyone else's individual project. This is **OUR** collective project - built by us, for us. Its success depends entirely on students like you helping to contribute and maintainin it."
+## Project Overview
 
-**ENGRAM can only become THE definitive hub for IPU study materials if we all contribute to it.** Here's why your participation is crucial:
+**ENGRAM** is a modern, open-source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
+
+ENGRAM is and will **always stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions,
+
+### **What We Have Now** 
+- ✅ **Aggregated Content** - Notes from Dotnotes, SyllabusX, and Fifteenfourteen (with proper credits)
+- ✅ **Clean Interface** - Modern, space-themed UI with no ads or trackers
+- ✅ **Smart Organization** - Branch and semester-based structure
+- ✅ **Google Drive Integration** - Currently using JSON metadata with Google Drive links for 10,000+ materials
+
+### **What's Coming Next**
+- 🚧 **Dedicated Materials Repository** - Moving away from Google Drive to a proper GitHub-based system
+- 🚧 **Community Upload System** - Easy pull request workflow for material contributions
+- 🚧 **Real-time Updates** - Always current materials with community maintenance
+- 🚧 **Contributor Recognition** - Your name on every note you upload
+
+> **Note:** We're currently using JSONs with Google Drive links, but we're working toward a dedicated repository for notes. It's challenging to manage 10,000+ notes and we're still not complete, but we're committed to making it happen! The transition will
+<td align="center" width="33%">
+<br><strong>Scattered Resources</strong><br>
+<em>Most notes on present sites are old, new assignments don't get uploaded, and you REALLY have to dig to find quality material.</em>
+</td>
+<td align="center" width="33%">
+<br><strong>Outdated Content</strong><br>
+<em>Old notes, old papers, outdated assignments. Without active maintenance, platforms become digital graveyards.</em>
+</td>
+<td align="center" width="33%">
+<br><strong>Poor User Experience</strong><br>
+<em>Bad UI, ads everywhere, unreliable websites that go down during exam time when you need them most.</em>
+</td>
+</tr>
+</table>
 
 ### **The Sustainability Challenge**
 
@@ -43,15 +95,16 @@ This project emerged from my frustration of scattered study materials across dif
 </tr>
 </table>
 
-### **The Vision for ENGRAM is**
+### **The Vision: A Legacy That Outlives Us**
 
 - 🎯 **The First Stop** - Every IPU student's go-to resource for any subject
-
-- 🏆 **Quality Guaranteed** - Peer-reviewed content that students trust
-
-- 🚀 **Always Current** - Real-time updates as syllabi change
-
+- 🏆 **Quality Guaranteed** - Peer-reviewed content that students actually trust
+- 🚀 **Always Current** - Real-time updates as syllabi change and new materials emerge
 - 🤝 **Student-Led** - Decisions made by and for the community
+- 🌟 **Recognition System** - Contributors get credited for every upload
+- 🔄 **Self-Sustaining** - A resource that evolves and improves with each batch of students
+
+> *"I want us to create a resource that out-lives us even after graduation, constantly evolves and is a token from us to our future juniors."*
 
 <div align="center">
 
@@ -128,30 +181,46 @@ This project emerged from my frustration of scattered study materials across dif
 </table>
 </div>
 
-## System Architecture
+## Technical Architecture & Implementation
 
+### **Current Technology Stack**
+- **Frontend:** React 18 + TypeScript + Vite
+- **Styling:** Tailwind CSS + ShadCN UI components
+- **Routing:** React Router for seamless navigation
+- **State:** Local Storage for user preferences
+- **Content:** JSON metadata with Google Drive integration
+- **Deployment:** GitHub Pages with custom domain
+
+### **Data Architecture (Current)**
 ```mermaid
 graph TD
-    A[User Interface] --> B[React Router]
-    B --> C[Index Page]
-    B --> D[Branch/Semester Page]
-    B --> E[Subject Page]
+    A[ENGRAM Frontend] --> B[JSON Metadata Files]
+    B --> C[Google Drive Links]
+    C --> D[Study Materials]
     
-    C --> F[StarField Animation]
-    C --> G[Selection Interface]
-    D --> H[SubjectGrid Component]
-    E --> I[Tabbed Resource View]
-    
-    G --> J[LocalStorage]
-    H --> K[Resource Data]
-    I --> L[Download System]
+    B --> E[Dotnotes Content]
+    B --> F[SyllabusX Content]
+    B --> G[Fifteenfourteen Content]
     
     style A fill:#9f1239
-    style F fill:#0369a1
-    style G fill:#0369a1
-    style H fill:#dc2626
-    style I fill:#0369a1
-    style J fill:#ea580c
+    style B fill:#0369a1
+    style C fill:#dc2626
+    style D fill:#ea580c
+```
+
+### **Planned Architecture Migration**
+```mermaid
+graph TD
+    A[ENGRAM Frontend] --> B[GitHub Materials Repo]
+    B --> C[Direct File Access]
+    B --> D[PR-based Contributions]
+    D --> E[Community Moderation]
+    E --> F[Automated Integration]
+    
+    style A fill:#9f1239
+    style B fill:#0369a1
+    style D fill:#16a34a
+    style E fill:#dc2626
 ```
 
 ## 🚀 Getting Started
@@ -163,9 +232,9 @@ graph TD
 <td width="50%">
 
 **Development Requirements:**
-- Node.js 18+ 
-- npm or yarn or bun
-- Modern web browser
+- Node.js 18+ or Bun (recommended)
+- npm, yarn, or bun package manager
+- Modern web browser (Chrome, Firefox, Safari, Edge)
 - Git for version control
 
 </td>
@@ -175,7 +244,7 @@ graph TD
 - Any modern OS (Windows, macOS, Linux)
 - 4GB+ RAM recommended
 - 1GB+ free disk space
-- Internet connection for setup
+- Stable internet connection
 
 </td>
 </tr>
@@ -192,44 +261,75 @@ cd engram
 npm install
 # or
 yarn install
-# or
+# or (recommended)
 bun install
 
 # Start development server
 npm run dev
 # or
 yarn dev
-# or
+# or (recommended)
 bun dev
 
 # Open your browser to http://localhost:5173
 ```
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```
-src/
-├── components/               # Reusable UI components
-│   ├── ui/                  # ShadCN UI primitive components
-│   │   ├── card.tsx         # Card components
-│   │   ├── button.tsx       # Button variants
-│   │   ├── select.tsx       # Dropdown selectors
-│   │   ├── tabs.tsx         # Tabbed interfaces
-│   │   └── ...              # Other UI primitives
-│   ├── StarField.tsx        # Animated cosmic background
-│   └── SubjectGrid.tsx      # Subject cards grid layout
-├── pages/                   # Application route pages
-│   ├── Index.tsx            # Landing page with selection
-│   ├── BranchSemester.tsx   # Subject listing page
-│   ├── Subject.tsx          # Individual subject resources
-│   └── NotFound.tsx         # 404 error page
-├── hooks/                   # Custom React hooks
-│   ├── use-toast.ts         # Toast notification system
-│   └── use-mobile.tsx       # Mobile detection hook
-├── lib/                     # Utility functions
-│   └── utils.ts             # Helper functions and utilities
-└── App.tsx                  # Main application component
+├── public/                   # Static assets and materials
+│   ├── assets/              # Logo, icons, and branding
+│   ├── materials/           # Study materials (temporary)
+│   └── Content-Meta/        # Metadata for content organization
+├── src/                     # Source code
+│   ├── components/          # Reusable UI components
+│   │   ├── ui/             # ShadCN UI primitives
+│   │   ├── StarField.tsx   # Cosmic background animation
+│   │   └── SubjectGrid.tsx # Subject listing component
+│   ├── pages/              # Route pages
+│   ├── hooks/              # Custom React hooks
+│   └── lib/                # Utility functions
+├── scripts/                # Data processing and migration scripts
+└── package.json           # Dependencies and scripts
 ```
+
+## 📚 Current Content & Sources
+
+### **Aggregated Content Sources**
+ENGRAM currently aggregates materials from multiple trusted sources, with proper attribution:
+
+<table>
+<tr>
+<td width="33%" align="center">
+<br><strong>🔵 Dotnotes</strong><br>
+<em>Comprehensive notes across multiple branches</em><br>
+<sub>Full credit and attribution maintained</sub>
+</td>
+<td width="33%" align="center">
+<br><strong>📘 SyllabusX</strong><br>
+<em>Syllabus and structured course content</em><br>
+<sub>Original creators acknowledged</sub>
+</td>
+<td width="33%" align="center">
+<br><strong>📖 Fifteenfourteen</strong><br>
+<em>Additional study materials and resources</em><br>
+<sub>Contributors properly credited</sub>
+</td>
+</tr>
+</table>
+
+### **Content Statistics**
+- **📊 10,000+ Study Materials** currently indexed
+- **🎓 8 Engineering Branches** covered
+- **📅 8 Semesters** of content available
+- **🔗 Google Drive Integration** for reliable access
+- **⚡ JSON Metadata** for fast loading and search
+
+### **Future Content Strategy**
+- **📦 Dedicated Materials Repository** - Moving to GitHub-based storage
+- **🔄 Community Contributions** - Pull request workflow for new materials
+- **✅ Quality Control** - Peer review system for uploaded content
+- **🏷️ Better Tagging** - Enhanced categorization and search capabilities
 
 ## 💫 Design Philosophy
 
@@ -247,119 +347,50 @@ ENGRAM's interface draws inspiration from the vastness of space and the intercon
 - **Stellar Performance** - Smooth 60fps animations throughout
 - **Universal Accessibility** - Clear contrast and readable typography
 
-## 📚 Adding Study Materials
+## 📚 How to Contribute Materials (Current Process)
 
-### File Organization Structure
+> **Note:** This is our current system using Google Drive links. We're working on a much better GitHub-based system!
 
-```
-materials/
-├── [BRANCH]/                # AIDS, AIML, CIVIL, CSE, ECE, EEE, IT, MECH
-│   ├── [SEMESTER]/          # 1st, 2nd, 3rd, 4th, 5th, 6th
-│   │   ├── [SUBJECT]/       # Subject name (spaces allowed)
-│   │   │   ├── syllabus/    # Syllabus documents
-│   │   │   ├── notes/       # Lecture notes and study materials
-│   │   │   ├── pyqs/        # Previous year question papers
-│   │   │   ├── lab/         # Lab manuals and code
-│   │   │   ├── books/       # Reference books and textbooks
-│   │   │   ├── akash/       # Special Akash collection
-│   │   │   └── videos/      # Video lecture links
-│   │   └── ...
-│   └── ...
-└── ...
-```
+### Current Workflow
+1. **Organize Your Materials** - Sort by branch, semester, and subject
+2. **Upload to Google Drive** - Ensure public sharing is enabled
+3. **Update JSON Metadata** - Add entries to appropriate data files
+4. **Submit Pull Request** - Include proper attribution and descriptions
+5. **Community Review** - Materials get reviewed for quality and accuracy
 
 ### Naming Conventions
+- **Files:** `Subject_Topic_Version.pdf` (e.g., `DSA_LinkedLists_v2.pdf`)
+- **PYQs:** Include year and exam type (e.g., `PYQ_2023_EndSem.pdf`)
+- **Labs:** Include experiment number (e.g., `Lab05_BinaryTrees.pdf`)
 
-<table>
-<tr>
-<td width="50%">
+### Future Contribution System
+- **📁 Direct GitHub Upload** - No more Google Drive dependency
+- **🔄 Automated Processing** - Smart categorization and metadata generation
+- **✅ Quality Checks** - Automated validation and peer review
+- **🏆 Contributor Credits** - Your name permanently attached to contributions
+- **📱 Mobile-Friendly** - Easy uploads from phone during lectures
 
-**File Naming:**
-- Use descriptive names: `Chapter_1_Introduction.pdf`
-- Include year for PYQs: `PYQ_2023_EndSem.pdf`
-- Use underscores instead of spaces: `Lab_Manual_v2.pdf`
-- Include version numbers: `Notes_Complete_v3.pdf`
-
-</td>
-<td width="50%">
-
-**Subject Naming:**
-- Use official IPU subject names
-- Maintain consistent capitalization
-- Include subject codes when applicable: `CO101_Programming`
-- Keep folder names clear and descriptive
-
-</td>
-</tr>
-</table>
-
-### Contribution Workflow
-
-1. **Prepare Materials**
-   - Organize files according to the structure above
-   - Ensure files are properly named and categorized
-   - Verify file quality and readability
-
-2. **Update Resource Data**
-   - Add entries to the appropriate data structures in `SubjectGrid.tsx`
-   - Include contributor attribution for recognition
-   - Update subject listings if adding new subjects
-
-3. **Test Integration**
-   - Run the development server locally
-   - Navigate to your additions and test download/preview
-   - Ensure proper routing and file access
-
-4. **Submit Contribution**
-   - Create a pull request with clear description
-   - Include screenshots of the additions
-   - Mention the scope of materials added
-
-## 🎯 Usage Guide
+## 📱 Usage Guide
 
 ### For Students
 
-1. **🎓 Select Your Academic Path**
-   - Choose your engineering branch from the dropdown
-   - Pick your current semester
-   - Your preferences are automatically saved for future visits
+1. **🎯 Quick Access**
+   - Visit [engram website](https://engram.kuber.studio) (no registration required)
+   - Select your branch and semester (preferences saved automatically)
+   - Browse subjects and materials instantly
 
-2. **📖 Browse Available Subjects**
-   - View all subjects for your branch/semester combination
-   - Each subject card shows available resource types
-   - Click on any subject to dive deeper
+2. **📖 Navigate Resources**
+   - **SYLLABUS** - Complete course outlines and assessment patterns
+   - **NOTES** - Comprehensive study materials and lecture notes
+   - **PYQS** - Previous year question papers with solutions
+   - **LAB** - Lab manuals, experiments, and code samples
+   - **BOOKS** - Reference books and additional reading
+   - **VIDEOS** - Curated video lectures and tutorials
 
-3. **📚 Access Study Materials**
-   - Use the tabbed interface to navigate different resource types:
-     - **SYLLABUS** - Complete course outline and assessment pattern
-     - **NOTES** - Comprehensive lecture notes and study guides
-     - **PYQS** - Previous year question papers with solutions
-     - **LAB** - Lab manuals, experiments, and code samples
-     - **BOOKS** - Reference books and additional reading material
-     - **AKASH** - Special curated notes collection
-     - **VIDEOS** - Video lectures and tutorials
-
-4. **⬇️ Download & Study**
-   - Download materials instantly with one click or just view it
-   - Preview documents before downloading (when available)
-   - All resources are free and require no registration
-
-### For Contributors
-
-1. **📤 Adding New Materials**
-   - Organize files according to the structure guidelines
-   - Follow naming conventions for consistency
-   - Include proper attribution and metadata
-
-2. **🔧 Technical Contributions**
-   - Fork the repository and create feature branches
-   - Follow the existing code style and patterns
-   - Test thoroughly before submitting pull requests
-
-3. **🐛 Reporting Issues**
-   - Use GitHub Issues for bug reports and feature requests
-   - Provide detailed descriptions and reproduction steps
-   - Include screenshots for UI-related issues
+3. **⬇️ Download & Study**
+   - One-click downloads for all materials
+   - Preview documents before downloading
+   - Mobile-optimized for studying on any device
 
 ## 🌟 Contributing
 
@@ -439,24 +470,30 @@ We welcome contributions from the IPU community and beyond! Here's how you can h
 
 ### **Making ENGRAM Truly Ours**
 
-**Current Status:** 🌱 **Pre Alpha** - We have the foundation, now we need the community
+**Current Status:** 🚀 **Pre-Alpha but Functional** - We have 10,000+ materials and growing!
+
+**The Mass Adoption Challenge:**
+> *"This project WOULD NOT be possible without mass adoption and WILL DIE DOWN if we don't get the community support it needs. Please, please share this with any friends, groups or communities you have in IPU B.Tech."*
 
 **What Success Looks Like:**
-- 🎯 **90%+ Coverage** - Every IPU subject has quality materials
-- 🏆 **Student Recognition** - Top contributors become campus legends
-- 📱 **Platform Evolution** - Features requested and built by students
-- 🌍 **Beyond IPU** - Model adopted by other universities
+- 🎯 **90%+ Coverage** - Every IPU subject has quality, updated materials
+- 🏆 **Student Recognition** - Top contributors become campus legends with their names on every upload
+- 📱 **Platform Evolution** - Features requested and built by students, for students
+- 🌍 **Beyond IPU** - A model that other universities can adopt and adapt
+- 🔄 **Self-Sustaining Ecosystem** - Where knowledge flows freely between generations
 
 **Your Role in This Journey:**
-1. **Immediate Impact** - Add materials you have right now
-2. **Ongoing Commitment** - Update resources as you create new ones
-3. **Community Building** - Encourage classmates to contribute
-4. **Quality Assurance** - Review and improve existing materials
-5. **Feature Requests** - Help shape the platform's future
+1. **📤 Immediate Impact** - Share materials you have right now
+2. **🔄 Ongoing Commitment** - Update resources as you create new ones
+3. **📢 Community Building** - Encourage classmates and spread the word
+4. **✅ Quality Assurance** - Review and improve existing materials
+5. **💡 Feature Requests** - Help shape the platform's future development
 
 <div align="center">
 
-**🚀 The goal isn't just to build a study platform - it's to create a sustainable ecosystem where knowledge flows freely between IPU students across generations.**
+**🌟 The goal isn't just to build a study platform - it's to create a sustainable ecosystem where knowledge flows freely between IPU students across generations.**
+
+**This affects ALL of us. Let's make it happen together.**
 
 </div>
 
@@ -515,6 +552,10 @@ This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LI
 
 ### 🌟 **Star this repository if you find it helpful!**
 
-**Built with ❤️ by [Kuber Mehta](https://kuber.studio/) and the entire IPU student community**
+### 📢 **Share with your IPU friends and communities**
+
+**Built with ❤️ by [Kuber Mehta](https://x.com/Kuberwastaken) and the entire IPU student community**
+
+*A legacy project that outlives us all - from students, for students, forever.*
 
 </div>
