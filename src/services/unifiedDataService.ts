@@ -221,11 +221,18 @@ class UnifiedDataService {
         fifteenFourteenDataService.getAvailableSubjects(branchName, semester)
       ]);
       const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
-      const result = Array.from(subjectMap.values())
+      // Deduplicate by normalized subject name
+      const normalizedSet = new Map<string, string>();
+      Array.from(subjectMap.values())
         .map(mapping => mapping.studyX || mapping.dotNotes || mapping.fifteenFourteen || '')
         .filter(name => name.length > 0)
-        .sort();
-      return result;
+        .forEach(name => {
+          const normalized = this.subjectMapper.normalizeSubjectName(name);
+          if (!normalizedSet.has(normalized)) {
+            normalizedSet.set(normalized, name);
+          }
+        });
+      return Array.from(normalizedSet.values()).sort();
     } catch (error) {
       console.error(`[Unified] Error getting available subjects for ${branchName} ${semester}:`, error);
       return [];
