@@ -12,9 +12,10 @@
    <img src="https://img.shields.io/badge/License-Apache 2.0-black" alt="License Apache 2.0">
 </p>
 
-<div align="center">
-   <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/engram-demo.gif" alt="ENGRAM Demo" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="80%">
-</div>
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/engram-demo.gif" alt="ENGRAM Demo" width="80%">
+</p>
+
 
 ## Project Overview
 
