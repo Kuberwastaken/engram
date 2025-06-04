@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams, useNavigate } from 'react-router-dom';
+import { createPortal } from 'react-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -11,7 +12,161 @@ import { unifiedDataService } from '@/services/unifiedDataService';
 import type { GoogleDriveFile } from '@/services/unifiedDataService';
 import { type SyllabusData, type VideoData } from '@/services/contentFetchingService';
 import MaterialsList from '@/components/MaterialsList';
+import PDFViewer from '@/components/PDFViewer';
 import { formatSubjectName } from '@/lib/utils';
+
+// Component that auto-opens PDF in fullscreen for single Akash files
+const AutoOpenPDFCard: React.FC<{
+  file: GoogleDriveFile;
+  subjectName: string;
+  materialType: string;
+  showSourceTag: boolean;
+}> = ({ file, subjectName, materialType, showSourceTag }) => {
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Auto-open the PDF in fullscreen after component mounts
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsFullscreen(true);
+      setIsLoading(true);
+    }, 1000); // Give a moment for the user to see the card
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Close fullscreen handler
+  const handleCloseFullscreen = () => {
+    setIsFullscreen(false);
+    setIsLoading(false);
+  };
+
+  // Fullscreen PDF Reader component (similar to PDFViewer's implementation)
+  const FullscreenPDFReader = () => {
+    useEffect(() => {
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+          handleCloseFullscreen();
+        }
+      };
+      
+      document.addEventListener('keydown', handleEscape);
+      document.body.classList.add('pdf-fullscreen-open');
+      
+      return () => {
+        document.removeEventListener('keydown', handleEscape);
+        document.body.classList.remove('pdf-fullscreen-open');
+      };
+    }, []);
+
+    const fileName = unifiedDataService.getFileName(file);
+    const fileId = unifiedDataService.getFileId(file);
+
+    return (
+      <div 
+        className="fixed inset-0 w-screen h-screen bg-black flex flex-col overflow-hidden"
+        style={{ 
+          zIndex: 999999,
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          width: '100vw',
+          height: '100vh'
+        }}
+      >
+        {/* Header */}
+        <div className="relative flex items-center justify-between px-6 py-2 bg-black border-b border-gray-800/30 h-12 flex-shrink-0">
+          <div className="flex items-center space-x-4 relative z-10">
+            <button
+              onClick={handleCloseFullscreen}
+              className="p-1.5 rounded bg-gray-900/50 hover:bg-gray-800/70 transition-colors border border-gray-700/50"
+            >
+              <ArrowLeft className="w-4 h-4 text-gray-300" />
+            </button>
+            <div className="text-sm text-gray-300">
+              <span className="opacity-60">{formatSubjectName(subjectName)}</span>
+              <span className="mx-2 opacity-40">/</span>
+              <span className="opacity-60">{materialType.toUpperCase()}</span>
+              <span className="mx-2 opacity-40">/</span>
+              <span className="text-white font-medium">{fileName}</span>
+            </div>
+          </div>
+          <div className="flex items-center space-x-3 relative z-10">
+            <div className="text-xs text-gray-400">
+              Press ESC to close
+            </div>
+          </div>
+        </div>
+        
+        {/* PDF content */}
+        <div className="flex-1 relative w-full h-full overflow-hidden bg-black">
+          {isLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/90 z-20">
+              <div className="text-center">
+                <Loader2 className="w-16 h-16 animate-spin text-purple-400 mx-auto mb-6" />
+                <p className="text-purple-200 text-xl">Loading PDF...</p>
+                <div className="mt-3 text-purple-300/70">Press ESC to close</div>
+              </div>
+            </div>
+          )}
+          
+          <iframe
+            src={file.previewUrl || unifiedDataService.getEmbedUrl(fileId)}
+            className="w-full h-full border-0 block"
+            onLoad={() => setIsLoading(false)}
+            title={fileName}
+            style={{ 
+              backgroundColor: '#000',
+              minHeight: '100%',
+              width: '100%',
+              height: '100%',
+              display: 'block',
+              border: 'none',
+              margin: 0,
+              padding: 0
+            }}
+            allowFullScreen
+            frameBorder="0"
+          />
+        </div>
+      </div>
+    );
+  };
+
+  return (
+    <>
+      {/* Show preview card */}
+      <Card className="bg-gray-900/20 border-2 border-blue-500/50 hover:bg-gray-800/40 hover:border-blue-400/70 transition-all duration-200">
+        <CardContent className="p-4">
+          <div className="flex justify-between items-center">
+            <div className="flex-1">
+              <div className="flex items-center mb-2">
+                <FileText className="w-4 h-4 text-blue-400 mr-2" />
+                <h4 className="text-gray-300 font-medium">{unifiedDataService.getFileName(file)}</h4>
+              </div>
+              <p className="text-sm text-gray-400">
+                PDF Document • Auto-opening in fullscreen...
+                {showSourceTag && file.source && (
+                  <span className="ml-2 px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
+                    {file.source}
+                  </span>
+                )}
+              </p>
+            </div>
+            <div className="flex items-center gap-3">
+              <Loader2 className="w-4 h-4 animate-spin text-blue-400" />
+            </div>
+          </div>
+        </CardContent>
+      </Card>
+
+      {/* Fullscreen PDF Reader */}
+      {isFullscreen && createPortal(<FullscreenPDFReader />, document.body)}
+    </>
+  );
+};
 
 const Subject = () => {
   const { name } = useParams<{ name: string }>();
@@ -224,14 +379,14 @@ const Subject = () => {
       const units = Object.entries(syllabusData);
       
       return (
-        <div className="space-y-6">
-          <Accordion type="multiple" collapsible className="w-full">
+        <div className="space-y-8">
+          <Accordion type="multiple" className="w-full">
             {units.map(([unitKey, unitContent], index) => (
               <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
-                <AccordionTrigger className="text-gray-300 hover:text-white hover:no-underline">
+                <AccordionTrigger className="text-gray-200 hover:text-white hover:no-underline font-medium tracking-wide text-lg" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
                   {unitKey}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-400 leading-relaxed whitespace-pre-line">
+                <AccordionContent className="text-gray-100 leading-relaxed whitespace-pre-line text-base md:text-lg px-4 py-3 bg-gray-900 rounded-lg shadow-inner" style={{ lineHeight: 1.85, letterSpacing: '0.01em', fontFamily: 'Helvetica, Arial, sans-serif' }}>
                   {unitContent}
                 </AccordionContent>
               </AccordionItem>
@@ -360,6 +515,35 @@ const Subject = () => {
           </div>
         </div>
       );
+    }
+
+    // Handle Akash tab: auto-open PDF if only one Akash file exists
+    if (tabId === 'akash') {
+      const akashMaterials = materials['akash'] || [];
+      
+      if (akashMaterials.length === 1) {
+        const akashFile = akashMaterials[0];
+        
+        // Return auto-opening PDF viewer component with a ref to trigger fullscreen
+        return (
+          <div className="space-y-3">
+            <AutoOpenPDFCard
+              file={akashFile}
+              subjectName={formatSubjectName(subjectName)}
+              materialType="akash"
+              showSourceTag={true}
+            />
+            <div className="text-center py-4">
+              <p className="text-gray-300 text-sm">
+                📄 Single Akash PDF detected - Opening automatically in fullscreen...
+              </p>
+              <p className="text-gray-500 text-xs mt-1">
+                Press ESC to close the fullscreen reader
+              </p>
+            </div>
+          </div>
+        );
+      }
     }
 
     // Render materials from Google Drive
