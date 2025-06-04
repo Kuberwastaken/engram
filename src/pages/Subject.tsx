@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import { ArrowLeft, Github, BookOpen, FileText, Loader2, Download, ExternalLink, Eye, Play } from 'lucide-react';
+import { ArrowLeft, BookOpen, FileText, Loader2, Download, ExternalLink, Eye, Play } from 'lucide-react';
 import { StarField } from '@/components/StarField';
 import { toast } from '@/hooks/use-toast';
 import { unifiedDataService } from '@/services/unifiedDataService';
@@ -85,16 +85,23 @@ const AutoOpenPDFCard: React.FC<{
             >
               <ArrowLeft className="w-4 h-4 text-gray-300" />
             </button>
-            <div className="text-sm text-gray-300">
+            
+            {/* Desktop: Show full path */}
+            <div className="hidden md:block text-sm text-gray-300">
               <span className="opacity-60">{formatSubjectName(subjectName)}</span>
               <span className="mx-2 opacity-40">/</span>
               <span className="opacity-60">{materialType.toUpperCase()}</span>
               <span className="mx-2 opacity-40">/</span>
               <span className="text-white font-medium">{fileName}</span>
             </div>
+            
+            {/* Mobile: Show only file name */}
+            <div className="md:hidden text-sm text-gray-300">
+              <span className="text-white font-medium">{fileName}</span>
+            </div>
           </div>
           <div className="flex items-center space-x-3 relative z-10">
-            <div className="text-xs text-gray-400">
+            <div className="hidden md:block text-xs text-gray-400">
               Press ESC to close
             </div>
           </div>
@@ -562,7 +569,7 @@ const Subject = () => {
       <StarField />
       
       {/* Floating Header */}
-      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-4xl">
+      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl">
         <div className="bg-gray-900/20 backdrop-blur-xl border border-gray-800/30 rounded-2xl px-6 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
@@ -583,18 +590,23 @@ const Subject = () => {
             <Button
               variant="ghost"
               size="icon"
-              className="w-10 h-10 rounded-full bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700/30 transition-all duration-300 hover:scale-105"
+              className="w-10 h-10 rounded-full bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700/30 transition-all duration-300 hover:scale-105 p-0 overflow-hidden"
               onClick={() => window.open('https://github.com/kuberwastaken/engram', '_blank')}
+              title="View on GitHub"
             >
-              <Github className="w-5 h-5 text-gray-300" />
+              <img 
+                src="/assets/web-app-manifest-192x192.png" 
+                alt="ENGRAM" 
+                className="w-full h-full object-cover rounded-full opacity-90 hover:opacity-100 transition-opacity"
+              />
             </Button>
           </div>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="pt-24 pb-8 px-4">
-        <div className="container mx-auto max-w-4xl">
+      <main className="pt-24 pb-8 px-3 sm:px-4 lg:px-6">
+        <div className="container mx-auto max-w-[95vw] xl:max-w-[90vw] 2xl:max-w-[85vw]">
           {/* Subject Header */}
           <div className="text-center mb-8 animate-fade-in">
             <h1 className="text-3xl md:text-4xl font-bold mb-2 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">

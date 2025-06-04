@@ -35,9 +35,8 @@ const Resources = () => {
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden grain">
       <StarField />
-      
-      {/* Floating Header */}
-      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-4xl">
+        {/* Floating Header */}
+      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl">
         <div className="bg-gray-900/20 backdrop-blur-xl border border-gray-800/30 rounded-2xl px-6 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
@@ -62,17 +61,15 @@ const Resources = () => {
             </Button>
           </div>
         </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="pt-24 pb-8 px-4">
-        <div className="container mx-auto max-w-4xl">
+      </header>      {/* Main Content */}
+      <main className="pt-24 pb-8 px-3 sm:px-4 lg:px-6">
+        <div className="container mx-auto max-w-[95vw] xl:max-w-[90vw] 2xl:max-w-[85vw]">
           {/* Page Header */}
           <div className="text-center mb-12 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">
               Resources & Sources
             </h1>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
               ENGRAM wouldn't exist without these incredible platforms that made educational content accessible to engineering students everywhere.
             </p>
           </div>

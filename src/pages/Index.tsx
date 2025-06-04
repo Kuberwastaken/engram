@@ -343,12 +343,10 @@ const Index = () => {
             </div>
           </div>
         </>
-      )}
-
-      {/* Main Content */}
-      <main className="pb-16 px-6 pt-32">
-        <div className="container mx-auto max-w-7xl">          {/* Hero Section */}
-          <div className="text-center mb-12 animate-fade-in w-full mx-auto mt-8 px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-8">
+      )}      {/* Main Content */}
+      <main className="pb-16 px-3 sm:px-4 lg:px-6 pt-32">
+        <div className="container mx-auto max-w-[95vw] xl:max-w-[90vw] 2xl:max-w-[85vw]">          {/* Hero Section */}
+          <div className="text-center mb-12 animate-fade-in w-full mx-auto mt-8 px-2 sm:px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-8">
               <span className="block">
                 The Centralized, No BS hub for
               </span>
@@ -356,13 +354,12 @@ const Index = () => {
                 IP University Resources
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-400 max-w-5xl mx-auto">
               Built for students, by students. No Trackers, No Ads and Open Source
             </p>
           </div>          {/* Selection Interface */}
-          <div className="max-w-xl mx-auto mb-32">
-            <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl shadow-2xl cosmic-hover transition-all duration-500 hover:shadow-cosmic">
-              <CardContent className="p-6 sm:p-8 md:p-10">
+          <div className="max-w-2xl lg:max-w-3xl mx-auto mb-32">            <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl shadow-2xl cosmic-hover transition-all duration-500 hover:shadow-cosmic">
+              <CardContent className="p-6 sm:p-8 lg:p-12">
                 <div className="space-y-8">
                   {/* Branch Selection */}
                   <div className="space-y-4">
@@ -427,21 +424,18 @@ const Index = () => {
           </div>
 
           {/* Features Section - Bento Grid */}
-          <div className="space-y-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <div className="space-y-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>            <div className="text-center">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Everything You Need to Excel
               </h2>
-              <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              <p className="text-gray-400 text-lg max-w-3xl mx-auto">
                 Comprehensive study materials curated by students, for students
               </p>
-            </div>
-
-            {/* Bento Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            </div>            {/* Bento Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-none mx-auto">
               {/* Large Card */}
-              <Card className="md:col-span-2 lg:col-span-2 bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300">
-                <CardContent className="p-8">
+              <Card className="md:col-span-2 xl:col-span-2 bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300">
+                <CardContent className="p-6 lg:p-8">
                   <BookOpen className="w-12 h-12 text-blue-400 mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-3">Comprehensive Notes</h3>
                   <p className="text-gray-400 leading-relaxed">
@@ -519,11 +513,9 @@ const Index = () => {
             </div>
           </div>
         </div>
-      </main>
-
-      {/* Footer */}
+      </main>      {/* Footer */}
       <footer className="border-t border-gray-800/30 bg-gray-900/20 backdrop-blur-xl mt-20">
-        <div className="container mx-auto max-w-6xl px-6 py-12">
+        <div className="container mx-auto max-w-[95vw] xl:max-w-[90vw] 2xl:max-w-[85vw] px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="md:col-span-1">

@@ -83,9 +83,8 @@ const Privacy = () => {
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden grain">
       <StarField />
-      
-      {/* Floating Header */}
-      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl">
+        {/* Floating Header */}
+      <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl">
         <div className="bg-gray-900/20 backdrop-blur-xl border border-gray-800/30 rounded-2xl px-6 py-3">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-4">
@@ -110,11 +109,9 @@ const Privacy = () => {
             </Button>
           </div>
         </div>
-      </header>
-
-      {/* Main Content */}
-      <main className="pt-24 pb-8 px-4">
-        <div className="container mx-auto max-w-6xl">
+      </header>      {/* Main Content */}
+      <main className="pt-24 pb-8 px-3 sm:px-4 lg:px-6">
+        <div className="container mx-auto max-w-[95vw] xl:max-w-[90vw] 2xl:max-w-[85vw]">
           {/* Page Header */}
           <div className="text-center mb-12 animate-fade-in">
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-red-500/20 to-orange-500/20 flex items-center justify-center mx-auto mb-6">
@@ -123,7 +120,7 @@ const Privacy = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-gray-200 to-gray-400 bg-clip-text text-transparent">
               Privacy & Legal Information
             </h1>
-            <p className="text-lg text-gray-400 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-gray-400 max-w-4xl mx-auto leading-relaxed">
               Important information about content ownership, licensing, liability, and your rights when using ENGRAM.
               Please read this information carefully before using the platform.
             </p>
@@ -146,10 +143,8 @@ const Privacy = () => {
                 </div>
               </div>
             </CardContent>
-          </Card>
-
-          {/* Legal Sections */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          </Card>          {/* Legal Sections */}
+          <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8 mb-12">
             {sections.map((section, index) => (
               <Card 
                 key={section.title}
@@ -184,7 +179,7 @@ const Privacy = () => {
               <h2 className="text-2xl font-bold text-gray-200 mb-6 text-center">
                 Apache License 2.0 - Key Points
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
                 <div className="text-center">
                   <div className="w-12 h-12 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-3">
                     <Shield className="w-6 h-6 text-green-400" />
@@ -224,7 +219,7 @@ const Privacy = () => {
                 Questions or Concerns?
               </h2>
               <div className="text-center space-y-4">
-                <p className="text-gray-300 leading-relaxed max-w-2xl mx-auto">
+                <p className="text-gray-300 leading-relaxed max-w-3xl mx-auto">
                   If you have questions about this privacy policy, content ownership, licensing, 
                   or wish to request content removal, please reach out to us through GitHub.
                 </p>

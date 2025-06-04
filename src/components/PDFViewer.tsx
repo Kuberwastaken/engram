@@ -24,10 +24,9 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
     // Get file info using the service helper methods
   const fileName = unifiedDataService.getFileName(file);
   const fileId = unifiedDataService.getFileId(file);
-
   // SVG Icons
   const DownloadIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-gray-300">
       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <polyline points="7,10 12,15 17,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
       <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
@@ -141,15 +140,17 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
             <div className="absolute top-2 left-3/4 w-0.5 h-0.5 bg-white/35 rounded-full animate-pulse"></div>
             <div className="absolute top-6 left-1/2 w-0.5 h-0.5 bg-white/20 rounded-full"></div>
           </div>
-          
-          {/* Left side - Back button and path */}
+            {/* Left side - Back button and path */}
           <div className="flex items-center space-x-4 relative z-10">
             <button
               onClick={handleCloseFullscreen}
               className="p-1.5 rounded bg-gray-900/50 hover:bg-gray-800/70 transition-colors border border-gray-700/50"
             >
               <ArrowLeft className="w-4 h-4 text-gray-300" />
-            </button>            <div className="text-sm text-gray-300">
+            </button>
+            
+            {/* Desktop: Show full path */}
+            <div className="hidden md:block text-sm text-gray-300">
               <span className="opacity-60">{formatSubjectName(subjectName)}</span>
               {materialType && (
                 <>
@@ -160,19 +161,39 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               <span className="mx-2 opacity-40">/</span>
               <span className="text-white font-medium">{fileName}</span>
             </div>
+            
+            {/* Mobile: Show only file name */}
+            <div className="md:hidden text-sm text-gray-300">
+              <span className="text-white font-medium">{fileName}</span>
+            </div>
           </div>
 
           {/* Right side - Simple controls */}
           <div className="flex items-center space-x-3 relative z-10">
+            {/* Desktop: Show download button with text */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 handleDownload();
               }}
-              className="px-3 py-1 bg-gray-800/50 hover:bg-gray-700/70 border border-gray-600/50 rounded text-gray-300 text-sm transition-colors"
+              className="hidden md:flex px-3 py-1 bg-gray-800/50 hover:bg-gray-700/70 border border-gray-600/50 rounded text-gray-300 text-sm transition-colors"
             >
               Download
-            </button>            <div className="text-xs text-gray-400">
+            </button>
+            
+            {/* Mobile: Show download button as icon only */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleDownload();
+              }}
+              className="md:hidden p-1.5 rounded bg-gray-900/50 hover:bg-gray-800/70 transition-colors border border-gray-700/50"
+              title="Download PDF"
+            >
+              <DownloadIcon />
+            </button>
+            
+            <div className="hidden md:block text-xs text-gray-400">
               {showSourceTag && file.source ? `By ${file.source}` : 'Press ESC to close'}
             </div>
           </div>
