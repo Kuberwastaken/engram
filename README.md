@@ -36,11 +36,6 @@ ENGRAM is and will **always stay free to access with no ads and no trackers**. I
 
 > *"I don't know about you, but during exam prep, I don't like having to open 4 different websites, 2 drive links and 4 WhatsApp groups just to get good material. Sometimes the websites are down, have bad UI and are filled with ads, half the notes are outdated or just confusing. This was me literally two days before our last exam and I honestly had it. That's why I started making ENGRAM."*
 
-<div align="center">
-    <img src="https://img.shields.io/badge/TRY_ENGRAM_NOW-000000?style=for-the-badge&labelColor=000000&font=Space+Mono" alt="Try ENGRAM Now" width="300" height="45">
-    </a>
-</div>
-
 ## Project Overview
 
 **ENGRAM** is a modern, open-source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
