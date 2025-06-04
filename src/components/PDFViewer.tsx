@@ -271,22 +271,21 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
       <Card 
         className={`bg-gray-900/20 border-gray-800/30 hover:bg-gray-800/40 hover:border-gray-600/50 transition-all duration-200 cursor-pointer group ${className}`}
         onClick={handleCardClick}
-        title="Click to open in fullscreen PDF reader"
       >
         <CardContent className="p-4">
           <div className="flex justify-between items-center">
             <div className="flex-1">
-              <div className="flex items-center mb-2">
+              <div className="flex items-center">
                 <FileText className="w-4 h-4 text-blue-400 mr-2" />
                 <h4 className="text-gray-300 font-medium group-hover:text-white transition-colors">{fileName}</h4>
-              </div>              <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors">
-                PDF Document • Click to open fullscreen reader
-                {showSourceTag && file.source && (
-                  <span className="ml-2 px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
+              </div>
+              {showSourceTag && file.source && (
+                <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors mt-2">
+                  <span className="px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
                     {file.source}
                   </span>
-                )}
-              </p>
+                </p>
+              )}
             </div>
             <div className="flex items-center gap-3 ml-4" onClick={(e) => e.stopPropagation()}>
               {showPreview && fileId && (

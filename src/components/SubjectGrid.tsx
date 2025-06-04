@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { useNavigate } from 'react-router-dom';
@@ -102,7 +101,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {subjects.map((subject, index) => (
         <Card
-          key={subject}
+          key={`${subject}-${index}`}
           className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300 cursor-pointer cosmic-hover animate-fade-in"
           style={{ animationDelay: `${index * 0.1}s` }}
           onClick={() => handleSubjectClick(subject)}

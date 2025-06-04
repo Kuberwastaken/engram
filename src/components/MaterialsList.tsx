@@ -35,24 +35,28 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
   const shouldShowSourceTags = ['notes', 'pyqs', 'lab'].includes(materialType.toLowerCase());
 
   return (
-    <div className={`space-y-3 ${className}`}>
+    <div className={`space-y-3 w-full max-w-full ${className}`}>
       {title && (
         <h3 className="text-lg font-semibold text-gray-300 mb-4">{title}</h3>
-      )}      {materials.map((file, index) => {
-        const fileId = unifiedDataService.getFileId(file);
-        const fileName = unifiedDataService.getFileName(file);
-        const isPdf = unifiedDataService.isPdfFile(fileName);
+      )}
+      <div className="grid gap-3">
+        {materials.map((file, index) => {
+          const fileId = unifiedDataService.getFileId(file);
+          const fileName = unifiedDataService.getFileName(file);
+          const isPdf = unifiedDataService.isPdfFile(fileName);
+          
           return (
-          <PDFViewer
-            key={fileId ? fileId : `${file.downloadUrl}-${index}`}
-            file={file}
-            showPreview={isPdf}
-            subjectName={subjectName}
-            materialType={materialType}
-            showSourceTag={shouldShowSourceTags}
-          />
-        );
-      })}
+            <PDFViewer
+              key={fileId ? fileId : `${file.downloadUrl}-${index}`}
+              file={file}
+              showPreview={isPdf}
+              subjectName={subjectName}
+              materialType={materialType}
+              showSourceTag={shouldShowSourceTags}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 };

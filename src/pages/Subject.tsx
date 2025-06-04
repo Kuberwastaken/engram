@@ -614,22 +614,54 @@ const Subject = () => {
             </h1>
           </div>
 
-          {/* Tabbed Interface */}
+          {/* Mobile-only Tab Navigation */}
+          <div className="md:hidden mb-4">
+            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+              <TabsList className="grid grid-cols-4 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-1.5 gap-1">
+                {tabs.slice(0, 4).map((tab) => (
+                  <TabsTrigger
+                    key={tab.id}
+                    value={tab.id}
+                    className="min-h-[2.5rem] text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400 px-2 rounded-md hover:bg-gray-700/30 transition-colors inline-flex items-center justify-center"
+                  >
+                    {tab.label}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+              <TabsList className="grid grid-cols-3 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-1.5 gap-1 mt-2">
+                {tabs.slice(4).map((tab) => (
+                  <TabsTrigger
+                    key={tab.id}
+                    value={tab.id}
+                    className="min-h-[2.5rem] text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400 px-2 rounded-md hover:bg-gray-700/30 transition-colors inline-flex items-center justify-center"
+                  >
+                    {tab.label}
+                  </TabsTrigger>
+                ))}
+              </TabsList>
+            </Tabs>
+          </div>
+
+          {/* Tabbed Interface (Desktop) */}
           <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl">
             <CardContent className="p-6">
               <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-                <TabsList className="grid grid-cols-4 lg:grid-cols-7 w-full bg-gray-800/30 p-1">
-                  {tabs.map((tab) => (
-                    <TabsTrigger
-                      key={tab.id}
-                      value={tab.id}
-                      className="text-xs lg:text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400"
-                    >
-                      {tab.label}
-                    </TabsTrigger>
-                  ))}
-                </TabsList>
+                {/* Desktop-only tab list */}
+                <div className="hidden md:block">
+                  <TabsList className="grid grid-cols-7 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-1.5">
+                    {tabs.map((tab) => (
+                      <TabsTrigger
+                        key={tab.id}
+                        value={tab.id}
+                        className="text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400 px-1 py-2.5 rounded-md hover:bg-gray-700/30 transition-colors"
+                      >
+                        {tab.label}
+                      </TabsTrigger>
+                    ))}
+                  </TabsList>
+                </div>
 
+                {/* Tab content */}
                 {tabs.map((tab) => (
                   <TabsContent key={tab.id} value={tab.id} className="mt-6">
                     <div className="animate-fade-in">
