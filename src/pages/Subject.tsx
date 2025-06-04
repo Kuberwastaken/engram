@@ -617,23 +617,23 @@ const Subject = () => {
           {/* Mobile-only Tab Navigation */}
           <div className="md:hidden mb-4">
             <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
-              <TabsList className="grid grid-cols-4 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-1.5 gap-1">
+              <TabsList className="grid grid-cols-4 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-0.5 gap-1">
                 {tabs.slice(0, 4).map((tab) => (
                   <TabsTrigger
                     key={tab.id}
                     value={tab.id}
-                    className="min-h-[2.5rem] text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400 px-2 rounded-md hover:bg-gray-700/30 transition-colors inline-flex items-center justify-center"
+                    className="h-9 text-xs font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-0.5 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none"
                   >
                     {tab.label}
                   </TabsTrigger>
                 ))}
               </TabsList>
-              <TabsList className="grid grid-cols-3 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-1.5 gap-1 mt-2">
+              <TabsList className="grid grid-cols-3 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-0.5 gap-1 mt-2">
                 {tabs.slice(4).map((tab) => (
                   <TabsTrigger
                     key={tab.id}
                     value={tab.id}
-                    className="min-h-[2.5rem] text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400 px-2 rounded-md hover:bg-gray-700/30 transition-colors inline-flex items-center justify-center"
+                    className="h-9 text-xs font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-0.5 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -648,12 +648,12 @@ const Subject = () => {
               <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
                 {/* Desktop-only tab list */}
                 <div className="hidden md:block">
-                  <TabsList className="grid grid-cols-7 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-1.5">
+                  <TabsList className="grid grid-cols-7 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-0.5">
                     {tabs.map((tab) => (
                       <TabsTrigger
                         key={tab.id}
                         value={tab.id}
-                        className="text-sm data-[state=active]:bg-gray-700/50 data-[state=active]:text-white text-gray-400 px-1 py-2.5 rounded-md hover:bg-gray-700/30 transition-colors"
+                        className="h-9 text-sm font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-1 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none"
                       >
                         {tab.label}
                       </TabsTrigger>
