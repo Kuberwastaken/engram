@@ -348,7 +348,7 @@ const Index = () => {
       {/* Main Content */}
       <main className="pb-16 px-6 pt-32">
         <div className="container mx-auto max-w-7xl">          {/* Hero Section */}
-          <div className="text-center mb-20 animate-fade-in w-full mx-auto mt-16 px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-6">
+          <div className="text-center mb-12 animate-fade-in w-full mx-auto mt-8 px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-8">
               <span className="block">
                 The Centralized, No BS hub for
               </span>
@@ -359,19 +359,18 @@ const Index = () => {
             <p className="text-lg md:text-xl text-gray-400 max-w-4xl mx-auto">
               Built for students, by students. No Trackers, No Ads and Open Source
             </p>
-          </div>
-
-          {/* Selection Interface */}
-          <div className="max-w-lg mx-auto mb-32">
-            <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl shadow-2xl">
-              <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div className="space-y-3">
-                    <label className="block text-sm font-medium text-gray-300">
+          </div>          {/* Selection Interface */}
+          <div className="max-w-xl mx-auto mb-32">
+            <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl shadow-2xl cosmic-hover transition-all duration-500 hover:shadow-cosmic">
+              <CardContent className="p-6 sm:p-8 md:p-10">
+                <div className="space-y-8">
+                  {/* Branch Selection */}
+                  <div className="space-y-4">
+                    <label className="block text-sm font-semibold text-gray-200 tracking-wide">
                       Select Your Branch
                     </label>
                     <Select value={branch} onValueChange={setBranch}>
-                      <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-12 text-base hover:bg-gray-800/50 transition-all">
+                      <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-14 text-base hover:bg-gray-800/50 transition-all duration-300 hover:border-gray-600/50 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20">
                         <SelectValue placeholder="Choose your branch" />
                       </SelectTrigger>
                       <SelectContent className="bg-gray-900/95 border-gray-700/50 backdrop-blur-xl">
@@ -379,7 +378,7 @@ const Index = () => {
                           <SelectItem 
                             key={b} 
                             value={b} 
-                            className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50"
+                            className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50 transition-colors"
                           >
                             {b}
                           </SelectItem>
@@ -388,12 +387,13 @@ const Index = () => {
                     </Select>
                   </div>
 
-                  <div className="space-y-3">
-                    <label className="block text-sm font-medium text-gray-300">
+                  {/* Semester Selection with proper spacing */}
+                  <div className="space-y-4 mt-8">
+                    <label className="block text-sm font-semibold text-gray-200 tracking-wide">
                       Select Semester
                     </label>
                     <Select value={semester} onValueChange={setSemester}>
-                      <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-12 text-base hover:bg-gray-800/50 transition-all">
+                      <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-14 text-base hover:bg-gray-800/50 transition-all duration-300 hover:border-gray-600/50 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20">
                         <SelectValue placeholder="Choose semester" />
                       </SelectTrigger>
                       <SelectContent className="bg-gray-900/95 border-gray-700/50 backdrop-blur-xl">
@@ -401,7 +401,7 @@ const Index = () => {
                           <SelectItem 
                             key={s} 
                             value={s} 
-                            className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50"
+                            className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50 transition-colors"
                           >
                             {s} Semester
                           </SelectItem>
@@ -410,11 +410,11 @@ const Index = () => {
                     </Select>
                   </div>
 
+                  {/* Reset Button with enhanced styling */}
                   {(branch || semester) && (
-                    <div className="pt-4">
-                      <Button
+                    <div className="pt-6 animate-fade-in">                      <Button
                         variant="outline"
-                        className="w-full border-gray-700/50 text-gray-300 hover:bg-gray-800/30 hover:text-white transition-all h-11"
+                        className="w-full border-gray-700/50 text-gray-300 hover:bg-gray-800/30 hover:text-white transition-all duration-300 h-12 hover:border-gray-600/50"
                         onClick={resetPreferences}
                       >
                         Reset Preferences
@@ -611,8 +611,8 @@ const Index = () => {
           {/* Bottom Section */}
           <div className="border-t border-gray-800/30 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm">
-              © 2024 Engram. Open source and always free.
-            </p>            <p className="text-gray-400 text-sm mt-4 md:mt-0 flex items-center">
+              © {new Date().getFullYear()} Engram. Open source and always free.
+            </p><p className="text-gray-400 text-sm mt-4 md:mt-0 flex items-center">
               Made with <Heart className="w-4 h-4 mx-1 text-red-400" /> by{' '}
               <a 
                 href="https://kuber.studio/" 
