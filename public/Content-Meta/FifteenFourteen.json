@@ -12,7 +12,7 @@
   },
   "branches": {
     "COMMON": {
-      "SEM1": {
+      "1st": {
         "APC": {
           "name": "Applied Chemistry",
           "url": "https://fifteenforteen.vercel.app/html/contents/applied_chemistry.html",
@@ -554,7 +554,7 @@
           "akash": []
         }
       },
-      "SEM2": {
+      "2nd": {
         "APP2": {
           "name": "Applied Physics - 2",
           "url": "https://fifteenforteen.vercel.app/html/contents/applied_physics-2.html",

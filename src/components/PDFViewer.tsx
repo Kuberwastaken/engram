@@ -4,7 +4,7 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { Card, CardContent } from '@/components/ui/card';
 import { FileText, Loader2, X, ArrowLeft } from 'lucide-react';
 import { GoogleDriveFile } from '@/services/unifiedDataService';
-import { studyXDataService } from '@/services/studyXDataService';
+import { unifiedDataService } from '@/services/unifiedDataService';
 import { toast } from '@/hooks/use-toast';
 import { formatSubjectName } from '@/lib/utils';
 
@@ -21,10 +21,9 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
   const [isLoading, setIsLoading] = useState(false);
   const [embedError, setEmbedError] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  
-  // Get file info using the service helper methods
-  const fileName = studyXDataService.getFileName(file);
-  const fileId = studyXDataService.getFileId(file);
+    // Get file info using the service helper methods
+  const fileName = unifiedDataService.getFileName(file);
+  const fileId = unifiedDataService.getFileId(file);
 
   // SVG Icons
   const DownloadIcon = () => (
@@ -47,7 +46,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
       title: "Download Started",
       description: `Downloading ${fileName}...`,
     });
-    window.open(studyXDataService.getDownloadUrl(file), '_blank');
+    window.open(unifiedDataService.getDownloadUrl(file), '_blank');
   };
   const handleOpenFullscreen = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -77,7 +76,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
       console.log('Opening webViewUrl:', file.webViewUrl);
       window.open(file.webViewUrl, '_blank');
     } else if (fileId) {
-      const viewUrl = studyXDataService.getViewUrl(fileId);
+      const viewUrl = unifiedDataService.getViewUrl(fileId);
       console.log('Opening viewUrl:', viewUrl);
       window.open(viewUrl, '_blank');
     } else {
@@ -211,7 +210,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
                       if (file.webViewUrl) {
                         window.open(file.webViewUrl, '_blank');
                       } else if (fileId) {
-                        window.open(studyXDataService.getViewUrl(fileId), '_blank');
+                        window.open(unifiedDataService.getViewUrl(fileId), '_blank');
                       }
                     }}
                     className="px-8 py-4 bg-slate-700 hover:bg-slate-600 text-purple-200 rounded-lg transition-colors text-lg"
@@ -223,7 +222,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
             </div>
           ) : (
             <iframe
-              src={file.previewUrl || studyXDataService.getEmbedUrl(fileId)}
+              src={file.previewUrl || unifiedDataService.getEmbedUrl(fileId)}
               className="w-full h-full border-0 block"
               onLoad={handleEmbedLoad}
               onError={handleEmbedError}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PDFViewer from './PDFViewer';
 import { GoogleDriveFile } from '@/services/unifiedDataService';
-import { studyXDataService } from '@/services/studyXDataService';
+import { unifiedDataService } from '@/services/unifiedDataService';
 
 interface MaterialsListProps {
   materials: GoogleDriveFile[];
@@ -38,11 +38,10 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
     <div className={`space-y-3 ${className}`}>
       {title && (
         <h3 className="text-lg font-semibold text-gray-300 mb-4">{title}</h3>
-      )}
-      {materials.map((file, index) => {
-        const fileId = studyXDataService.getFileId(file);
-        const fileName = studyXDataService.getFileName(file);
-        const isPdf = studyXDataService.isPdfFile(fileName);
+      )}      {materials.map((file, index) => {
+        const fileId = unifiedDataService.getFileId(file);
+        const fileName = unifiedDataService.getFileName(file);
+        const isPdf = unifiedDataService.isPdfFile(fileName);
           return (
           <PDFViewer
             key={fileId ? fileId : `${file.downloadUrl}-${index}`}
