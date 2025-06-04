@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "bun run build",
     "deploy": "gh-pages -d dist",
-    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "generate-sitemap": "node build-tools/generate-sitemap.js",
     "build:with-sitemap": "bun run build && bun run generate-sitemap"
   },
   "dependencies": {
