@@ -14,14 +14,13 @@
 
 <div align="center">
    <table>
-      <tr>
-         <td align="center" width="60%">
-            <img src="public/assets/pc-screenshot.png" alt="ENGRAM Desktop Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
-            <br><em>Desktop Experience</em>
-         </td>
-         <td align="center" width="40%">
-            <img src="public/assets/mobile-screenshot.png" alt="ENGRAM Mobile Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
-            <br><em>Mobile Experience</em>
+       <td align="center" width="60%">
+         <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/PC-screenshot.png" alt="ENGRAM Desktop Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
+         <br><em>Desktop Experience</em>
+       </td>
+       <td align="center" width="40%">
+         <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/Mobile-screenshot.png" alt="ENGRAM Mobile Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
+         <br><em>Mobile Experience</em>
          </td>
       </tr>
    </table>
