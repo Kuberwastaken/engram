@@ -12,9 +12,19 @@
    <img src="https://img.shields.io/badge/License-Apache 2.0-black" alt="License Apache 2.0">
 </p>
 
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/engram-demo.gif" alt="ENGRAM Demo">
-</p>
+<div align="center">
+   <table>
+       <td align="center" width="60%">
+         <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/PC-screenshot.png" alt="ENGRAM Desktop Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
+         <br><em>Desktop Experience</em>
+       </td>
+       <td align="center" width="40%">
+         <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/Mobile-screenshot.png" alt="ENGRAM Mobile Interface" style="border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" width="100%">
+         <br><em>Mobile Experience</em>
+         </td>
+      </tr>
+   </table>
+</div>
 
 ## Project Overview
 
@@ -25,6 +35,12 @@ ENGRAM is and will **always stay free to access with no ads and no trackers**. I
 **Born from Frustration, Built for (potential) Solutions**
 
 > *"I don't know about you, but during exam prep, I don't like having to open 4 different websites, 2 drive links and 4 WhatsApp groups just to get good material. Sometimes the websites are down, have bad UI and are filled with ads, half the notes are outdated or just confusing. This was me literally two days before our last exam and I honestly had it. That's why I started making ENGRAM."*
+
+## Project Overview
+
+**ENGRAM** is a modern, open-source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
+
+ENGRAM is and will **always stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions,
 
 ### **What We Have Now** 
 - ✅ **Aggregated Content** - Notes from Dotnotes, SyllabusX, and Fifteenfourteen (with proper credits)
