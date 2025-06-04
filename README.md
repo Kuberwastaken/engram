@@ -13,9 +13,8 @@
 </p>
 
 <p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/engram-demo.gif" alt="ENGRAM Demo" width="80%">
+  <img src="https://cdn.jsdelivr.net/gh/Kuberwastaken/engram@main/public/assets/engram-demo.gif" alt="ENGRAM Demo">
 </p>
-
 
 ## Project Overview
 
