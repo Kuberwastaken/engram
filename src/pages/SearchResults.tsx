@@ -93,7 +93,7 @@ const SearchResults = () => {
           Back
         </Button>
 
-        <h1 className="text-2xl sm:text-3xl font-bold mb-6">
+        <h1 className="text-2xl sm:text-3xl font-bold mb-6 ml-5">
           Search Results for "{query}"
         </h1>
 

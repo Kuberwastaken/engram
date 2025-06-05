@@ -174,19 +174,19 @@ const [isSearching, setIsSearching] = useState(false);
   <div className="relative transition-all duration-500 ease-out">
   <input
     type="text"
-    placeholder="Search notes, subjects..."
+    placeholder="Search notes, subjects"
     value={searchQuery}
     onChange={handleSearchChange}
     onKeyPress={handleKeyPress}
     className={`bg-white/90 text-black placeholder-gray-500 rounded-full shadow-sm focus:outline-none focus:ring-4 focus:ring-blue-400 transition-all duration-500 ease-out ${
-      isScrolled ? 'w-56 h-6 text-sm px-4' : 'w-96 h-12 text-base px-6'
+      isScrolled ? 'w-60 h-8 text-sm px-4' : 'w-60 h-8 text-base px-4'
     }`}
     disabled={isSearching}
   />
   <button
     onClick={handleSearchSubmit}
     disabled={isSearching || !searchQuery.trim()}
-    className={`absolute right-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease-in-out ${
+    className={`absolute right-4 bl-4 top-1/2 transform -translate-y-1/2 transition-all duration-300 ease-in-out ${
       isSearching || !searchQuery.trim()
         ? 'opacity-40 cursor-not-allowed'
         : 'opacity-100 hover:scale-110'
