@@ -496,13 +496,47 @@ class UnifiedDataService {
       const unifiedMaterials = await unifiedContentService.getOrganizedMaterials(branchName, semester, subjectName);
       
       if (unifiedMaterials && unifiedMaterials.syllabus && unifiedMaterials.syllabus.length > 0) {
-        console.log(`[Unified] Found ${unifiedMaterials.syllabus.length} syllabus files from UnifiedContent`);
-        // Fetch syllabus data from the first JSON file found
-        const syllabusFile = unifiedMaterials.syllabus.find(f => f.name.toLowerCase().includes('.json'));
-        if (syllabusFile) {
-          console.log(`[Unified] Fetching syllabus JSON: ${syllabusFile.name}`);
+        console.log(`[Unified] Found ${unifiedMaterials.syllabus.length} syllabus items from UnifiedContent`);
+        console.log('[Unified] Syllabus items:', unifiedMaterials.syllabus);
+        
+        // Check if we have structured syllabus data (type: "structured")
+        const structuredItems = unifiedMaterials.syllabus.filter((f: any) => f.type === 'structured');
+        if (structuredItems.length > 0) {
+          console.log(`[Unified] Found ${structuredItems.length} structured syllabus units`);
+          // Convert array of units to object format expected by frontend
+          const syllabusData: SyllabusData = {};
+          structuredItems.forEach((item: any) => {
+            const unitKey = `Unit ${item.unit}`;
+            syllabusData[unitKey] = {
+              content: item.content,
+              topics: item.topics || [item.content],
+              hours: item.hours
+            };
+          });
+          console.log('[Unified] Returning structured syllabus:', syllabusData);
+          return syllabusData;
+        }
+        
+        // Look for JSON file (old format)
+        const jsonFile = unifiedMaterials.syllabus.find((f: any) => f.name?.toLowerCase().endsWith('.json'));
+        if (jsonFile) {
+          console.log(`[Unified] Fetching structured syllabus JSON: ${jsonFile.name}`);
           const { contentFetchingService } = await import('./contentFetchingService');
-          return await contentFetchingService.fetchSyllabusData([syllabusFile]);
+          return await contentFetchingService.fetchSyllabusData([jsonFile]);
+        }
+        
+        // If no structured data or JSON, check if we have PDF files
+        const pdfFiles = unifiedMaterials.syllabus.filter((f: any) => 
+          f.name?.toLowerCase().endsWith('.pdf')
+        );
+        
+        if (pdfFiles.length > 0) {
+          console.log(`[Unified] No structured syllabus found, returning ${pdfFiles.length} PDF files for embedding`);
+          // Return PDF files in a special format that the frontend can detect and embed
+          return {
+            _displayMode: 'pdf',
+            _pdfFiles: pdfFiles
+          } as SyllabusData;
         }
       }
       
@@ -511,11 +545,11 @@ class UnifiedDataService {
       const dotNotesSubjectCode = mapping.dotNotesCode;
       
       if (!dotNotesSubjectCode) {
-        console.log(`[Unified] No DotNotes subject code found for ${subjectName}`);
+        console.log(`[Unified] No DotNotes subject code found for ${subjectName}, no syllabus available`);
         return null;
       }
       
-      console.log(`[Unified] Using DotNotes subject code "${dotNotesSubjectCode}" for syllabus`);
+      console.log(`[Unified] Falling back to DotNotes subject code "${dotNotesSubjectCode}" for syllabus`);
       
       // Fetch syllabus from consolidated data using the mapped subject code
       return await consolidatedDataService.getSyllabusData(branchName, semester, dotNotesSubjectCode);

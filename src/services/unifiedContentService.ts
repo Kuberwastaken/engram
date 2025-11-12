@@ -29,6 +29,7 @@ export interface UnifiedContentData {
               viva: ContentFile[];
               midsem: ContentFile[];
             };
+            syllabus?: ContentFile[]; // New structured syllabus location (for SEM3+)
             units: Array<{ number: string; content: string }>;
             lastUpdated: string;
             source: string;
@@ -196,20 +197,27 @@ class UnifiedContentService {
           originalFolder: material.originalFolder,
           subject: material.subject,
           addedAt: material.addedAt,
-          index: material.index
+          index: material.index,
+          // Preserve structured syllabus fields
+          type: material.type,
+          unit: material.unit,
+          hours: material.hours,
+          content: material.content,
+          topics: material.topics
         }));
       };
 
       const organizedMaterials = {
-        notes: convertMaterials(subjectData.materials.notes || []),
-        pyqs: convertMaterials(subjectData.materials.pyqs || []),
-        books: convertMaterials(subjectData.materials.books || []),
-        lab: convertMaterials(subjectData.materials.lab || []),
-        akash: convertMaterials(subjectData.materials.akash || []),
-        videos: convertMaterials(subjectData.materials.videos || []),
-        viva: convertMaterials(subjectData.materials.viva || []),
-        midsem: convertMaterials(subjectData.materials.midsem || []),
-        syllabus: convertMaterials(subjectData.materials.syllabus || [])
+        notes: convertMaterials(subjectData.materials?.notes || []),
+        pyqs: convertMaterials(subjectData.materials?.pyqs || []),
+        books: convertMaterials(subjectData.materials?.books || []),
+        lab: convertMaterials(subjectData.materials?.lab || []),
+        akash: convertMaterials(subjectData.materials?.akash || []),
+        videos: convertMaterials(subjectData.materials?.videos || []),
+        viva: convertMaterials(subjectData.materials?.viva || []),
+        midsem: convertMaterials(subjectData.materials?.midsem || []),
+        // Check both locations for syllabus: direct (new structure) or inside materials (old structure)
+        syllabus: convertMaterials(subjectData.syllabus || subjectData.materials?.syllabus || [])
       };
 
       console.log(`[UnifiedContent] Found materials for ${subjectName}:`, {

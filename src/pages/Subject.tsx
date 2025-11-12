@@ -383,21 +383,81 @@ const Subject = () => {
       }
 
       // Render real syllabus data
-      const units = Object.entries(syllabusData);
+      // Check if this is PDF-only mode
+      if (syllabusData._displayMode === 'pdf' && syllabusData._pdfFiles) {
+        const pdfFiles = syllabusData._pdfFiles;
+        return (
+          <div className="space-y-6">
+            <div className="bg-blue-900/20 border border-blue-800/30 rounded-lg p-4 mb-6">
+              <div className="flex items-start gap-3">
+                <FileText className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" />
+                <div>
+                  <h3 className="text-blue-200 font-medium mb-1">Syllabus PDF Files</h3>
+                  <p className="text-gray-400 text-sm">
+                    Structured syllabus data is not available for this subject. View the PDF files below.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            {pdfFiles.map((pdf, index) => (
+              <div key={pdf.id || index} className="space-y-3">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-lg font-medium text-gray-200">{pdf.name}</h3>
+                  <a
+                    href={pdf.downloadUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-400 hover:text-blue-300 text-sm"
+                  >
+                    <Download className="w-4 h-4" />
+                    Download
+                  </a>
+                </div>
+                <div className="bg-gray-900 rounded-lg overflow-hidden border border-gray-800">
+                  <iframe
+                    src={pdf.viewUrl}
+                    className="w-full"
+                    style={{ height: '80vh', minHeight: '600px' }}
+                    title={pdf.name}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        );
+      }
+      
+      const units = Object.entries(syllabusData).filter(([key]) => !key.startsWith('_'));
       
       return (
         <div className="space-y-8">
           <Accordion type="multiple" className="w-full">
-            {units.map(([unitKey, unitContent], index) => (
-              <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
-                <AccordionTrigger className="text-gray-200 hover:text-white hover:no-underline font-medium tracking-wide text-lg" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
-                  {unitKey}
-                </AccordionTrigger>
-                <AccordionContent className="text-gray-100 leading-relaxed whitespace-pre-line text-base md:text-lg px-4 py-3 bg-gray-900 rounded-lg shadow-inner" style={{ lineHeight: 1.85, letterSpacing: '0.01em', fontFamily: 'Helvetica, Arial, sans-serif' }}>
-                  {unitContent}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
+            {units.map(([unitKey, unitContent], index) => {
+              // Handle both old string format and new object format
+              let contentToDisplay: string;
+              let hours: number | undefined;
+              
+              if (typeof unitContent === 'string') {
+                contentToDisplay = unitContent;
+              } else if (unitContent && typeof unitContent === 'object' && 'content' in unitContent) {
+                contentToDisplay = unitContent.content;
+                hours = unitContent.hours;
+              } else {
+                contentToDisplay = JSON.stringify(unitContent);
+              }
+              
+              return (
+                <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
+                  <AccordionTrigger className="text-gray-200 hover:text-white hover:no-underline font-medium tracking-wide text-lg" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                    {unitKey}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-100 leading-relaxed whitespace-pre-line text-base md:text-lg px-4 py-3 bg-gray-900 rounded-lg shadow-inner" style={{ lineHeight: 1.85, letterSpacing: '0.01em', fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                    {contentToDisplay}
+                  </AccordionContent>
+                </AccordionItem>
+              );
+            })}
           </Accordion>
           
           {units.length === 0 && (

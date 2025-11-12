@@ -1,6 +1,14 @@
 // Content fetching service for syllabus and videos JSON files from Google Drive
+export interface SyllabusUnitData {
+  content: string;
+  topics?: string[];
+  hours?: number;
+}
+
 export interface SyllabusData {
-  [unitKey: string]: string;
+  [unitKey: string]: string | ContentFile[] | SyllabusUnitData | 'structured' | 'pdf' | undefined;
+  _pdfFiles?: ContentFile[]; // Special field for PDF-only syllabus
+  _displayMode?: 'structured' | 'pdf'; // How to display the syllabus
 }
 
 export interface VideoData {
