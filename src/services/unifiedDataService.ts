@@ -9,7 +9,7 @@ import { type SyllabusData, type VideoData } from './contentFetchingService';
 
 // Enhanced GoogleDriveFile with source attribution
 export interface GoogleDriveFile extends BaseGoogleDriveFile {
-  source?: 'StudyX' | 'DotNotes' | 'FifteenFourteen' | 'UnifiedContent';
+  source?: 'StudyX' | 'DotNotes' | 'FifteenFourteen' | 'UnifiedContent' | 'kamati' | string;
 }
 
 export type { SubjectData };
@@ -103,10 +103,10 @@ class UnifiedDataService {
   /**
    * Add source attribution to materials
    */
-  private addSourceToMaterials(materials: BaseGoogleDriveFile[], source: 'StudyX' | 'DotNotes' | 'FifteenFourteen' | 'UnifiedContent'): GoogleDriveFile[] {
+  private addSourceToMaterials(materials: BaseGoogleDriveFile[], source: string): GoogleDriveFile[] {
     return materials.map(material => ({
       ...material,
-      source
+      source: source as any
     }));
   }
 
@@ -165,16 +165,18 @@ class UnifiedDataService {
     unifiedContentMaterials: Record<string, BaseGoogleDriveFile[]>
   ): Record<string, GoogleDriveFile[]> {
     // Helper to preserve existing source or add new source
-    const preserveOrAddSource = (materials: BaseGoogleDriveFile[], fallbackSource: 'StudyX' | 'DotNotes' | 'FifteenFourteen' | 'UnifiedContent'): GoogleDriveFile[] => {
+    // This allows materials from UnifiedContent.json to keep their specific sources
+    // (kamati, google-drive-sem3, etc.) while providing a fallback for unattributed materials
+    const preserveOrAddSource = (materials: BaseGoogleDriveFile[], fallbackSource: string): GoogleDriveFile[] => {
       return materials.map(material => {
-        // Check if material already has a source attribution (from UnifiedContent)
         const existingSource = (material as any).source;
-        if (existingSource && existingSource !== 'UnifiedContent' && existingSource.includes('google-drive')) {
-          // Preserve google-drive-sem3 or similar sources
-          return { ...material, source: existingSource };
+        
+        if (existingSource && existingSource !== 'UnifiedContent') {
+          // Preserve any specific source (kamati, google-drive-sem3, studyx, dotnotes, etc.)
+          return { ...material, source: existingSource as any };
         }
-        // Otherwise add the fallback source
-        return { ...material, source: fallbackSource };
+        // Use fallback for materials without a specific source
+        return { ...material, source: fallbackSource as any };
       });
     };
 
@@ -337,15 +339,9 @@ class UnifiedDataService {
       
       if (unifiedContentMaterials) {
         console.log(`[Unified] Found materials in UnifiedContent for ${subjectName}, using those`);
-        // Convert to the expected format with source attribution
-        const result: Record<string, GoogleDriveFile[]> = {};
-        Object.entries(unifiedContentMaterials).forEach(([type, materials]) => {
-          result[type] = materials.map(material => ({
-            ...material,
-            source: 'UnifiedContent' as const
-          }));
-        });
-        return result;
+        // Return materials with their original sources from UnifiedContent.json
+        // (kamati, google-drive-sem3, or any other future sources)
+        return unifiedContentMaterials as Record<string, GoogleDriveFile[]>;
       }
       
       // Fallback to existing multi-source logic
