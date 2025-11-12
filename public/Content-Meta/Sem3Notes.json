@@ -1,0 +1,3142 @@
+{
+  "metadata": {
+    "source": "Google Drive Sem 3 Collection (Mapped)",
+    "generatedAt": "2025-10-05T13:14:15.825Z",
+    "version": "1.0.0",
+    "description": "B.Tech Third Semester study materials mapped to standard structure",
+    "totalSubjects": 9,
+    "totalFiles": 266,
+    "baseUrl": "https://drive.google.com/drive/u/0/folders/10t28DY-g2iPtipyKay-c6zsEQRA4xoO0",
+    "coverage": "Third Semester (SEM 3)",
+    "note": "Organized Google Drive links with proper subject mapping",
+    "originalScrapedAt": "2025-10-05T13:10:50.996Z",
+    "mappedAt": "2025-10-05T13:14:15.825Z"
+  },
+  "branches": {
+    "CSE": {
+      "3rd": {
+        "CRST": {
+          "name": "Computer Science and Technology",
+          "code": "CRST",
+          "category": "core",
+          "url": "https://engram-project.vercel.app/sem3/crst",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1DFJ10HtnKIYtuCzVBY7pYcW7WvHn9H4Y",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DFJ10HtnKIYtuCzVBY7pYcW7WvHn9H4Y",
+              "viewUrl": "https://drive.google.com/file/d/1DFJ10HtnKIYtuCzVBY7pYcW7WvHn9H4Y/preview",
+              "originalFolder": "CRST Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DFJ10HtnKIYtuCzVBY7pYcW7WvHn9H4Y/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            },
+            {
+              "id": "16IOf-qLIkymvJn2ydROZNyCT40YIC6M9",
+              "name": "crst unit 2,3,4.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=16IOf-qLIkymvJn2ydROZNyCT40YIC6M9",
+              "viewUrl": "https://drive.google.com/file/d/16IOf-qLIkymvJn2ydROZNyCT40YIC6M9/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/16IOf-qLIkymvJn2ydROZNyCT40YIC6M9/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 2
+            },
+            {
+              "id": "16IOf-qLIkymvJn2ydROZNyCT40YIC6M9",
+              "name": "crst unit 2,3,4.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=16IOf-qLIkymvJn2ydROZNyCT40YIC6M9",
+              "viewUrl": "https://drive.google.com/file/d/16IOf-qLIkymvJn2ydROZNyCT40YIC6M9/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/16IOf-qLIkymvJn2ydROZNyCT40YIC6M9/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 3
+            },
+            {
+              "id": "14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7",
+              "name": "Unit - 3.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7",
+              "viewUrl": "https://drive.google.com/file/d/14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 4
+            },
+            {
+              "id": "14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7",
+              "name": "Unit - 3.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7",
+              "viewUrl": "https://drive.google.com/file/d/14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14jrn8Z0My9kbTIQyTtYuk0jviiwGizD7/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 5
+            },
+            {
+              "id": "14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO",
+              "name": "unit 1.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO",
+              "viewUrl": "https://drive.google.com/file/d/14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 6
+            },
+            {
+              "id": "14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO",
+              "name": "unit 1.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO",
+              "viewUrl": "https://drive.google.com/file/d/14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14dBHu2E7BsuhTfrV6XcqbXL_2Bd6tjzO/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 7
+            },
+            {
+              "id": "1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ",
+              "name": "UNIT 1.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ",
+              "viewUrl": "https://drive.google.com/file/d/1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 8
+            },
+            {
+              "id": "1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ",
+              "name": "UNIT 1.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ",
+              "viewUrl": "https://drive.google.com/file/d/1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1juCetwEgboH5I7F3o8eBLR5nTYWvx7rJ/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 9
+            },
+            {
+              "id": "14d_MabuqateSniNMMFtWosW-Sq74Y5jt",
+              "name": "unit 2.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14d_MabuqateSniNMMFtWosW-Sq74Y5jt",
+              "viewUrl": "https://drive.google.com/file/d/14d_MabuqateSniNMMFtWosW-Sq74Y5jt/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14d_MabuqateSniNMMFtWosW-Sq74Y5jt/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 10
+            },
+            {
+              "id": "14d_MabuqateSniNMMFtWosW-Sq74Y5jt",
+              "name": "unit 2.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14d_MabuqateSniNMMFtWosW-Sq74Y5jt",
+              "viewUrl": "https://drive.google.com/file/d/14d_MabuqateSniNMMFtWosW-Sq74Y5jt/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14d_MabuqateSniNMMFtWosW-Sq74Y5jt/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 11
+            },
+            {
+              "id": "15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1",
+              "name": "UNIT 2.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1",
+              "viewUrl": "https://drive.google.com/file/d/15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 12
+            },
+            {
+              "id": "15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1",
+              "name": "UNIT 2.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1",
+              "viewUrl": "https://drive.google.com/file/d/15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/15xjGBsFEwwS5-Tb8XAKWH8IIGhXyXQT1/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 13
+            },
+            {
+              "id": "14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi",
+              "name": "UNIT 4 .pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi",
+              "viewUrl": "https://drive.google.com/file/d/14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 14
+            },
+            {
+              "id": "14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi",
+              "name": "UNIT 4 .pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi",
+              "viewUrl": "https://drive.google.com/file/d/14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi/preview",
+              "originalFolder": "CRST Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14lpbtNfUSRH1xPsvdM_Kdmtgw15hxNyi/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 15
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK",
+              "name": "pyq.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK",
+              "viewUrl": "https://drive.google.com/file/d/1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK/preview",
+              "originalFolder": "CRST Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            },
+            {
+              "id": "1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK",
+              "name": "pyq.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK",
+              "viewUrl": "https://drive.google.com/file/d/1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK/preview",
+              "originalFolder": "CRST Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1D4Scrq0S83EtUZDvjLSBrFmafFTfRwFK/view",
+              "subject": "CRST",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 2
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "DLD": {
+          "name": "Digital Logic Design",
+          "code": "DLD",
+          "category": "core",
+          "url": "https://engram-project.vercel.app/sem3/dld",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1CyzyTcx9PtlJYfq62CDSMSm4MGoRccUk",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1CyzyTcx9PtlJYfq62CDSMSm4MGoRccUk",
+              "viewUrl": "https://drive.google.com/file/d/1CyzyTcx9PtlJYfq62CDSMSm4MGoRccUk/preview",
+              "originalFolder": "DLD Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1CyzyTcx9PtlJYfq62CDSMSm4MGoRccUk/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            },
+            {
+              "id": "1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv",
+              "name": "Dld aakash PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv",
+              "viewUrl": "https://drive.google.com/file/d/1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv/preview",
+              "originalFolder": "DLD Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 2
+            },
+            {
+              "id": "1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv",
+              "name": "Dld aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv",
+              "viewUrl": "https://drive.google.com/file/d/1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv/preview",
+              "originalFolder": "DLD Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1C7BpHcx1C9uD1hIxclVdd_56enj9eWzv/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 3
+            },
+            {
+              "id": "18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A",
+              "name": "DLD SIR NOTES.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A",
+              "viewUrl": "https://drive.google.com/file/d/18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 4
+            },
+            {
+              "id": "18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A",
+              "name": "DLD SIR NOTES.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A",
+              "viewUrl": "https://drive.google.com/file/d/18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/18hWD8cvZ2iTHunnPwORt-rW7J6KxHK2A/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 5
+            },
+            {
+              "id": "1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y",
+              "name": "Full chapter notes PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y",
+              "viewUrl": "https://drive.google.com/file/d/1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 6
+            },
+            {
+              "id": "1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y",
+              "name": "Full chapter notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y",
+              "viewUrl": "https://drive.google.com/file/d/1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1zzD4pfHbTHOdYx-x5yM81qLhzjssiU_y/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 7
+            },
+            {
+              "id": "1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL",
+              "name": "UNIT 1 (1).pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL",
+              "viewUrl": "https://drive.google.com/file/d/1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 8
+            },
+            {
+              "id": "1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL",
+              "name": "UNIT 1 (1).pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL",
+              "viewUrl": "https://drive.google.com/file/d/1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1OM3xKGjDCc6caP0NzkXDAcFEfouejDhL/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 9
+            },
+            {
+              "id": "1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf",
+              "name": "unit 1 & 2.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf",
+              "viewUrl": "https://drive.google.com/file/d/1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 10
+            },
+            {
+              "id": "1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf",
+              "name": "unit 1 & 2.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf",
+              "viewUrl": "https://drive.google.com/file/d/1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1hxzv1MUSsWfddn8kU_Ikm1mr8H5cS9wf/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 11
+            },
+            {
+              "id": "1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH",
+              "name": "all experiment.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH",
+              "viewUrl": "https://drive.google.com/file/d/1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH/preview",
+              "originalFolder": "DLD Shared folder/Practical file  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 12
+            },
+            {
+              "id": "1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH",
+              "name": "all experiment.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH",
+              "viewUrl": "https://drive.google.com/file/d/1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH/preview",
+              "originalFolder": "DLD Shared folder/Practical file  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1qHSiAI09jmf8L6Gx_vtZTRx2Va9LGYVH/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 13
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br",
+              "viewUrl": "https://drive.google.com/file/d/1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br/preview",
+              "originalFolder": "DLD Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            },
+            {
+              "id": "1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br",
+              "viewUrl": "https://drive.google.com/file/d/1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br/preview",
+              "originalFolder": "DLD Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1D2NDvxkwNVbqM6GiCFTDP8w2mw724-Br/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 2
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [
+            {
+              "id": "1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS",
+              "name": "Book",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS",
+              "viewUrl": "https://drive.google.com/file/d/1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            },
+            {
+              "id": "1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS",
+              "name": "Book",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS",
+              "viewUrl": "https://drive.google.com/file/d/1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS/preview",
+              "originalFolder": "DLD Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DCoKxUJItpzVi-HKwC_wsMjHYGrb6MwS/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 2
+            }
+          ],
+          "lab": [
+            {
+              "id": "1CqknUqyY9TVXk0vYvMKKdliNTJ0EmK7K",
+              "name": "Practical file",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1CqknUqyY9TVXk0vYvMKKdliNTJ0EmK7K",
+              "viewUrl": "https://drive.google.com/file/d/1CqknUqyY9TVXk0vYvMKKdliNTJ0EmK7K/preview",
+              "originalFolder": "DLD Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1CqknUqyY9TVXk0vYvMKKdliNTJ0EmK7K/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            }
+          ],
+          "syllabus": [],
+          "videos": [],
+          "akash": [
+            {
+              "id": "1CyYHQBtV-7e8RbjxILe_6x_8p2XWYO3y",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1CyYHQBtV-7e8RbjxILe_6x_8p2XWYO3y",
+              "viewUrl": "https://drive.google.com/file/d/1CyYHQBtV-7e8RbjxILe_6x_8p2XWYO3y/preview",
+              "originalFolder": "DLD Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1CyYHQBtV-7e8RbjxILe_6x_8p2XWYO3y/view",
+              "subject": "DLD",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            }
+          ]
+        },
+        "DS": {
+          "name": "Data Structures",
+          "code": "DS",
+          "category": "core",
+          "url": "https://engram-project.vercel.app/sem3/ds",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1GSiyuoDQEjRH_2PXtZQVjidnJME5VvF8",
+              "name": "Assignment",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1GSiyuoDQEjRH_2PXtZQVjidnJME5VvF8",
+              "viewUrl": "https://drive.google.com/file/d/1GSiyuoDQEjRH_2PXtZQVjidnJME5VvF8/preview",
+              "originalFolder": "DS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1GSiyuoDQEjRH_2PXtZQVjidnJME5VvF8/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 1
+            },
+            {
+              "id": "1GJ7iU49Rba-ch5bo-mbbHfFEcd6g6v1O",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1GJ7iU49Rba-ch5bo-mbbHfFEcd6g6v1O",
+              "viewUrl": "https://drive.google.com/file/d/1GJ7iU49Rba-ch5bo-mbbHfFEcd6g6v1O/preview",
+              "originalFolder": "DS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1GJ7iU49Rba-ch5bo-mbbHfFEcd6g6v1O/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 2
+            },
+            {
+              "id": "1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu",
+              "name": "aakash end sem.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu",
+              "viewUrl": "https://drive.google.com/file/d/1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu/preview",
+              "originalFolder": "DS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 3
+            },
+            {
+              "id": "1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu",
+              "name": "aakash end sem.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu",
+              "viewUrl": "https://drive.google.com/file/d/1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu/preview",
+              "originalFolder": "DS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DstgXc3oartMcRW3rtyBnLDsWB_A6lgu/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 4
+            },
+            {
+              "id": "1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM",
+              "name": "aakash.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM",
+              "viewUrl": "https://drive.google.com/file/d/1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM/preview",
+              "originalFolder": "DS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 5
+            },
+            {
+              "id": "1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM",
+              "name": "aakash.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM",
+              "viewUrl": "https://drive.google.com/file/d/1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM/preview",
+              "originalFolder": "DS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DRrF7xvC3rUAFw9qti0dEWocmER3YpDM/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 6
+            },
+            {
+              "id": "14KBkDKyclj28V8ooMG5q8LOmi797QyDY",
+              "name": "1st PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14KBkDKyclj28V8ooMG5q8LOmi797QyDY",
+              "viewUrl": "https://drive.google.com/file/d/14KBkDKyclj28V8ooMG5q8LOmi797QyDY/preview",
+              "originalFolder": "DS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14KBkDKyclj28V8ooMG5q8LOmi797QyDY/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 7
+            },
+            {
+              "id": "14KBkDKyclj28V8ooMG5q8LOmi797QyDY",
+              "name": "1st",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14KBkDKyclj28V8ooMG5q8LOmi797QyDY",
+              "viewUrl": "https://drive.google.com/file/d/14KBkDKyclj28V8ooMG5q8LOmi797QyDY/preview",
+              "originalFolder": "DS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14KBkDKyclj28V8ooMG5q8LOmi797QyDY/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 8
+            },
+            {
+              "id": "1khVDStGeWldmj7dKfonnJikfX9GG8A_Y",
+              "name": "2nd.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1khVDStGeWldmj7dKfonnJikfX9GG8A_Y",
+              "viewUrl": "https://drive.google.com/file/d/1khVDStGeWldmj7dKfonnJikfX9GG8A_Y/preview",
+              "originalFolder": "DS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1khVDStGeWldmj7dKfonnJikfX9GG8A_Y/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 9
+            },
+            {
+              "id": "1khVDStGeWldmj7dKfonnJikfX9GG8A_Y",
+              "name": "2nd.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1khVDStGeWldmj7dKfonnJikfX9GG8A_Y",
+              "viewUrl": "https://drive.google.com/file/d/1khVDStGeWldmj7dKfonnJikfX9GG8A_Y/preview",
+              "originalFolder": "DS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1khVDStGeWldmj7dKfonnJikfX9GG8A_Y/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 10
+            },
+            {
+              "id": "1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc",
+              "name": "ALL CHAPTER.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc",
+              "viewUrl": "https://drive.google.com/file/d/1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 11
+            },
+            {
+              "id": "1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc",
+              "name": "ALL CHAPTER.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc",
+              "viewUrl": "https://drive.google.com/file/d/1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1zrHfeQp6J4XeIsj5b2ubz4oj2CAse9Vc/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.826Z",
+              "index": 12
+            },
+            {
+              "id": "13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6",
+              "name": "Ds difference.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6",
+              "viewUrl": "https://drive.google.com/file/d/13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 13
+            },
+            {
+              "id": "13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6",
+              "name": "Ds difference.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6",
+              "viewUrl": "https://drive.google.com/file/d/13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/13VB5NqOHn_LjpHxWDtwjqtiq3JsaSDn6/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 14
+            },
+            {
+              "id": "1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ",
+              "name": "DS Unit 3.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ",
+              "viewUrl": "https://drive.google.com/file/d/1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 15
+            },
+            {
+              "id": "1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ",
+              "name": "DS Unit 3.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ",
+              "viewUrl": "https://drive.google.com/file/d/1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1gfkvcxxBVEd3Hpnn60XqCGEEhg80jQfQ/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 16
+            },
+            {
+              "id": "1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB",
+              "name": "Time Complexities of all Sorting Algorithms.docx_20231212_225711_0000.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB",
+              "viewUrl": "https://drive.google.com/file/d/1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 17
+            },
+            {
+              "id": "1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB",
+              "name": "Time Complexities of all Sorting Algorithms.docx_20231212_225711_0000.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB",
+              "viewUrl": "https://drive.google.com/file/d/1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xMS4muDmLpCLnXJDBeWffwePw1WCHOaB/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 18
+            },
+            {
+              "id": "1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh",
+              "name": "unit 1 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh",
+              "viewUrl": "https://drive.google.com/file/d/1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 19
+            },
+            {
+              "id": "1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh",
+              "name": "unit 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh",
+              "viewUrl": "https://drive.google.com/file/d/1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EyGEOOhqqp9pyXw42ymImU34Mpg8ualh/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 20
+            },
+            {
+              "id": "1xPlTulebLJyMueFlR6OgekuZtPJOL-1y",
+              "name": "unit 2 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xPlTulebLJyMueFlR6OgekuZtPJOL-1y",
+              "viewUrl": "https://drive.google.com/file/d/1xPlTulebLJyMueFlR6OgekuZtPJOL-1y/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xPlTulebLJyMueFlR6OgekuZtPJOL-1y/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 21
+            },
+            {
+              "id": "1xPlTulebLJyMueFlR6OgekuZtPJOL-1y",
+              "name": "unit 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xPlTulebLJyMueFlR6OgekuZtPJOL-1y",
+              "viewUrl": "https://drive.google.com/file/d/1xPlTulebLJyMueFlR6OgekuZtPJOL-1y/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xPlTulebLJyMueFlR6OgekuZtPJOL-1y/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 22
+            },
+            {
+              "id": "1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws",
+              "name": "unit 3 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws",
+              "viewUrl": "https://drive.google.com/file/d/1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 23
+            },
+            {
+              "id": "1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws",
+              "name": "unit 3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws",
+              "viewUrl": "https://drive.google.com/file/d/1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xtc6pZzDaZXqbS9i4d9osg0ILxzEuBws/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 24
+            },
+            {
+              "id": "1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1",
+              "name": "unit 3 ds.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1",
+              "viewUrl": "https://drive.google.com/file/d/1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 25
+            },
+            {
+              "id": "1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1",
+              "name": "unit 3 ds.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1",
+              "viewUrl": "https://drive.google.com/file/d/1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1/preview",
+              "originalFolder": "DS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1nHK7s3bC5N2IZb5RT_B2yDmU9Um3PQU1/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 26
+            },
+            {
+              "id": "1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi",
+              "name": "DS practical file.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi",
+              "viewUrl": "https://drive.google.com/file/d/1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi/preview",
+              "originalFolder": "DS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 27
+            },
+            {
+              "id": "1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi",
+              "name": "DS practical file.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi",
+              "viewUrl": "https://drive.google.com/file/d/1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi/preview",
+              "originalFolder": "DS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1hpRVS2b2MbDNO42G_p_Y8zOOisTGoFDi/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 28
+            },
+            {
+              "id": "1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6",
+              "name": "output.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6",
+              "viewUrl": "https://drive.google.com/file/d/1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6/preview",
+              "originalFolder": "DS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 29
+            },
+            {
+              "id": "1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6",
+              "name": "output.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6",
+              "viewUrl": "https://drive.google.com/file/d/1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6/preview",
+              "originalFolder": "DS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1quF6NYdGbA9jYNr8HB-t6M50qYg6OTR6/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 30
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1Myic5C2EGRlZMUXe0rvDeQsZwHsXPF10",
+              "name": "PYQ",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Myic5C2EGRlZMUXe0rvDeQsZwHsXPF10",
+              "viewUrl": "https://drive.google.com/file/d/1Myic5C2EGRlZMUXe0rvDeQsZwHsXPF10/preview",
+              "originalFolder": "DS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Myic5C2EGRlZMUXe0rvDeQsZwHsXPF10/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1G_voREEip_J0_VR4azeo478J3_-rBajd",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1G_voREEip_J0_VR4azeo478J3_-rBajd",
+              "viewUrl": "https://drive.google.com/file/d/1G_voREEip_J0_VR4azeo478J3_-rBajd/preview",
+              "originalFolder": "DS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1G_voREEip_J0_VR4azeo478J3_-rBajd/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1G_voREEip_J0_VR4azeo478J3_-rBajd",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1G_voREEip_J0_VR4azeo478J3_-rBajd",
+              "viewUrl": "https://drive.google.com/file/d/1G_voREEip_J0_VR4azeo478J3_-rBajd/preview",
+              "originalFolder": "DS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1G_voREEip_J0_VR4azeo478J3_-rBajd/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS",
+              "name": "DS questions.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS",
+              "viewUrl": "https://drive.google.com/file/d/1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS/preview",
+              "originalFolder": "DS Shared folder/PYQ Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            },
+            {
+              "id": "1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS",
+              "name": "DS questions.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS",
+              "viewUrl": "https://drive.google.com/file/d/1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS/preview",
+              "originalFolder": "DS Shared folder/PYQ Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Wo71u5E0mxPmsI7p40zAcnwAn3w3tBOS/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 5
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [
+            {
+              "id": "1GHsHlmEdVq9QY_YnWTuJt074WAWR5aoV",
+              "name": "Practical file",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1GHsHlmEdVq9QY_YnWTuJt074WAWR5aoV",
+              "viewUrl": "https://drive.google.com/file/d/1GHsHlmEdVq9QY_YnWTuJt074WAWR5aoV/preview",
+              "originalFolder": "DS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1GHsHlmEdVq9QY_YnWTuJt074WAWR5aoV/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ],
+          "syllabus": [],
+          "videos": [],
+          "akash": [
+            {
+              "id": "1GJawgNjewJ5YtH-5_dnZY1KlxPsBbfHr",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1GJawgNjewJ5YtH-5_dnZY1KlxPsBbfHr",
+              "viewUrl": "https://drive.google.com/file/d/1GJawgNjewJ5YtH-5_dnZY1KlxPsBbfHr/preview",
+              "originalFolder": "DS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1GJawgNjewJ5YtH-5_dnZY1KlxPsBbfHr/view",
+              "subject": "DS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ]
+        },
+        "FODS": {
+          "name": "Fundamentals of Data Science",
+          "code": "FODS",
+          "category": "core",
+          "url": "https://engram-project.vercel.app/sem3/fods",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1DMAiwWu1RtIlwBOUMYozXaiHsGpNsAqr",
+              "name": "Assignment",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DMAiwWu1RtIlwBOUMYozXaiHsGpNsAqr",
+              "viewUrl": "https://drive.google.com/file/d/1DMAiwWu1RtIlwBOUMYozXaiHsGpNsAqr/preview",
+              "originalFolder": "FODS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DMAiwWu1RtIlwBOUMYozXaiHsGpNsAqr/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1DJ3wbu32cEMMOeB2yq-Dl8EoRQhACOx2",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DJ3wbu32cEMMOeB2yq-Dl8EoRQhACOx2",
+              "viewUrl": "https://drive.google.com/file/d/1DJ3wbu32cEMMOeB2yq-Dl8EoRQhACOx2/preview",
+              "originalFolder": "FODS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DJ3wbu32cEMMOeB2yq-Dl8EoRQhACOx2/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z",
+              "name": "mid sem aakash.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z",
+              "viewUrl": "https://drive.google.com/file/d/1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z/preview",
+              "originalFolder": "FODS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z",
+              "name": "mid sem aakash.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z",
+              "viewUrl": "https://drive.google.com/file/d/1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z/preview",
+              "originalFolder": "FODS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1G2eoRizFALgOmwqr2KlVZ4CIU0ixWh5Z/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            },
+            {
+              "id": "1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ",
+              "name": "1st PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ",
+              "viewUrl": "https://drive.google.com/file/d/1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ/preview",
+              "originalFolder": "FODS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 5
+            },
+            {
+              "id": "1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ",
+              "name": "1st",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ",
+              "viewUrl": "https://drive.google.com/file/d/1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ/preview",
+              "originalFolder": "FODS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1PyPlTF683gXCCCX1T6-fEsabk-IG5WDJ/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 6
+            },
+            {
+              "id": "10J5ar_kMkhgZD7HSfPkuOUSImphJDzug",
+              "name": "2nd PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=10J5ar_kMkhgZD7HSfPkuOUSImphJDzug",
+              "viewUrl": "https://drive.google.com/file/d/10J5ar_kMkhgZD7HSfPkuOUSImphJDzug/preview",
+              "originalFolder": "FODS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/10J5ar_kMkhgZD7HSfPkuOUSImphJDzug/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 7
+            },
+            {
+              "id": "10J5ar_kMkhgZD7HSfPkuOUSImphJDzug",
+              "name": "2nd",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=10J5ar_kMkhgZD7HSfPkuOUSImphJDzug",
+              "viewUrl": "https://drive.google.com/file/d/10J5ar_kMkhgZD7HSfPkuOUSImphJDzug/preview",
+              "originalFolder": "FODS Shared folder/Assignment  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/10J5ar_kMkhgZD7HSfPkuOUSImphJDzug/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 8
+            },
+            {
+              "id": "1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn",
+              "name": "U3 U4.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn",
+              "viewUrl": "https://drive.google.com/file/d/1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 9
+            },
+            {
+              "id": "1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn",
+              "name": "U3 U4.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn",
+              "viewUrl": "https://drive.google.com/file/d/1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1aOu3eNbxlpKUzACwNR-bNfP4GwPK9lnn/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 10
+            },
+            {
+              "id": "1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg",
+              "name": "Full notes PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg",
+              "viewUrl": "https://drive.google.com/file/d/1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 11
+            },
+            {
+              "id": "1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg",
+              "name": "Full notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg",
+              "viewUrl": "https://drive.google.com/file/d/1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1XqbnOAC7TZEPYtRVvM3BducqLoGAIsVg/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 12
+            },
+            {
+              "id": "1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI",
+              "name": "SHORT NOTES.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI",
+              "viewUrl": "https://drive.google.com/file/d/1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 13
+            },
+            {
+              "id": "1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI",
+              "name": "SHORT NOTES.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI",
+              "viewUrl": "https://drive.google.com/file/d/1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1BIk26EWcU6RZuR36nAnvFQcqQ5vgHAWI/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 14
+            },
+            {
+              "id": "1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC",
+              "name": "Unit 1 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC",
+              "viewUrl": "https://drive.google.com/file/d/1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 15
+            },
+            {
+              "id": "1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC",
+              "name": "Unit 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC",
+              "viewUrl": "https://drive.google.com/file/d/1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1eUfqhkEuUg4GoHKBns3Kk7sbJBYKatLC/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 16
+            },
+            {
+              "id": "1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s",
+              "name": "Unit 2.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s",
+              "viewUrl": "https://drive.google.com/file/d/1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 17
+            },
+            {
+              "id": "1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s",
+              "name": "Unit 2.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s",
+              "viewUrl": "https://drive.google.com/file/d/1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DkeeATkIdOmO59e8XD7wzAI9ecir3d9s/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 18
+            },
+            {
+              "id": "17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL",
+              "name": "unit 4.pptx Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL",
+              "viewUrl": "https://drive.google.com/file/d/17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 19
+            },
+            {
+              "id": "17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL",
+              "name": "unit 4.pptx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL",
+              "viewUrl": "https://drive.google.com/file/d/17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/17HUtXbzugTbgR4Y2egvToZCw6S5CrFKL/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 20
+            },
+            {
+              "id": "14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa",
+              "name": "Unit-1.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa",
+              "viewUrl": "https://drive.google.com/file/d/14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 21
+            },
+            {
+              "id": "14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa",
+              "name": "Unit-1.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa",
+              "viewUrl": "https://drive.google.com/file/d/14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14tM2gSN_SDbi6t9q2DZ5lQHzpA14XbBa/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 22
+            },
+            {
+              "id": "1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v",
+              "name": "Unit-2 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v",
+              "viewUrl": "https://drive.google.com/file/d/1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 23
+            },
+            {
+              "id": "1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v",
+              "name": "Unit-2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v",
+              "viewUrl": "https://drive.google.com/file/d/1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1fQnBih4qCHnkEAF9YX6nMu3iqQOgUf3v/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 24
+            },
+            {
+              "id": "1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM",
+              "name": "unit-3 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM",
+              "viewUrl": "https://drive.google.com/file/d/1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 25
+            },
+            {
+              "id": "1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM",
+              "name": "unit-3",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM",
+              "viewUrl": "https://drive.google.com/file/d/1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xOJY0Ht436phQPkoRXkUNF0N-7JAmbyM/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 26
+            },
+            {
+              "id": "1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22",
+              "name": "Unit-4 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22",
+              "viewUrl": "https://drive.google.com/file/d/1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 27
+            },
+            {
+              "id": "1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22",
+              "name": "Unit-4",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22",
+              "viewUrl": "https://drive.google.com/file/d/1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22/preview",
+              "originalFolder": "FODS Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1qjiVCboY-7Ef73gG6yFHDDcHBZAKsk22/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 28
+            },
+            {
+              "id": "15llhsIwR2Op0yk708BjMqjCZVMaLfY9i",
+              "name": "Handwritten",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=15llhsIwR2Op0yk708BjMqjCZVMaLfY9i",
+              "viewUrl": "https://drive.google.com/file/d/15llhsIwR2Op0yk708BjMqjCZVMaLfY9i/preview",
+              "originalFolder": "FODS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/15llhsIwR2Op0yk708BjMqjCZVMaLfY9i/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 29
+            },
+            {
+              "id": "15llhsIwR2Op0yk708BjMqjCZVMaLfY9i",
+              "name": "Handwritten",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=15llhsIwR2Op0yk708BjMqjCZVMaLfY9i",
+              "viewUrl": "https://drive.google.com/file/d/15llhsIwR2Op0yk708BjMqjCZVMaLfY9i/preview",
+              "originalFolder": "FODS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/15llhsIwR2Op0yk708BjMqjCZVMaLfY9i/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 30
+            },
+            {
+              "id": "159cF72UeGsvIY2DpKPcc5hUaZT4imn-8",
+              "name": "Printed",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=159cF72UeGsvIY2DpKPcc5hUaZT4imn-8",
+              "viewUrl": "https://drive.google.com/file/d/159cF72UeGsvIY2DpKPcc5hUaZT4imn-8/preview",
+              "originalFolder": "FODS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/159cF72UeGsvIY2DpKPcc5hUaZT4imn-8/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 31
+            },
+            {
+              "id": "159cF72UeGsvIY2DpKPcc5hUaZT4imn-8",
+              "name": "Printed",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=159cF72UeGsvIY2DpKPcc5hUaZT4imn-8",
+              "viewUrl": "https://drive.google.com/file/d/159cF72UeGsvIY2DpKPcc5hUaZT4imn-8/preview",
+              "originalFolder": "FODS Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/159cF72UeGsvIY2DpKPcc5hUaZT4imn-8/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 32
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9",
+              "viewUrl": "https://drive.google.com/file/d/1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9/preview",
+              "originalFolder": "FODS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9",
+              "viewUrl": "https://drive.google.com/file/d/1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9/preview",
+              "originalFolder": "FODS Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DYn8Z3btGg6SItyxxi6PbuKS-erZXax9/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [
+            {
+              "id": "1569IzC_6R_4LRjp1GPmyXY3iFXIrnYoy",
+              "name": "Practical file",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1569IzC_6R_4LRjp1GPmyXY3iFXIrnYoy",
+              "viewUrl": "https://drive.google.com/file/d/1569IzC_6R_4LRjp1GPmyXY3iFXIrnYoy/preview",
+              "originalFolder": "FODS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1569IzC_6R_4LRjp1GPmyXY3iFXIrnYoy/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ],
+          "syllabus": [],
+          "videos": [],
+          "akash": [
+            {
+              "id": "1DODY_-tTnYvBroQAZFUfgy1Md-5lf7sS",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DODY_-tTnYvBroQAZFUfgy1Md-5lf7sS",
+              "viewUrl": "https://drive.google.com/file/d/1DODY_-tTnYvBroQAZFUfgy1Md-5lf7sS/preview",
+              "originalFolder": "FODS Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DODY_-tTnYvBroQAZFUfgy1Md-5lf7sS/view",
+              "subject": "FODS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ]
+        },
+        "PAI": {
+          "name": "Principles of Artificial Intelligence",
+          "code": "PAI",
+          "category": "core",
+          "url": "https://engram-project.vercel.app/sem3/pai",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1-cqm-iDe7cb-LxIRguBYNEDy_RsqY7_Y",
+              "name": "Assignment",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-cqm-iDe7cb-LxIRguBYNEDy_RsqY7_Y",
+              "viewUrl": "https://drive.google.com/file/d/1-cqm-iDe7cb-LxIRguBYNEDy_RsqY7_Y/preview",
+              "originalFolder": "PAI Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-cqm-iDe7cb-LxIRguBYNEDy_RsqY7_Y/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1ETqSvlKRwe5Ne0wtuzdTeS6xCoWFmWYt",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ETqSvlKRwe5Ne0wtuzdTeS6xCoWFmWYt",
+              "viewUrl": "https://drive.google.com/file/d/1ETqSvlKRwe5Ne0wtuzdTeS6xCoWFmWYt/preview",
+              "originalFolder": "PAI Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1ETqSvlKRwe5Ne0wtuzdTeS6xCoWFmWYt/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX",
+              "name": "Aakash PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX",
+              "viewUrl": "https://drive.google.com/file/d/1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX/preview",
+              "originalFolder": "PAI Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX",
+              "viewUrl": "https://drive.google.com/file/d/1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX/preview",
+              "originalFolder": "PAI Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1naO-bkDKvH0LTbnWxDw7RpjFVsilmXBX/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            },
+            {
+              "id": "1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-",
+              "name": "pai end sem.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-",
+              "viewUrl": "https://drive.google.com/file/d/1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-/preview",
+              "originalFolder": "PAI Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 5
+            },
+            {
+              "id": "1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-",
+              "name": "pai end sem.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-",
+              "viewUrl": "https://drive.google.com/file/d/1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-/preview",
+              "originalFolder": "PAI Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1I_WrexgA3yA0WqBjYM1IQnRUXpETNjB-/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 6
+            },
+            {
+              "id": "17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU",
+              "name": "2nd.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU",
+              "viewUrl": "https://drive.google.com/file/d/17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU/preview",
+              "originalFolder": "PAI Shared folder/Assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 7
+            },
+            {
+              "id": "17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU",
+              "name": "2nd.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU",
+              "viewUrl": "https://drive.google.com/file/d/17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU/preview",
+              "originalFolder": "PAI Shared folder/Assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/17DKVMVw_Eox1QQ7MpxzQ3URIDz_A_-mU/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 8
+            },
+            {
+              "id": "1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV",
+              "name": "1 - Introduction.ppt Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV",
+              "viewUrl": "https://drive.google.com/file/d/1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 9
+            },
+            {
+              "id": "1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV",
+              "name": "1 - Introduction.ppt",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV",
+              "viewUrl": "https://drive.google.com/file/d/1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EEagth4K9IcLUgwWqEkJVL3ogalzk5XV/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 10
+            },
+            {
+              "id": "1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi",
+              "name": "2_Logic_1.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi",
+              "viewUrl": "https://drive.google.com/file/d/1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 11
+            },
+            {
+              "id": "1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi",
+              "name": "2_Logic_1.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi",
+              "viewUrl": "https://drive.google.com/file/d/1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1KlM3z-AHeseFYzT3b-pqYjWCoeIm1IZi/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 12
+            },
+            {
+              "id": "1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO",
+              "name": "4 - AStar.ppt Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO",
+              "viewUrl": "https://drive.google.com/file/d/1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 13
+            },
+            {
+              "id": "1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO",
+              "name": "4 - AStar.ppt",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO",
+              "viewUrl": "https://drive.google.com/file/d/1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1biCP5I60OFA4A-hIvhoBHQFtd-MkkyJO/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 14
+            },
+            {
+              "id": "1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV",
+              "name": "5 - Problem Reduction Search.ppt Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV",
+              "viewUrl": "https://drive.google.com/file/d/1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 15
+            },
+            {
+              "id": "1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV",
+              "name": "5 - Problem Reduction Search.ppt",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV",
+              "viewUrl": "https://drive.google.com/file/d/1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1TPSRmfsCSCRVUkkwjl2On46BRlwF0lhV/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 16
+            },
+            {
+              "id": "1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY",
+              "name": "6 - Game Playing Strategies.ppt Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY",
+              "viewUrl": "https://drive.google.com/file/d/1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 17
+            },
+            {
+              "id": "1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY",
+              "name": "6 - Game Playing Strategies.ppt",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY",
+              "viewUrl": "https://drive.google.com/file/d/1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1vhIdQrkQaE41A6LvTB5qDle90ODwiLRY/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 18
+            },
+            {
+              "id": "1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73",
+              "name": "9 - Programming Prolog.ppt Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73",
+              "viewUrl": "https://drive.google.com/file/d/1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 19
+            },
+            {
+              "id": "1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73",
+              "name": "9 - Programming Prolog.ppt",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73",
+              "viewUrl": "https://drive.google.com/file/d/1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1THZoqXjM-J6MSATv1CeYzxMfFNvNlg73/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 20
+            },
+            {
+              "id": "1LLkn8jRroUzMhahuIbfVqoRMA1piewzt",
+              "name": "AI UNIT 4 (1).pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LLkn8jRroUzMhahuIbfVqoRMA1piewzt",
+              "viewUrl": "https://drive.google.com/file/d/1LLkn8jRroUzMhahuIbfVqoRMA1piewzt/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1LLkn8jRroUzMhahuIbfVqoRMA1piewzt/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 21
+            },
+            {
+              "id": "1LLkn8jRroUzMhahuIbfVqoRMA1piewzt",
+              "name": "AI UNIT 4 (1).pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LLkn8jRroUzMhahuIbfVqoRMA1piewzt",
+              "viewUrl": "https://drive.google.com/file/d/1LLkn8jRroUzMhahuIbfVqoRMA1piewzt/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1LLkn8jRroUzMhahuIbfVqoRMA1piewzt/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 22
+            },
+            {
+              "id": "1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c",
+              "name": "all unit .pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c",
+              "viewUrl": "https://drive.google.com/file/d/1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 23
+            },
+            {
+              "id": "1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c",
+              "name": "all unit .pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c",
+              "viewUrl": "https://drive.google.com/file/d/1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1uu8JAXFY5xSF-jY_eDOyTf_6SZh3TW1c/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 24
+            },
+            {
+              "id": "19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1",
+              "name": "First-order logic in Artificial Intelligence - Javatpoint.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1",
+              "viewUrl": "https://drive.google.com/file/d/19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 25
+            },
+            {
+              "id": "19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1",
+              "name": "First-order logic in Artificial Intelligence - Javatpoint.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1",
+              "viewUrl": "https://drive.google.com/file/d/19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/19n4VLAaj4jRfdRCvAF-QM73NuRpRfYq1/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 26
+            },
+            {
+              "id": "1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG",
+              "name": "Forward Chaining and backward chaining in AI - Javatpoint.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG",
+              "viewUrl": "https://drive.google.com/file/d/1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 27
+            },
+            {
+              "id": "1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG",
+              "name": "Forward Chaining and backward chaining in AI - Javatpoint.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG",
+              "viewUrl": "https://drive.google.com/file/d/1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DDfn7fWvWGu1lyEqe4RDPKJidLDXnpcG/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 28
+            },
+            {
+              "id": "1p-UNdvCILv12CctHMpjbKX_R7dbmyigo",
+              "name": "FuzzyLogic.pptx Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1p-UNdvCILv12CctHMpjbKX_R7dbmyigo",
+              "viewUrl": "https://drive.google.com/file/d/1p-UNdvCILv12CctHMpjbKX_R7dbmyigo/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1p-UNdvCILv12CctHMpjbKX_R7dbmyigo/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 29
+            },
+            {
+              "id": "1p-UNdvCILv12CctHMpjbKX_R7dbmyigo",
+              "name": "FuzzyLogic.pptx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1p-UNdvCILv12CctHMpjbKX_R7dbmyigo",
+              "viewUrl": "https://drive.google.com/file/d/1p-UNdvCILv12CctHMpjbKX_R7dbmyigo/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1p-UNdvCILv12CctHMpjbKX_R7dbmyigo/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 30
+            },
+            {
+              "id": "1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII",
+              "name": "Learning.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII",
+              "viewUrl": "https://drive.google.com/file/d/1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 31
+            },
+            {
+              "id": "1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII",
+              "name": "Learning.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII",
+              "viewUrl": "https://drive.google.com/file/d/1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1gmt2KqyY9aOauUkokhyaJWwbEsoL9jII/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 32
+            },
+            {
+              "id": "1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe",
+              "name": "Means end analysis.pptx Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe",
+              "viewUrl": "https://drive.google.com/file/d/1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 33
+            },
+            {
+              "id": "1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe",
+              "name": "Means end analysis.pptx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe",
+              "viewUrl": "https://drive.google.com/file/d/1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1dCRgty3ZZmF_0u81QKlLEua_yokQ-bQe/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 34
+            },
+            {
+              "id": "1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX",
+              "name": "neuralnetwork.pptx Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX",
+              "viewUrl": "https://drive.google.com/file/d/1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 35
+            },
+            {
+              "id": "1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX",
+              "name": "neuralnetwork.pptx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX",
+              "viewUrl": "https://drive.google.com/file/d/1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1fhrwNbMsfnNDbrrp2TxKD-WU4okfNyoX/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 36
+            },
+            {
+              "id": "1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ",
+              "name": "notes unit 1 and 2 std (1).pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ",
+              "viewUrl": "https://drive.google.com/file/d/1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 37
+            },
+            {
+              "id": "1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ",
+              "name": "notes unit 1 and 2 std (1).pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ",
+              "viewUrl": "https://drive.google.com/file/d/1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Up_0n33YzgMNyJnPcupa1CC4kVvwKjFQ/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 38
+            },
+            {
+              "id": "1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE",
+              "name": "PAI - Jyoti Notes.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE",
+              "viewUrl": "https://drive.google.com/file/d/1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 39
+            },
+            {
+              "id": "1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE",
+              "name": "PAI - Jyoti Notes.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE",
+              "viewUrl": "https://drive.google.com/file/d/1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1uzjfy_InpLzXPgxnqI17cyB-V6RhF7HE/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 40
+            },
+            {
+              "id": "1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7",
+              "name": "PAI NOTEEESSSSS.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7",
+              "viewUrl": "https://drive.google.com/file/d/1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 41
+            },
+            {
+              "id": "1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7",
+              "name": "PAI NOTEEESSSSS.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7",
+              "viewUrl": "https://drive.google.com/file/d/1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1m9l4SdAyuHyM6xM5-MQNRg8Jrm0nR6t7/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 42
+            },
+            {
+              "id": "1kSLr187c0U2akVCWsoXjw6QAuK8_dmct",
+              "name": "pai notes.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1kSLr187c0U2akVCWsoXjw6QAuK8_dmct",
+              "viewUrl": "https://drive.google.com/file/d/1kSLr187c0U2akVCWsoXjw6QAuK8_dmct/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1kSLr187c0U2akVCWsoXjw6QAuK8_dmct/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 43
+            },
+            {
+              "id": "1kSLr187c0U2akVCWsoXjw6QAuK8_dmct",
+              "name": "pai notes.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1kSLr187c0U2akVCWsoXjw6QAuK8_dmct",
+              "viewUrl": "https://drive.google.com/file/d/1kSLr187c0U2akVCWsoXjw6QAuK8_dmct/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1kSLr187c0U2akVCWsoXjw6QAuK8_dmct/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 44
+            },
+            {
+              "id": "1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP",
+              "name": "PAI previous year qp.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP",
+              "viewUrl": "https://drive.google.com/file/d/1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 45
+            },
+            {
+              "id": "1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP",
+              "name": "PAI previous year qp.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP",
+              "viewUrl": "https://drive.google.com/file/d/1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1q3cP1n3mbNj6JwdMpnQ2pM0750Wu20fP/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 46
+            },
+            {
+              "id": "1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5",
+              "name": "PAI U1 U2 U3 U4.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5",
+              "viewUrl": "https://drive.google.com/file/d/1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 47
+            },
+            {
+              "id": "1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5",
+              "name": "PAI U1 U2 U3 U4.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5",
+              "viewUrl": "https://drive.google.com/file/d/1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1ttkGc4L4Y70fCJT8DMt5sHomLHTtcpi5/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 48
+            },
+            {
+              "id": "1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY",
+              "name": "Planning.pptx Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY",
+              "viewUrl": "https://drive.google.com/file/d/1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 49
+            },
+            {
+              "id": "1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY",
+              "name": "Planning.pptx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY",
+              "viewUrl": "https://drive.google.com/file/d/1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1sOW91fFqHGGXQvHAzMKYu9ri5xKP4OsY/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 50
+            },
+            {
+              "id": "181CiZMvZ6rLUljEJtloisNDCniw-R2Jc",
+              "name": "Principles of Artificial Intelligence ( PDFDrive ).pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=181CiZMvZ6rLUljEJtloisNDCniw-R2Jc",
+              "viewUrl": "https://drive.google.com/file/d/181CiZMvZ6rLUljEJtloisNDCniw-R2Jc/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/181CiZMvZ6rLUljEJtloisNDCniw-R2Jc/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 51
+            },
+            {
+              "id": "181CiZMvZ6rLUljEJtloisNDCniw-R2Jc",
+              "name": "Principles of Artificial Intelligence ( PDFDrive ).pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=181CiZMvZ6rLUljEJtloisNDCniw-R2Jc",
+              "viewUrl": "https://drive.google.com/file/d/181CiZMvZ6rLUljEJtloisNDCniw-R2Jc/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/181CiZMvZ6rLUljEJtloisNDCniw-R2Jc/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 52
+            },
+            {
+              "id": "1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam",
+              "name": "Production System.pptx Microsoft PowerPoint",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam",
+              "viewUrl": "https://drive.google.com/file/d/1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 53
+            },
+            {
+              "id": "1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam",
+              "name": "Production System.pptx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam",
+              "viewUrl": "https://drive.google.com/file/d/1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1mQFatoPwt3e7l6BUERZcHIMoWrDy1Xam/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 54
+            },
+            {
+              "id": "1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X",
+              "name": "Propositional Logic in Artificial Intelligence - Javatpoint.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X",
+              "viewUrl": "https://drive.google.com/file/d/1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 55
+            },
+            {
+              "id": "1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X",
+              "name": "Propositional Logic in Artificial Intelligence - Javatpoint.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X",
+              "viewUrl": "https://drive.google.com/file/d/1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1nTi9q2eWQpwUBsOHMo1veG8drLl74L3X/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 56
+            },
+            {
+              "id": "1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy",
+              "name": "Reasoning in Artificial intelligence.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy",
+              "viewUrl": "https://drive.google.com/file/d/1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 57
+            },
+            {
+              "id": "1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy",
+              "name": "Reasoning in Artificial intelligence.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy",
+              "viewUrl": "https://drive.google.com/file/d/1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1Eqs73owRP5RIAghIns4wy5t_DlFHcmKy/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 58
+            },
+            {
+              "id": "1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-",
+              "name": "Resolution in First-order logic - Javatpoint.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-",
+              "viewUrl": "https://drive.google.com/file/d/1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 59
+            },
+            {
+              "id": "1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-",
+              "name": "Resolution in First-order logic - Javatpoint.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-",
+              "viewUrl": "https://drive.google.com/file/d/1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1ltVjS5USfgdsz8Vbf0GDTZhmqdSN6cy-/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 60
+            },
+            {
+              "id": "1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao",
+              "name": "Unification in First-order logic - Javatpoint.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao",
+              "viewUrl": "https://drive.google.com/file/d/1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 61
+            },
+            {
+              "id": "1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao",
+              "name": "Unification in First-order logic - Javatpoint.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao",
+              "viewUrl": "https://drive.google.com/file/d/1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1x0MxwSXIcyaZUFqAXJJDJsN6n8mZy0Ao/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 62
+            },
+            {
+              "id": "1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn",
+              "name": "unit1 AI.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn",
+              "viewUrl": "https://drive.google.com/file/d/1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 63
+            },
+            {
+              "id": "1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn",
+              "name": "unit1 AI.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn",
+              "viewUrl": "https://drive.google.com/file/d/1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1uVvIL8vfGydZQAjBxlIDFexH5dT8QJFn/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 64
+            },
+            {
+              "id": "1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19",
+              "name": "ouput.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19",
+              "viewUrl": "https://drive.google.com/file/d/1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19/preview",
+              "originalFolder": "PAI Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 65
+            },
+            {
+              "id": "1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19",
+              "name": "ouput.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19",
+              "viewUrl": "https://drive.google.com/file/d/1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19/preview",
+              "originalFolder": "PAI Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xHBAjEDWzXj5O0BAAkdIlYicVRzu3w19/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 66
+            },
+            {
+              "id": "1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC",
+              "name": "PAI file.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC",
+              "viewUrl": "https://drive.google.com/file/d/1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC/preview",
+              "originalFolder": "PAI Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 67
+            },
+            {
+              "id": "1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC",
+              "name": "PAI file.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC",
+              "viewUrl": "https://drive.google.com/file/d/1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC/preview",
+              "originalFolder": "PAI Shared folder/Practical file Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xBhtZAQ2nSUJXZq7ax_iQitmDyx_sKHC/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 68
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y",
+              "name": "pyq.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y",
+              "viewUrl": "https://drive.google.com/file/d/1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y/preview",
+              "originalFolder": "PAI Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y",
+              "name": "pyq.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y",
+              "viewUrl": "https://drive.google.com/file/d/1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y/preview",
+              "originalFolder": "PAI Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DJG4XquVOxhPVlSfWfeDWvGrrFG8EQ1y/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [
+            {
+              "id": "1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T",
+              "name": "Book",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T",
+              "viewUrl": "https://drive.google.com/file/d/1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T",
+              "name": "Book",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T",
+              "viewUrl": "https://drive.google.com/file/d/1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1E_Qu6L_2RszNmyPSbYsk53sa36NxyO8T/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z",
+              "name": "(Book)Introduction to Machine Learning with Python.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z",
+              "viewUrl": "https://drive.google.com/file/d/1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z",
+              "name": "(Book)Introduction to Machine Learning with Python.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z",
+              "viewUrl": "https://drive.google.com/file/d/1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z/preview",
+              "originalFolder": "PAI Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1xaZ_4UE1IIl-5ly2M2AdHWp7QQt_js8Z/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            }
+          ],
+          "lab": [
+            {
+              "id": "1qMuFLiqmMIjLqva0DqVnEIoXZ0ypKoOv",
+              "name": "Practical file",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1qMuFLiqmMIjLqva0DqVnEIoXZ0ypKoOv",
+              "viewUrl": "https://drive.google.com/file/d/1qMuFLiqmMIjLqva0DqVnEIoXZ0ypKoOv/preview",
+              "originalFolder": "PAI Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1qMuFLiqmMIjLqva0DqVnEIoXZ0ypKoOv/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ],
+          "syllabus": [],
+          "videos": [],
+          "akash": [
+            {
+              "id": "1ESqijdQmyl6-jE1LVdZxXEufbvnldPGL",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1ESqijdQmyl6-jE1LVdZxXEufbvnldPGL",
+              "viewUrl": "https://drive.google.com/file/d/1ESqijdQmyl6-jE1LVdZxXEufbvnldPGL/preview",
+              "originalFolder": "PAI Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1ESqijdQmyl6-jE1LVdZxXEufbvnldPGL/view",
+              "subject": "PAI",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ]
+        },
+        "PSLA": {
+          "name": "Programming with Scripting Languages",
+          "code": "PSLA",
+          "category": "core",
+          "url": "https://engram-project.vercel.app/sem3/psla",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "17DoORqz49s1JaiXmlZCxwue4kbcrtJHN",
+              "name": "Assignment",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=17DoORqz49s1JaiXmlZCxwue4kbcrtJHN",
+              "viewUrl": "https://drive.google.com/file/d/17DoORqz49s1JaiXmlZCxwue4kbcrtJHN/preview",
+              "originalFolder": "PSLA Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/17DoORqz49s1JaiXmlZCxwue4kbcrtJHN/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt",
+              "viewUrl": "https://drive.google.com/file/d/1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt/preview",
+              "originalFolder": "PSLA Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+              "name": "Aakash PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+              "viewUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/preview",
+              "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+              "viewUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/preview",
+              "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            },
+            {
+              "id": "19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+              "name": "math assignment 1.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+              "viewUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/preview",
+              "originalFolder": "PSLA Shared folder/Assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 5
+            },
+            {
+              "id": "19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+              "name": "math assignment 1.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+              "viewUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/preview",
+              "originalFolder": "PSLA Shared folder/Assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 6
+            },
+            {
+              "id": "1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+              "name": "All chapter notes PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+              "viewUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/preview",
+              "originalFolder": "PSLA Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 7
+            },
+            {
+              "id": "1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+              "name": "All chapter notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+              "viewUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/preview",
+              "originalFolder": "PSLA Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 8
+            },
+            {
+              "id": "1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+              "name": "Unit 1 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+              "viewUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/preview",
+              "originalFolder": "PSLA Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 9
+            },
+            {
+              "id": "1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+              "name": "Unit 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+              "viewUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/preview",
+              "originalFolder": "PSLA Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 10
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+              "viewUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/preview",
+              "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+              "name": "Pyq",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+              "viewUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/preview",
+              "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [
+            {
+              "id": "1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+              "name": "Book",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+              "viewUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/preview",
+              "originalFolder": "PSLA Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+              "name": "Book",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+              "viewUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/preview",
+              "originalFolder": "PSLA Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            }
+          ],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": [
+            {
+              "id": "1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne",
+              "name": "Aakash",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne",
+              "viewUrl": "https://drive.google.com/file/d/1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne/preview",
+              "originalFolder": "PSLA Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne/view",
+              "subject": "PSLA",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            }
+          ]
+        },
+        "SYLLABUS": {
+          "name": "Syllabus Collection",
+          "code": "SYLLABUS",
+          "category": "reference",
+          "url": "https://engram-project.vercel.app/sem3/syllabus",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+              "name": "3rd sem.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+              "viewUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/preview",
+              "originalFolder": "Syllabus Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/view",
+              "subject": "SYLLABUS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+              "name": "3rd sem.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+              "viewUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/preview",
+              "originalFolder": "Syllabus Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/view",
+              "subject": "SYLLABUS",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            }
+          ],
+          "pyqs": [],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "UHV": {
+          "name": "Universal Human Values",
+          "code": "UHV",
+          "category": "humanities",
+          "url": "https://engram-project.vercel.app/sem3/uhv",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1RT-NfbYtWhYYNXWApyfj0voGMQjtvAwj",
+              "name": "assignment",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1RT-NfbYtWhYYNXWApyfj0voGMQjtvAwj",
+              "viewUrl": "https://drive.google.com/file/d/1RT-NfbYtWhYYNXWApyfj0voGMQjtvAwj/preview",
+              "originalFolder": "UHV Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1RT-NfbYtWhYYNXWApyfj0voGMQjtvAwj/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1DnpvyEPN4foJ_oWa9ZSu4GxvwKjEDWSi",
+              "name": "Notes",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DnpvyEPN4foJ_oWa9ZSu4GxvwKjEDWSi",
+              "viewUrl": "https://drive.google.com/file/d/1DnpvyEPN4foJ_oWa9ZSu4GxvwKjEDWSi/preview",
+              "originalFolder": "UHV Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DnpvyEPN4foJ_oWa9ZSu4GxvwKjEDWSi/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q",
+              "name": "1st PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q",
+              "viewUrl": "https://drive.google.com/file/d/1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q",
+              "name": "1st",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q",
+              "viewUrl": "https://drive.google.com/file/d/1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1LPes4rF3faUteDcNm09rpV-3nRkBSQ1q/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            },
+            {
+              "id": "1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn",
+              "name": "2nd.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn",
+              "viewUrl": "https://drive.google.com/file/d/1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 5
+            },
+            {
+              "id": "1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn",
+              "name": "2nd.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn",
+              "viewUrl": "https://drive.google.com/file/d/1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1j6Hkl0hdFDdNHjl9ISkfidqDqv2RsaQn/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 6
+            },
+            {
+              "id": "14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N",
+              "name": "3rd.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N",
+              "viewUrl": "https://drive.google.com/file/d/14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 7
+            },
+            {
+              "id": "14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N",
+              "name": "3rd.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N",
+              "viewUrl": "https://drive.google.com/file/d/14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14pn5hM-CwV6EghRIFgz_iV2ib9odWA5N/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 8
+            },
+            {
+              "id": "14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO",
+              "name": "4th.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO",
+              "viewUrl": "https://drive.google.com/file/d/14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 9
+            },
+            {
+              "id": "14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO",
+              "name": "4th.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO",
+              "viewUrl": "https://drive.google.com/file/d/14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO/preview",
+              "originalFolder": "UHV Shared folder/assignment Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/14mt-tvkHTKV7J_Zp7yjaprmO3Itx31jO/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 10
+            },
+            {
+              "id": "10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X",
+              "name": "all chapters.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X",
+              "viewUrl": "https://drive.google.com/file/d/10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 11
+            },
+            {
+              "id": "10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X",
+              "name": "all chapters.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X",
+              "viewUrl": "https://drive.google.com/file/d/10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/10-ay8OKlUgxwFceW_JOlJA7V7rNFr23X/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 12
+            },
+            {
+              "id": "1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ",
+              "name": "unit 1.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ",
+              "viewUrl": "https://drive.google.com/file/d/1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 13
+            },
+            {
+              "id": "1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ",
+              "name": "unit 1.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ",
+              "viewUrl": "https://drive.google.com/file/d/1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-nfG1m7xL8XMl8aLu957ePWK4EIFviAQ/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 14
+            },
+            {
+              "id": "18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP",
+              "name": "Unit 2 part 1 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP",
+              "viewUrl": "https://drive.google.com/file/d/18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 15
+            },
+            {
+              "id": "18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP",
+              "name": "Unit 2 part 1",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP",
+              "viewUrl": "https://drive.google.com/file/d/18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/18XVBvOlrWfbp0zEXf4vfOXTKLX5TPPdP/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 16
+            },
+            {
+              "id": "1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM",
+              "name": "Unit 2 part 2 PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM",
+              "viewUrl": "https://drive.google.com/file/d/1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 17
+            },
+            {
+              "id": "1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM",
+              "name": "Unit 2 part 2",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM",
+              "viewUrl": "https://drive.google.com/file/d/1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1vRy3zo6gXjRc-NpFBmK8MZueMy5NxgcM/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 18
+            },
+            {
+              "id": "1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o",
+              "name": "unit 2.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o",
+              "viewUrl": "https://drive.google.com/file/d/1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 19
+            },
+            {
+              "id": "1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o",
+              "name": "unit 2.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o",
+              "viewUrl": "https://drive.google.com/file/d/1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-hDaWwHlxiPiR0ha9-VYz7eia7cg0H6o/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 20
+            },
+            {
+              "id": "1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi",
+              "name": "unit 3.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi",
+              "viewUrl": "https://drive.google.com/file/d/1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 21
+            },
+            {
+              "id": "1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi",
+              "name": "unit 3.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi",
+              "viewUrl": "https://drive.google.com/file/d/1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi/preview",
+              "originalFolder": "UHV Shared folder/Notes Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1-dKiAgHHk9kcwbI-zPOym9vXSNnm0Pfi/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 22
+            }
+          ],
+          "pyqs": [
+            {
+              "id": "1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO",
+              "name": "pyq.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO",
+              "viewUrl": "https://drive.google.com/file/d/1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO/preview",
+              "originalFolder": "UHV Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO",
+              "name": "pyq.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO",
+              "viewUrl": "https://drive.google.com/file/d/1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO/preview",
+              "originalFolder": "UHV Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1DU4nKeSY6WPtGHQdQBhFRpYbNNVIDUjO/view",
+              "subject": "UHV",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            }
+          ],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        },
+        "WEB_PROG": {
+          "name": "Web Programming",
+          "code": "WEB_PROG",
+          "category": "elective",
+          "url": "https://engram-project.vercel.app/sem3/web_prog",
+          "units": [
+            {
+              "number": "Unit 1",
+              "content": ""
+            },
+            {
+              "number": "Unit 2",
+              "content": ""
+            },
+            {
+              "number": "Unit 3",
+              "content": ""
+            },
+            {
+              "number": "Unit 4",
+              "content": ""
+            },
+            {
+              "number": "Unit 5",
+              "content": ""
+            }
+          ],
+          "notes": [
+            {
+              "id": "1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y",
+              "name": "WEB PROGRAMMING FILE.docx Microsoft Word",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y",
+              "viewUrl": "https://drive.google.com/file/d/1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y/preview",
+              "originalFolder": "WEB PROGRAMMING Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y/view",
+              "subject": "WEB_PROG",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 1
+            },
+            {
+              "id": "1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y",
+              "name": "WEB PROGRAMMING FILE.docx",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y",
+              "viewUrl": "https://drive.google.com/file/d/1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y/preview",
+              "originalFolder": "WEB PROGRAMMING Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1LeC1d0s4QZ9XBSjdcnCXtbkF8Y26D77y/view",
+              "subject": "WEB_PROG",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 2
+            },
+            {
+              "id": "1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii",
+              "name": "WEB PROGRAMMING FILE.pdf PDF",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii",
+              "viewUrl": "https://drive.google.com/file/d/1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii/preview",
+              "originalFolder": "WEB PROGRAMMING Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii/view",
+              "subject": "WEB_PROG",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 3
+            },
+            {
+              "id": "1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii",
+              "name": "WEB PROGRAMMING FILE.pdf",
+              "downloadUrl": "https://drive.google.com/uc?export=download&id=1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii",
+              "viewUrl": "https://drive.google.com/file/d/1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii/preview",
+              "originalFolder": "WEB PROGRAMMING Shared folder",
+              "source": "google-drive-sem3",
+              "originalUrl": "https://drive.google.com/file/d/1QH7grY4-HFUf_ZXnIyMZaEiWyVGJ7kii/view",
+              "subject": "WEB_PROG",
+              "addedAt": "2025-10-05T13:14:15.827Z",
+              "index": 4
+            }
+          ],
+          "pyqs": [],
+          "viva": [],
+          "midsem": [],
+          "books": [],
+          "lab": [],
+          "syllabus": [],
+          "videos": [],
+          "akash": []
+        }
+      }
+    }
+  }
+}
