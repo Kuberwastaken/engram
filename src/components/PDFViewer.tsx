@@ -272,24 +272,26 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
         className={`bg-gray-900/20 border-gray-800/30 hover:bg-gray-800/40 hover:border-gray-600/50 transition-all duration-200 cursor-pointer group ${className}`}
         onClick={handleCardClick}
       >
-        <CardContent className="p-4">
-          <div className="flex justify-between items-center">
-            <div className="flex-1">
-              <div className="flex items-center">
-                <FileText className="w-4 h-4 text-blue-400 mr-2" />
-                <h4 className="text-gray-300 font-medium group-hover:text-white transition-colors">{fileName}</h4>
+        <CardContent className="p-3 sm:p-4">
+          <div className="flex justify-between items-start gap-2">
+            <div className="flex-1 min-w-0">
+              <div className="flex items-start gap-2">
+                <FileText className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
+                <h4 className="text-gray-300 font-medium group-hover:text-white transition-colors break-words line-clamp-2 text-sm sm:text-base">
+                  {fileName}
+                </h4>
               </div>
               {showSourceTag && file.source && (
-                <p className="text-sm text-gray-500 group-hover:text-gray-400 transition-colors mt-2">
-                  <span className="px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
+                <div className="mt-2 ml-6">
+                  <span className="inline-block px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
                     {file.source}
                   </span>
-                </p>
+                </div>
               )}
             </div>
-            <div className="flex items-center gap-3 ml-4" onClick={(e) => e.stopPropagation()}>
+            <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0" onClick={(e) => e.stopPropagation()}>
               {showPreview && fileId && (
-                <div onClick={handleOpenInDrive} title="Open in Google Drive">
+                <div onClick={handleOpenInDrive} title="Open in Google Drive" className="p-1 hover:bg-gray-700/30 rounded">
                   <EyeIcon />
                 </div>
               )}
@@ -299,6 +301,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
                   handleDownload();
                 }}
                 title="Download PDF"
+                className="p-1 hover:bg-gray-700/30 rounded"
               >
                 <DownloadIcon />
               </div>
