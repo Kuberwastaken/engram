@@ -354,7 +354,7 @@ const Index = () => {
                 IP University Resources
               </span>
             </h1>
-            <p className="text-lg md:text-xl text-gray-400 max-w-5xl mx-auto">
+            <p className="text-lg md:text-xl text-gray-400 max-w-5xl mx-auto font-mono tracking-tight">
               Built for students, by students. No Trackers, No Ads and Open Source
             </p>
           </div>          {/* Selection Interface */}
@@ -363,7 +363,7 @@ const Index = () => {
                 <div className="space-y-8">
                   {/* Branch Selection */}
                   <div className="space-y-4">
-                    <label className="block text-sm font-semibold text-gray-200 tracking-wide">
+                    <label className="block text-sm font-mono font-semibold text-gray-200 tracking-tight">
                       Select Your Branch
                     </label>
                     <Select value={branch} onValueChange={setBranch}>
@@ -386,7 +386,7 @@ const Index = () => {
 
                   {/* Semester Selection with proper spacing */}
                   <div className="space-y-4 mt-8">
-                    <label className="block text-sm font-semibold text-gray-200 tracking-wide">
+                    <label className="block text-sm font-mono font-semibold text-gray-200 tracking-tight">
                       Select Semester
                     </label>
                     <Select value={semester} onValueChange={setSemester}>

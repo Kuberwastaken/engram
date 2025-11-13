@@ -449,10 +449,10 @@ const Subject = () => {
               
               return (
                 <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
-                  <AccordionTrigger className="text-gray-200 hover:text-white hover:no-underline font-medium tracking-wide text-lg" style={{ fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                  <AccordionTrigger className="text-gray-200 hover:text-white hover:no-underline font-mono font-medium tracking-tight text-lg">
                     {unitKey}
                   </AccordionTrigger>
-                  <AccordionContent className="text-gray-100 leading-relaxed whitespace-pre-line text-base md:text-lg px-4 py-3 bg-gray-900 rounded-lg shadow-inner" style={{ lineHeight: 1.85, letterSpacing: '0.01em', fontFamily: 'Helvetica, Arial, sans-serif' }}>
+                  <AccordionContent className="text-gray-100 leading-relaxed whitespace-pre-line text-base md:text-lg px-4 py-3 bg-gray-900 rounded-lg shadow-inner font-mono" style={{ lineHeight: 1.85, letterSpacing: '0.01em' }}>
                     {contentToDisplay}
                   </AccordionContent>
                 </AccordionItem>
@@ -682,7 +682,7 @@ const Subject = () => {
                   <TabsTrigger
                     key={tab.id}
                     value={tab.id}
-                    className="h-9 text-xs font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-0.5 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none"
+                    className="h-9 text-xs font-mono font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-0.5 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none tracking-tight"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -693,7 +693,7 @@ const Subject = () => {
                   <TabsTrigger
                     key={tab.id}
                     value={tab.id}
-                    className="h-9 text-xs font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-0.5 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none"
+                    className="h-9 text-xs font-mono font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-0.5 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none tracking-tight"
                   >
                     {tab.label}
                   </TabsTrigger>
@@ -713,7 +713,7 @@ const Subject = () => {
                       <TabsTrigger
                         key={tab.id}
                         value={tab.id}
-                        className="h-9 text-sm font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-1 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none"
+                        className="h-9 text-sm font-mono font-medium data-[state=active]:bg-gray-700/60 data-[state=active]:text-white text-gray-400 px-1 rounded-md hover:bg-gray-700/30 transition-colors flex items-center justify-center whitespace-nowrap overflow-hidden text-center leading-none tracking-tight"
                       >
                         {tab.label}
                       </TabsTrigger>
