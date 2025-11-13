@@ -38,23 +38,26 @@ ENGRAM is and will **always stay free to access with no ads and no trackers**. I
 
 ## Project Overview
 
-**ENGRAM** is a modern, open-source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
+This is... a very large scale project
 
-ENGRAM is and will **always stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions,
+large scale enough that most others that've undertook it just give up due to the sheer volume.
 
-### **What We Have Now** 
-- ✅ **Aggregated Content** - Notes from Dotnotes, SyllabusX, and Fifteenfourteen (with proper credits)
+To not go down the same path, this is Open Source
+
+Some stuff we've proudly achieved
+
+- ✅ **Aggregated Content** - Notes from Dotnotes, SyllabusX, Kamati and Fifteenfourteen (with proper credits and attributions)
 - ✅ **Clean Interface** - Modern, space-themed UI with no ads or trackers
 - ✅ **Smart Organization** - Branch and semester-based structure
-- ✅ **Google Drive Integration** - Currently using JSON metadata with Google Drive links for 10,000+ materials
+- ✅ **Google Drive Integration** - Currently using JSON metadata with Google Drive links for 15,000+ materials
 
 ### **What's Coming Next**
-- 🚧 **Dedicated Materials Repository** - Moving away from Google Drive to a proper GitHub-based system
+
 - 🚧 **Community Upload System** - Easy pull request workflow for material contributions
 - 🚧 **Real-time Updates** - Always current materials with community maintenance
-- 🚧 **Contributor Recognition** - Your name on every note you upload
+- 🚧 **Contributor Recognition** - Your name on every note you upload (with potential backlinks)
 
-> **Note:** We're currently using JSONs with Google Drive links, but we're working toward a dedicated repository for notes. It's challenging to manage 10,000+ notes and we're still not complete, but we're committed to making it happen! The transition will
+
 <td align="center" width="33%">
 <br><strong>Scattered Resources</strong><br>
 <em>Most notes on present sites are old, new assignments don't get uploaded, and you REALLY have to dig to find quality material.</em>
@@ -89,91 +92,11 @@ ENGRAM is and will **always stay free to access with no ads and no trackers**. I
 </tr>
 </table>
 
-### **The Vision: A Legacy That Outlives Us**
+### **Why even work on this if it's so complicated**
 
-- 🎯 **The First Stop** - Every IPU student's go-to resource for any subject
-- 🏆 **Quality Guaranteed** - Peer-reviewed content that students actually trust
-- 🚀 **Always Current** - Real-time updates as syllabi change and new materials emerge
-- 🤝 **Student-Led** - Decisions made by and for the community
-- 🌟 **Recognition System** - Contributors get credited for every upload
-- 🔄 **Self-Sustaining** - A resource that evolves and improves with each batch of students
-
-> *"I want us to create a resource that out-lives us even after graduation, constantly evolves and is a token from us to our future juniors."*
+> *"I want us to create a resource that out-lives us even after graduation, constantly evolves and is a token from us to our future juniors. Simple."*
 
 <div align="center">
-
-### **ENGRAM's Solution:**
-
-<table>
-<tr>
-<td align="center" width="25%">
-<br><strong>Centralized Hub</strong><br>
-<em>Everything in one place</em>
-</td>
-<td align="center" width="25%">
-<br><strong>Smart Organization</strong><br>
-<em>Branch & semester based structure</em>
-</td>
-<td align="center" width="25%">
-<br><strong>Instant Access</strong><br>
-<em>No registration, no barriers</em>
-</td>
-<td align="center" width="25%">
-<br><strong>Community Driven</strong><br>
-<em>By students, for students</em>
-</td>
-</tr>
-</table>
-
-<div align="center">
-<strong>💡 ENGRAM becomes powerful only when WE make it powerful together</strong>
-</div>
-
-## Key Features
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎓 **Academic Coverage**
-- **8 Engineering Branches** - AIDS, AIML, CIVIL, CSE, ECE, EEE, IT, MECH
-- **8 Semester Range** - Complete undergraduate coverage
-- **Comprehensive Resources** - Syllabus, Notes, PYQs, Lab materials, Books
-- **Special Collections** - Akash notes and actually decent youtube lectures
-
-</td>
-<td width="50%">
-
-### 🌌 **Cosmic User Experience**
-- **Space-themed Interface** - Beautiful dark UI with starfield animations
-- **Responsive Design** - Works perfectly on mobile, tablet, and desktop
-- **Smart Navigation** - Remembers your branch/semester preferences
-- **Instant Loading** - Fast, optimized React architecture
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 📚 **Resource Management**
-- **Tabbed Organization** - Clean separation of different material types
-- **Contributor Attribution** - Recognition for community contributors
-- **Download & Preview** - Both options available for all materials
-- **Search Integration** - Quick access to specific subjects
-
-</td>
-<td width="50%">
-
-### 🛠️ **Technical Excellence**
-- **Modern Stack** - React 18, TypeScript, Vite, Tailwind CSS
-- **ShadCN UI** - Premium component library for consistency
-- **Local Storage** - Persistent user preferences
-- **PWA Ready** - Installable as a progressive web app
-
-</td>
-</tr>
-</table>
-</div>
 
 ## Technical Architecture & Implementation
 
@@ -184,38 +107,6 @@ ENGRAM is and will **always stay free to access with no ads and no trackers**. I
 - **State:** Local Storage for user preferences
 - **Content:** JSON metadata with Google Drive integration
 - **Deployment:** GitHub Pages with custom domain
-
-### **Data Architecture (Current)**
-```mermaid
-graph TD
-    A[ENGRAM Frontend] --> B[JSON Metadata Files]
-    B --> C[Google Drive Links]
-    C --> D[Study Materials]
-    
-    B --> E[Dotnotes Content]
-    B --> F[SyllabusX Content]
-    B --> G[Fifteenfourteen Content]
-    
-    style A fill:#9f1239
-    style B fill:#0369a1
-    style C fill:#dc2626
-    style D fill:#ea580c
-```
-
-### **Planned Architecture Migration**
-```mermaid
-graph TD
-    A[ENGRAM Frontend] --> B[GitHub Materials Repo]
-    B --> C[Direct File Access]
-    B --> D[PR-based Contributions]
-    D --> E[Community Moderation]
-    E --> F[Automated Integration]
-    
-    style A fill:#9f1239
-    style B fill:#0369a1
-    style D fill:#16a34a
-    style E fill:#dc2626
-```
 
 ## 🚀 Getting Started
 
@@ -248,7 +139,7 @@ graph TD
 
 ```bash
 # Clone the repository
-git clone https://github.com/kuberwastaken/engram.git
+git clone https://github.com/kuberwastaken/engram
 cd engram
 
 # Install dependencies (choose one)
@@ -265,223 +156,25 @@ yarn dev
 # or (recommended)
 bun dev
 
-# Open your browser to http://localhost:5173
-```
-
-### 📁 Project Structure
-
-```
-├── public/                   # Static assets and materials
-│   ├── assets/              # Logo, icons, and branding
-│   ├── materials/           # Study materials (temporary)
-│   └── Content-Meta/        # Metadata for content organization
-├── src/                     # Source code
-│   ├── components/          # Reusable UI components
-│   │   ├── ui/             # ShadCN UI primitives
-│   │   ├── StarField.tsx   # Cosmic background animation
-│   │   └── SubjectGrid.tsx # Subject listing component
-│   ├── pages/              # Route pages
-│   ├── hooks/              # Custom React hooks
-│   └── lib/                # Utility functions
-├── scripts/                # Data processing and migration scripts
-└── package.json           # Dependencies and scripts
+# Open your browser to http://localhost:8080
 ```
 
 ## 📚 Current Content & Sources
 
 ### **Aggregated Content Sources**
-ENGRAM currently aggregates materials from multiple trusted sources, with proper attribution:
+ENGRAM currently aggregates materials from multiple trusted sources, with proper attribution - this might be stingy but most websites aren't maintained because there's no monetary gains from having websites like these
 
-<table>
-<tr>
-<td width="33%" align="center">
-<br><strong>🔵 Dotnotes</strong><br>
-<em>Comprehensive notes across multiple branches</em><br>
-<sub>Full credit and attribution maintained</sub>
-</td>
-<td width="33%" align="center">
-<br><strong>📘 SyllabusX</strong><br>
-<em>Syllabus and structured course content</em><br>
-<sub>Original creators acknowledged</sub>
-</td>
-<td width="33%" align="center">
-<br><strong>📖 Fifteenfourteen</strong><br>
-<em>Additional study materials and resources</em><br>
-<sub>Contributors properly credited</sub>
-</td>
-</tr>
-</table>
+except if you have adblock, which just ruins the entire experience.
 
-### **Content Statistics**
-- **📊 10,000+ Study Materials** currently indexed
-- **🎓 8 Engineering Branches** covered
-- **📅 8 Semesters** of content available
-- **🔗 Google Drive Integration** for reliable access
-- **⚡ JSON Metadata** for fast loading and search
+We've made sure to properly attribute EVERY note gathered in Engram
 
-### **Future Content Strategy**
-- **📦 Dedicated Materials Repository** - Moving to GitHub-based storage
-- **🔄 Community Contributions** - Pull request workflow for new materials
-- **✅ Quality Control** - Peer review system for uploaded content
-- **🏷️ Better Tagging** - Enhanced categorization and search capabilities
+## How to Contribute Materials
 
-## 💫 Design Philosophy
-
-ENGRAM's interface draws inspiration from the vastness of space and the interconnected nature of knowledge:
-
-### **Cosmic Visual Language**
-- **Deep Space Backgrounds** - Gradients from deep black to cosmic blue
-- **Starfield Animations** - Twinkling particles that create ambient movement
-- **Nebula-inspired Cards** - Translucent containers with backdrop blur effects
-- **Orbital Navigation** - Smooth transitions that feel like floating through space
-
-### **Interaction Principles**
-- **Gravity-defying Hovers** - Elements that gently lift and glow on interaction
-- **Constellation Navigation** - Logical grouping of related elements
-- **Stellar Performance** - Smooth 60fps animations throughout
-- **Universal Accessibility** - Clear contrast and readable typography
-
-## 📚 How to Contribute Materials (Current Process)
-
-> **Note:** This is our current system using Google Drive links. We're working on a much better GitHub-based system!
-
-### Current Workflow
-1. **Organize Your Materials** - Sort by branch, semester, and subject
-2. **Upload to Google Drive** - Ensure public sharing is enabled
-3. **Update JSON Metadata** - Add entries to appropriate data files
-4. **Submit Pull Request** - Include proper attribution and descriptions
-5. **Community Review** - Materials get reviewed for quality and accuracy
-
-### Naming Conventions
-- **Files:** `Subject_Topic_Version.pdf` (e.g., `DSA_LinkedLists_v2.pdf`)
-- **PYQs:** Include year and exam type (e.g., `PYQ_2023_EndSem.pdf`)
-- **Labs:** Include experiment number (e.g., `Lab05_BinaryTrees.pdf`)
-
-### Future Contribution System
-- **📁 Direct GitHub Upload** - No more Google Drive dependency
-- **🔄 Automated Processing** - Smart categorization and metadata generation
-- **✅ Quality Checks** - Automated validation and peer review
-- **🏆 Contributor Credits** - Your name permanently attached to contributions
-- **📱 Mobile-Friendly** - Easy uploads from phone during lectures
-
-## 📱 Usage Guide
-
-### For Students
-
-1. **🎯 Quick Access**
-   - Visit [engram website](https://engram.kuber.studio) (no registration required)
-   - Select your branch and semester (preferences saved automatically)
-   - Browse subjects and materials instantly
-
-2. **📖 Navigate Resources**
-   - **SYLLABUS** - Complete course outlines and assessment patterns
-   - **NOTES** - Comprehensive study materials and lecture notes
-   - **PYQS** - Previous year question papers with solutions
-   - **LAB** - Lab manuals, experiments, and code samples
-   - **BOOKS** - Reference books and additional reading
-   - **VIDEOS** - Curated video lectures and tutorials
-
-3. **⬇️ Download & Study**
-   - One-click downloads for all materials
-   - Preview documents before downloading
-   - Mobile-optimized for studying on any device
+Coming soon! If you have a large repository or volume of content, DM me.
 
 ## 🌟 Contributing
 
 **This is not just an open-source project - it's OUR collective responsibility to build and maintain the study hub that IPU desperately needs.**
-
-### **Every Contribution Matters**
-
-ENGRAM's success isn't measured by GitHub stars or code quality alone - it's measured by how many IPU students can access quality study materials when they need them most. **Your contribution, no matter how small, directly impacts thousands of students.**
-
-### **The Collective Ownership Model**
-
-ENGRAM operates on a simple principle: **Everyone benefits, everyone contributes.**
-
-```mermaid
-graph LR
-    A[Current Student] --> B[Contributes Materials]
-    B --> C[ENGRAM Grows]
-    C --> D[Future Students Benefit]
-    D --> E[They Contribute Back]
-    E --> B
-    
-    style A fill:#9f1239
-    style C fill:#0369a1
-    style D fill:#dc2626
-```
-
-**This isn't charity work - it's enlightened self-interest:**
-- 📈 **Better materials help YOU study more effectively**
-- 🤝 **Your contributions get recognized and credited**
-- 🎯 **You shape the platform to work exactly how you need it**
-- 💪 **You build skills in collaboration and project management**
-
-We welcome contributions from the IPU community and beyond! Here's how you can help make ENGRAM even better:
-
-<table>
-<tr>
-<td width="50%">
-
-### **📚 Content Contributions**
-- **Add Study Materials** - Share your notes, PYQs, lab files
-- **Update Resources** - Keep materials current with latest syllabus
-- **Quality Review** - Help verify and improve existing content
-- **Organize Content** - Better categorization and tagging
-
-</td>
-<td width="50%">
-
-### **💻 Code Contributions**
-- **Feature Development** - New functionality and improvements
-- **Bug Fixes** - Resolve issues and enhance stability
-- **UI/UX Enhancements** - Better design and user experience
-- **Performance Optimization** - Faster loading and smoother animations
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### **🎨 Design Contributions**
-- **Visual Assets** - Icons, illustrations, branding elements
-- **Animation Improvements** - Enhanced cosmic effects
-- **Mobile Experience** - Better responsive design
-- **Accessibility** - Improved support for all users
-
-</td>
-<td width="50%">
-
-### **📖 Documentation**
-- **Usage Guides** - Help new users get started
-- **Technical Documentation** - Code explanations and architecture
-- **Contribution Guidelines** - Clear processes for contributors
-- **Video Tutorials** - Visual guides for common tasks
-
-</td>
-</tr>
-</table>
-
-### **Making ENGRAM Truly Ours**
-
-**Current Status:** 🚀 **Pre-Alpha but Functional** - We have 10,000+ materials and growing!
-
-**The Mass Adoption Challenge:**
-> *"This project WOULD NOT be possible without mass adoption and WILL DIE DOWN if we don't get the community support it needs. Please, please share this with any friends, groups or communities you have in IPU B.Tech."*
-
-**What Success Looks Like:**
-- 🎯 **90%+ Coverage** - Every IPU subject has quality, updated materials
-- 🏆 **Student Recognition** - Top contributors become campus legends with their names on every upload
-- 📱 **Platform Evolution** - Features requested and built by students, for students
-- 🌍 **Beyond IPU** - A model that other universities can adopt and adapt
-- 🔄 **Self-Sustaining Ecosystem** - Where knowledge flows freely between generations
-
-**Your Role in This Journey:**
-1. **📤 Immediate Impact** - Share materials you have right now
-2. **🔄 Ongoing Commitment** - Update resources as you create new ones
-3. **📢 Community Building** - Encourage classmates and spread the word
-4. **✅ Quality Assurance** - Review and improve existing materials
-5. **💡 Feature Requests** - Help shape the platform's future development
 
 <div align="center">
 
@@ -549,7 +242,5 @@ This project is licensed under the **Apache 2.0 License** - see the [LICENSE](LI
 ### 📢 **Share with your IPU friends and communities**
 
 **Built with ❤️ by [Kuber Mehta](https://x.com/Kuberwastaken) and the entire IPU student community**
-
-*A legacy project that outlives us all - from students, for students, forever.*
 
 </div>

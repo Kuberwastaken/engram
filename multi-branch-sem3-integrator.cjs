@@ -35,7 +35,7 @@ class MultiBranchSem3Integrator {
                 category: 'core'
             },
             'PSLA': {
-                name: 'Programming with Scripting Languages',
+                name: 'Probability Statistics and Linear Algebra',
                 branches: ['CSE', 'IT', 'CST', 'ITE', 'AIDS', 'AIML'], // Programming branches
                 category: 'core'
             },
