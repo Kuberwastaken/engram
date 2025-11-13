@@ -8,8 +8,8 @@
 
 <p align="center">
    <img src="https://img.shields.io/badge/Built%20for-IPU%20Students-black?logo=graduation-cap" alt="Built for IPU Students">
-   <img src="https://img.shields.io/badge/Version-Pre--Alpha-black" alt="Version Pre-Alpha">
-   <img src="https://img.shields.io/badge/License-Apache 2.0-black" alt="License Apache 2.0">
+   <img src="https://img.shields.io/badge/Version-Alpha-black" alt="Version Alpha">
+   <img src="https://img.shields.io/badge/License-Mofified Apache 2.0-black" alt="License Modified Apache 2.0">
 </p>
 
 <div align="center">
@@ -30,6 +30,8 @@
 
 **ENGRAM** is a modern, open-source web platform designed to centralize all study materials for IP University students across 8 engineering branches and semesters. 
 
+### IT IS NOT A NOTES PLATFORM, IT IS AN AGGREGATOR.
+
 ENGRAM is and will **always stay free to access with no ads and no trackers**. It aims to provide instant access to notes, previous year questions, lab manuals, and comprehensive resources without the typical friction of academic resource hunting or unreliable websites.
 
 **Born from Frustration, Built for (potential) Solutions**
@@ -46,7 +48,7 @@ To not go down the same path, this is Open Source
 
 Some stuff we've proudly achieved
 
-- ✅ **Aggregated Content** - Notes from Dotnotes, SyllabusX, Kamati and Fifteenfourteen (with proper credits and attributions)
+- ✅ **Aggregated Content** - Notes from Dotnotes, SyllabusX, Bunk to Brains and Fifteenfourteen (with proper credits and attributions)
 - ✅ **Clean Interface** - Modern, space-themed UI with no ads or trackers
 - ✅ **Smart Organization** - Branch and semester-based structure
 - ✅ **Google Drive Integration** - Currently using JSON metadata with Google Drive links for 15,000+ materials
