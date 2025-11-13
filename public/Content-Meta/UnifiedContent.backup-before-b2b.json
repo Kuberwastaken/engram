@@ -36,7 +36,7 @@
       "SEM7",
       "SEM8"
     ],
-    "lastUpdated": "2025-11-13T17:29:49.245Z",
+    "lastUpdated": "2025-11-12T18:38:35.619Z",
     "fixedIssues": {
       "duplicateStructuresRemoved": 0,
       "subjectsAdded": 0,
@@ -54,18 +54,6 @@
         "SEM4",
         "SEM5"
       ]
-    },
-    "b2bIntegration": {
-      "integratedAt": "2025-11-13T17:29:49.246Z",
-      "source": "b2b-optimized.json",
-      "sourceFullName": "Bunk to Brains (B2B)",
-      "subjectsAdded": 0,
-      "subjectsUpdated": 54,
-      "subjectsSkipped": 25,
-      "notesAdded": 81,
-      "pyqsAdded": 29,
-      "videosAdded": 0,
-      "branchesProcessed": 6
     }
   },
   "materials": {
@@ -1483,51 +1471,6 @@
                   "originalFolder": "Notes",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma",
-                  "name": "B2B MP UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma",
-                  "viewUrl": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5",
-                  "name": "B2B MP UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5",
-                  "viewUrl": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2",
-                  "name": "B2B MP UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2",
-                  "viewUrl": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9",
-                  "name": "B2B MP UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9",
-                  "viewUrl": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G",
-                  "name": "B2B MP UNIT 3 PART 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G",
-                  "viewUrl": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -2018,15 +1961,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -4577,51 +4511,6 @@
                   "originalFolder": "Notes",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7",
-                  "name": "B2B AC UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7",
-                  "viewUrl": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD",
-                  "name": "B2B AC UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD",
-                  "viewUrl": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc",
-                  "name": "B2B AC UNIT 2 POLYMERS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc",
-                  "viewUrl": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4",
-                  "name": "B2B AC UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4",
-                  "viewUrl": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0",
-                  "name": "B2B AC UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0",
-                  "viewUrl": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -5184,15 +5073,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -5910,33 +5790,6 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM",
-                  "name": "B2B AM UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM",
-                  "viewUrl": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN",
-                  "name": "B2B AM UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN",
-                  "viewUrl": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12",
-                  "name": "B2B AM UNIT 2 NOTES",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12",
-                  "viewUrl": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -5995,15 +5848,6 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -6436,51 +6280,6 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy",
-                  "name": "B2B AP UNIT 1 - SHORT",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy",
-                  "viewUrl": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5",
-                  "name": "B2B AP UNIT 1 -  DETAILED",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5",
-                  "viewUrl": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM",
-                  "name": "B2B AP UNIT 2 - WAVES",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM",
-                  "viewUrl": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU",
-                  "name": "B2B AP UNIT 2 EMT",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU",
-                  "viewUrl": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR",
-                  "name": "B2B AP UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR",
-                  "viewUrl": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -6581,15 +6380,6 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -6997,15 +6787,6 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -8476,15 +8257,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -9970,33 +9742,6 @@
                   "originalFolder": "Notes",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh",
-                  "name": "B2B ES UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh",
-                  "viewUrl": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm",
-                  "name": "B2B ES UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm",
-                  "viewUrl": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R",
-                  "name": "B2B ES UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R",
-                  "viewUrl": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -10329,15 +10074,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -11592,15 +11328,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -11713,15 +11440,6 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -12043,46 +11761,9 @@
                   },
                   "source": "studyx",
                   "sourceTag": "StudyX"
-                },
-                {
-                  "id": "1pDd0jCR0x689av0zB4shgiMZhXEAUBdP",
-                  "name": "B2B PC UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1pDd0jCR0x689av0zB4shgiMZhXEAUBdP",
-                  "viewUrl": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija",
-                  "name": "B2B PC UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija",
-                  "viewUrl": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "15euyCy27NCtosW1XecdrADsMK50xDN0E",
-                  "name": "B2B PC UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=15euyCy27NCtosW1XecdrADsMK50xDN0E",
-                  "viewUrl": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
-              "pyqs": [
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                }
-              ],
+              "pyqs": [],
               "books": [
                 {
                   "id": "17gRV6yC6a4Lizt3KAa5BsaEOI_Tf22Mv",
@@ -14232,15 +13913,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -16595,15 +16267,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -19838,15 +19501,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -21568,15 +21222,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -22482,15 +22127,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -23300,15 +22936,6 @@
                   "originalFolder": "PYQ",
                   "source": "dotnotes",
                   "sourceTag": "DotNotes"
-                },
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -24070,17 +23697,7 @@
                   "sourceTag": "DotNotes"
                 }
               ],
-              "pyqs": [
-                {
-                  "id": "1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "name": "PYQ ALL SUBJECTS SEM 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM",
-                  "viewUrl": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                }
-              ],
+              "pyqs": [],
               "books": [],
               "lab": [],
               "akash": [],
@@ -107599,42 +107216,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92",
-                  "name": "B2B DLCD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92",
-                  "viewUrl": "https://drive.google.com/file/d/1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl",
-                  "name": "B2B DLCD UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl",
-                  "viewUrl": "https://drive.google.com/file/d/101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_",
-                  "name": "B2B DLCD UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_",
-                  "viewUrl": "https://drive.google.com/file/d/17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8",
-                  "name": "B2B DLCD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8",
-                  "viewUrl": "https://drive.google.com/file/d/1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -108456,51 +108037,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu",
-                  "name": "B2B DS UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu",
-                  "viewUrl": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH",
-                  "name": "B2B DS UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH",
-                  "viewUrl": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz",
-                  "name": "B2B DS UNIT 2 - SEARCHING AND SORTING",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz",
-                  "viewUrl": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5",
-                  "name": "B2B DS UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5",
-                  "viewUrl": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG",
-                  "name": "B2B DS UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG",
-                  "viewUrl": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -123932,42 +123468,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92",
-                  "name": "B2B DLCD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92",
-                  "viewUrl": "https://drive.google.com/file/d/1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl",
-                  "name": "B2B DLCD UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl",
-                  "viewUrl": "https://drive.google.com/file/d/101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_",
-                  "name": "B2B DLCD UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_",
-                  "viewUrl": "https://drive.google.com/file/d/17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8",
-                  "name": "B2B DLCD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8",
-                  "viewUrl": "https://drive.google.com/file/d/1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -125225,42 +124725,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92",
-                  "name": "B2B DLCD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92",
-                  "viewUrl": "https://drive.google.com/file/d/1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl",
-                  "name": "B2B DLCD UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl",
-                  "viewUrl": "https://drive.google.com/file/d/101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_",
-                  "name": "B2B DLCD UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_",
-                  "viewUrl": "https://drive.google.com/file/d/17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8",
-                  "name": "B2B DLCD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8",
-                  "viewUrl": "https://drive.google.com/file/d/1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -126792,51 +126256,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu",
-                  "name": "B2B DS UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu",
-                  "viewUrl": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH",
-                  "name": "B2B DS UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH",
-                  "viewUrl": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz",
-                  "name": "B2B DS UNIT 2 - SEARCHING AND SORTING",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz",
-                  "viewUrl": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5",
-                  "name": "B2B DS UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5",
-                  "viewUrl": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG",
-                  "name": "B2B DS UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG",
-                  "viewUrl": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -127709,42 +127128,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD",
-                  "name": "B2B FOD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD",
-                  "viewUrl": "https://drive.google.com/file/d/1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY",
-                  "name": "B2B FOD UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY",
-                  "viewUrl": "https://drive.google.com/file/d/1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2",
-                  "name": "B2B FOD  UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2",
-                  "viewUrl": "https://drive.google.com/file/d/1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH",
-                  "name": "B2B FOD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH",
-                  "viewUrl": "https://drive.google.com/file/d/1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -127771,15 +127154,6 @@
                   "subject": "FODS",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -129091,33 +128465,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9",
-                  "name": "B2B PAI UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9",
-                  "viewUrl": "https://drive.google.com/file/d/18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft",
-                  "name": "B2B PAI UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft",
-                  "viewUrl": "https://drive.google.com/file/d/1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY",
-                  "name": "B2B PAI UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY",
-                  "viewUrl": "https://drive.google.com/file/d/1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -129144,15 +128491,6 @@
                   "subject": "PAI",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -129689,15 +129027,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2",
-                  "name": "B2B PSLA UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2",
-                  "viewUrl": "https://drive.google.com/file/d/1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -129724,15 +129053,6 @@
                   "subject": "PSLA",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECT",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -130451,42 +129771,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ",
-                  "name": "B2B UHV UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ",
-                  "viewUrl": "https://drive.google.com/file/d/1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr",
-                  "name": "B2B UHV UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr",
-                  "viewUrl": "https://drive.google.com/file/d/1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3",
-                  "name": "B2B UHV UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3",
-                  "viewUrl": "https://drive.google.com/file/d/1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH",
-                  "name": "B2B UHV UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH",
-                  "viewUrl": "https://drive.google.com/file/d/1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -130513,15 +129797,6 @@
                   "subject": "UHV",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -130921,15 +130196,6 @@
                   "subject": "CRST",
                   "addedAt": "2025-10-05T13:14:15.826Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -131379,33 +130645,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H",
-                  "name": "B2B DLD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H",
-                  "viewUrl": "https://drive.google.com/file/d/1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV",
-                  "name": "B2B DLD UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV",
-                  "viewUrl": "https://drive.google.com/file/d/1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO",
-                  "name": "B2B DLD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO",
-                  "viewUrl": "https://drive.google.com/file/d/1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -131432,15 +130671,6 @@
                   "subject": "DLD",
                   "addedAt": "2025-10-05T13:14:15.826Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -132242,51 +131472,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu",
-                  "name": "B2B DS UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu",
-                  "viewUrl": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH",
-                  "name": "B2B DS UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH",
-                  "viewUrl": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz",
-                  "name": "B2B DS UNIT 2 - SEARCHING AND SORTING",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz",
-                  "viewUrl": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5",
-                  "name": "B2B DS UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5",
-                  "viewUrl": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG",
-                  "name": "B2B DS UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG",
-                  "viewUrl": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -133159,42 +132344,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD",
-                  "name": "B2B FOD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD",
-                  "viewUrl": "https://drive.google.com/file/d/1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY",
-                  "name": "B2B FOD UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY",
-                  "viewUrl": "https://drive.google.com/file/d/1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2",
-                  "name": "B2B FOD  UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2",
-                  "viewUrl": "https://drive.google.com/file/d/1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH",
-                  "name": "B2B FOD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH",
-                  "viewUrl": "https://drive.google.com/file/d/1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -133221,15 +132370,6 @@
                   "subject": "FODS",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -134541,33 +133681,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9",
-                  "name": "B2B PAI UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9",
-                  "viewUrl": "https://drive.google.com/file/d/18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft",
-                  "name": "B2B PAI UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft",
-                  "viewUrl": "https://drive.google.com/file/d/1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY",
-                  "name": "B2B PAI UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY",
-                  "viewUrl": "https://drive.google.com/file/d/1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -134594,15 +133707,6 @@
                   "subject": "PAI",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -135139,15 +134243,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2",
-                  "name": "B2B PSLA UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2",
-                  "viewUrl": "https://drive.google.com/file/d/1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -135174,15 +134269,6 @@
                   "subject": "PSLA",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECT",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
@@ -135901,42 +134987,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ",
-                  "name": "B2B UHV UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ",
-                  "viewUrl": "https://drive.google.com/file/d/1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr",
-                  "name": "B2B UHV UNIT 2",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr",
-                  "viewUrl": "https://drive.google.com/file/d/1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3",
-                  "name": "B2B UHV UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3",
-                  "viewUrl": "https://drive.google.com/file/d/1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH",
-                  "name": "B2B UHV UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH",
-                  "viewUrl": "https://drive.google.com/file/d/1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -135963,15 +135013,6 @@
                   "subject": "UHV",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -136371,15 +135412,6 @@
                   "subject": "CRST",
                   "addedAt": "2025-10-05T13:14:15.826Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [],
@@ -136829,33 +135861,6 @@
                   },
                   "source": "kamati",
                   "sourceTag": "Kamati"
-                },
-                {
-                  "id": "1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H",
-                  "name": "B2B DLD UNIT 1",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H",
-                  "viewUrl": "https://drive.google.com/file/d/1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV",
-                  "name": "B2B DLD UNIT 3",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV",
-                  "viewUrl": "https://drive.google.com/file/d/1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
-                },
-                {
-                  "id": "1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO",
-                  "name": "B2B DLD UNIT 4",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO",
-                  "viewUrl": "https://drive.google.com/file/d/1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO/preview",
-                  "originalFolder": "Notes",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "pyqs": [
@@ -136882,15 +135887,6 @@
                   "subject": "DLD",
                   "addedAt": "2025-10-05T13:14:15.826Z",
                   "index": 2
-                },
-                {
-                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "name": "QUESTION PAPER ALL SUBJECTS",
-                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
-                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
-                  "originalFolder": "PYQ",
-                  "source": "B2B",
-                  "sourceTag": "B2B (Bunk to Brains)"
                 }
               ],
               "books": [
