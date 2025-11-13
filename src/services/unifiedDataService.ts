@@ -164,20 +164,25 @@ class UnifiedDataService {
     fifteenFourteenMaterials: Record<string, BaseGoogleDriveFile[]>,
     unifiedContentMaterials: Record<string, BaseGoogleDriveFile[]>
   ): Record<string, GoogleDriveFile[]> {
+    // Toggle to disable Kamati notes (set to true to re-enable)
+    const ENABLE_KAMATI_NOTES = false;
+    
     // Helper to preserve existing source or add new source
     // This allows materials from UnifiedContent.json to keep their specific sources
     // (kamati, google-drive-sem3, etc.) while providing a fallback for unattributed materials
     const preserveOrAddSource = (materials: BaseGoogleDriveFile[], fallbackSource: string): GoogleDriveFile[] => {
-      return materials.map(material => {
-        const existingSource = (material as any).source;
-        
-        if (existingSource && existingSource !== 'UnifiedContent') {
-          // Preserve any specific source (kamati, google-drive-sem3, studyx, dotnotes, etc.)
-          return { ...material, source: existingSource as any };
-        }
-        // Use fallback for materials without a specific source
-        return { ...material, source: fallbackSource as any };
-      });
+      return materials
+        .filter(material => ENABLE_KAMATI_NOTES || (material as any).source !== 'kamati')
+        .map(material => {
+          const existingSource = (material as any).source;
+          
+          if (existingSource && existingSource !== 'UnifiedContent') {
+            // Preserve any specific source (kamati, google-drive-sem3, studyx, dotnotes, etc.)
+            return { ...material, source: existingSource as any };
+          }
+          // Use fallback for materials without a specific source
+          return { ...material, source: fallbackSource as any };
+        });
     };
 
     return {
@@ -333,12 +338,25 @@ class UnifiedDataService {
    * Get all materials organized by type for a subject from all four sources
    */
   async getOrganizedMaterials(branchName: string, semester: string, subjectName: string): Promise<Record<string, GoogleDriveFile[]>> {
+    // Toggle to disable Kamati notes (set to true to re-enable)
+    const ENABLE_KAMATI_NOTES = false;
+    
     try {
       // First check if UnifiedContent has this subject
       const unifiedContentMaterials = await unifiedContentService.getOrganizedMaterials(branchName, semester, subjectName);
       
       if (unifiedContentMaterials) {
         console.log(`[Unified] Found materials in UnifiedContent for ${subjectName}, using those`);
+        
+        // Filter out kamati notes if disabled
+        if (!ENABLE_KAMATI_NOTES) {
+          const filteredMaterials: Record<string, GoogleDriveFile[]> = {};
+          for (const [key, materials] of Object.entries(unifiedContentMaterials)) {
+            filteredMaterials[key] = materials.filter((m: any) => m.source !== 'kamati');
+          }
+          return filteredMaterials;
+        }
+        
         // Return materials with their original sources from UnifiedContent.json
         // (kamati, google-drive-sem3, or any other future sources)
         return unifiedContentMaterials as Record<string, GoogleDriveFile[]>;
