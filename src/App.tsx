@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
+import SearchResults from "./pages/SearchResults";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/:branch/:semester" element={<BranchSemester />} />
           <Route path="/subject/:name" element={<Subject />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="/search" element={<SearchResults />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
