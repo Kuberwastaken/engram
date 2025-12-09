@@ -20,6 +20,25 @@ class UnifiedDataService {
   constructor() {
     this.subjectMapper = new EnhancedSubjectMapper();
   }  /**
+   * Check if Kamati notes are enabled
+   */
+  public get isKamatiEnabled(): boolean {
+    if (typeof window === 'undefined') return false;
+    return localStorage.getItem('kamati_notes_enabled') === 'true';
+  }
+
+  /**
+   * Toggle Kamati notes visibility
+   */
+  public toggleKamatiNotes(): boolean {
+    if (typeof window === 'undefined') return false;
+    const currentState = this.isKamatiEnabled;
+    const newState = !currentState;
+    localStorage.setItem('kamati_notes_enabled', String(newState));
+    return newState;
+  }
+
+  /**
    * Find matching subject names across sources using enhanced intelligent mapping
    */
   private findMatchingSubjects(
@@ -165,8 +184,8 @@ class UnifiedDataService {
     unifiedContentMaterials: Record<string, BaseGoogleDriveFile[]>
   ): Record<string, GoogleDriveFile[]> {
     // Toggle to disable Kamati notes (set to true to re-enable)
-    const ENABLE_KAMATI_NOTES = false;
-    
+    const ENABLE_KAMATI_NOTES = this.isKamatiEnabled;
+
     // Helper to preserve existing source or add new source
     // This allows materials from UnifiedContent.json to keep their specific sources
     // (kamati, google-drive-sem3, etc.) while providing a fallback for unattributed materials
@@ -175,7 +194,7 @@ class UnifiedDataService {
         .filter(material => ENABLE_KAMATI_NOTES || (material as any).source !== 'kamati')
         .map(material => {
           const existingSource = (material as any).source;
-          
+
           if (existingSource && existingSource !== 'UnifiedContent') {
             // Preserve any specific source (kamati, google-drive-sem3, studyx, dotnotes, etc.)
             return { ...material, source: existingSource as any };
@@ -304,18 +323,18 @@ class UnifiedDataService {
         fifteenFourteenDataService.getAvailableSubjects(branchName, semester),
         unifiedContentService.getAvailableSubjects(branchName, semester)
       ]);
-      
+
       console.log(`[Unified] Subject counts - StudyX: ${studyXSubjects.length}, DotNotes: ${dotNotesSubjects.length}, FifteenFourteen: ${fifteenFourteenSubjects.length}, UnifiedContent: ${unifiedContentSubjects.length}`);
-      
+
       // If UnifiedContent has subjects for this branch/semester, prioritize it
       if (unifiedContentSubjects.length > 0) {
         console.log(`[Unified] Using UnifiedContent subjects for ${branchName} ${semester}:`, unifiedContentSubjects);
         return unifiedContentSubjects.sort();
       }
-      
+
       // Fallback to existing logic for other sources
       const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
-      
+
       // Deduplicate by normalized subject name
       const normalizedSet = new Map<string, string>();
       Array.from(subjectMap.values())
@@ -339,15 +358,15 @@ class UnifiedDataService {
    */
   async getOrganizedMaterials(branchName: string, semester: string, subjectName: string): Promise<Record<string, GoogleDriveFile[]>> {
     // Toggle to disable Kamati notes (set to true to re-enable)
-    const ENABLE_KAMATI_NOTES = false;
-    
+    const ENABLE_KAMATI_NOTES = this.isKamatiEnabled;
+
     try {
       // First check if UnifiedContent has this subject
       const unifiedContentMaterials = await unifiedContentService.getOrganizedMaterials(branchName, semester, subjectName);
-      
+
       if (unifiedContentMaterials) {
         console.log(`[Unified] Found materials in UnifiedContent for ${subjectName}, using those`);
-        
+
         // Filter out kamati notes if disabled
         if (!ENABLE_KAMATI_NOTES) {
           const filteredMaterials: Record<string, GoogleDriveFile[]> = {};
@@ -356,21 +375,21 @@ class UnifiedDataService {
           }
           return filteredMaterials;
         }
-        
+
         // Return materials with their original sources from UnifiedContent.json
         // (kamati, google-drive-sem3, or any other future sources)
         return unifiedContentMaterials as Record<string, GoogleDriveFile[]>;
       }
-      
+
       // Fallback to existing multi-source logic
       const [studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects] = await Promise.all([
         studyXDataService.getAvailableSubjects(branchName, semester),
         dotNotesDataService.getAvailableSubjects(branchName, semester),
         fifteenFourteenDataService.getAvailableSubjects(branchName, semester)
       ]);
-      
+
       const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
-      
+
       let mappingInfo = subjectMap.get(subjectName);
       if (!mappingInfo) {
         for (const [key, value] of subjectMap) {
@@ -380,11 +399,11 @@ class UnifiedDataService {
           }
         }
       }
-      
+
       const studyXSubjectName = mappingInfo?.studyX;
       const dotNotesSubjectName = mappingInfo?.dotNotes;
       const fifteenFourteenSubjectName = mappingInfo?.fifteenFourteen;
-      
+
       const materialPromises: Promise<Record<string, BaseGoogleDriveFile[]>>[] = [
         studyXSubjectName
           ? studyXDataService.getOrganizedMaterials(branchName, semester, studyXSubjectName)
@@ -396,9 +415,9 @@ class UnifiedDataService {
           ? fifteenFourteenDataService.getOrganizedMaterials(branchName, semester, fifteenFourteenSubjectName)
           : Promise.resolve(this.getEmptyOrganizedMaterials())
       ];
-      
+
       const [studyXMaterials, dotNotesMaterials, fifteenFourteenMaterials] = (await Promise.all(materialPromises));
-      
+
       // Apply material type rules for three sources
       const result = this.applyMaterialTypeRules(studyXMaterials, dotNotesMaterials, fifteenFourteenMaterials);
       return result;
@@ -440,14 +459,14 @@ class UnifiedDataService {
   /**
    * Search subjects across all branches and semesters in all three sources
    */
-  async searchSubjects(query: string): Promise<Array<{branch: string, semester: string, subject: string, source: string}>> {
+  async searchSubjects(query: string): Promise<Array<{ branch: string, semester: string, subject: string, source: string }>> {
     try {
       const [studyXResults, dotNotesResults, fifteenFourteenResults] = await Promise.all([
         studyXDataService.searchSubjects(query),
         dotNotesDataService.searchSubjects(query),
         fifteenFourteenDataService.searchSubjects(query)
       ]);
-      const allResults: Array<{branch: string, semester: string, subject: string, source: string}> = [];
+      const allResults: Array<{ branch: string, semester: string, subject: string, source: string }> = [];
       if (studyXResults) allResults.push(...studyXResults.map(r => ({ ...r, source: 'StudyX' })));
       if (dotNotesResults) allResults.push(...dotNotesResults.map(r => ({ ...r, source: 'DotNotes' })));
       if (fifteenFourteenResults) allResults.push(...fifteenFourteenResults.map(r => ({ ...r, source: 'FifteenFourteen' })));
@@ -495,7 +514,7 @@ class UnifiedDataService {
   getFileName(file: GoogleDriveFile): string {
     return studyXDataService.getFileName(file);
   }
-    isPdfFile(fileName: string): boolean {
+  isPdfFile(fileName: string): boolean {
     return studyXDataService.isPdfFile(fileName);
   }
 
@@ -505,14 +524,14 @@ class UnifiedDataService {
   async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
     try {
       console.log(`[Unified] Fetching syllabus for ${branchName} ${semester} ${subjectName}`);
-      
+
       // First, try to get materials from UnifiedContent (which includes Sem3Notes)
       const unifiedMaterials = await unifiedContentService.getOrganizedMaterials(branchName, semester, subjectName);
-      
+
       if (unifiedMaterials && unifiedMaterials.syllabus && unifiedMaterials.syllabus.length > 0) {
         console.log(`[Unified] Found ${unifiedMaterials.syllabus.length} syllabus items from UnifiedContent`);
         console.log('[Unified] Syllabus items:', unifiedMaterials.syllabus);
-        
+
         // Check if we have structured syllabus data (type: "structured")
         const structuredItems = unifiedMaterials.syllabus.filter((f: any) => f.type === 'structured');
         if (structuredItems.length > 0) {
@@ -530,7 +549,7 @@ class UnifiedDataService {
           console.log('[Unified] Returning structured syllabus:', syllabusData);
           return syllabusData;
         }
-        
+
         // Look for JSON file (old format)
         const jsonFile = unifiedMaterials.syllabus.find((f: any) => f.name?.toLowerCase().endsWith('.json'));
         if (jsonFile) {
@@ -538,12 +557,12 @@ class UnifiedDataService {
           const { contentFetchingService } = await import('./contentFetchingService');
           return await contentFetchingService.fetchSyllabusData([jsonFile]);
         }
-        
+
         // If no structured data or JSON, check if we have PDF files
-        const pdfFiles = unifiedMaterials.syllabus.filter((f: any) => 
+        const pdfFiles = unifiedMaterials.syllabus.filter((f: any) =>
           f.name?.toLowerCase().endsWith('.pdf')
         );
-        
+
         if (pdfFiles.length > 0) {
           console.log(`[Unified] No structured syllabus found, returning ${pdfFiles.length} PDF files for embedding`);
           // Return PDF files in a special format that the frontend can detect and embed
@@ -553,18 +572,18 @@ class UnifiedDataService {
           } as SyllabusData;
         }
       }
-      
+
       // Fallback to DotNotes if not found in UnifiedContent
       const mapping = this.subjectMapper.mapStudyXToDotNotes(subjectName, branchName, semester);
       const dotNotesSubjectCode = mapping.dotNotesCode;
-      
+
       if (!dotNotesSubjectCode) {
         console.log(`[Unified] No DotNotes subject code found for ${subjectName}, no syllabus available`);
         return null;
       }
-      
+
       console.log(`[Unified] Falling back to DotNotes subject code "${dotNotesSubjectCode}" for syllabus`);
-      
+
       // Fetch syllabus from consolidated data using the mapped subject code
       return await consolidatedDataService.getSyllabusData(branchName, semester, dotNotesSubjectCode);
     } catch (error) {
@@ -579,7 +598,7 @@ class UnifiedDataService {
   async fetchVideosData(branchName: string, semester: string, subjectName: string): Promise<VideoData[]> {
     try {
       console.log(`[Unified] Fetching videos for ${branchName} ${semester} ${subjectName}`);
-      
+
       // For now, videos come from DotNotes only since StudyX doesn't have structured video data
       // In the future, this could be expanded to include both sources
       return await dotNotesDataService.fetchVideosData(branchName, semester, subjectName);

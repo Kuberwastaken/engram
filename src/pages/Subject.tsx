@@ -49,10 +49,10 @@ const AutoOpenPDFCard: React.FC<{
           handleCloseFullscreen();
         }
       };
-      
+
       document.addEventListener('keydown', handleEscape);
       document.body.classList.add('pdf-fullscreen-open');
-      
+
       return () => {
         document.removeEventListener('keydown', handleEscape);
         document.body.classList.remove('pdf-fullscreen-open');
@@ -63,9 +63,9 @@ const AutoOpenPDFCard: React.FC<{
     const fileId = unifiedDataService.getFileId(file);
 
     return (
-      <div 
+      <div
         className="fixed inset-0 w-screen h-screen bg-black flex flex-col overflow-hidden"
-        style={{ 
+        style={{
           zIndex: 999999,
           position: 'fixed',
           top: 0,
@@ -85,7 +85,7 @@ const AutoOpenPDFCard: React.FC<{
             >
               <ArrowLeft className="w-4 h-4 text-gray-300" />
             </button>
-            
+
             {/* Desktop: Show full path */}
             <div className="hidden md:block text-sm text-gray-300">
               <span className="opacity-60">{formatSubjectName(subjectName)}</span>
@@ -94,7 +94,7 @@ const AutoOpenPDFCard: React.FC<{
               <span className="mx-2 opacity-40">/</span>
               <span className="text-white font-medium">{fileName}</span>
             </div>
-            
+
             {/* Mobile: Show only file name */}
             <div className="md:hidden text-sm text-gray-300">
               <span className="text-white font-medium">{fileName}</span>
@@ -106,7 +106,7 @@ const AutoOpenPDFCard: React.FC<{
             </div>
           </div>
         </div>
-        
+
         {/* PDF content */}
         <div className="flex-1 relative w-full h-full overflow-hidden bg-black">
           {isLoading && (
@@ -118,13 +118,13 @@ const AutoOpenPDFCard: React.FC<{
               </div>
             </div>
           )}
-          
+
           <iframe
             src={file.previewUrl || unifiedDataService.getEmbedUrl(fileId)}
             className="w-full h-full border-0 block"
             onLoad={() => setIsLoading(false)}
             title={fileName}
-            style={{ 
+            style={{
               backgroundColor: '#000',
               minHeight: '100%',
               width: '100%',
@@ -183,7 +183,7 @@ const Subject = () => {
   const [materials, setMaterials] = useState<Record<string, GoogleDriveFile[]>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  
+
   // State for syllabus and videos data
   const [syllabusData, setSyllabusData] = useState<SyllabusData | null>(null);
   const [videosData, setVideosData] = useState<VideoData[] | null>(null);
@@ -218,20 +218,20 @@ const Subject = () => {
       try {
         setLoading(true);
         console.log('Loading materials for:', { branch, semester, subjectName });
-        
+
         const organizedMaterials = await unifiedDataService.getOrganizedMaterials(
-          branch, 
-          semester, 
+          branch,
+          semester,
           subjectName
         );
-        
+
         console.log('Organized materials received:', organizedMaterials);
-        
+
         // Log each material type and count
         Object.keys(organizedMaterials).forEach(type => {
           console.log(`${type}: ${organizedMaterials[type].length} files`);
         });
-        
+
         setMaterials(organizedMaterials);
         setError(null);
       } catch (err) {
@@ -265,7 +265,7 @@ const Subject = () => {
         setSyllabusLoading(true);
         setSyllabusError(null);
         console.log('Loading syllabus data for:', { branch, semester, subjectName });
-        
+
         const data = await unifiedDataService.fetchSyllabusData(branch, semester, subjectName);
         setSyllabusData(data);
       } catch (err) {
@@ -299,7 +299,7 @@ const Subject = () => {
         setVideosLoading(true);
         setVideosError(null);
         console.log('Loading videos data for:', { branch, semester, subjectName });
-        
+
         const data = await unifiedDataService.fetchVideosData(branch, semester, subjectName);
         setVideosData(data);
       } catch (err) {
@@ -337,8 +337,8 @@ const Subject = () => {
             <FileText className="w-16 h-16 text-gray-600 mx-auto mb-4" />
             <h3 className="text-lg font-medium text-gray-300 mb-2">Unable to load materials</h3>
             <p className="text-gray-500 mb-4">{error}</p>
-            <Button 
-              onClick={() => window.location.reload()} 
+            <Button
+              onClick={() => window.location.reload()}
               className="bg-blue-600 hover:bg-blue-700"
             >
               Try Again
@@ -368,11 +368,11 @@ const Subject = () => {
               <FileText className="w-16 h-16 text-gray-600 mx-auto mb-4" />
               <h3 className="text-lg font-medium text-gray-300 mb-2">Unable to load syllabus</h3>
               <p className="text-gray-500 mb-4">{syllabusError || 'No syllabus data available'}</p>
-              <Button 
+              <Button
                 onClick={() => {
                   setSyllabusData(null);
                   setSyllabusError(null);
-                }} 
+                }}
                 className="bg-blue-600 hover:bg-blue-700"
               >
                 Try Again
@@ -399,7 +399,7 @@ const Subject = () => {
                 </div>
               </div>
             </div>
-            
+
             {pdfFiles.map((pdf, index) => (
               <div key={pdf.id || index} className="space-y-3">
                 <div className="flex items-center justify-between">
@@ -427,9 +427,9 @@ const Subject = () => {
           </div>
         );
       }
-      
+
       const units = Object.entries(syllabusData).filter(([key]) => !key.startsWith('_'));
-      
+
       return (
         <div className="space-y-8">
           <Accordion type="multiple" className="w-full">
@@ -437,7 +437,7 @@ const Subject = () => {
               // Handle both old string format and new object format
               let contentToDisplay: string;
               let hours: number | undefined;
-              
+
               if (typeof unitContent === 'string') {
                 contentToDisplay = unitContent;
               } else if (unitContent && typeof unitContent === 'object' && 'content' in unitContent) {
@@ -446,7 +446,7 @@ const Subject = () => {
               } else {
                 contentToDisplay = JSON.stringify(unitContent);
               }
-              
+
               return (
                 <AccordionItem key={unitKey} value={`item-${index}`} className="border-gray-800/30">
                   <AccordionTrigger className="text-gray-200 hover:text-white hover:no-underline font-mono font-medium tracking-tight text-lg">
@@ -459,7 +459,7 @@ const Subject = () => {
               );
             })}
           </Accordion>
-          
+
           {units.length === 0 && (
             <div className="text-center py-8">
               <FileText className="w-16 h-16 text-gray-600 mx-auto mb-4" />
@@ -490,11 +490,11 @@ const Subject = () => {
               <Play className="w-16 h-16 text-gray-600 mx-auto mb-4" />
               <h3 className="text-lg font-medium text-gray-300 mb-2">Unable to load videos</h3>
               <p className="text-gray-500 mb-4">{videosError || 'No video data available'}</p>
-              <Button 
+              <Button
                 onClick={() => {
                   setVideosData(null);
                   setVideosError(null);
-                }} 
+                }}
                 className="bg-blue-600 hover:bg-blue-700"
               >
                 Try Again
@@ -524,8 +524,8 @@ const Subject = () => {
                     {/* Video Thumbnail */}
                     {video.thumbnailUrl && (
                       <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden">
-                        <img 
-                          src={video.thumbnailUrl} 
+                        <img
+                          src={video.thumbnailUrl}
                           alt={video.title}
                           className="w-full h-full object-cover"
                           onError={(e) => {
@@ -538,7 +538,7 @@ const Subject = () => {
                         </div>
                       </div>
                     )}
-                    
+
                     {/* Video Info */}
                     <div>
                       <h3 className="font-semibold text-gray-200 text-sm mb-1 line-clamp-2">
@@ -550,12 +550,12 @@ const Subject = () => {
                         </p>
                       )}
                     </div>
-                    
+
                     {/* Action Buttons */}
                     <div className="flex gap-2">
                       {video.embedUrl && (
-                        <Button 
-                          size="sm" 
+                        <Button
+                          size="sm"
                           className="flex-1 bg-red-600 hover:bg-red-700 text-xs"
                           onClick={() => window.open(video.embedUrl, '_blank')}
                         >
@@ -564,9 +564,9 @@ const Subject = () => {
                         </Button>
                       )}
                       {video.playlistUrl && (
-                        <Button 
-                          size="sm" 
-                          variant="outline" 
+                        <Button
+                          size="sm"
+                          variant="outline"
                           className="flex-1 border-gray-600 text-gray-300 hover:bg-gray-800 text-xs"
                           onClick={() => window.open(video.playlistUrl, '_blank')}
                         >
@@ -587,10 +587,10 @@ const Subject = () => {
     // Handle Akash tab: auto-open PDF if only one Akash file exists
     if (tabId === 'akash') {
       const akashMaterials = materials['akash'] || [];
-      
+
       if (akashMaterials.length === 1) {
         const akashFile = akashMaterials[0];
-        
+
         // Return auto-opening PDF viewer component with a ref to trigger fullscreen
         return (
           <div className="space-y-3">
@@ -616,8 +616,8 @@ const Subject = () => {
     // Render materials from Google Drive
     const tabMaterials = materials[tabId] || [];
     return (
-      <MaterialsList 
-        materials={tabMaterials} 
+      <MaterialsList
+        materials={tabMaterials}
         subjectName={formatSubjectName(subjectName)}
         materialType={tabId}
       />
@@ -627,7 +627,7 @@ const Subject = () => {
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden grain">
       <StarField />
-      
+
       {/* Floating Header */}
       <header className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-7xl">
         <div className="bg-gray-900/20 backdrop-blur-xl border border-gray-800/30 rounded-2xl px-6 py-3">
@@ -646,17 +646,25 @@ const Subject = () => {
                 <span className="text-gray-300">{branch}</span> • <span className="text-gray-300">{semester}</span>
               </div>
             </div>
-            
+
             <Button
               variant="ghost"
               size="icon"
               className="w-10 h-10 rounded-full bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700/30 transition-all duration-300 hover:scale-105 p-0 overflow-hidden"
-              onClick={() => window.open('https://github.com/kuberwastaken/engram', '_blank')}
-              title="View on GitHub"
+              onDoubleClick={() => {
+                const newState = unifiedDataService.toggleKamatiNotes();
+                toast({
+                  title: newState ? "Secret Mode" : "Shh",
+                  description: "Reloading page to apply changes...",
+                  duration: 2000,
+                });
+                setTimeout(() => window.location.reload(), 1000);
+              }}
+              title="Double tap to toggle Kamati notes"
             >
-              <img 
-                src="/assets/web-app-manifest-192x192.png" 
-                alt="ENGRAM" 
+              <img
+                src="/assets/web-app-manifest-192x192.png"
+                alt="ENGRAM"
                 className="w-full h-full object-cover rounded-full opacity-90 hover:opacity-100 transition-opacity"
               />
             </Button>
