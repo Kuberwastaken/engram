@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { Card, CardContent } from '@/components/ui/card';
-import { FileText, Loader2, X, ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { FileText, Loader2, X, ArrowLeft, Download, Eye, ExternalLink } from 'lucide-react';
 import { GoogleDriveFile } from '@/services/unifiedDataService';
 import { unifiedDataService } from '@/services/unifiedDataService';
 import { toast } from '@/hooks/use-toast';
@@ -21,24 +22,18 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
   const [isLoading, setIsLoading] = useState(false);
   const [embedError, setEmbedError] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
-    // Get file info using the service helper methods
+
+  // Get file info using the service helper methods
   const fileName = unifiedDataService.getFileName(file);
   const fileId = unifiedDataService.getFileId(file);
-  // SVG Icons
-  const DownloadIcon = () => (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-gray-300">
-      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <polyline points="7,10 12,15 17,10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-    </svg>
-  );
 
-  const EyeIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-gray-400 hover:text-white transition-colors cursor-pointer">
-      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="2"/>
-    </svg>
-  );
+  // Determine if we can show a preview or at least open it
+  const canPreview = showPreview && fileId;
+  const canOpenExternal = !canPreview && (file.webViewUrl || fileId);
+
+  // SVG Icons
+  // SVG Icons
+
 
   const handleDownload = () => {
     toast({
@@ -69,7 +64,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
   const handleOpenInDrive = (e: React.MouseEvent) => {
     e.stopPropagation();
     console.log('Eye icon clicked! Opening Google Drive preview for:', fileName);
-    
+
     // Open Google Drive preview in new tab
     if (file.webViewUrl) {
       console.log('Opening webViewUrl:', file.webViewUrl);
@@ -104,11 +99,11 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
           handleCloseFullscreen();
         }
       };
-      
+
       document.addEventListener('keydown', handleEscape);
       // Add class to body to prevent scrolling
       document.body.classList.add('pdf-fullscreen-open');
-      
+
       return () => {
         document.removeEventListener('keydown', handleEscape);
         document.body.classList.remove('pdf-fullscreen-open');
@@ -116,9 +111,9 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
     }, []);
 
     return (
-      <div 
+      <div
         className="fixed inset-0 w-screen h-screen bg-black flex flex-col overflow-hidden"
-        style={{ 
+        style={{
           zIndex: 999999,
           position: 'fixed',
           top: 0,
@@ -140,7 +135,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
             <div className="absolute top-2 left-3/4 w-0.5 h-0.5 bg-white/35 rounded-full animate-pulse"></div>
             <div className="absolute top-6 left-1/2 w-0.5 h-0.5 bg-white/20 rounded-full"></div>
           </div>
-            {/* Left side - Back button and path */}
+          {/* Left side - Back button and path */}
           <div className="flex items-center space-x-4 relative z-10">
             <button
               onClick={handleCloseFullscreen}
@@ -148,7 +143,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
             >
               <ArrowLeft className="w-4 h-4 text-gray-300" />
             </button>
-            
+
             {/* Desktop: Show full path */}
             <div className="hidden md:block text-sm text-gray-300">
               <span className="opacity-60">{formatSubjectName(subjectName)}</span>
@@ -161,7 +156,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               <span className="mx-2 opacity-40">/</span>
               <span className="text-white font-medium">{fileName}</span>
             </div>
-            
+
             {/* Mobile: Show only file name */}
             <div className="md:hidden text-sm text-gray-300">
               <span className="text-white font-medium">{fileName}</span>
@@ -180,7 +175,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
             >
               Download
             </button>
-            
+
             {/* Mobile: Show download button as icon only */}
             <button
               onClick={(e) => {
@@ -190,9 +185,9 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               className="md:hidden p-1.5 rounded bg-gray-900/50 hover:bg-gray-800/70 transition-colors border border-gray-700/50"
               title="Download PDF"
             >
-              <DownloadIcon />
+              <Download className="w-4 h-4 text-gray-300" />
             </button>
-            
+
             <div className="hidden md:block text-xs text-gray-400">
               {showSourceTag && file.source ? `By ${file.source}` : 'Press ESC to close'}
             </div>
@@ -208,7 +203,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               </div>
             </div>
           )}
-          
+
           {embedError ? (
             <div className="h-full flex items-center justify-center">
               <div className="text-center">
@@ -248,7 +243,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
               onLoad={handleEmbedLoad}
               onError={handleEmbedError}
               title={fileName}
-              style={{ 
+              style={{
                 backgroundColor: '#000',
                 minHeight: '100%',
                 width: '100%',
@@ -268,43 +263,62 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ file, showPreview = true, classNa
   };
   return (
     <>
-      <Card 
-        className={`bg-gray-900/20 border-gray-800/30 hover:bg-gray-800/40 hover:border-gray-600/50 transition-all duration-200 cursor-pointer group ${className}`}
+      <Card
+        className={`bg-gray-900/20 border-gray-800/30 backdrop-blur-sm hover:bg-gray-800/40 hover:border-blue-500/30 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300 cursor-pointer group flex flex-col h-full ${className}`}
         onClick={handleCardClick}
       >
-        <CardContent className="p-3 sm:p-4">
-          <div className="flex justify-between items-start gap-2">
-            <div className="flex-1 min-w-0">
-              <div className="flex items-start gap-2">
-                <FileText className="w-4 h-4 text-blue-400 flex-shrink-0 mt-0.5" />
-                <h4 className="text-gray-300 font-medium group-hover:text-white transition-colors break-words line-clamp-2 text-sm sm:text-base">
-                  {fileName}
-                </h4>
-              </div>
+        <CardContent className="p-5 flex-1 flex flex-col justify-between">
+          <div className="mb-4">
+            <h4 className="text-gray-200 font-mono font-semibold text-lg leading-relaxed break-words group-hover:text-blue-200 transition-colors">
+              {fileName}
+            </h4>
+          </div>
+
+          <div className="flex items-center justify-between pt-4 border-t border-gray-800/50 mt-auto">
+            <div className="flex items-center">
+
               {showSourceTag && file.source && (
-                <div className="mt-2 ml-6">
-                  <span className="inline-block px-2 py-0.5 bg-gray-700/50 text-gray-300 text-xs rounded border border-gray-600/30">
-                    {file.source}
-                  </span>
-                </div>
+                <span className="text-[10px] text-blue-300/70 px-2 py-0.5 bg-blue-500/5 rounded-full border border-blue-500/10">
+                  {file.source}
+                </span>
               )}
             </div>
-            <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0" onClick={(e) => e.stopPropagation()}>
-              {showPreview && fileId && (
-                <div onClick={handleOpenInDrive} title="Open in Google Drive" className="p-1 hover:bg-gray-700/30 rounded">
-                  <EyeIcon />
-                </div>
-              )}
-              <div 
+
+            <div className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
+              {canPreview ? (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 text-gray-500 hover:text-blue-400 hover:bg-blue-500/10 rounded-md transition-all"
+                  onClick={handleOpenInDrive}
+                  title="Preview"
+                >
+                  <Eye className="w-4 h-4" />
+                </Button>
+              ) : canOpenExternal ? (
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="h-8 w-8 text-gray-500 hover:text-blue-400 hover:bg-blue-500/10 rounded-md transition-all"
+                  onClick={handleOpenInDrive}
+                  title="Open Externally"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                </Button>
+              ) : null}
+
+              <Button
+                variant="ghost"
+                size="icon"
+                className="h-8 w-8 text-gray-500 hover:text-green-400 hover:bg-green-500/10 rounded-md transition-all"
                 onClick={(e) => {
                   e.stopPropagation();
                   handleDownload();
                 }}
-                title="Download PDF"
-                className="p-1 hover:bg-gray-700/30 rounded"
+                title="Download"
               >
-                <DownloadIcon />
-              </div>
+                <Download className="w-4 h-4" />
+              </Button>
             </div>
           </div>
         </CardContent>

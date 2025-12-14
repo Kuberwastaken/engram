@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Github } from 'lucide-react';
 import { StarField } from '@/components/StarField';
 import { SubjectGrid } from '@/components/SubjectGrid';
+import { SEO } from '@/components/SEO';
 
 const BranchSemester = () => {
   const { branch, semester } = useParams<{ branch: string; semester: string }>();
@@ -16,24 +17,24 @@ const BranchSemester = () => {
   const branchName = branch?.toUpperCase() || '';
   const semesterName = semester?.replace('sem-', '') + (
     semester?.includes('1') ? 'st' :
-    semester?.includes('2') ? 'nd' :
-    semester?.includes('3') ? 'rd' : 'th'
+      semester?.includes('2') ? 'nd' :
+        semester?.includes('3') ? 'rd' : 'th'
   ) || '';
 
   useEffect(() => {
     // Validate the route params
     const validBranches = ['AIDS', 'AIML', 'CIVIL', 'CSE', 'ECE', 'EEE', 'IT', 'MECH'];
     const validSemesters = ['1st', '2nd', '3rd', '4th', '5th', '6th'];
-    
+
     if (!validBranches.includes(branchName) || !validSemesters.includes(semesterName)) {
       navigate('/');
       return;
     }
 
     // Update localStorage with current selection
-    localStorage.setItem('engram-preferences', JSON.stringify({ 
-      branch: branchName, 
-      semester: semesterName 
+    localStorage.setItem('engram-preferences', JSON.stringify({
+      branch: branchName,
+      semester: semesterName
     }));
 
     setLoading(false);
@@ -52,10 +53,19 @@ const BranchSemester = () => {
     );
   }
 
+  const seoTitle = `${branchName} ${semesterName} Semester Notes & Resources`;
+  const seoDesc = `Free PDF notes, PYQs, and books for ${branchName} ${semesterName} Semester IPU students. Download comprehensive study materials for all subjects.`;
+
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
+      <SEO
+        title={seoTitle}
+        description={seoDesc}
+        keywords={[branchName, `${branchName} notes`, `${semesterName} semester`, "IPU notes", "Engineering Resources"]}
+        url={window.location.href}
+      />
       <StarField />
-      
+
       {/* Top Navigation Bar */}
       <header className="fixed top-0 w-full bg-black/40 backdrop-blur-xl border-b border-gray-800/30 z-50">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -67,7 +77,7 @@ const BranchSemester = () => {
           >
             <Github className="w-5 h-5 text-gray-300" />
           </Button>
-          
+
           <div className="flex items-center space-x-4">
             <Button
               variant="ghost"
@@ -79,7 +89,7 @@ const BranchSemester = () => {
               Back to Home
             </Button>
           </div>
-          
+
           <div className="w-10 h-10" />
         </div>
       </header>

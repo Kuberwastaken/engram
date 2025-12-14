@@ -106833,7 +106833,7 @@
       "SEM3": {
         "subjects": {
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -110752,7 +110752,7 @@
             "appliedToBranch": "CSE"
           },
           "psla": {
-            "name": "Programming with Scripting Languages",
+            "name": "Probability Statistics and Linear Programming",
             "code": "PSLA",
             "category": "core",
             "materials": {
@@ -112099,7 +112099,7 @@
       "SEM3": {
         "subjects": {
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -115937,7 +115937,7 @@
             "appliedToBranch": "IT"
           },
           "psla": {
-            "name": "Programming with Scripting Languages",
+            "name": "Probability Statistics and Linear Programming",
             "code": "PSLA",
             "category": "core",
             "materials": {
@@ -117284,7 +117284,7 @@
       "SEM3": {
         "subjects": {
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -119091,7 +119091,7 @@
             ]
           },
           "psla": {
-            "name": "Programming with Scripting Languages",
+            "name": "Probability Statistics and Linear Programming",
             "code": "PSLA",
             "category": "core",
             "materials": {
@@ -120438,7 +120438,7 @@
       "SEM3": {
         "subjects": {
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -122245,7 +122245,7 @@
             ]
           },
           "psla": {
-            "name": "Programming with Scripting Languages",
+            "name": "Probability Statistics and Linear Programming",
             "code": "PSLA",
             "category": "core",
             "materials": {
@@ -129357,7 +129357,7 @@
             ]
           },
           "psla": {
-            "name": "Programming with Scripting Languages",
+            "name": "Probability Statistics and Linear Programming",
             "code": "PSLA",
             "category": "core",
             "materials": {
@@ -130654,7 +130654,7 @@
             ]
           },
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -134807,7 +134807,7 @@
             ]
           },
           "psla": {
-            "name": "Programming with Scripting Languages",
+            "name": "Probability Statistics and Linear Programming",
             "code": "PSLA",
             "category": "core",
             "materials": {
@@ -136104,7 +136104,7 @@
             ]
           },
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -137782,7 +137782,7 @@
             ]
           },
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {
@@ -138893,7 +138893,7 @@
             ]
           },
           "crst": {
-            "name": "Computer Science and Technology",
+            "name": "Critical Reasoning and Thinking",
             "code": "CRST",
             "category": "core",
             "materials": {

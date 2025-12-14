@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Github, BookOpen, Users, Download, Star, Code, ExternalLink, AlertCircle, Heart, Menu, X } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { StarField } from '@/components/StarField';
+import { SEO } from '@/components/SEO';
 
 const Index = () => {
   const [branch, setBranch] = useState('');
@@ -53,7 +54,7 @@ const Index = () => {
   useEffect(() => {
     if (branch && semester) {
       localStorage.setItem('engram-preferences', JSON.stringify({ branch, semester }));
-        // Navigate to the new route format
+      // Navigate to the new route format
       const branchSlug = branch.toLowerCase();
       const semesterSlug = semester.replace(/(\d+)/, 'sem-$1').replace('st', '').replace('nd', '').replace('rd', '').replace('th', '');
       navigate(`/${branchSlug}/${semesterSlug}`);
@@ -62,7 +63,7 @@ const Index = () => {
   // Effect for scroll detection with debouncing for smoother performance
   useEffect(() => {
     let ticking = false;
-    
+
     const handleScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -73,7 +74,7 @@ const Index = () => {
         ticking = true;
       }
     };
-    
+
     window.addEventListener('scroll', handleScroll, { passive: true });
     handleScroll(); // Initial check
     return () => window.removeEventListener('scroll', handleScroll);
@@ -107,121 +108,127 @@ const Index = () => {
     setBranch('');
     setSemester('');
   };
-  
+
+
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden">
+      <SEO
+        title="Home"
+        description="The centralized, No BS Open-Source hub for IP University study materials. Get notes, PYQs, books, syllabus and more for B.Tech CSE, IT, ECE, & AIDS."
+        keywords={["IPU", "GGSIPU", "Notes", "PYQs", "B.Tech", "Engineering", "Kuber Mehta", "Engram"]}
+      />
       <StarField />
-      
+
       {/* Navigation Bar - Clean floating design */}
       <header className="fixed top-0 left-0 right-0 z-50">
         <div className="transition-all duration-500 ease-out">
-          <div 
+          <div
             className={`transition-all duration-500 ease-out
-              ${isScrolled 
-                ? 'mx-auto mt-4 max-w-2xl px-4' 
+              ${isScrolled
+                ? 'mx-auto mt-4 max-w-2xl px-4'
                 : 'mx-0 mt-0 px-0'
               }`
             }
           >
-            <div 
+            <div
               className={`transition-all duration-500 ease-out
-                ${isScrolled 
-                  ? 'bg-black/70 backdrop-blur-md border border-gray-800/50 rounded-full px-6 py-3' 
+                ${isScrolled
+                  ? 'bg-black/70 backdrop-blur-md border border-gray-800/50 rounded-full px-6 py-3'
                   : 'bg-transparent border-b border-gray-800/70 px-4 py-4'
                 }`
               }
             >
-              <div 
+              <div
                 className={`flex justify-between items-center transition-all duration-500 ease-out
-                  ${isScrolled 
-                    ? 'gap-8' 
+                  ${isScrolled
+                    ? 'gap-8'
                     : 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'
                   }`
                 }
               >              {/* Logo */}
-              <div className="flex items-center">
-                <img 
-                  src="/assets/web-app-manifest-192x192.png" 
-                  alt="ENGRAM" 
-                  className={`transition-all duration-500 ease-out
+                <div className="flex items-center">
+                  <img
+                    src="/assets/web-app-manifest-192x192.png"
+                    alt="ENGRAM"
+                    className={`transition-all duration-500 ease-out
                     ${isScrolled ? 'h-7' : 'h-8'}
                   `}
-                />
-              </div>
+                  />
+                </div>
 
-              {/* Centered Navigation - Desktop Only */}
-              <nav className="hidden md:flex items-center space-x-8">
-                <span 
-                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
-                  onClick={() => navigate('/')}
+                {/* Centered Navigation - Desktop Only */}
+                <nav className="hidden md:flex items-center space-x-8">
+                  <span
+                    className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                    onClick={() => navigate('/')}
+                  >
+                    Home
+                  </span>
+                  <span
+                    className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                    onClick={() => navigate('/about')}
+                  >
+                    About
+                  </span>
+                  <span
+                    className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                    onClick={() => navigate('/resources')}
+                  >
+                    Resources
+                  </span>
+                  <span
+                    className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
+                    onClick={() => navigate('/privacy')}
+                  >
+                    Privacy
+                  </span>
+                </nav>
+
+                {/* Desktop GitHub Button */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={`hidden md:flex rounded-full transition-all duration-300 ease-out hover:scale-105
+                  ${isScrolled
+                      ? 'w-9 h-9 bg-gray-800/60 hover:bg-gray-700/60 border border-gray-700/30'
+                      : 'w-10 h-10 hover:bg-gray-800/40'
+                    }`
+                  }
+                  onClick={() => window.open('https://github.com/kuberwastaken/engram', '_blank')}
                 >
-                  Home
-                </span>
-                <span 
-                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
-                  onClick={() => navigate('/about')}
-                >
-                  About
-                </span>
-                <span 
-                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
-                  onClick={() => navigate('/resources')}
-                >
-                  Resources
-                </span>
-                <span 
-                  className="text-sm font-medium text-gray-400 hover:text-white cursor-pointer transition-colors duration-200"
-                  onClick={() => navigate('/privacy')}
-                >
-                  Privacy
-                </span>
-              </nav>
-              
-              {/* Desktop GitHub Button */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className={`hidden md:flex rounded-full transition-all duration-300 ease-out hover:scale-105
-                  ${isScrolled 
-                    ? 'w-9 h-9 bg-gray-800/60 hover:bg-gray-700/60 border border-gray-700/30' 
-                    : 'w-10 h-10 hover:bg-gray-800/40'
-                  }`
-                }
-                onClick={() => window.open('https://github.com/kuberwastaken/engram', '_blank')}
-              >
-                <Github 
-                  className={`text-gray-300 transition-all duration-300 ease-out
+                  <Github
+                    className={`text-gray-300 transition-all duration-300 ease-out
                     ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}
                   `}
-                />
-              </Button>
+                  />
+                </Button>
 
-              {/* Mobile Hamburger Menu */}
-              <Button
-                variant="ghost"
-                size="icon"
-                className={`md:hidden rounded-full transition-all duration-300 ease-out hover:scale-105
-                  ${isScrolled 
-                    ? 'w-9 h-9 bg-gray-800/60 hover:bg-gray-700/60 border border-gray-700/30' 
-                    : 'w-10 h-10 hover:bg-gray-800/40'
-                  }`
-                }
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              >
-                {isMobileMenuOpen ? (
-                  <X 
-                    className={`text-gray-300 transition-all duration-300 ease-out
+                {/* Mobile Hamburger Menu */}
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={`md:hidden rounded-full transition-all duration-300 ease-out hover:scale-105
+                  ${isScrolled
+                      ? 'w-9 h-9 bg-gray-800/60 hover:bg-gray-700/60 border border-gray-700/30'
+                      : 'w-10 h-10 hover:bg-gray-800/40'
+                    }`
+                  }
+                  onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                >
+                  {isMobileMenuOpen ? (
+                    <X
+                      className={`text-gray-300 transition-all duration-300 ease-out
                       ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}
                     `}
-                  />
-                ) : (
-                  <Menu 
-                    className={`text-gray-300 transition-all duration-300 ease-out
+                    />
+                  ) : (
+                    <Menu
+                      className={`text-gray-300 transition-all duration-300 ease-out
                       ${isScrolled ? 'w-4 h-4' : 'w-5 h-5'}
                     `}
-                  />
-                )}
-              </Button>              </div>
+                    />
+                  )}
+                </Button>              </div>
             </div>
           </div>
         </div>
@@ -229,15 +236,14 @@ const Index = () => {
       {isMobileMenuOpen && (
         <>
           {/* Dark Backdrop Overlay */}
-          <div 
+          <div
             className="md:hidden fixed inset-0 bg-black/70 backdrop-blur-sm z-40 animate-fade-in"
             onClick={closeMobileMenu}
           />
-            {/* Slide-in Menu Panel */}
-          <div 
-            className={`md:hidden fixed right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-black/90 backdrop-blur-xl border-l border-gray-800/50 z-50 ${
-              isMenuClosing ? 'slide-out-right' : 'slide-in-right'
-            }`}
+          {/* Slide-in Menu Panel */}
+          <div
+            className={`md:hidden fixed right-0 top-0 bottom-0 w-80 max-w-[85vw] bg-black/90 backdrop-blur-xl border-l border-gray-800/50 z-50 ${isMenuClosing ? 'slide-out-right' : 'slide-in-right'
+              }`}
             data-mobile-menu
           >            {/* Menu Header */}
             <div className="flex items-center justify-end p-4 border-b border-gray-800/50">
@@ -251,7 +257,7 @@ const Index = () => {
               </Button>
             </div>{/* Menu Items */}
             <nav className="p-6 space-y-2">
-              <div 
+              <div
                 className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
                 onClick={() => {
                   navigate('/');
@@ -266,8 +272,8 @@ const Index = () => {
                   <span className="text-gray-400 text-sm">Main dashboard</span>
                 </div>
               </div>
-              
-              <div 
+
+              <div
                 className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
                 onClick={() => {
                   navigate('/about');
@@ -282,8 +288,8 @@ const Index = () => {
                   <span className="text-gray-400 text-sm">Our story & mission</span>
                 </div>
               </div>
-              
-              <div 
+
+              <div
                 className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
                 onClick={() => {
                   navigate('/resources');
@@ -298,8 +304,8 @@ const Index = () => {
                   <span className="text-gray-400 text-sm">Data sources & info</span>
                 </div>
               </div>
-              
-              <div 
+
+              <div
                 className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
                 onClick={() => {
                   navigate('/privacy');
@@ -314,12 +320,12 @@ const Index = () => {
                   <span className="text-gray-400 text-sm">Privacy policy</span>
                 </div>
               </div>
-              
+
               {/* Separator */}
               <div className="border-t border-gray-700/50 my-6"></div>
-              
+
               {/* GitHub Link */}
-              <div 
+              <div
                 className="flex items-center space-x-4 p-4 rounded-xl hover:bg-gray-800/50 cursor-pointer transition-all duration-200 group"
                 onClick={() => {
                   window.open('https://github.com/kuberwastaken/engram', '_blank');
@@ -347,91 +353,91 @@ const Index = () => {
       <main className="pb-16 px-3 sm:px-4 lg:px-6 pt-32">
         <div className="container mx-auto max-w-[95vw] xl:max-w-[90vw] 2xl:max-w-[85vw]">          {/* Hero Section */}
           <div className="text-center mb-12 animate-fade-in w-full mx-auto mt-8 px-2 sm:px-4">            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mx-auto leading-tight mb-8">
-              <span className="block">
-                The Centralized, No BS hub for
-              </span>
-              <span className="block">
-                IP University Resources
-              </span>
-            </h1>
+            <span className="block">
+              The Centralized, No BS hub for
+            </span>
+            <span className="block">
+              IP University Resources
+            </span>
+          </h1>
             <p className="text-lg md:text-xl text-gray-400 max-w-5xl mx-auto font-mono tracking-tight">
               Built for students, by students. No Trackers, No Ads and Open Source
             </p>
           </div>          {/* Selection Interface */}
           <div className="max-w-2xl lg:max-w-3xl mx-auto mb-32">            <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl shadow-2xl cosmic-hover transition-all duration-500 hover:shadow-cosmic">
-              <CardContent className="p-6 sm:p-8 lg:p-12">
-                <div className="space-y-8">
-                  {/* Branch Selection */}
-                  <div className="space-y-4">
-                    <label className="block text-sm font-mono font-semibold text-gray-200 tracking-tight">
-                      Select Your Branch
-                    </label>
-                    <Select value={branch} onValueChange={setBranch}>
-                      <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-14 text-base hover:bg-gray-800/50 transition-all duration-300 hover:border-gray-600/50 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20">
-                        <SelectValue placeholder="Choose your branch" />
-                      </SelectTrigger>
-                      <SelectContent className="bg-gray-900/95 border-gray-700/50 backdrop-blur-xl">
-                        {branches.map((b) => (
-                          <SelectItem 
-                            key={b} 
-                            value={b} 
-                            className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50 transition-colors"
-                          >
-                            {b}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  {/* Semester Selection with proper spacing */}
-                  <div className="space-y-4 mt-8">
-                    <label className="block text-sm font-mono font-semibold text-gray-200 tracking-tight">
-                      Select Semester
-                    </label>
-                    <Select value={semester} onValueChange={setSemester}>
-                      <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-14 text-base hover:bg-gray-800/50 transition-all duration-300 hover:border-gray-600/50 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20">
-                        <SelectValue placeholder="Choose semester" />
-                      </SelectTrigger>
-                      <SelectContent className="bg-gray-900/95 border-gray-700/50 backdrop-blur-xl">
-                        {semesters.map((s) => (
-                          <SelectItem 
-                            key={s} 
-                            value={s} 
-                            className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50 transition-colors"
-                          >
-                            {s} Semester
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
-                  </div>
-
-                  {/* Reset Button with enhanced styling */}
-                  {(branch || semester) && (
-                    <div className="pt-6 animate-fade-in">                      <Button
-                        variant="outline"
-                        className="w-full border-gray-700/50 text-gray-300 hover:bg-gray-800/30 hover:text-white transition-all duration-300 h-12 hover:border-gray-600/50"
-                        onClick={resetPreferences}
-                      >
-                        Reset Preferences
-                      </Button>
-                    </div>
-                  )}
+            <CardContent className="p-6 sm:p-8 lg:p-12">
+              <div className="space-y-8">
+                {/* Branch Selection */}
+                <div className="space-y-4">
+                  <label className="block text-sm font-mono font-semibold text-gray-200 tracking-tight">
+                    Select Your Branch
+                  </label>
+                  <Select value={branch} onValueChange={setBranch}>
+                    <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-14 text-base hover:bg-gray-800/50 transition-all duration-300 hover:border-gray-600/50 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20">
+                      <SelectValue placeholder="Choose your branch" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-gray-900/95 border-gray-700/50 backdrop-blur-xl">
+                      {branches.map((b) => (
+                        <SelectItem
+                          key={b}
+                          value={b}
+                          className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50 transition-colors"
+                        >
+                          {b}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </div>
-              </CardContent>
-            </Card>
+
+                {/* Semester Selection with proper spacing */}
+                <div className="space-y-4 mt-8">
+                  <label className="block text-sm font-mono font-semibold text-gray-200 tracking-tight">
+                    Select Semester
+                  </label>
+                  <Select value={semester} onValueChange={setSemester}>
+                    <SelectTrigger className="bg-gray-800/30 border-gray-700/30 text-white h-14 text-base hover:bg-gray-800/50 transition-all duration-300 hover:border-gray-600/50 focus:border-blue-400/50 focus:ring-2 focus:ring-blue-400/20">
+                      <SelectValue placeholder="Choose semester" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-gray-900/95 border-gray-700/50 backdrop-blur-xl">
+                      {semesters.map((s) => (
+                        <SelectItem
+                          key={s}
+                          value={s}
+                          className="text-white hover:bg-gray-800/50 focus:bg-gray-800/50 transition-colors"
+                        >
+                          {s} Semester
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                {/* Reset Button with enhanced styling */}
+                {(branch || semester) && (
+                  <div className="pt-6 animate-fade-in">                      <Button
+                    variant="outline"
+                    className="w-full border-gray-700/50 text-gray-300 hover:bg-gray-800/30 hover:text-white transition-all duration-300 h-12 hover:border-gray-600/50"
+                    onClick={resetPreferences}
+                  >
+                    Reset Preferences
+                  </Button>
+                  </div>
+                )}
+              </div>
+            </CardContent>
+          </Card>
           </div>
 
           {/* Features Section - Bento Grid */}
           <div className="space-y-16 animate-fade-in" style={{ animationDelay: '0.2s' }}>            <div className="text-center">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-                Everything You Need to Excel
-              </h2>
-              <p className="text-gray-400 text-lg max-w-3xl mx-auto">
-                Comprehensive study materials curated by students, for students
-              </p>
-            </div>            {/* Bento Grid */}
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
+              Everything You Need to Excel
+            </h2>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+              Comprehensive study materials curated by students, for students
+            </p>
+          </div>            {/* Bento Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-none mx-auto">
               {/* Large Card */}
               <Card className="md:col-span-2 xl:col-span-2 bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300">
@@ -439,7 +445,7 @@ const Index = () => {
                   <BookOpen className="w-12 h-12 text-blue-400 mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-3">Comprehensive Notes</h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Access detailed notes for all subjects across 8 engineering branches. 
+                    Access detailed notes for all subjects across 8 engineering branches.
                     From fundamentals to advanced topics, we've got you covered.
                   </p>
                 </CardContent>
@@ -473,7 +479,7 @@ const Index = () => {
                   <Users className="w-10 h-10 text-purple-400 mb-3" />
                   <h3 className="text-lg font-semibold text-white mb-2">Community Driven</h3>
                   <p className="text-gray-400">
-                    Built by students who understand your academic challenges. 
+                    Built by students who understand your academic challenges.
                     Contribute your own materials to help fellow students.
                   </p>
                 </CardContent>
@@ -485,7 +491,7 @@ const Index = () => {
                   <Code className="w-12 h-12 text-indigo-400 mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-3">Open Source</h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Completely open source and transparent. Contribute code, report issues, 
+                    Completely open source and transparent. Contribute code, report issues,
                     or suggest improvements on GitHub.
                   </p>
                 </CardContent>
@@ -527,20 +533,20 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
               <div className="space-y-2">
-                <span 
+                <span
                   className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
                   onClick={() => navigate('/')}
                 >
                   Home
                 </span>
-                <span 
+                <span
                   className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
                   onClick={() => navigate('/resources')}
                 >
                   Resources
                 </span>
                 <span className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer">About</span>
-                <span 
+                <span
                   className="block text-gray-400 hover:text-white transition-colors text-sm cursor-pointer"
                   onClick={() => navigate('/privacy')}
                 >
@@ -553,27 +559,27 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Contribute</h4>
               <div className="space-y-2">
-                <a 
-                  href="https://github.com/kuberwastaken/engram/issues" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/kuberwastaken/engram/issues"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   <AlertCircle className="w-4 h-4 mr-2" />
                   Raise an Issue
                 </a>
-                <a 
-                  href="https://github.com/kuberwastaken/engram/pulls" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/kuberwastaken/engram/pulls"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-400 hover:text-white transition-colors text-sm"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Add Content
                 </a>
-                <a 
-                  href="https://github.com/kuberwastaken/engram" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/kuberwastaken/engram"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-400 hover:text-white transition-colors text-sm"
                 >
@@ -587,9 +593,9 @@ const Index = () => {
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Connect</h4>
               <div className="space-y-2">
-                <a 
-                  href="https://github.com/kuberwastaken/engram" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/kuberwastaken/engram"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center text-gray-400 hover:text-white transition-colors text-sm"
                 >
@@ -606,9 +612,9 @@ const Index = () => {
               © {new Date().getFullYear()} Engram. Open source and always free.
             </p><p className="text-gray-400 text-sm mt-4 md:mt-0 flex items-center">
               Made with <Heart className="w-4 h-4 mx-1 text-red-400" /> by{' '}
-              <a 
-                href="https://kuber.studio/" 
-                target="_blank" 
+              <a
+                href="https://kuber.studio/"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="ml-1 text-white hover:text-blue-400 transition-colors"
               >

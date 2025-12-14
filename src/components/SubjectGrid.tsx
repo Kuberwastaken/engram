@@ -21,7 +21,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
       try {
         setLoading(true);
         setError(null);
-        
+
         // Convert semester format to StudyX format
         // URL format: 1st -> SEM1, 2nd -> SEM2, 3rd -> SEM3, etc.
         // URL format: sem-1 -> SEM1, sem-2 -> SEM2, etc.
@@ -46,7 +46,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
           // Fallback for direct SEM format
           semesterKey = semester.replace(/sem-?/i, 'SEM').toUpperCase();
         }
-        
+
         const availableSubjects = await unifiedDataService.getAvailableSubjects(branch, semesterKey);
         setSubjects(availableSubjects);
       } catch (err) {
@@ -98,11 +98,11 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="flex flex-wrap gap-6 justify-center">
       {subjects.map((subject, index) => (
         <Card
           key={`${subject}-${index}`}
-          className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300 cursor-pointer cosmic-hover animate-fade-in group"
+          className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl hover:bg-gray-900/30 transition-all duration-300 cursor-pointer cosmic-hover animate-fade-in group w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
           style={{ animationDelay: `${index * 0.1}s` }}
           onClick={() => handleSubjectClick(subject)}
         >

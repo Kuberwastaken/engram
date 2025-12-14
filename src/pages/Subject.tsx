@@ -14,6 +14,7 @@ import { type SyllabusData, type VideoData } from '@/services/contentFetchingSer
 import MaterialsList from '@/components/MaterialsList';
 import PDFViewer from '@/components/PDFViewer';
 import { formatSubjectName } from '@/lib/utils';
+import { SEO } from '@/components/SEO';
 
 // Component that auto-opens PDF in fullscreen for single Akash files
 const AutoOpenPDFCard: React.FC<{
@@ -626,6 +627,12 @@ const Subject = () => {
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden grain">
+      <SEO
+        title={`${subjectName} - ${branch?.toUpperCase() || ''} ${semester?.toUpperCase() || ''} Notes | Engram`}
+        description={`Download free PDF notes, syllabus, PYQs, and books for ${subjectName}. ${branch?.toUpperCase()} ${semester?.toUpperCase()} IP University study materials.`}
+        keywords={[subjectName, `${subjectName} notes`, `${subjectName} syllabus`, "IPU notes", "Engram"]}
+        url={window.location.href}
+      />
       <StarField />
 
       {/* Floating Header */}

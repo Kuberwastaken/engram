@@ -12,9 +12,9 @@ interface MaterialsListProps {
   materialType?: string;
 }
 
-const MaterialsList: React.FC<MaterialsListProps> = ({ 
-  materials, 
-  title, 
+const MaterialsList: React.FC<MaterialsListProps> = ({
+  materials,
+  title,
   emptyMessage = "No materials available for this section yet.",
   className = "",
   subjectName = "",
@@ -39,12 +39,12 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
       {title && (
         <h3 className="text-lg font-semibold text-gray-300 mb-4">{title}</h3>
       )}
-      <div className="grid gap-3">
+      <div className="flex flex-wrap gap-4 justify-center">
         {materials.map((file, index) => {
           const fileId = unifiedDataService.getFileId(file);
           const fileName = unifiedDataService.getFileName(file);
           const isPdf = unifiedDataService.isPdfFile(fileName);
-          
+
           return (
             <PDFViewer
               key={fileId ? fileId : `${file.downloadUrl}-${index}`}
@@ -53,6 +53,7 @@ const MaterialsList: React.FC<MaterialsListProps> = ({
               subjectName={subjectName}
               materialType={materialType}
               showSourceTag={shouldShowSourceTags}
+              className="w-full md:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]"
             />
           );
         })}
