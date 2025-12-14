@@ -1,5 +1,5 @@
-// Unified Data Service that combines StudyX, DotNotes, FifteenFourteen, and UnifiedContent sources
-import { studyXDataService, GoogleDriveFile as BaseGoogleDriveFile, SubjectData } from './studyXDataService';
+// Unified Data Service that combines SyllabusX, DotNotes, FifteenFourteen, and UnifiedContent sources
+import { syllabusXDataService, GoogleDriveFile as BaseGoogleDriveFile, SubjectData } from './syllabusXDataService';
 import { dotNotesDataService } from './dotNotesDataService';
 import { fifteenFourteenDataService } from './fifteenFourteenDataService';
 import { consolidatedDataService } from './consolidatedDataService';
@@ -9,7 +9,7 @@ import { type SyllabusData, type VideoData } from './contentFetchingService';
 
 // Enhanced GoogleDriveFile with source attribution
 export interface GoogleDriveFile extends BaseGoogleDriveFile {
-  source?: 'StudyX' | 'DotNotes' | 'FifteenFourteen' | 'UnifiedContent' | 'kamati' | string;
+  source?: 'SyllabusX' | 'DotNotes' | 'FifteenFourteen' | 'UnifiedContent' | 'kamati' | string;
 }
 
 export type { SubjectData };
@@ -42,15 +42,15 @@ class UnifiedDataService {
    * Find matching subject names across sources using enhanced intelligent mapping
    */
   private findMatchingSubjects(
-    studyXSubjects: string[],
+    syllabusXSubjects: string[],
     dotNotesSubjects: string[],
     fifteenFourteenSubjects: string[],
     branch?: string
-  ): Map<string, { studyX?: string, dotNotes?: string, fifteenFourteen?: string, confidence?: number }> {
-    const subjectMap = new Map<string, { studyX?: string, dotNotes?: string, fifteenFourteen?: string, confidence?: number }>();
-    // Map StudyX subjects
-    for (const studyXSubject of studyXSubjects) {
-      const mapping = this.subjectMapper.mapStudyXToDotNotes(studyXSubject, branch);
+  ): Map<string, { syllabusX?: string, dotNotes?: string, fifteenFourteen?: string, confidence?: number }> {
+    const subjectMap = new Map<string, { syllabusX?: string, dotNotes?: string, fifteenFourteen?: string, confidence?: number }>();
+    // Map SyllabusX subjects
+    for (const syllabusXSubject of syllabusXSubjects) {
+      const mapping = this.subjectMapper.mapSyllabusXToDotNotes(syllabusXSubject, branch);
       let dotNotesCode: string | undefined;
       let fifteenFourteenCode: string | undefined;
       let confidence = 0;
@@ -62,9 +62,9 @@ class UnifiedDataService {
         fifteenFourteenCode = mapping.dotNotesCode;
         confidence = Math.max(confidence, mapping.confidence || 0);
       }
-      const key = `${studyXSubject}::${dotNotesCode || ''}::${fifteenFourteenCode || ''}`;
+      const key = `${syllabusXSubject}::${dotNotesCode || ''}::${fifteenFourteenCode || ''}`;
       subjectMap.set(key, {
-        studyX: studyXSubject,
+        syllabusX: syllabusXSubject,
         dotNotes: dotNotesCode,
         fifteenFourteen: fifteenFourteenCode,
         confidence
@@ -74,13 +74,13 @@ class UnifiedDataService {
     for (const dotNotesSubject of dotNotesSubjects) {
       const alreadyMapped = Array.from(subjectMap.values()).some(mapping => mapping.dotNotes === dotNotesSubject);
       if (!alreadyMapped) {
-        const reverseMapping = this.subjectMapper.mapDotNotesToStudyX(dotNotesSubject, studyXSubjects);
-        if (reverseMapping.studyXSubjects.length > 0) {
-          const bestStudyXMatch = reverseMapping.studyXSubjects[0];
-          const key = `${bestStudyXMatch}::${dotNotesSubject}`;
+        const reverseMapping = this.subjectMapper.mapDotNotesToSyllabusX(dotNotesSubject, syllabusXSubjects);
+        if (reverseMapping.syllabusXSubjects.length > 0) {
+          const bestSyllabusXMatch = reverseMapping.syllabusXSubjects[0];
+          const key = `${bestSyllabusXMatch}::${dotNotesSubject}`;
           if (!subjectMap.has(key)) {
             subjectMap.set(key, {
-              studyX: bestStudyXMatch,
+              syllabusX: bestSyllabusXMatch,
               dotNotes: dotNotesSubject,
               confidence: reverseMapping.confidence
             });
@@ -97,13 +97,13 @@ class UnifiedDataService {
     for (const fifteenFourteenSubject of fifteenFourteenSubjects) {
       const alreadyMapped = Array.from(subjectMap.values()).some(mapping => mapping.fifteenFourteen === fifteenFourteenSubject);
       if (!alreadyMapped) {
-        const reverseMapping = this.subjectMapper.mapDotNotesToStudyX(fifteenFourteenSubject, studyXSubjects);
-        if (reverseMapping.studyXSubjects.length > 0) {
-          const bestStudyXMatch = reverseMapping.studyXSubjects[0];
-          const key = `${bestStudyXMatch}::::${fifteenFourteenSubject}`;
+        const reverseMapping = this.subjectMapper.mapDotNotesToSyllabusX(fifteenFourteenSubject, syllabusXSubjects);
+        if (reverseMapping.syllabusXSubjects.length > 0) {
+          const bestSyllabusXMatch = reverseMapping.syllabusXSubjects[0];
+          const key = `${bestSyllabusXMatch}::::${fifteenFourteenSubject}`;
           if (!subjectMap.has(key)) {
             subjectMap.set(key, {
-              studyX: bestStudyXMatch,
+              syllabusX: bestSyllabusXMatch,
               fifteenFourteen: fifteenFourteenSubject,
               confidence: reverseMapping.confidence
             });
@@ -133,41 +133,41 @@ class UnifiedDataService {
    * Apply material type specific filtering rules for all three sources
    */
   private applyMaterialTypeRules(
-    studyXMaterials: Record<string, BaseGoogleDriveFile[]>,
+    syllabusXMaterials: Record<string, BaseGoogleDriveFile[]>,
     dotNotesMaterials: Record<string, BaseGoogleDriveFile[]>,
     fifteenFourteenMaterials: Record<string, BaseGoogleDriveFile[]>
   ): Record<string, GoogleDriveFile[]> {
     return {
       syllabus: this.addSourceToMaterials(dotNotesMaterials.syllabus || [], 'DotNotes'),
       books: [
-        ...this.addSourceToMaterials(studyXMaterials.books || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.books || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.books || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.books || [], 'FifteenFourteen')
       ],
       akash: [
-        ...this.addSourceToMaterials(studyXMaterials.akash || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.akash || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.akash || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.akash || [], 'FifteenFourteen')
       ],
       notes: [
         ...[
-          ...this.addSourceToMaterials(studyXMaterials.notes || [], 'StudyX'),
+          ...this.addSourceToMaterials(syllabusXMaterials.notes || [], 'SyllabusX'),
           ...this.addSourceToMaterials(dotNotesMaterials.notes || [], 'DotNotes'),
           ...this.addSourceToMaterials(fifteenFourteenMaterials.notes || [], 'FifteenFourteen')
         ].sort((a, b) => (a.name || '').localeCompare(b.name || ''))
       ],
       pyqs: [
-        ...this.addSourceToMaterials(studyXMaterials.pyqs || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.pyqs || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.pyqs || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.pyqs || [], 'FifteenFourteen')
       ],
       lab: [
-        ...this.addSourceToMaterials(studyXMaterials.lab || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.lab || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.lab || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.lab || [], 'FifteenFourteen')
       ],
       videos: [
-        ...(studyXMaterials.videos || []).map(m => ({ ...m })),
+        ...(syllabusXMaterials.videos || []).map(m => ({ ...m })),
         ...(dotNotesMaterials.videos || []).map(m => ({ ...m })),
         ...(fifteenFourteenMaterials.videos || []).map(m => ({ ...m }))
       ]
@@ -178,7 +178,7 @@ class UnifiedDataService {
    * Apply material type rules for all four sources including UnifiedContent
    */
   private applyMaterialTypeRulesWithUnifiedContent(
-    studyXMaterials: Record<string, BaseGoogleDriveFile[]>,
+    syllabusXMaterials: Record<string, BaseGoogleDriveFile[]>,
     dotNotesMaterials: Record<string, BaseGoogleDriveFile[]>,
     fifteenFourteenMaterials: Record<string, BaseGoogleDriveFile[]>,
     unifiedContentMaterials: Record<string, BaseGoogleDriveFile[]>
@@ -196,7 +196,7 @@ class UnifiedDataService {
           const existingSource = (material as any).source;
 
           if (existingSource && existingSource !== 'UnifiedContent') {
-            // Preserve any specific source (kamati, google-drive-sem3, studyx, dotnotes, etc.)
+            // Preserve any specific source (kamati, google-drive-sem3, syllabusx, dotnotes, etc.)
             return { ...material, source: existingSource as any };
           }
           // Use fallback for materials without a specific source
@@ -210,39 +210,39 @@ class UnifiedDataService {
         ...preserveOrAddSource(unifiedContentMaterials.syllabus || [], 'UnifiedContent')
       ],
       books: [
-        ...this.addSourceToMaterials(studyXMaterials.books || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.books || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.books || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.books || [], 'FifteenFourteen'),
         ...preserveOrAddSource(unifiedContentMaterials.books || [], 'UnifiedContent')
       ],
       akash: [
-        ...this.addSourceToMaterials(studyXMaterials.akash || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.akash || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.akash || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.akash || [], 'FifteenFourteen'),
         ...preserveOrAddSource(unifiedContentMaterials.akash || [], 'UnifiedContent')
       ],
       notes: [
         ...[
-          ...this.addSourceToMaterials(studyXMaterials.notes || [], 'StudyX'),
+          ...this.addSourceToMaterials(syllabusXMaterials.notes || [], 'SyllabusX'),
           ...this.addSourceToMaterials(dotNotesMaterials.notes || [], 'DotNotes'),
           ...this.addSourceToMaterials(fifteenFourteenMaterials.notes || [], 'FifteenFourteen'),
           ...preserveOrAddSource(unifiedContentMaterials.notes || [], 'UnifiedContent')
         ].sort((a, b) => (a.name || '').localeCompare(b.name || ''))
       ],
       pyqs: [
-        ...this.addSourceToMaterials(studyXMaterials.pyqs || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.pyqs || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.pyqs || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.pyqs || [], 'FifteenFourteen'),
         ...preserveOrAddSource(unifiedContentMaterials.pyqs || [], 'UnifiedContent')
       ],
       lab: [
-        ...this.addSourceToMaterials(studyXMaterials.lab || [], 'StudyX'),
+        ...this.addSourceToMaterials(syllabusXMaterials.lab || [], 'SyllabusX'),
         ...this.addSourceToMaterials(dotNotesMaterials.lab || [], 'DotNotes'),
         ...this.addSourceToMaterials(fifteenFourteenMaterials.lab || [], 'FifteenFourteen'),
         ...preserveOrAddSource(unifiedContentMaterials.lab || [], 'UnifiedContent')
       ],
       videos: [
-        ...(studyXMaterials.videos || []).map(m => ({ ...m })),
+        ...(syllabusXMaterials.videos || []).map(m => ({ ...m })),
         ...(dotNotesMaterials.videos || []).map(m => ({ ...m })),
         ...(fifteenFourteenMaterials.videos || []).map(m => ({ ...m })),
         ...preserveOrAddSource(unifiedContentMaterials.videos || [], 'UnifiedContent')
@@ -273,13 +273,13 @@ class UnifiedDataService {
    */
   async getAvailableBranches(): Promise<string[]> {
     try {
-      const [studyXBranches, dotNotesBranches, fifteenFourteenBranches] = await Promise.all([
-        studyXDataService.getAvailableBranches(),
+      const [syllabusXBranches, dotNotesBranches, fifteenFourteenBranches] = await Promise.all([
+        syllabusXDataService.getAvailableBranches(),
         dotNotesDataService.getAvailableBranches(),
         fifteenFourteenDataService.getAvailableBranches()
       ]);
       const allBranches = new Set([
-        ...studyXBranches,
+        ...syllabusXBranches,
         ...dotNotesBranches,
         ...fifteenFourteenBranches
       ]);
@@ -295,13 +295,13 @@ class UnifiedDataService {
    */
   async getAvailableSemesters(branchName: string): Promise<string[]> {
     try {
-      const [studyXSemesters, dotNotesSemesters, fifteenFourteenSemesters] = await Promise.all([
-        studyXDataService.getAvailableSemesters(branchName),
+      const [syllabusXSemesters, dotNotesSemesters, fifteenFourteenSemesters] = await Promise.all([
+        syllabusXDataService.getAvailableSemesters(branchName),
         dotNotesDataService.getAvailableSemesters(branchName),
         fifteenFourteenDataService.getAvailableSemesters(branchName)
       ]);
       const allSemesters = new Set([
-        ...studyXSemesters,
+        ...syllabusXSemesters,
         ...dotNotesSemesters,
         ...fifteenFourteenSemesters
       ]);
@@ -317,14 +317,14 @@ class UnifiedDataService {
    */
   async getAvailableSubjects(branchName: string, semester: string): Promise<string[]> {
     try {
-      const [studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects, unifiedContentSubjects] = await Promise.all([
-        studyXDataService.getAvailableSubjects(branchName, semester),
+      const [syllabusXSubjects, dotNotesSubjects, fifteenFourteenSubjects, unifiedContentSubjects] = await Promise.all([
+        syllabusXDataService.getAvailableSubjects(branchName, semester),
         dotNotesDataService.getAvailableSubjects(branchName, semester),
         fifteenFourteenDataService.getAvailableSubjects(branchName, semester),
         unifiedContentService.getAvailableSubjects(branchName, semester)
       ]);
 
-      console.log(`[Unified] Subject counts - StudyX: ${studyXSubjects.length}, DotNotes: ${dotNotesSubjects.length}, FifteenFourteen: ${fifteenFourteenSubjects.length}, UnifiedContent: ${unifiedContentSubjects.length}`);
+      console.log(`[Unified] Subject counts - SyllabusX: ${syllabusXSubjects.length}, DotNotes: ${dotNotesSubjects.length}, FifteenFourteen: ${fifteenFourteenSubjects.length}, UnifiedContent: ${unifiedContentSubjects.length}`);
 
       // If UnifiedContent has subjects for this branch/semester, prioritize it
       if (unifiedContentSubjects.length > 0) {
@@ -333,12 +333,12 @@ class UnifiedDataService {
       }
 
       // Fallback to existing logic for other sources
-      const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
+      const subjectMap = this.findMatchingSubjects(syllabusXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
 
       // Deduplicate by normalized subject name
       const normalizedSet = new Map<string, string>();
       Array.from(subjectMap.values())
-        .map(mapping => mapping.studyX || mapping.dotNotes || mapping.fifteenFourteen || '')
+        .map(mapping => mapping.syllabusX || mapping.dotNotes || mapping.fifteenFourteen || '')
         .filter(name => name.length > 0)
         .forEach(name => {
           const normalized = this.subjectMapper.normalizeSubjectName(name);
@@ -382,31 +382,31 @@ class UnifiedDataService {
       }
 
       // Fallback to existing multi-source logic
-      const [studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects] = await Promise.all([
-        studyXDataService.getAvailableSubjects(branchName, semester),
+      const [syllabusXSubjects, dotNotesSubjects, fifteenFourteenSubjects] = await Promise.all([
+        syllabusXDataService.getAvailableSubjects(branchName, semester),
         dotNotesDataService.getAvailableSubjects(branchName, semester),
         fifteenFourteenDataService.getAvailableSubjects(branchName, semester)
       ]);
 
-      const subjectMap = this.findMatchingSubjects(studyXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
+      const subjectMap = this.findMatchingSubjects(syllabusXSubjects, dotNotesSubjects, fifteenFourteenSubjects, branchName);
 
       let mappingInfo = subjectMap.get(subjectName);
       if (!mappingInfo) {
         for (const [key, value] of subjectMap) {
-          if (value.studyX === subjectName || value.dotNotes === subjectName || value.fifteenFourteen === subjectName || key === subjectName) {
+          if (value.syllabusX === subjectName || value.dotNotes === subjectName || value.fifteenFourteen === subjectName || key === subjectName) {
             mappingInfo = value;
             break;
           }
         }
       }
 
-      const studyXSubjectName = mappingInfo?.studyX;
+      const syllabusXSubjectName = mappingInfo?.syllabusX;
       const dotNotesSubjectName = mappingInfo?.dotNotes;
       const fifteenFourteenSubjectName = mappingInfo?.fifteenFourteen;
 
       const materialPromises: Promise<Record<string, BaseGoogleDriveFile[]>>[] = [
-        studyXSubjectName
-          ? studyXDataService.getOrganizedMaterials(branchName, semester, studyXSubjectName)
+        syllabusXSubjectName
+          ? syllabusXDataService.getOrganizedMaterials(branchName, semester, syllabusXSubjectName)
           : Promise.resolve(this.getEmptyOrganizedMaterials()),
         dotNotesSubjectName
           ? dotNotesDataService.getOrganizedMaterials(branchName, semester, dotNotesSubjectName)
@@ -416,10 +416,10 @@ class UnifiedDataService {
           : Promise.resolve(this.getEmptyOrganizedMaterials())
       ];
 
-      const [studyXMaterials, dotNotesMaterials, fifteenFourteenMaterials] = (await Promise.all(materialPromises));
+      const [syllabusXMaterials, dotNotesMaterials, fifteenFourteenMaterials] = (await Promise.all(materialPromises));
 
       // Apply material type rules for three sources
-      const result = this.applyMaterialTypeRules(studyXMaterials, dotNotesMaterials, fifteenFourteenMaterials);
+      const result = this.applyMaterialTypeRules(syllabusXMaterials, dotNotesMaterials, fifteenFourteenMaterials);
       return result;
     } catch (error) {
       console.error('[Unified] Error getting organized materials:', error);
@@ -432,20 +432,20 @@ class UnifiedDataService {
    */
   async getSubjectMaterials(branchName: string, semester: string, subjectName: string): Promise<SubjectData | null> {
     try {
-      const [studyXResult, dotNotesResult, fifteenFourteenResult] = await Promise.all([
-        studyXDataService.getSubjectMaterials(branchName, semester, subjectName),
+      const [syllabusXResult, dotNotesResult, fifteenFourteenResult] = await Promise.all([
+        syllabusXDataService.getSubjectMaterials(branchName, semester, subjectName),
         dotNotesDataService.getSubjectMaterials(branchName, semester, subjectName),
         fifteenFourteenDataService.getSubjectMaterials(branchName, semester, subjectName)
       ]);
-      if (!studyXResult && !dotNotesResult && !fifteenFourteenResult) return null;
+      if (!syllabusXResult && !dotNotesResult && !fifteenFourteenResult) return null;
       // Merge folderDetails from all sources
       const folderDetails = [
-        ...(studyXResult?.folderDetails || []),
+        ...(syllabusXResult?.folderDetails || []),
         ...(dotNotesResult?.folderDetails || []),
         ...(fifteenFourteenResult?.folderDetails || [])
       ];
       return {
-        name: studyXResult?.name || dotNotesResult?.name || fifteenFourteenResult?.name || subjectName,
+        name: syllabusXResult?.name || dotNotesResult?.name || fifteenFourteenResult?.name || subjectName,
         folders: folderDetails.length,
         files: folderDetails.reduce((sum, f) => sum + (f.files || 0), 0),
         folderDetails
@@ -461,13 +461,13 @@ class UnifiedDataService {
    */
   async searchSubjects(query: string): Promise<Array<{ branch: string, semester: string, subject: string, source: string }>> {
     try {
-      const [studyXResults, dotNotesResults, fifteenFourteenResults] = await Promise.all([
-        studyXDataService.searchSubjects(query),
+      const [syllabusXResults, dotNotesResults, fifteenFourteenResults] = await Promise.all([
+        syllabusXDataService.searchSubjects(query),
         dotNotesDataService.searchSubjects(query),
         fifteenFourteenDataService.searchSubjects(query)
       ]);
       const allResults: Array<{ branch: string, semester: string, subject: string, source: string }> = [];
-      if (studyXResults) allResults.push(...studyXResults.map(r => ({ ...r, source: 'StudyX' })));
+      if (syllabusXResults) allResults.push(...syllabusXResults.map(r => ({ ...r, source: 'SyllabusX' })));
       if (dotNotesResults) allResults.push(...dotNotesResults.map(r => ({ ...r, source: 'DotNotes' })));
       if (fifteenFourteenResults) allResults.push(...fifteenFourteenResults.map(r => ({ ...r, source: 'FifteenFourteen' })));
       // Deduplicate
@@ -482,40 +482,40 @@ class UnifiedDataService {
     }
   }
 
-  // Delegate URL helper methods to StudyX service (as they're compatible)
+  // Delegate URL helper methods to SyllabusX service (as they're compatible)
   getEmbedUrl(fileId: string): string {
-    return studyXDataService.getEmbedUrl(fileId);
+    return syllabusXDataService.getEmbedUrl(fileId);
   }
 
   getViewUrl(fileId: string): string {
-    return studyXDataService.getViewUrl(fileId);
+    return syllabusXDataService.getViewUrl(fileId);
   }
 
   getDownloadUrl(file: GoogleDriveFile): string {
-    return studyXDataService.getDownloadUrl(file);
+    return syllabusXDataService.getDownloadUrl(file);
   }
 
   getPreviewUrl(file: GoogleDriveFile): string {
-    return studyXDataService.getPreviewUrl(file);
+    return syllabusXDataService.getPreviewUrl(file);
   }
 
   getWebViewUrl(file: GoogleDriveFile): string {
-    return studyXDataService.getWebViewUrl(file);
+    return syllabusXDataService.getWebViewUrl(file);
   }
 
   extractFileIdFromUrl(downloadUrl: string): string | null {
-    return studyXDataService.extractFileIdFromUrl(downloadUrl);
+    return syllabusXDataService.extractFileIdFromUrl(downloadUrl);
   }
 
   getFileId(file: GoogleDriveFile): string | null {
-    return studyXDataService.getFileId(file);
+    return syllabusXDataService.getFileId(file);
   }
 
   getFileName(file: GoogleDriveFile): string {
-    return studyXDataService.getFileName(file);
+    return syllabusXDataService.getFileName(file);
   }
   isPdfFile(fileName: string): boolean {
-    return studyXDataService.isPdfFile(fileName);
+    return syllabusXDataService.isPdfFile(fileName);
   }
 
   /**
@@ -574,7 +574,7 @@ class UnifiedDataService {
       }
 
       // Fallback to DotNotes if not found in UnifiedContent
-      const mapping = this.subjectMapper.mapStudyXToDotNotes(subjectName, branchName, semester);
+      const mapping = this.subjectMapper.mapSyllabusXToDotNotes(subjectName, branchName, semester);
       const dotNotesSubjectCode = mapping.dotNotesCode;
 
       if (!dotNotesSubjectCode) {
@@ -599,7 +599,7 @@ class UnifiedDataService {
     try {
       console.log(`[Unified] Fetching videos for ${branchName} ${semester} ${subjectName}`);
 
-      // For now, videos come from DotNotes only since StudyX doesn't have structured video data
+      // For now, videos come from DotNotes only since SyllabusX doesn't have structured video data
       // In the future, this could be expanded to include both sources
       return await dotNotesDataService.fetchVideosData(branchName, semester, subjectName);
     } catch (error) {

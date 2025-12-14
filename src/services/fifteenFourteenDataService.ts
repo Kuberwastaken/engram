@@ -109,14 +109,14 @@ class FifteenFourteenDataService {
    */
   private convertMaterialToGoogleDriveFile(material: FifteenFourteenMaterial, materialType?: string, index?: number): GoogleDriveFile {
     let displayName = material.name;
-    
+
     // Improve generic names like "LINK"
     if (material.name === "LINK" || material.name.toLowerCase() === "link") {
       const folderName = material.originalFolder || materialType || "Material";
       const fileNumber = index !== undefined ? index + 1 : "";
       displayName = `${folderName}${fileNumber ? ` ${fileNumber}` : ""}`;
     }
-    
+
     return {
       name: displayName,
       id: material.id,
@@ -150,20 +150,20 @@ class FifteenFourteenDataService {
    * Get available subjects for a branch and semester
    */  async getAvailableSubjects(branchName: string, semester: string): Promise<string[]> {
     console.log(`[FifteenFourteen][getAvailableSubjects] CALLED with: branch=${branchName}, semester=${semester}`);
-    
+
     const data = await this.loadFifteenFourteenData();
     const semesterKey = this.normalizeSemesterKey(semester);
-    
+
     // FifteenFourteen has first-year materials under COMMON branch
     // These are applicable to all branches for first-year subjects
     const targetBranch = data.branches['COMMON'] || data.branches[branchName.toUpperCase()];
-    
+
     console.log(`[FifteenFourteen][getAvailableSubjects] Using branch: ${targetBranch ? 'COMMON' : branchName}`);
-    
+
     if (!targetBranch) {
       console.log(`[FifteenFourteen][getAvailableSubjects] No branch data found for ${branchName} or COMMON`);
       return [];
-    }    const semesterData = targetBranch[semesterKey];
+    } const semesterData = targetBranch[semesterKey];
     if (!semesterData) {
       console.log(`[FifteenFourteen][getAvailableSubjects] No semester data found for ${semesterKey} in target branch`);
       return [];
@@ -179,15 +179,15 @@ class FifteenFourteenDataService {
     console.log(`[FifteenFourteen][getOrganizedMaterials] CALLED with: branch=${branchName}, semester=${semester}, subject=${subjectName}`);
     const data = await this.loadFifteenFourteenData();
     const semesterKey = this.normalizeSemesterKey(semester);
-    
+
     console.log(`[FifteenFourteen][getOrganizedMaterials] Looking for: ${branchName} ${semesterKey} ${subjectName}`);
-    
+
     // FifteenFourteen has first-year materials under COMMON branch
     // These are applicable to all branches for first-year subjects
     const targetBranch = data.branches['COMMON'] || data.branches[branchName.toUpperCase()];
-    
+
     console.log(`[FifteenFourteen][getOrganizedMaterials] Using branch: ${targetBranch ? 'COMMON' : branchName}`);
-    
+
     if (!targetBranch) {
       console.log(`[FifteenFourteen][getOrganizedMaterials] No branch data found for ${branchName} or COMMON`);
       return this.getEmptyOrganizedMaterials();
@@ -203,41 +203,41 @@ class FifteenFourteenDataService {
     let subjectKey = Object.keys(semesterData).find(
       key => key.toLowerCase() === subjectName.toLowerCase()
     );
-    
+
     // If not found directly, try subject mapping
     if (!subjectKey) {
       console.log(`[FifteenFourteen][getOrganizedMaterials] Direct match not found, trying subject mapping...`);
-      
+
       // Import the subject mapper
       const { EnhancedSubjectMapper } = await import('../utils/subjectMapper.js');
       const subjectMapper = new EnhancedSubjectMapper();
-      
+
       // Try to map the subject name to FifteenFourteen format (which is similar to DotNotes)
-      const mapping = subjectMapper.mapStudyXToDotNotes(subjectName, branchName);
-      
+      const mapping = subjectMapper.mapSyllabusXToDotNotes(subjectName, branchName);
+
       console.log(`[FifteenFourteen][getOrganizedMaterials] Mapping result:`, mapping);
-      
+
       if (mapping.dotNotesCode) {
         // Check if the mapped code exists in the data
         subjectKey = Object.keys(semesterData).find(
           key => key.toLowerCase() === mapping.dotNotesCode.toLowerCase()
         );
-        
+
         if (subjectKey) {
           console.log(`[FifteenFourteen][getOrganizedMaterials] Found subject using mapping: "${subjectName}" -> "${mapping.dotNotesCode}" -> "${subjectKey}"`);
         }
       }
     }
-    
+
     console.log(`[FifteenFourteen][getOrganizedMaterials] Available subjects:`, Object.keys(semesterData));
-    
+
     if (!subjectKey) {
       console.warn(`[FifteenFourteen] Subject ${subjectName} not found in ${semesterKey}`);
       return this.getEmptyOrganizedMaterials();
     }
 
     const subject = semesterData[subjectKey];
-    
+
     console.log(`[FifteenFourteen][getOrganizedMaterials] Found subject data:`, {
       notes: (subject.notes || []).length,
       pyqs: (subject.pyqs || []).length,
@@ -247,7 +247,7 @@ class FifteenFourteenDataService {
       syllabus: (subject.syllabus || []).length,
       videos: (subject.videos || []).length
     });
-      // Convert FifteenFourteen materials to GoogleDriveFile format
+    // Convert FifteenFourteen materials to GoogleDriveFile format
     const result = {
       notes: (subject.notes || []).map((m, index) => this.convertMaterialToGoogleDriveFile(m, 'Notes', index)),
       pyqs: (subject.pyqs || []).map((m, index) => this.convertMaterialToGoogleDriveFile(m, 'PYQs', index)),
@@ -257,7 +257,7 @@ class FifteenFourteenDataService {
       syllabus: (subject.syllabus || []).map((m, index) => this.convertMaterialToGoogleDriveFile(m, 'Syllabus', index)),
       videos: (subject.videos || []).map((m, index) => this.convertMaterialToGoogleDriveFile(m, 'Videos', index))
     };
-    
+
     console.log(`[FifteenFourteen][getOrganizedMaterials] Returning organized materials:`, {
       notes: result.notes.length,
       pyqs: result.pyqs.length,
@@ -267,7 +267,7 @@ class FifteenFourteenDataService {
       syllabus: result.syllabus.length,
       videos: result.videos.length
     });
-    
+
     return result;
   }
 
@@ -289,13 +289,13 @@ class FifteenFourteenDataService {
     console.log(`[FifteenFourteen][getSubjectMaterials] CALLED with: branch=${branchName}, semester=${semester}, subject=${subjectName}`);
     const data = await this.loadFifteenFourteenData();
     const semesterKey = this.normalizeSemesterKey(semester);
-    
+
     // FifteenFourteen has first-year materials under COMMON branch
     // These are applicable to all branches for first-year subjects
     const targetBranch = data.branches['COMMON'] || data.branches[branchName.toUpperCase()];
-    
+
     console.log(`[FifteenFourteen][getSubjectMaterials] Using branch: ${targetBranch ? 'COMMON' : branchName}`);
-    
+
     if (!targetBranch) {
       console.log(`[FifteenFourteen][getSubjectMaterials] No branch data found for ${branchName} or COMMON`);
       return null;
@@ -311,26 +311,26 @@ class FifteenFourteenDataService {
     let subjectKey = Object.keys(semesterData).find(
       key => key.toLowerCase() === subjectName.toLowerCase()
     );
-    
+
     // If not found directly, try subject mapping
     if (!subjectKey) {
       console.log(`[FifteenFourteen][getSubjectMaterials] Direct match not found, trying subject mapping...`);
-      
+
       // Import the subject mapper
       const { EnhancedSubjectMapper } = await import('../utils/subjectMapper.js');
       const subjectMapper = new EnhancedSubjectMapper();
-      
+
       // Try to map the subject name to FifteenFourteen format
-      const mapping = subjectMapper.mapStudyXToDotNotes(subjectName, branchName);
-      
+      const mapping = subjectMapper.mapSyllabusXToDotNotes(subjectName, branchName);
+
       console.log(`[FifteenFourteen][getSubjectMaterials] Mapping result:`, mapping);
-      
+
       if (mapping.dotNotesCode) {
         // Check if the mapped code exists in the data
         subjectKey = Object.keys(semesterData).find(
           key => key.toLowerCase() === mapping.dotNotesCode.toLowerCase()
         );
-        
+
         if (subjectKey) {
           console.log(`[FifteenFourteen][getSubjectMaterials] Found subject using mapping: "${subjectName}" -> "${mapping.dotNotesCode}" -> "${subjectKey}"`);
         }
@@ -343,11 +343,11 @@ class FifteenFourteenDataService {
     }
 
     const subject = semesterData[subjectKey];
-    
+
     // Convert to compatible format with folder structure
     const materialTypes = ['notes', 'pyqs', 'books', 'lab', 'akash', 'syllabus', 'videos'];
     const folderDetails: SubjectFolder[] = [];
-    let totalFiles = 0;    materialTypes.forEach(type => {
+    let totalFiles = 0; materialTypes.forEach(type => {
       const materials = subject[type] || [];
       if (materials.length > 0) {
         folderDetails.push({
@@ -370,9 +370,9 @@ class FifteenFourteenDataService {
   /**
    * Search subjects across all branches and semesters
    */
-  async searchSubjects(query: string): Promise<Array<{branch: string, semester: string, subject: string}>> {
+  async searchSubjects(query: string): Promise<Array<{ branch: string, semester: string, subject: string }>> {
     const data = await this.loadFifteenFourteenData();
-    const results: Array<{branch: string, semester: string, subject: string}> = [];
+    const results: Array<{ branch: string, semester: string, subject: string }> = [];
     const normalizedQuery = query.toLowerCase();
 
     Object.keys(data.branches).forEach(branchName => {
@@ -381,8 +381,8 @@ class FifteenFourteenDataService {
         const semester = branch[semesterName];
         Object.keys(semester).forEach(subjectCode => {
           const subject = semester[subjectCode];
-          if (subject.name.toLowerCase().includes(normalizedQuery) || 
-              subjectCode.toLowerCase().includes(normalizedQuery)) {
+          if (subject.name.toLowerCase().includes(normalizedQuery) ||
+            subjectCode.toLowerCase().includes(normalizedQuery)) {
             results.push({
               branch: branchName,
               semester: semesterName,
@@ -442,7 +442,7 @@ class FifteenFourteenDataService {
   async fetchSyllabusData(branchName: string, semester: string, subjectName: string): Promise<SyllabusData | null> {
     try {
       console.log(`[FifteenFourteen] Fetching syllabus for ${branchName} ${semester} ${subjectName}`);
-      
+
       // FifteenFourteen primarily focuses on first year subjects (SEM1 & SEM2)
       // and doesn't have detailed syllabus content, so we return null
       // This will allow other services to handle syllabus data
@@ -459,7 +459,7 @@ class FifteenFourteenDataService {
   async fetchVideosData(branchName: string, semester: string, subjectName: string): Promise<VideoData[]> {
     try {
       console.log(`[FifteenFourteen] Fetching videos for ${branchName} ${semester} ${subjectName}`);
-      
+
       // FifteenFourteen doesn't have video content in the current structure
       // Return empty array to allow other services to handle videos
       return [];

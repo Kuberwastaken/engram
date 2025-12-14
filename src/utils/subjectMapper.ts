@@ -3,7 +3,7 @@
 
 /**
  * Enhanced Subject Mapper Class (Browser Compatible)
- * Handles mapping between StudyX full names and DotNotes abbreviations
+ * Handles mapping between SyllabusX full names and DotNotes abbreviations
  */
 export class EnhancedSubjectMapper {
     private directMappings: { [key: string]: string };
@@ -17,19 +17,19 @@ export class EnhancedSubjectMapper {
         this.directMappings = {
             // Basic Sciences (SEM1-2)
             'applied-chemistry': 'APC',
-            'applied-mathematics-1': 'APM1', 
+            'applied-mathematics-1': 'APM1',
             'applied-mathematics-2': 'APM2',
             'applied-physics-1': 'APP1',
             'applied-physics-2': 'APP2',
             'basic-chemistry': 'APC', // Alternative name
-            
+
             // Core Programming
             'programming-in-c': 'PIC',
             'programming-in-java': 'PIJ',
             'programming-in-python': 'PIP',
             'cpp-programming': 'OOPS', // C++ often mapped to OOPS
             'object-oriented-programming-using-c-p-p': 'OOPS',
-            
+
             // Core CS Subjects
             'data-structures': 'DS',
             'database-management-system': 'DBMS',
@@ -40,19 +40,19 @@ export class EnhancedSubjectMapper {
             'design-and-analysis-of-algorithm': 'DAA',
             'theory-of-computation': 'TOC',
             'software-engineering': 'SE',
-            
+
             // Mathematics & Computational
             'discrete-mathematics': 'DM',
             'computational-methods': 'CM',
             'probability-statistics-and-linear-programming': 'PSLA',
-            
+
             // Electronics & Communications
             'digital-logic-and-computer-design': 'DLCD',
             'digital-signal-and-image-processing': 'DSP',
             'analog-and-digital-communications': 'ADC',
             'microprocessors-and-microcontrollers': 'MPMC',
             'advanced-microprocessors-arm-and-interfacing': 'MPMC',
-            
+
             // Engineering Fundamentals
             'engineering-mechanics': 'EM',
             'environmental-studies': 'EVS',
@@ -64,13 +64,13 @@ export class EnhancedSubjectMapper {
             'engineering-graphics': 'EG',
             'workshop-practice': 'WP',
             'workshop-technology': 'WP', // Alternative name
-            
+
             // Advanced Topics
             'advanced-java-programming': 'ADVJ',
             'visual-basic-dot-net': 'VBNET',
             'web-technologies': 'WET',
             'data-warehousing-and-data-mining': 'DMD',
-            
+
             // Additional Common Mappings
             'electronic-circuits': 'ECMC',
             'electrical-engineering': 'EE',
@@ -83,10 +83,10 @@ export class EnhancedSubjectMapper {
             'advanced-computer-architecture': 'ACA'
         };
 
-        // Reverse mappings for better DotNotes → StudyX resolution
+        // Reverse mappings for better DotNotes → SyllabusX resolution
         this.reverseMappings = {
             'EG': 'engineering-graphics',
-            'WP': 'workshop-practice', 
+            'WP': 'workshop-practice',
             'WT': 'workshop-technology',
             'MP': 'manufacturing-processes',
             'MIE': 'material-science',
@@ -117,18 +117,18 @@ export class EnhancedSubjectMapper {
             { pattern: /programming.*java/i, dotNotesCode: 'PIJ' },
             { pattern: /programming.*python/i, dotNotesCode: 'PIP' },
             { pattern: /c\+\+|cpp|object.*oriented/i, dotNotesCode: 'OOPS' },
-            
+
             // Mathematics patterns
             { pattern: /applied.*math.*1/i, dotNotesCode: 'APM1' },
             { pattern: /applied.*math.*2/i, dotNotesCode: 'APM2' },
             { pattern: /discrete.*math/i, dotNotesCode: 'DM' },
             { pattern: /probability.*statistics/i, dotNotesCode: 'PSLA' },
-            
+
             // Physics/Chemistry patterns
             { pattern: /applied.*physics.*1/i, dotNotesCode: 'APP1' },
             { pattern: /applied.*physics.*2/i, dotNotesCode: 'APP2' },
             { pattern: /applied.*chemistry|basic.*chemistry/i, dotNotesCode: 'APC' },
-            
+
             // Core CS patterns
             { pattern: /data.*structure/i, dotNotesCode: 'DS' },
             { pattern: /database.*management/i, dotNotesCode: 'DBMS' },
@@ -139,12 +139,12 @@ export class EnhancedSubjectMapper {
             { pattern: /algorithm.*design|design.*algorithm/i, dotNotesCode: 'DAA' },
             { pattern: /theory.*computation/i, dotNotesCode: 'TOC' },
             { pattern: /software.*engineering/i, dotNotesCode: 'SE' },
-            
+
             // Electronics patterns
             { pattern: /digital.*logic/i, dotNotesCode: 'DLCD' },
             { pattern: /microprocessor/i, dotNotesCode: 'MPMC' },
             { pattern: /digital.*signal/i, dotNotesCode: 'DSP' },
-            
+
             // General patterns
             { pattern: /environmental.*studies/i, dotNotesCode: 'EVS' },
             { pattern: /communication.*skill/i, dotNotesCode: 'CS' },
@@ -206,11 +206,11 @@ export class EnhancedSubjectMapper {
     }
 
     /**
-     * Main mapping function - finds the best DotNotes code for a StudyX subject
+     * Main mapping function - finds the best DotNotes code for a SyllabusX subject
      */
-    mapStudyXToDotNotes(studyXSubject, branch = null, semester = null) {
-        const normalizedSubject = this.normalizeSubjectName(studyXSubject);
-        
+    mapSyllabusXToDotNotes(syllabusXSubject, branch = null, semester = null) {
+        const normalizedSubject = this.normalizeSubjectName(syllabusXSubject);
+
         // 1. Try direct mapping first
         const directMatch = this.directMappings[normalizedSubject];
         if (directMatch) {
@@ -222,7 +222,7 @@ export class EnhancedSubjectMapper {
         }
 
         // 2. Try pattern-based matching
-        const patternMatch = this.findPatternMatch(studyXSubject);
+        const patternMatch = this.findPatternMatch(syllabusXSubject);
         if (patternMatch) {
             return {
                 dotNotesCode: patternMatch,
@@ -232,7 +232,7 @@ export class EnhancedSubjectMapper {
         }
 
         // 3. Try keyword-based fuzzy matching
-        const fuzzyMatch = this.findFuzzyMatch(studyXSubject, branch);
+        const fuzzyMatch = this.findFuzzyMatch(syllabusXSubject, branch);
         if (fuzzyMatch) {
             return fuzzyMatch;
         }
@@ -242,18 +242,18 @@ export class EnhancedSubjectMapper {
             dotNotesCode: null,
             confidence: 0.0,
             method: 'none',
-            suggestion: this.generateMapping(studyXSubject)
+            suggestion: this.generateMapping(syllabusXSubject)
         };
     }    /**
-     * Reverse mapping - finds StudyX subjects for a DotNotes code
+     * Reverse mapping - finds SyllabusX subjects for a DotNotes code
      * Enhanced to handle abbreviations better
      */
-    mapDotNotesToStudyX(dotNotesCode, availableStudyXSubjects = []) {
+    mapDotNotesToSyllabusX(dotNotesCode, availableSyllabusXSubjects = []) {
         // 1. Try direct reverse mapping first
         const reverseMatch = this.reverseMappings[dotNotesCode];
         if (reverseMatch) {
             return {
-                studyXSubjects: [reverseMatch],
+                syllabusXSubjects: [reverseMatch],
                 confidence: 1.0,
                 method: 'reverse-direct'
             };
@@ -266,15 +266,15 @@ export class EnhancedSubjectMapper {
 
         if (directMatches.length > 0) {
             return {
-                studyXSubjects: directMatches,
+                syllabusXSubjects: directMatches,
                 confidence: 1.0,
                 method: 'direct'
             };
         }
 
-        // 3. If we have available StudyX subjects, try fuzzy matching
-        if (availableStudyXSubjects.length > 0) {
-            const fuzzyMatches = availableStudyXSubjects
+        // 3. If we have available SyllabusX subjects, try fuzzy matching
+        if (availableSyllabusXSubjects.length > 0) {
+            const fuzzyMatches = availableSyllabusXSubjects
                 .map(subject => ({
                     subject,
                     score: this.calculateMatchScore(subject, dotNotesCode)
@@ -285,7 +285,7 @@ export class EnhancedSubjectMapper {
 
             if (fuzzyMatches.length > 0) {
                 return {
-                    studyXSubjects: fuzzyMatches.map(m => m.subject),
+                    syllabusXSubjects: fuzzyMatches.map(m => m.subject),
                     confidence: fuzzyMatches[0].score,
                     method: 'fuzzy'
                 };
@@ -296,14 +296,14 @@ export class EnhancedSubjectMapper {
         const patternMatch = this.findReversePatternMatch(dotNotesCode);
         if (patternMatch) {
             return {
-                studyXSubjects: [patternMatch],
+                syllabusXSubjects: [patternMatch],
                 confidence: 0.8,
                 method: 'pattern-reverse'
             };
         }
 
         return {
-            studyXSubjects: [],
+            syllabusXSubjects: [],
             confidence: 0.0,
             method: 'none'
         };
@@ -367,18 +367,18 @@ export class EnhancedSubjectMapper {
     /**
      * Find fuzzy matches using keyword scoring
      */
-    findFuzzyMatch(studyXSubject, branch = null) {
-        const subjectWords = this.extractKeywords(studyXSubject);
+    findFuzzyMatch(syllabusXSubject, branch = null) {
+        const subjectWords = this.extractKeywords(syllabusXSubject);
         let bestMatch = null;
         let bestScore = 0;
 
         for (const [dotNotesCode, keywords] of Object.entries(this.keywordMappings)) {
             let score = this.calculateKeywordScore(subjectWords, keywords);
-            
+
             // Boost score if branch context matches
             if (branch && this.branchContext[branch]) {
                 const branchBoost = this.calculateKeywordScore(
-                    subjectWords, 
+                    subjectWords,
                     this.branchContext[branch]
                 ) * 0.2;
                 score += branchBoost;
@@ -417,34 +417,34 @@ export class EnhancedSubjectMapper {
      * Calculate keyword matching score
      */
     calculateKeywordScore(subjectWords, targetKeywords) {
-        const matches = subjectWords.filter(word => 
-            targetKeywords.some(keyword => 
+        const matches = subjectWords.filter(word =>
+            targetKeywords.some(keyword =>
                 word.includes(keyword) || keyword.includes(word)
             )
         );
-        
+
         return matches.length / Math.max(subjectWords.length, targetKeywords.length);
     }
 
     /**
      * Calculate overall match score between subject and DotNotes code
      */
-    calculateMatchScore(studyXSubject, dotNotesCode) {
+    calculateMatchScore(syllabusXSubject, dotNotesCode) {
         const keywords = this.keywordMappings[dotNotesCode] || [];
-        const subjectWords = this.extractKeywords(studyXSubject);
+        const subjectWords = this.extractKeywords(syllabusXSubject);
         return this.calculateKeywordScore(subjectWords, keywords);
     }
 
     /**
      * Generate a suggested mapping for unmapped subjects
      */
-    generateMapping(studyXSubject) {
-        const words = this.extractKeywords(studyXSubject);
+    generateMapping(syllabusXSubject) {
+        const words = this.extractKeywords(syllabusXSubject);
         const abbreviation = words
             .slice(0, 3)
             .map(word => word.charAt(0).toUpperCase())
             .join('');
-        
+
         return {
             suggested: abbreviation,
             reason: `Generated from first letters of: ${words.slice(0, 3).join(', ')}`

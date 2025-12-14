@@ -22,7 +22,7 @@ export const SubjectGrid: React.FC<SubjectGridProps> = ({ branch, semester }) =>
         setLoading(true);
         setError(null);
 
-        // Convert semester format to StudyX format
+        // Convert semester format to SyllabusX format
         // URL format: 1st -> SEM1, 2nd -> SEM2, 3rd -> SEM3, etc.
         // URL format: sem-1 -> SEM1, sem-2 -> SEM2, etc.
         let semesterKey = semester.toUpperCase();
