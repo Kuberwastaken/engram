@@ -1,0 +1,3509 @@
+{
+  "source": "Bunk to Brains (B2B)",
+  "sourceUrl": "https://www.bunktobrains.com",
+  "processedAt": "2025-11-13T17:14:22.617Z",
+  "scrapedAt": "2025-11-13T17:07:39.036Z",
+  "branches": {
+    "aiml": {
+      "name": "AIML",
+      "code": "AIML",
+      "semesters": {
+        "sem1": {
+          "semester": 1,
+          "subjects": {
+            "pyq sem 1": {
+              "name": "PYQ SEM 1",
+              "slug": "pyq-sem1",
+              "url": "/catalog/aiml/1/pyq-sem1",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "PYQ ALL SUBJECTS SEM 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "applied physics-1": {
+              "name": "Applied Physics-1",
+              "slug": "applied-physics-1",
+              "url": "/catalog/aiml/1/applied-physics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AP UNIT 1 - SHORT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 1 -  DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 - WAVES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 EMT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "applied mathematics-1": {
+              "name": "Applied Mathematics-1",
+              "slug": "applied-mathematics-1",
+              "url": "/catalog/aiml/1/applied-mathematics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AM UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 2 NOTES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "manufacturing processes": {
+              "name": "Manufacturing Processes",
+              "slug": "manufacturing-processes",
+              "url": "/catalog/aiml/1/manufacturing-processes",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B MP UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3 PART 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/view?usp=drive_link",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "environmental science": {
+              "name": "Environmental Science",
+              "slug": "environmental-science",
+              "url": "/catalog/aiml/1/environmental-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B EVS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ni9bac-h85hRS_CXaGPBSU_TARxje8sw/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1th6BGK1KdPD7PJccrApducG4PKwdT93B/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1yM9udFaxhcgBZhwllriXvjH8Dc8tvLNF/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1orC3jCvYQES6TH7SFgxVezGjZ4VsAaLf/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "electrical science": {
+              "name": "Electrical Science",
+              "slug": "electrical-science",
+              "url": "/catalog/aiml/1/electrical-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B ES UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "applied chemistry-1": {
+              "name": "Applied Chemistry-1",
+              "slug": "applied-chemistry-1",
+              "url": "/catalog/aiml/1/applied-chemistry-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2 POLYMERS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "communication skills": {
+              "name": "Communication Skills",
+              "slug": "communication-skills",
+              "url": "/catalog/aiml/1/communication-skills",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1berN0DcmcJLmFxWFm8Zyosz6Tvs12FV1/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WCjTlymb4EMeQf8oKduE7BgaaI8tsdLi/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MSyHKzjEcaW_7pKfOIsYomFCnPZPJMZt/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vdrjTm4G8kHn6XqnyZo96mtvM4I4sgDQ/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "programming in c": {
+              "name": "Programming in C",
+              "slug": "programming-in-c",
+              "url": "/catalog/aiml/1/programming-in-c",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            }
+          }
+        },
+        "sem3": {
+          "semester": 3,
+          "subjects": {
+            "critical reasoning and system thinking": {
+              "name": "Critical Reasoning and System Thinking",
+              "slug": "critical-reasoning-and-system-thinking",
+              "url": "/catalog/aiml/3/critical-reasoning-and-system-thinking",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "data structures": {
+              "name": "Data Structures",
+              "slug": "data-structures",
+              "url": "/catalog/aiml/3/data-structures",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2 - SEARCHING AND SORTING",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "digital logic design": {
+              "name": "Digital Logic Design",
+              "slug": "digital-logic-design",
+              "url": "/catalog/aiml/3/digital-logic-design",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DLD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H/view?usp=drive_link",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLD UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "foundation of data science": {
+              "name": "Foundation of Data Science",
+              "slug": "foundation-of-data-science",
+              "url": "/catalog/aiml/3/foundation-of-data-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B FOD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B FOD UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B FOD  UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B FOD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "principles of artificial intelligence": {
+              "name": "Principles of Artificial Intelligence",
+              "slug": "principles-of-artificial-intelligence",
+              "url": "/catalog/aiml/3/principles-of-artificial-intelligence",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PAI UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B PAI UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B PAI UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "probability statistics and linear algebra": {
+              "name": "Probability, Statistics and Linear Algebra",
+              "slug": "probability-statistics-and-linear-algebra",
+              "url": "/catalog/aiml/3/probability-statistics-and-linear-algebra",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PSLA UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 2
+            },
+            "universal human values-2": {
+              "name": "Universal Human Values-2",
+              "slug": "universal-human-values-2",
+              "url": "/catalog/aiml/3/universal-human-values-2",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B UHV UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B UHV UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B UHV UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3/view?usp=drive_link",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B UHV UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH/view?usp=drive_link",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 5
+            }
+          }
+        }
+      }
+    },
+    "aids": {
+      "name": "AIDS",
+      "code": "AIDS",
+      "semesters": {
+        "sem1": {
+          "semester": 1,
+          "subjects": {
+            "pyq sem 1": {
+              "name": "PYQ SEM 1",
+              "slug": "pyq-sem1",
+              "url": "/catalog/aids/1/pyq-sem1",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "PYQ ALL SUBJECTS SEM 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "applied physics-1": {
+              "name": "Applied Physics-1",
+              "slug": "applied-physics-1",
+              "url": "/catalog/aids/1/applied-physics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AP UNIT 1 - SHORT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 1 -  DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 - WAVES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 EMT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "applied mathematics-1": {
+              "name": "Applied Mathematics-1",
+              "slug": "applied-mathematics-1",
+              "url": "/catalog/aids/1/applied-mathematics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AM UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 2 NOTES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "manufacturing processes": {
+              "name": "Manufacturing Processes",
+              "slug": "manufacturing-processes",
+              "url": "/catalog/aids/1/manufacturing-processes",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B MP UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3 PART 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/view?usp=drive_link",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "environmental science": {
+              "name": "Environmental Science",
+              "slug": "environmental-science",
+              "url": "/catalog/aids/1/environmental-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B EVS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ni9bac-h85hRS_CXaGPBSU_TARxje8sw/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1th6BGK1KdPD7PJccrApducG4PKwdT93B/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1yM9udFaxhcgBZhwllriXvjH8Dc8tvLNF/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1orC3jCvYQES6TH7SFgxVezGjZ4VsAaLf/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "electrical science": {
+              "name": "Electrical Science",
+              "slug": "electrical-science",
+              "url": "/catalog/aids/1/electrical-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B ES UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "applied chemistry-1": {
+              "name": "Applied Chemistry-1",
+              "slug": "applied-chemistry-1",
+              "url": "/catalog/aids/1/applied-chemistry-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2 POLYMERS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "communication skills": {
+              "name": "Communication Skills",
+              "slug": "communication-skills",
+              "url": "/catalog/aids/1/communication-skills",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1berN0DcmcJLmFxWFm8Zyosz6Tvs12FV1/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WCjTlymb4EMeQf8oKduE7BgaaI8tsdLi/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MSyHKzjEcaW_7pKfOIsYomFCnPZPJMZt/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vdrjTm4G8kHn6XqnyZo96mtvM4I4sgDQ/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "programming in c": {
+              "name": "Programming in C",
+              "slug": "programming-in-c",
+              "url": "/catalog/aids/1/programming-in-c",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            }
+          }
+        },
+        "sem3": {
+          "semester": 3,
+          "subjects": {
+            "critical reasoning and system thinking": {
+              "name": "Critical Reasoning and System Thinking",
+              "slug": "critical-reasoning-and-system-thinking",
+              "url": "/catalog/aids/3/critical-reasoning-and-system-thinking",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "data structures": {
+              "name": "Data Structures",
+              "slug": "data-structures",
+              "url": "/catalog/aids/3/data-structures",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2 - SEARCHING AND SORTING",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "digital logic design": {
+              "name": "Digital Logic Design",
+              "slug": "digital-logic-design",
+              "url": "/catalog/aids/3/digital-logic-design",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DLD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ULuyBLAu-Zrq0QG-oJrrF_z8Lg5ODt4H/view?usp=drive_link",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLD UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1isnnNk2YVsK3C-B60ivUpR4uR4BHojeV/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1wLkG0UZQErOAlEXGU4aBhSCFXgenONdO/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "foundation of data science": {
+              "name": "Foundation of Data Science",
+              "slug": "foundation-of-data-science",
+              "url": "/catalog/aids/3/foundation-of-data-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B FOD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y4_aLBHayc_m9FpyAOMUWumFgDsQNDHD/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B FOD UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1u-FDxWr93x13DGtcVIS0mMn4mnIPDKlY/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B FOD  UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ha2MGAIMscxIkOYCXJVkjzlFL1qpxY_2/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B FOD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1zwyW9F2M2BmnekcDMJiKvTn6jlTPDtyH/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "principles of artificial intelligence": {
+              "name": "Principles of Artificial Intelligence",
+              "slug": "principles-of-artificial-intelligence",
+              "url": "/catalog/aids/3/principles-of-artificial-intelligence",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PAI UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/18bX-nS3exJmj_5XPnRJYkRRfC0REMX-9/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B PAI UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1AQiLle3uhI6Q2QJQZhXc9-DMSAt07Oft/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B PAI UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1B9TKJnevnBtCfjLaBRmqrWi5nQqHwvnY/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "probability statistics and linear algebra": {
+              "name": "Probability, Statistics and Linear Algebra",
+              "slug": "probability-statistics-and-linear-algebra",
+              "url": "/catalog/aids/3/probability-statistics-and-linear-algebra",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PSLA UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 2
+            },
+            "universal human values-2": {
+              "name": "Universal Human Values-2",
+              "slug": "universal-human-values-2",
+              "url": "/catalog/aids/3/universal-human-values-2",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B UHV UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OujfVe6GvufuZrKo_iNSnmcHDBjLYzEZ/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B UHV UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pNWE_xhcfm5xJL9yINcYeORCr45Yhppr/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B UHV UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ek3yjbNndL8GiUCQTHMb_XQyY69E9jd3/view?usp=drive_link",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B UHV UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vuLl8JaXGT2FcMjnfBbaSmO-CI-aOLrH/view?usp=drive_link",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [
+                  {
+                    "title": "QUESTION PAPER ALL SUBJECTS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 5
+            }
+          }
+        }
+      }
+    },
+    "cse": {
+      "name": "CSE",
+      "code": "CSE",
+      "semesters": {
+        "sem1": {
+          "semester": 1,
+          "subjects": {
+            "pyq sem 1": {
+              "name": "PYQ SEM 1",
+              "slug": "pyq-sem1",
+              "url": "/catalog/cse-core/1/pyq-sem1",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "PYQ ALL SUBJECTS SEM 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "applied physics-1": {
+              "name": "Applied Physics-1",
+              "slug": "applied-physics-1",
+              "url": "/catalog/cse-core/1/applied-physics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AP UNIT 1 - SHORT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 1 -  DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 - WAVES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 EMT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "applied mathematics-1": {
+              "name": "Applied Mathematics-1",
+              "slug": "applied-mathematics-1",
+              "url": "/catalog/cse-core/1/applied-mathematics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AM UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 2 NOTES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "manufacturing processes": {
+              "name": "Manufacturing Processes",
+              "slug": "manufacturing-processes",
+              "url": "/catalog/cse-core/1/manufacturing-processes",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B MP UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3 PART 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/view?usp=drive_link",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "environmental science": {
+              "name": "Environmental Science",
+              "slug": "environmental-science",
+              "url": "/catalog/cse-core/1/environmental-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B EVS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ni9bac-h85hRS_CXaGPBSU_TARxje8sw/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1th6BGK1KdPD7PJccrApducG4PKwdT93B/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1yM9udFaxhcgBZhwllriXvjH8Dc8tvLNF/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1orC3jCvYQES6TH7SFgxVezGjZ4VsAaLf/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "electrical science": {
+              "name": "Electrical Science",
+              "slug": "electrical-science",
+              "url": "/catalog/cse-core/1/electrical-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B ES UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "applied chemistry-1": {
+              "name": "Applied Chemistry-1",
+              "slug": "applied-chemistry-1",
+              "url": "/catalog/cse-core/1/applied-chemistry-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2 POLYMERS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "communication skills": {
+              "name": "Communication Skills",
+              "slug": "communication-skills",
+              "url": "/catalog/cse-core/1/communication-skills",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1berN0DcmcJLmFxWFm8Zyosz6Tvs12FV1/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WCjTlymb4EMeQf8oKduE7BgaaI8tsdLi/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MSyHKzjEcaW_7pKfOIsYomFCnPZPJMZt/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vdrjTm4G8kHn6XqnyZo96mtvM4I4sgDQ/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "programming in c": {
+              "name": "Programming in C",
+              "slug": "programming-in-c",
+              "url": "/catalog/cse-core/1/programming-in-c",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            }
+          }
+        },
+        "sem3": {
+          "semester": 3,
+          "subjects": {
+            "computational methods": {
+              "name": "Computational Methods",
+              "slug": "computational-methods",
+              "url": "/catalog/cse-core/3/computational-methods",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CM UNIT 1 -FORMULA SHEET",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1P4Y1th19QO0YSe7aXuRBRWSfaSBmCflL/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 1 - DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1jobAw60oyEgcC50UfKb2C9PSxvwnvwf0/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rra-oSFslFNXku1di9dSobDxoSmpzsX-/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jqse7yWINNwo3cL7kTbBPw3j90M7_b_Z/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1jfxoy8jkD2aln5IJvPIRFaguIsM5HoeL/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "data structures": {
+              "name": "Data Structures",
+              "slug": "data-structures",
+              "url": "/catalog/cse-core/3/data-structures",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2 - SEARCHING AND SORTING",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "digital logic and computer design": {
+              "name": "Digital Logic and Computer Design",
+              "slug": "digital-logic-and-computer-design",
+              "url": "/catalog/cse-core/3/digital-logic-and-computer-design",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DLCD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "discrete mathematics": {
+              "name": "Discrete Mathematics",
+              "slug": "discrete-mathematics",
+              "url": "/catalog/cse-core/3/discrete-mathematics",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            },
+            "object-oriented programming": {
+              "name": "Object-Oriented Programming",
+              "slug": "object-oriented-programming",
+              "url": "/catalog/cse-core/3/object-oriented-programming",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            }
+          }
+        }
+      }
+    },
+    "it": {
+      "name": "IT",
+      "code": "IT",
+      "semesters": {
+        "sem1": {
+          "semester": 1,
+          "subjects": {
+            "pyq sem 1": {
+              "name": "PYQ SEM 1",
+              "slug": "pyq-sem1",
+              "url": "/catalog/it/1/pyq-sem1",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "PYQ ALL SUBJECTS SEM 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "applied physics-1": {
+              "name": "Applied Physics-1",
+              "slug": "applied-physics-1",
+              "url": "/catalog/it/1/applied-physics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AP UNIT 1 - SHORT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 1 -  DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 - WAVES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 EMT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "applied mathematics-1": {
+              "name": "Applied Mathematics-1",
+              "slug": "applied-mathematics-1",
+              "url": "/catalog/it/1/applied-mathematics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AM UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 2 NOTES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "manufacturing processes": {
+              "name": "Manufacturing Processes",
+              "slug": "manufacturing-processes",
+              "url": "/catalog/it/1/manufacturing-processes",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B MP UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3 PART 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/view?usp=drive_link",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "environmental science": {
+              "name": "Environmental Science",
+              "slug": "environmental-science",
+              "url": "/catalog/it/1/environmental-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B EVS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ni9bac-h85hRS_CXaGPBSU_TARxje8sw/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1th6BGK1KdPD7PJccrApducG4PKwdT93B/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1yM9udFaxhcgBZhwllriXvjH8Dc8tvLNF/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1orC3jCvYQES6TH7SFgxVezGjZ4VsAaLf/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "electrical science": {
+              "name": "Electrical Science",
+              "slug": "electrical-science",
+              "url": "/catalog/it/1/electrical-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B ES UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "applied chemistry-1": {
+              "name": "Applied Chemistry-1",
+              "slug": "applied-chemistry-1",
+              "url": "/catalog/it/1/applied-chemistry-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2 POLYMERS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "communication skills": {
+              "name": "Communication Skills",
+              "slug": "communication-skills",
+              "url": "/catalog/it/1/communication-skills",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1berN0DcmcJLmFxWFm8Zyosz6Tvs12FV1/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WCjTlymb4EMeQf8oKduE7BgaaI8tsdLi/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MSyHKzjEcaW_7pKfOIsYomFCnPZPJMZt/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vdrjTm4G8kHn6XqnyZo96mtvM4I4sgDQ/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "programming in c": {
+              "name": "Programming in C",
+              "slug": "programming-in-c",
+              "url": "/catalog/it/1/programming-in-c",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            }
+          }
+        },
+        "sem3": {
+          "semester": 3,
+          "subjects": {}
+        }
+      }
+    },
+    "eee": {
+      "name": "EEE",
+      "code": "EEE",
+      "semesters": {
+        "sem1": {
+          "semester": 1,
+          "subjects": {
+            "pyq sem 1": {
+              "name": "PYQ SEM 1",
+              "slug": "pyq-sem1",
+              "url": "/catalog/ee/1/pyq-sem1",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "PYQ ALL SUBJECTS SEM 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "applied physics-1": {
+              "name": "Applied Physics-1",
+              "slug": "applied-physics-1",
+              "url": "/catalog/ee/1/applied-physics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AP UNIT 1 - SHORT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 1 -  DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 - WAVES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 EMT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "applied mathematics-1": {
+              "name": "Applied Mathematics-1",
+              "slug": "applied-mathematics-1",
+              "url": "/catalog/ee/1/applied-mathematics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AM UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 2 NOTES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "manufacturing processes": {
+              "name": "Manufacturing Processes",
+              "slug": "manufacturing-processes",
+              "url": "/catalog/ee/1/manufacturing-processes",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B MP UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3 PART 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/view?usp=drive_link",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "environmental science": {
+              "name": "Environmental Science",
+              "slug": "environmental-science",
+              "url": "/catalog/ee/1/environmental-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B EVS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ni9bac-h85hRS_CXaGPBSU_TARxje8sw/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1th6BGK1KdPD7PJccrApducG4PKwdT93B/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1yM9udFaxhcgBZhwllriXvjH8Dc8tvLNF/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1orC3jCvYQES6TH7SFgxVezGjZ4VsAaLf/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "electrical science": {
+              "name": "Electrical Science",
+              "slug": "electrical-science",
+              "url": "/catalog/ee/1/electrical-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B ES UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "applied chemistry-1": {
+              "name": "Applied Chemistry-1",
+              "slug": "applied-chemistry-1",
+              "url": "/catalog/ee/1/applied-chemistry-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2 POLYMERS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "communication skills": {
+              "name": "Communication Skills",
+              "slug": "communication-skills",
+              "url": "/catalog/ee/1/communication-skills",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1berN0DcmcJLmFxWFm8Zyosz6Tvs12FV1/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WCjTlymb4EMeQf8oKduE7BgaaI8tsdLi/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MSyHKzjEcaW_7pKfOIsYomFCnPZPJMZt/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vdrjTm4G8kHn6XqnyZo96mtvM4I4sgDQ/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "programming in c": {
+              "name": "Programming in C",
+              "slug": "programming-in-c",
+              "url": "/catalog/ee/1/programming-in-c",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            }
+          }
+        },
+        "sem3": {
+          "semester": 3,
+          "subjects": {
+            "analog communication": {
+              "name": "Analog Communication",
+              "slug": "analog-communication",
+              "url": "/catalog/ee/3/analog-communication",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            },
+            "data structures": {
+              "name": "Data Structures",
+              "slug": "data-structures",
+              "url": "/catalog/ee/3/data-structures",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2 - SEARCHING AND SORTING",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "analog electronics-1": {
+              "name": "Analog Electronics-1",
+              "slug": "analog-electronics-1",
+              "url": "/catalog/ee/3/analog-electronics-1",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            },
+            "computational methods": {
+              "name": "Computational Methods",
+              "slug": "computational-methods",
+              "url": "/catalog/ee/3/computational-methods",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CM UNIT 1 -FORMULA SHEET",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1P4Y1th19QO0YSe7aXuRBRWSfaSBmCflL/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 1 - DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1jobAw60oyEgcC50UfKb2C9PSxvwnvwf0/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rra-oSFslFNXku1di9dSobDxoSmpzsX-/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jqse7yWINNwo3cL7kTbBPw3j90M7_b_Z/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1jfxoy8jkD2aln5IJvPIRFaguIsM5HoeL/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "digital logic and computer design": {
+              "name": "Digital Logic and Computer Design",
+              "slug": "digital-logic-and-computer-design",
+              "url": "/catalog/ee/3/digital-logic-and-computer-design",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DLCD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "signals and systems": {
+              "name": "Signals and Systems",
+              "slug": "signals-and-systems",
+              "url": "/catalog/ee/3/signals-and-systems",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            }
+          }
+        }
+      }
+    },
+    "ece": {
+      "name": "ECE",
+      "code": "ECE",
+      "semesters": {
+        "sem1": {
+          "semester": 1,
+          "subjects": {
+            "pyq sem 1": {
+              "name": "PYQ SEM 1",
+              "slug": "pyq-sem1",
+              "url": "/catalog/ece/1/pyq-sem1",
+              "materials": {
+                "notes": [],
+                "pyq": [
+                  {
+                    "title": "PYQ ALL SUBJECTS SEM 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1kcFuoq5vdabl9ejZMswY_wSsW8BAFJXM/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": true,
+              "hasVideos": false,
+              "totalResources": 1
+            },
+            "applied physics-1": {
+              "name": "Applied Physics-1",
+              "slug": "applied-physics-1",
+              "url": "/catalog/ece/1/applied-physics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AP UNIT 1 - SHORT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1OBNe67jSDQfc5c9GOQvWEjbIVqvFs9yy/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 1 -  DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1tqbIXU1tikGBmMahmkQKE8cAKtiysoC5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 - WAVES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jhne61oln16ZJTNUMZTby8qUlUHgo5QM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 2 EMT",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1mwd6kSPcfC3ZTmBznlnU7KUci-O0g0CU/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/19dDqXDm_7-CjO_0zHiEZCsXhbHp0oNpR/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "applied mathematics-1": {
+              "name": "Applied Mathematics-1",
+              "slug": "applied-mathematics-1",
+              "url": "/catalog/ece/1/applied-mathematics-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AM UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1TfFqobZVx5KObeZf5YJEB3UBgKMkCmeM/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/14j4YzxyjxPPwMlhQw2xelG-Vs6z4utXN/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AM UNIT 2 NOTES",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Y_njBd0Rs-WL91KWARaAKGj_b3pEIV12/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "manufacturing processes": {
+              "name": "Manufacturing Processes",
+              "slug": "manufacturing-processes",
+              "url": "/catalog/ece/1/manufacturing-processes",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B MP UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1G7nOP4iVQhkXElGWYw1xJccOM8T8yzma/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MNaBVHhHK9xhS_a75gjxJXNIPb_9kNn5/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1fPEnkuSqLHsIOLFzooonn0Uwj8fTAX-2/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1h8ogdeguX7G_f8Trkn6aC2NizSc7Sto9/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B MP UNIT 3 PART 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1BXCJiRwXh1mrlue5oCWZvRXPdsjTBF4G/view?usp=drive_link",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "environmental science": {
+              "name": "Environmental Science",
+              "slug": "environmental-science",
+              "url": "/catalog/ece/1/environmental-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B EVS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ni9bac-h85hRS_CXaGPBSU_TARxje8sw/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1th6BGK1KdPD7PJccrApducG4PKwdT93B/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1yM9udFaxhcgBZhwllriXvjH8Dc8tvLNF/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B EVS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1orC3jCvYQES6TH7SFgxVezGjZ4VsAaLf/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "electrical science": {
+              "name": "Electrical Science",
+              "slug": "electrical-science",
+              "url": "/catalog/ece/1/electrical-science",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B ES UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1lzGaBiSP2ZbHt-FcGRH1uN5MJDqzs_Rh/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1-wtRaXV-KgxOYkfWbTzMiNyGAUo0r-Bm/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B ES UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1DSFbyHKq6JMEbT-SXoVzT9LhGeDYaI7R/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            },
+            "applied chemistry-1": {
+              "name": "Applied Chemistry-1",
+              "slug": "applied-chemistry-1",
+              "url": "/catalog/ece/1/applied-chemistry-1",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B AC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rEHQkzjJ8_cM2RXlQcgEwKeDMLs6Dts7/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Lgzx1_5P32hu6mCXoD5b-koiZP1dgbSD/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 2 POLYMERS",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1LBwW0y5HW5Gjx1dZucCU3Ps6lZaY_sEc/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1F7_tsraA3wx7RzbEhIe_I_3UTnXBwL-4/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B AC UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Ycu1E7ZkuXLOe4I_N13ZphVDoqDKE7w0/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "communication skills": {
+              "name": "Communication Skills",
+              "slug": "communication-skills",
+              "url": "/catalog/ece/1/communication-skills",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1berN0DcmcJLmFxWFm8Zyosz6Tvs12FV1/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WCjTlymb4EMeQf8oKduE7BgaaI8tsdLi/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1MSyHKzjEcaW_7pKfOIsYomFCnPZPJMZt/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B CS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1vdrjTm4G8kHn6XqnyZo96mtvM4I4sgDQ/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "programming in c": {
+              "name": "Programming in C",
+              "slug": "programming-in-c",
+              "url": "/catalog/ece/1/programming-in-c",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B PC UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1pDd0jCR0x689av0zB4shgiMZhXEAUBdP/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Noqih0FlQ-iYOG86PsN5qZvfKXBg9Ija/view?usp=sharing",
+                    "semester": "sem1"
+                  },
+                  {
+                    "title": "B2B PC UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/15euyCy27NCtosW1XecdrADsMK50xDN0E/view?usp=sharing",
+                    "semester": "sem1"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 3
+            }
+          }
+        },
+        "sem3": {
+          "semester": 3,
+          "subjects": {
+            "analog communication": {
+              "name": "Analog Communication",
+              "slug": "analog-communication",
+              "url": "/catalog/ece/3/analog-communication",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            },
+            "data structures": {
+              "name": "Data Structures",
+              "slug": "data-structures",
+              "url": "/catalog/ece/3/data-structures",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DS UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1q7aYK2o1cBa9Q_2R7J4Vwp-zImjPTaMu/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1PReNsYULUDo2C-fcJqDHxFbtFhBZ75ZH/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 2 - SEARCHING AND SORTING",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1iwCkyWaI9gwLzBBIoqU-8Bt_8hETtfwz/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1_b9OAb_ms3p5ms3L3b0zqvOOv8KHb0D5/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DS UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Rhct6C3Uokcl0QFCASbJ78YnrhmULbTG/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "analog electronics-1": {
+              "name": "Analog Electronics-1",
+              "slug": "analog-electronics-1",
+              "url": "/catalog/ece/3/analog-electronics-1",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            },
+            "computational methods": {
+              "name": "Computational Methods",
+              "slug": "computational-methods",
+              "url": "/catalog/ece/3/computational-methods",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B CM UNIT 1 -FORMULA SHEET",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1P4Y1th19QO0YSe7aXuRBRWSfaSBmCflL/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 1 - DETAILED",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1jobAw60oyEgcC50UfKb2C9PSxvwnvwf0/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1rra-oSFslFNXku1di9dSobDxoSmpzsX-/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1Jqse7yWINNwo3cL7kTbBPw3j90M7_b_Z/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B CM UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1jfxoy8jkD2aln5IJvPIRFaguIsM5HoeL/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 5
+            },
+            "digital logic and computer design": {
+              "name": "Digital Logic and Computer Design",
+              "slug": "digital-logic-and-computer-design",
+              "url": "/catalog/ece/3/digital-logic-and-computer-design",
+              "materials": {
+                "notes": [
+                  {
+                    "title": "B2B DLCD UNIT 1",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1WEJ6HmO0CzTSk3Zf5eP_Q4jH7EWjXE92/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 2",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/101UNxBqE7qEuxqKFdFAc-uaFPNXvQqEl/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 3",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/17b5PX3FoMI4cGZjHXR-yCmlS-mb1rq2_/view?usp=sharing",
+                    "semester": "sem3"
+                  },
+                  {
+                    "title": "B2B DLCD UNIT 4",
+                    "type": "pdf",
+                    "source": "B2B",
+                    "driveLink": "https://drive.google.com/file/d/1IfZV7riJoFIAtxdsskD4595FbTg9Oqm8/view?usp=sharing",
+                    "semester": "sem3"
+                  }
+                ],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": true,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 4
+            },
+            "signals and systems": {
+              "name": "Signals and Systems",
+              "slug": "signals-and-systems",
+              "url": "/catalog/ece/3/signals-and-systems",
+              "materials": {
+                "notes": [],
+                "pyq": [],
+                "videos": [],
+                "tutorials": []
+              },
+              "hasNotes": false,
+              "hasPYQ": false,
+              "hasVideos": false,
+              "totalResources": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

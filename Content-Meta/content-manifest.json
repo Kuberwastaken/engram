@@ -1,0 +1,57 @@
+{
+  "lastUpdated": "2025-11-12T00:00:00.000Z",
+  "version": "1.1.0",
+  "integrationStrategy": "Multi-Branch Distribution with Syllabus Fix",
+  "availableBranches": [
+    "CSE",
+    "IT",
+    "CST",
+    "ITE",
+    "AIDS",
+    "AIML",
+    "CIVIL",
+    "ECE",
+    "EEE",
+    "MECH"
+  ],
+  "availableSemesters": [
+    "SEM1",
+    "SEM2",
+    "SEM3",
+    "SEM4",
+    "SEM5",
+    "SEM6",
+    "SEM7",
+    "SEM8"
+  ],
+  "totalContent": {
+    "branches": 10,
+    "semesters": 8,
+    "subjects": 820,
+    "materials": 12873
+  },
+  "sem3Integration": {
+    "strategy": "Subject-specific branch mapping with syllabus distribution",
+    "branchesUpdated": [
+      "CSE",
+      "IT",
+      "CST",
+      "ITE",
+      "ECE",
+      "EEE",
+      "AIDS",
+      "AIML",
+      "CIVIL",
+      "MECH"
+    ],
+    "subjectsDistributed": 9,
+    "materialsDistributed": 275,
+    "syllabusFixed": true,
+    "syllabusDistributedTo": 44
+  },
+  "files": {
+    "unifiedContent": "D:\\Projects\\ENGRAM-PROJECT\\public\\Content-Meta\\UnifiedContent.json",
+    "sem3Notes": "D:\\Projects\\ENGRAM-PROJECT\\public\\Content-Meta\\Sem3Notes.json",
+    "integrationReport": "D:\\Projects\\ENGRAM-PROJECT\\scripts\\multi-branch-integration-report.json"
+  }
+}

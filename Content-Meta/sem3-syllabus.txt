@@ -1,0 +1,2209 @@
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+DETAILED
+SYLLABUS
+FOR
+rd
+3 SEMESTER
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 11
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS201/AIML201/IOT201
+L
+T/P
+Credits
+Subject: Data Structures
+Marking Scheme
+3
+0
+3
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Theory Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end term examination question paper.
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should have
+objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the syllabus.
+Every unit should have two questions. However, students may be asked to attempt only 1
+question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper. The
+standard/ level of the questions to be asked should be at the level of the prescribed textbooks.
+5. The requirement of (scientific) calculators/ log-tables/ data-tables may be specified if required.
+Course Objectives:
+1.
+To understand the basic concepts of data structures.
+2.
+To perform basic operations on linked list, stacks and queues.
+3.
+To perform sorting and searching on a given set of data items.
+4.
+To understand the concepts of trees, hashing, and graph theory.
+Course Outcomes:
+Understand and identify the concepts of fundamentals of data structures and efficient
+CO1
+access strategies for solving a computational problem.
+Apply suitable data structure for solving a given problem and differentiate the usage of
+CO2
+data structures and their applications.
+Analyse the choice of data structures and their usage for sorting and searching numbers in
+CO3
+data structures.
+Create the solution for a particular problem and gain ability to provide
+CO4
+solutions/approaches with file handling and tree structures.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+2
+CO2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+2
+CO3
+2
+2
+2
+2
+1
+-
+-
+-
+-
+-
+1
+2
+CO4
+2
+2
+2
+2
+1
+1
+-
+-
+-
+-
+1
+2
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 12
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Course Overview:
+This subject gives an overview of data structure concepts including arrays, stack, queues,
+linked lists, trees, and graphs. Discussions shall be held of various implementations of these
+data structures in real life. This subject also examines algorithms for sorting and searching.
+The concepts of trees and graph-based algorithms shall be introduced.
+
+UNIT I:
+[8]
+Introduction- Introduction to Algorithmic Complexity, Introduction to various data
+structures, Arrays and Strings operations, Stacks and Queues, Operations on Stacks and
+Queues, Array representation of Stacks, Applications of Stacks- Recursion, Polish expression
+and their compilation conversion of infix expression to prefix and postfix expression,
+Operations of Queues, Representations of Queues Applications of Queues, Priority queues,
+Overview of the list, set, tuples, and dictionary data structures.
+UNIT II:
+[8]
+Searching and Sorting- Linear Search, Binary search, Insertion Sort, Quick sort, Radix sort,
+Merge sort, Heap sort. Linked Lists- Singly linked lists, Representation of linked list,
+Operations of the Linked list such as Traversing, Insertion, and Deletion, Searching, and
+applications of Linked List. Concepts of Circular linked list and doubly linked list and their
+applications. Stacks and Queues as a linked list.
+UNIT III:
+[8]
+Trees- Basic Terminology, Binary Trees and their representation, binary search trees,
+various operations on Binary search trees like traversing, searching, Insertion and Deletion,
+Applications of Binary search Trees, Complete Binary trees, Extended binary trees. General
+trees, AVL trees, Threaded trees, B- trees, 2-3 trees, 2-3-4 trees, B* and B+ trees.
+UNIT IV:
+[8]
+File Structure- File Organization, Indexing & Hashing, Hash Functions, GraphsTerminology and Representations, Graphs & Multi-graphs, Directed Graphs, Representation
+of graphs and their Transversal, Euler and Hamiltonian paths, Spanning trees, shortest path
+and Transitive Closure, Topological Sort, and Critical Paths.
+Text Books:
+1. Tannenbaum. Data Structures, PHI, 2007 (Fifth Impression).
+2. An introduction to data structures and application by Jean-Paul Tremblay & Pal G.
+Sorenson (McGraw Hill).
+Reference Books:
+1. Data Structures with C - By Schaum Series.
+2. R.L. Kruse, B.P. Leary, C.L. Tondo. Data structure and program design in C, PHI, 2009
+(Fourth Impression).
+3. Gilberg, R. F., & Forouzan, B. A., Data structures: A pseudocode approach with C++.
+Brooks/Cole Publishing, 2001.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 13
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS251/AIML251/IOT251
+L
+T/P Credits
+Subject: Data Structures Lab
+0
+2
+1
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Examination: As per university examination norms from time to time
+INSTRUCTIONS TO EVALUATORS: Maximum Marks: As per university norms
+1. This is the practical component of the corresponding theory paper.
+2. The practical list shall be notified by the teacher in the first week of the class
+commencement under the intimation to the office of the HOD/ Institution in which
+they appear is being offered from the list of practicals below.
+3. Instructors can add any other additional experiments over and above the mentioned in
+the experiment list which they think is important.
+4. At least 8 experiments must be performed by the students.
+Course Objectives:
+1. To teach students how to analyse different types of data structures.
+2. To design applications based on different types of data structures.
+Course Outcomes:
+Design programs using a variety of data structures such as stacks, queues, hash tables,
+binary trees, search trees, heaps, graphs, B-trees, list, set, tuples, dictionary.
+
+CO1
+CO2
+Implement and analyse abstract data types such as lists, graphs, search trees to solve
+real world problems efficiently.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+2
+2
+2
+2
+1
+-
+-
+-
+-
+-
+-
+1
+CO2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+2
+LIST OF EXPERIMENTS:
+1. Perform Linear Search and Binary Search on an array.
+2. Create a stack and perform Pop, Push, and Traverse operations on the stack using
+array.
+3. Create a stack and perform Pop, Push, and Traverse operations on the stack using
+linked list.
+4. Create a Linear Queue using Linked List and implement different operations such as
+insert, delete, and display the queue elements.
+5. Implement the following sorting techniques:
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 14
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+a. Insertion sort
+b. Merge sort
+c. Bubble sort
+d. Selection sort
+6. Create a linked list with nodes having information about a student. Insert a new node
+at the specified position.
+7. Create a doubly linked list with nodes having information about an employee and
+perform Insertion at front of doubly linked list and perform deletion at end of that
+doubly linked list.
+8. Create a circular linked list having information about a college and perform Insertion
+at the front end and perform deletion at the end.
+9. Create a Binary Tree and perform Tree Traversals (Preorder, Postorder, Inorder)
+using the concept of recursion.
+10. Implement insertion, deletion, and display (Inorder, Preorder, Postorder) on binary
+search tree with the information in the tree about the details of an automobile (type,
+company, year of make).
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 15
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS203/AIML203/IOT203
+L
+T/P Credits
+Subject: Foundations of Data Science
+3
+0
+3
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Theory Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end term examination question paper.
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should
+have objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the
+syllabus. Every unit should have two questions. However, students may be asked to attempt
+only 1 question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper. The
+standard/ level of the questions to be asked should be at the level of the prescribed
+textbooks.
+5. The requirement of (scientific) calculators/ log-tables/ data-tables may be specified if
+required
+Course Objectives:
+1. To analyse different types of data using Python and .
+2. To prepare data for analysis and perform simple statistical analysis.
+3. To create meaningful data visualizations and predict future trends from data.
+Course Outcomes:
+CO1 Understand and identify the basic concepts of data science for performing data analysis.
+CO2 Apply & perform pre-processing steps along with data visualization to get insights from
+data.
+Analyse and apply different modules of data science to evaluate mathematical, and
+CO3
+scientific problems of data analysis.
+Develop the model for data analysis and evaluate the model’s performance to optimize
+CO4
+business decisions and create competitive advantage with data analytics.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+CO2
+CO3
+CO4
+3
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+1
+3
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+2
+2
+2
+3
+3
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 16
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Course Overview:
+Foundations of Data Science is a blend of statistical mathematics, data analysis tools and
+visualization, domain knowledge representation, tools and algorithms and computer science
+applications. The hidden insights or patterns are identified and analysed to form a decision.
+UNIT I:
+[8]
+Introduction to data science, applications of data science, data scientist roles and
+responsibilities, skills needed to become a data scientist. Need of Python for data analysis,
+Introduction to Data Understanding and Pre-processing, domain knowledge, Understanding
+structured and unstructured data. Creation of synthetic dataset in MS Excel.
+UNIT II:
+[8]
+Basics of Python programming: Variables, printing values, if condition, arithmetic
+operations, loops. Data Analysis process, Dataset generation, Importing Dataset: Importing
+and Exporting Data, Basic Insights from Datasets, Cleaning and Preparing the Data: Identify
+and Handle Missing Values.
+UNIT III:
+[8]
+Basics of essential Python libraries: Introduction to NumPy, Pandas, Matplotlib, SciPy.
+Data Processing, Data Visualization, Basic Visualization Tools, Specialized Visualization
+Tools, Seaborn Creating and Plotting Maps.
+UNIT IV:
+[8]
+Mathematical and scientific applications for data Analysis, Basics of Supervised and
+Unsupervised Learning. Decision Making. Trend & predictive mining using Python,
+Recommender systems.
+Text Books:
+1. Wes Mckinney. Python for Data Analysis, First edition, Publisher O’Reilly Media.
+2. Foundational Python for Data Science, 1st edition, Kennedy Behrman, Pearson
+Publication.
+3. Data analytics using Python, Bharti Motwani, Wiley Publication.
+Reference Books:
+1. Allen Downey, Jeffrey Elkner, Chris Meyers, Learning with Python, Dreamtech Press.
+2. Reema Thareja. Python Programming using Problem Solving approach, Oxford University
+press.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 17
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS253/AIML253/IOT253
+L
+T/P Credits
+Subject: Foundations of Data Science Lab
+0
+2
+1
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Examination: As per university examination norms from time to time
+INSTRUCTIONS TO EVALUATORS: Maximum Marks: As per university norms
+1. This is the practical component of the corresponding theory paper.
+2. The practical list shall be notified by the teacher in the first week of the class
+commencement under the intimation to the office of the HOD/ Institution in which the
+appear is being offered from the list of practicals below.
+3. Instructors can add any other additional experiments over and above the mentioned in the
+experiment list which they think is important.
+4. Atleast 8 experiments must be performed by the students.
+Course Objectives:
+1. To analyse different types of data using Python.
+2. To perform statistical analysis and create meaningful data insights.
+Course Outcomes:
+CO1 Apply data science principles to identify meaningful solutions to actual problems.
+Analyse and create programs based on statistical analysis using different libraries of
+CO2
+Python programming language.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+3
+3
+3
+3
+3
+1
+1
+2
+1
+1
+1
+2
+CO2
+3
+3
+3
+3
+3
+1
+1
+2
+1
+1
+1
+2
+LIST OF EXPERIMENTS:
+1. Introduction and installation of Python and Python IDEs for data science (SpyderAnaconda, Jupyter Notebook etc.)
+2. Design a Python program to generate and print a list except for the first 5 elements,
+where the values are squares of numbers between 1 and 30.
+3. Design a Python program to understand the working of loops.
+4. Design a Python function to find the Max of three numbers.
+5. Design a Python program for creating a random story generator
+6. Create a synthetic dataset (.csv/.xlsx) to work upon and design a Python program to
+read and print that data.
+7. Design a Python program using NumPy library functions.
+8. Perform Statistics and Data Visualization in python.
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 18
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+9. Design a Python program to implement Linear Regression
+10. Design a Python program to create a recommender system
+Faculties should also motivate students to make a project on the topics taught in theory and
+lab.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 19
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS205/AIML205/IOT205
+L
+T/P Credits
+Subject: Digital Logic Design
+3
+0
+3
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Theory Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end term examination question paper
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should
+have objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the
+syllabus. Every unit should have two questions. However, students may be asked to
+attempt only 1 question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper.
+The standard/ level of the questions to be asked should be at the level of the prescribed
+textbooks.
+5. The requirement of (scientific) calculators/ log-tables/ data-tables may be specified if
+required.
+Course Objectives:
+1.
+2.
+
+To teach various number systems, binary codes and their applications.
+To familiarize the students with the importance of error detection and error correction
+codes.
+3.
+To inculcate concepts of K-MAP to simplify a Boolean expression.
+4.
+To facilitate students in designing a logic circuit.
+Course Outcomes:
+CO1 Understand number systems and complements for the basic functionality of digital
+systems
+CO2 Identify the importance of canonical forms in the minimization or other optimization of
+Boolean formulas in general and digital circuits.
+CO3 Apply and evaluate circuits of minimizing algorithms (Boolean algebra, Karnaugh map
+or tabulation method).
+CO4 Design procedures of combinational and sequential circuits.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+CO2
+2
+2
+2
+2
+2
+2
+2
+2
+1
+1
+-
+-
+-
+-
+-
+-
+1
+1
+CO3
+2
+2
+2
+2
+1
+-
+-
+-
+-
+-
+-
+1
+CO4
+2
+2
+2
+2
+1
+-
+-
+-
+-
+-
+-
+1
+Course Overview:
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 20
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+The course addresses the concepts of digital systems logic design, and techniques of
+designing digital systems. The course teaches the fundamentals of digital systems applying
+the logic design and development techniques. This course forms the basis for the study of
+advanced subjects like Computer Organization and Architecture, Microprocessor through
+Interfacing, VLSI Designing.
+UNIT I:
+[8]
+Digital systems, binary numbers, number base conversions, octal and hexadecimal
+numbers, complements, signed binary numbers, binary codes, error detection and error
+correction codes. Boolean Algebra and Logic Gates: Basic definitions, axiomatic definition
+of Boolean algebra, basic theorems and properties of Boolean algebra, Boolean functions,
+canonical and standard forms, other logic operations, digital logic gates.
+UNIT II:
+[8]
+GATE level minimization, Logic gates and Logic families, The K-map method, fourvariable map, five-variable map, product of sums simplification, don’t-care conditions,
+NAND and NOR implementation, determination and selection of Prime Implicants,
+Essential and Nonessential
+prime Implicants.
+UNIT III:
+[8]
+Combinational logic and their Design procedure, Binary Adder, Binary Subtractor,
+Binary Multiplier, Magnitude Comparator, Decoders, Encoders, Multiplexers, and
+Demultiplexers.
+Memories such as ROM, RAM, EPROM.
+UNIT IV:
+[12]
+Sequential logic and circuits, latches, flip-flops, analysis of clocked sequential circuits,
+State reduction and assignment, design procedure. REGISTERS AND COUNTERS:
+Registers, shift registers, ripple counters, synchronous counters, counters with unused
+states, ring counter, Johnson counter. Random access memory, memory decoding, error
+detection and correction, read only memory, programmable logic array, programmable
+array logic, sequential programmable devices. A/D and D/A converters.
+Text Books:
+1. M. Morris Mano, Michael D. Ciletti (2008), Digital Design, 4th edition, Pearson
+Education Inc, India.
+2. Donald D. Givone (2002), Digital Principles and Design, Tata McGraw Hill, India.
+Reference Books:
+1. C. V. S. Rao (2009), Switching and Logic Design, 3rd Edition, Pearson Education, India.
+2. Roth (2004), Fundamentals of Logic Design, 5th Edition, Thomson, India.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 21
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS255/AIML255/IOT255
+L
+T/P Credits
+Subject: Digital Logic Design Lab
+0
+2
+1
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Examination: As per university examination norms from time to time
+INSTRUCTIONS TO EVALUATORS: Maximum Marks: As per university norms
+1. This is the practical component of the corresponding theory paper.
+2. The practical list shall be notified by the teacher in the first week of the class
+commencement under the intimation to the office of the HOD/ Institution in which the
+appear is being offered from the list of practicals below.
+3. Instructors can add any other additional experiments over and above the mentioned in the
+experiment list which they think is important.
+4. At least 8 experiments must be performed by the students.
+Course Objectives:
+1. To familiarize with the understanding of various aspects of designing real life applications
+through digital logic.
+2. Design and analysis of the digital circuits and systems.
+Course Outcomes:
+CO1 Design an experiment to validate through hypothesis, a Boolean logic gates, truth table
+and circuit simulation.
+CO2 Create circuits to solve real life problems via digital logic design.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+2
+2
+2
+2
+1
+-
+-
+-
+-
+-
+-
+1
+CO2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+1
+1
+LIST OF EXPERIMENTS:
+1. a) Introduction to Digital Logic Trainer kits and their function.
+b) Verify the truth table of Basic logic gates using their ICs.
+c) Realize logic functions of NOT, AND, OR, EX-OR, EX-NOR with the help of
+universal gates-NAND and NOR Gates.
+2. a) Verify De-Morgan’s theorem for two variables using basic gates.
+b) Realize Sum of Product (SOP) and Product of sum (POS) expressions using
+universal gates.
+3. Realize Binary to Gray & Gray to Binary code converter and their truth table.
+4. Design and test the Adder circuit.
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 22
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+a) Half Adder
+b) Full Adder
+c) Parallel Adder using 7483
+5. Design and test the Subtractor circuit.
+a) Half Subtractor
+b) Full subtractor
+6. Design and test the Multiplexer circuit.
+a) 8:1 Multiplexer using IC 74151
+b) 1:8 Demultiplexer circuit using IC 74138
+7. Verify and test the Counter circuit.
+a) BCD Counter using ICs 7493
+b) Ring counter using 7495
+c) Johnson Ring Counter using 7495
+8. Design and implement Comparator circuit.
+a) 1 bit comparator
+b) 4 bit magnitude Comparator using 7485
+9. Design and implement Encoder circuit.
+a) Decimal to BCD Encoder using IC 74147
+b) Octal to Binary Encoder using IC 74148
+10. Verify 2:4 Decoder using seven segment decoder and using ICs 7447.
+11. Investigate the operation of various Flip-Flops using IC 7400, 7410.
+a) SR & Clocked Flip flop
+b) D flip flop
+c) T flip flop
+d) JK flip flop
+12. Realize Shift Register using ICs 7495.
+a) SISO (Serial in Serial out)
+b) SIPO (Serial in Parallel out)
+c) PIPO (Parallel in Parallel out)
+d) PISO (Parallel in Serial out)
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 23
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS207/AIML207/IOT207
+L
+T/P Credits
+Subject: Principles of Artificial Intelligence
+3
+0
+3
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Theory Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end term examination question paper
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should
+have objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the
+syllabus. Every unit should have two questions. However, students may be asked to
+attempt only 1 question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper.
+The standard/ level of the questions to be asked should be at the level of the prescribed
+textbooks.
+5. The requirement of (scientific) calculators/ log-tables/ data-tables may be specified if
+required.
+Course Objectives:
+1. To understand the basic concepts of Artificial Intelligence, its principles, and
+techniques.
+2. To analyse the applicability of the basic knowledge representation, reason under
+uncertainty, develop a plan for concrete computational problems, and learn from
+experiences to solve various problems
+3. To Investigate applications of AI techniques in intelligent agents, expert systems,
+artificial neural networks and other machine learning models.
+4. To devise development tools such as prediction models, expert systems, and data
+mining tools.
+Course Outcomes:
+Understand theories and concepts necessary for building an Artificial Intelligent
+CO1
+System for knowledge representation.
+CO2
+Apply heuristic algorithms to develop better searching algorithms for solving realworld problems.
+Analyse and understand concepts of Neural Networks and Fuzzy data to deal with
+CO3
+uncertainty and imprecision, subsequently apply suitable soft-computing technique to
+do approximate reasoning and build computational models capable of learning
+meaningful patterns from data.
+Create logic programming to build systems capable of making decision to solve realCO4
+world problems by applying critical thinking, problem-solving and AI algorithms.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1 2
+3
+3
+3
+1
+1
+2
+CO2 2
+3
+3
+3
+1
+1
+1
+1
+1
+1
+1
+1
+CO3 2
+3
+3
+3
+1
+2
+2
+CO4 2
+3
+3
+3
+1
+1
+1
+1
+1
+1
+2
+3
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 24
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Course Overview:
+Principles of artificial Intelligence is the simulation of intelligence process by computer
+systems. It gives understanding of the main abstractions and reasoning techniques used in
+artificial intelligence including understand of AI, reasoning by machines, planning
+techniques, and basic machine learning methods.
+UNIT I:
+[8]
+Introduction to AI, History of Artificial Intelligence, Applications of AI in the real world
+(Gaming, Computer Vision, Expert Systems, Natural Language Processing, Robotics &
+others). AI techniques, Problem Solving: Production Systems, State Space Search, Depth
+First Search, Breadth First Search, Heuristic Search, Hill Climbing, Best First Search,
+best-first search, A*, Problem Reduction, AO*, Constraint Satisfaction, Means-End
+Analysis.
+UNIT II:
+[8]
+Knowledge representation, Knowledge representation using Predicate logic,
+Propositional logic, Inferences, First-Order Logic, Inferences, Unification, Resolution,
+Natural Deduction, Procedural versus declarative knowledge, logic programming, forward
+versus backward reasoning.
+UNIT III:
+[8]
+Reasoning, Introduction to Uncertainty, Bayesian Theory, Bayesian Network, DempsterShafer Theory. Overview of Planning and its Components. Overview of Learning and
+basic Techniques. Introduction of Fuzzy Reasoning and Neural Networks.
+UNIT IV:
+[12]
+Game Playing and Current Trends in AI, MinMax search procedure, Alpha-Beta
+Cutoffs, Game Development using AI, Applications of AI, Emerging Trends in AI
+Research in various domains.
+Text Books:
+1. Rich and Knight. Artificial Intelligence, Tata McGraw Hill, 1992.
+2. S. Russel and P. Norvig. Artificial Intelligence – A Modern Approach, Second Edition,
+Pearson Edu.
+Reference Books:
+1. Kheemani, Deepak, A First Course in Artificial Intelligence, McGraw Hill Education,
+1 Edition, 2017.
+2. Artificial Intelligence: foundations of computational agents, Cambridge University
+Press, 2017.
+3. Poole, David L., and Alan K. Mackworth. Artificial Intelligence: foundations of
+computational agents. Cambridge University Press, 2010.
+4. Luger, G.F. Artificial Intelligence -Structures and Strategies for Complex Problem
+Solving, 6th edition, Pearson, 2008.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 25
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS257/AIML257/IOT257
+L
+T/P Credits
+Subject: Principles of Artificial Intelligence Lab
+0
+2
+1
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Examination: As per university examination norms from time to time
+INSTRUCTIONS TO EVALUATORS: Maximum Marks: As per university norms
+1. This is the practical component of the corresponding theory paper.
+2. The practical list shall be notified by the teacher in the first week of the class
+commencement under the intimation to the office of the HOD/ Institution in which the
+appear is being offered from the list of practicals below.
+3. Instructors can add any other additional experiments over and above the mentioned in
+the experiment list which they think is important.
+4. At least 8 experiments must be performed by the students.
+Course Objectives:
+1. To understand the basics of Prolog Programming.
+2. To solve different mathematical problems using Prolog Programming.
+3. To apply Prolog Programming for solving different real time problems.
+4. To determine the rules for creating Expert Systems.
+Course Outcomes:
+CO1 Students will be able to understand and apply Prolog Programming for solving
+different real-life problems.
+CO2 Students will be able to create different expert systems using Prolog Programming
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1 2
+1
+2
+1
+1
+2
+2
+1
+1
+1
+1
+CO2 2
+1
+2
+2
+1
+1
+1
+1
+1
+1
+2
+List of Experiments
+1. Write a program to implement syntax, basic list manipulation functions and
+numeric functions in Prolog.
+2. Write a program to implement input, output and predicates in Prolog.
+3. Write a program to implement local variables and conditional statements using
+Prolog.
+4. Write a program to calculate factorial of a given number using Prolog.
+5. Write a program to solve 4-Queen problem using Prolog.
+6. Write a program to solve any real-life problem using depth first search.
+7. Write a program to solve TIC-TAC-TOE Problem using Prolog.
+8. Write a program to solve Monkey Banana Problem using Prolog.
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 26
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+9. Write a program to solve Water Jug Problem using Prolog.
+10. Write a program to solve 8 Puzzle Problem using Prolog
+11. Write a program to solve Tower of Hanoi Problem using Prolog.
+12. Write a program for medical diagnosis using Prolog.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 27
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS209/AIML209/IOT209
+L
+T/P Credits
+Subject: Probability, Statistics and Linear Algebra
+4
+0
+4
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end term examination question paper
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should
+have objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the
+syllabus. Everyunit should have two questions. However, students may be asked to attempt
+only 1 question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper.
+The standard/ level of the questions to be asked should be at the level of the prescribed
+textbooks.
+5. The requirement of (scientific) calculators/ log-tables/ data-tables may be specified if
+required.
+Course Objectives:
+1. To build a strong foundation on probabilistic and statistical analysis and linear Algebra.
+2. To apply tools of statistics, probability, discrete random variables and probability
+distributions, in various applications of engineering and technology.
+3. To analyse tools of continuous random variables and probability distributions and linear
+algebra in various applications of engineering and technology.
+4. To create systems using probabilistic and statistical analysis in varied applications of
+engineering and science like disease modeling, climate prediction and computer networks
+etc.
+Course Outcomes:
+CO1 Understand the fundamentals of probability, Conditional Probability, Baye’s theorem,
+random variables, sampling distribution, mean, and other statistical row reduced echelon
+form, Solutions of system of linear equations, Vector Space, Basis, Linear
+Transformations, Eigen values, and Eigen Vectors techniques and apply them to various
+real-life problems.
+CO2 Perform hypothesis testing to analyse various Engineering problems.
+CO3 Analyse different distributions, systems of linear equations, and linear transformations in
+engineering problems.
+CO4 Design network models, Markov chain, and their applications.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+CO2
+CO3
+CO4
+3
+2
+2
+3
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+1
+1
+1
+-
+1
+1
+1
+-
+1
+1
+1
+-
+1
+1
+1
+-
+1
+1
+1
+-
+1
+1
+1
+-
+1
+1
+2
+2
+Course Overview:
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 28
+1
+1
+-
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Probability, statistics and linear algebra gives and allows to access and examine the
+certainty of outcomes of a study or experiment that is executed. The course also addresses
+the statistics to gather, review, analyse and draw conclusion from raw data, as well as
+quantified mathematical models to understand machine learning algorithms.
+UNIT I:
+[10]
+Probability - Probability spaces, conditional probability, independence; Discrete random
+variables, continuous random variables and their properties, distribution functions and
+densities, exponential and gamma densities. Independent random variables, the multinomial
+distribution, Chebyshev's Inequality, Bayes' rule.
+UNIT II:
+[10]
+Basic Statistics- Measures of Central tendency: Moments, skewness and Kurtosis Probability distributions: Binomial, Poisson and Normal - evaluation of statistical
+parameters for these three distributions, Correlation and regression – Rank correlation.
+UNIT III:
+[10]
+Applied Statistics- Curve fitting by the method of least squares- fitting of straight lines,
+second degree parabolas and more general curves. Test of significance- large sample test
+for single proportion, difference of proportions, single mean, difference of means, and
+difference of standard deviations.
+UNIT IV:
+[10]
+Linear Algebra- Cramer's rule, Singular Value decomposition, Euclidian vector spaces,
+Projection. Hermitian and Unitary Matrix, Gram -Schmidt orthogonalization, LUdecomposition.
+Text Books:
+1. P. G. Hoel, S. C. Port and C. J. Stone, Introduction to Probability Theory, Universal
+Book Stall, 2003.
+2. S. Ross, A First Course in Probability, 6th Ed., Pearson Education India, 2002.
+3. W. Feller, An Introduction to Probability Theory and its Applications, Vol. 1, 3rd Ed.,
+Wiley, 1968.
+Reference Books:
+1. N.P. Bali and Manish Goyal, A textbook of Engineering Mathematics, Laxmi
+Publications, Reprint, 2010.
+2. B.S. Grewal, Higher Engineering Mathematics, Khanna Publishers, 35th Edition, 2000.
+3. Veerarajan T. Engineering Mathematics (for semester III), Tata McGraw-Hill, New
+Delhi, 2010.
+4. Mathematics For Machine Learning-Marc Peter Deisenroth, A. Aldo Faisal, Cheng
+soon ong.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 29
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS211/AIML211/IOT211
+L
+T/P Credits
+Subject: Universal Human Values II
+3
+0
+3
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Theory Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end-term examination question paper
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should
+have objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the syllabus.
+Every unit should have two questions. However, students may be asked to attempt only 1
+question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper. The
+standard/ level of the questions to be asked should be at the level of the prescribed textbooks.
+Course Objectives:
+1. To expand the holistic perspective based on self-exploration about themselves (human
+beings), family, society, and nature/existence and to appreciate the essential
+complementarily between ‘VALUES’ and ‘SKILLS’ to ensure sustained happiness and
+the real meaning of prosperity which are the core aspirations of all human beings.
+2. To understand the harmony in the human being at all four levels- Individual, family,
+society, and nature/existence.
+3. To strengthen the power of self-reflection with the right understanding.
+4. To develop the right evaluation in terms of actions, reactions, and commitments towards
+the human goal i.e. mutual happiness and mutual prosperity.
+Course Outcomes:
+CO1 Understand and become more aware of self (individual) and our surroundings (family,
+society, and nature).
+CO2 Become more responsible in life for handling problems with sustainable solutions while
+keeping human relationships and human nature in mind.
+CO3 Enhance critical ability for self-reflection.
+CO4 Boost sensitivity to our commitment in terms of human values, human relationships, and
+human society.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+CO2
+CO3
+CO4
+-
+-
+-
+-
+-
+1
+1
+1
+1
+-
+3
+3
+3
+3
+2
+2
+2
+2
+1
+1
+1
+1
+-
+Course Overview:
+This course is aimed at giving inputs that will help to ensure the right understanding and
+right feelings in the students in their life and profession, enabling them to lead ethical life.
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 30
+3
+3
+3
+3
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+In this course, the students learn the process of self-exploration, the difference between the
+Self and the Body, the naturally acceptable feelings in relationships in a family, the
+comprehensive human goal in society, the mutual fulfillment in nature, and the co-existence
+in existence.
+UNIT I:
+[8]
+Introduction to Value Education - Need, Basic Guidelines, Content and Process for
+Value Education, Self-Exploration, Natural Acceptance, Experiential Validation as the
+Mechanism for Self-Exploration. Continuous Happiness and Prosperity, Basic Human
+Aspirations. Right Understanding, Relationship, and Physical Facilities - the basic
+requirements for the fulfillment of aspirations of every human being with their priority,
+Understanding Happiness and Prosperity, Method to fulfill the above human aspirations:
+Understanding and living in harmony at various levels.
+
+UNIT II:
+[8]
+Understanding Harmony in the Human Being, the human being is a Co-existence of the
+sentient ‘I’ and the material ‘Body’. Understanding the needs of the Self (‘I’) and ‘Body’,
+happiness and physical facility, Understanding the Body as an instrument of ‘I’ (I being the
+doer, seer, and enjoyer), Understanding the characteristics and activities of ‘I’ and harmony
+in ‘I’, Understanding the harmony of I with the Body: Sanyam and Health, correct appraisal
+of Physical needs, the meaning of Prosperity, Programs to ensure Sanyam and Health.
+
+UNIT III:
+[8]
+Harmony in Human-Human Relationships, Understanding values in human-human
+relationships, meaning of Justice (Nine universal values in relationships) and the program
+for its fulfillment to ensure Mutual Happiness, Trust, and Respect as the foundational
+values of relationship, Understanding the meaning of Trust, Difference between Intention
+and Competence, Understanding the meaning of Respect, Difference between Respect
+and Differentiation, the other salient values in a relationship, Understanding the harmony
+in the society (society being an extension of the family), Resolution, Prosperity,
+Fearlessness (trust) and Co-existence as comprehensive Human Goals, Visualizing a
+universal harmonious order in society: Undivided Society, Universal order from family to
+world family.
+UNIT IV:
+[8]
+Understanding Harmony in Nature. Interconnectedness: Self-regulation and Mutual
+Fulfillment among the Four Orders of Nature: Recyclability and Self-regulation in Nature,
+Realizing Existence as Co-existence at All Levels. The Holistic Perception of Harmony in
+Existence. Natural Acceptance of Human Values. Definitiveness of (Ethical) Human
+Conduct. A Basis for Humanistic Education, Humanistic Constitution and Universal
+Humanistic Order.
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 31
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Text Books:
+1. R. R. Gaur, R. Asthana & G. P. Bagaria, A Foundation Course in Human Values and
+Professional Ethics, 2nd Revised Edition, Excel Books, New Delhi, 2019. ISBN 978-9387034-47-1. 2. Teacher’s Manual for A Foundation Course in Human Values and
+Professional Ethics, R. R. Gaur, R. Asthana & G. P. Bagaria,2nd Revised Edition, Excel
+Books, New Delhi, 2019, ISBN 978- 93-87034-53-2.
+Reference Books:
+1. A. Nagraj, Jeevan Vidya Ek Parichay, Divya Path Sansthan, Amarkantak, 1999.
+2. A. N. Tripathy, Human Values, New Age International Publishers, 2004.
+3. B. L. Bajpai, Indian Ethos and Modern Management, New Royal Book Co., Lucknow.
+Reprinted 2008.
+4. P. L. Dhar & R. R. Gaur, 1990, Science and Humanism, Commonwealth Publishers.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 32
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS259/AIML259/IOT259
+L
+T/P Credits
+Subject: Web Programming Lab
+0
+2
+1
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Examination: As per university examination norms from time to time
+INSTRUCTIONS TO EVALUATORS: Maximum Marks: As per university norms
+1. This is only the practical subject.
+2. The practical list shall be notified by the teacher in the first week of the class
+commencement under the intimation to the office of the HOD/ Institution in which the
+appear is being offered from the list of practicals below.
+3. Instructors can add any other additional experiments over and above the mentioned in the
+experiment list which they think is important.
+4. Atleast 8 experiments must be performed by the students.
+Course Objectives:
+To apply JavaScript Language programming concepts and techniques to create web
+1. pages and develop, plan and debug web pages as per the requirement. CSS, this course
+will familiarize students with how browsers
+To understand how browsers represent webpage data using the Document Object Model
+2. (DOM), how to develop dynamic, interactive web pages using JavaScript in the
+browser.
+Course Outcomes:
+Apply different core scripting modules to design a server.
+
+CO1
+Design and develop single-page applications, interactive and dynamic websites that can
+be used to resolve real world issues.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO2
+CO1
+2
+2
+2
+2
+2
+-
+-
+-
+-
+-
+-
+2
+CO2
+2
+2
+2
+2
+2
+1
+1
+1
+1
+1
+1
+3
+LIST OF EXPERIMENTS:
+1. Create a web page that covers your CV using various HTML Tags (UL, OL , Table,
+etc).
+2. Create a webpage that displays brief details of various Programming Languages using
+various types of CSS.
+3. Create a webpage using JavaScript and HTML to demonstrate Simple Calculator
+Application.
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 33
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+4. Create a web page covering the basic CRUD operations (Create, Read, Update, Delete)
+that implements To-do/Grocery lists using JavaScript and HTML
+5. Create a JavaScript application based on various Data Types, Statements, Keywords
+and Operators.
+6. Create a JavaScript application with Window Objects and Document Object.
+7. Create a JavaScript application with Object Creation and by adding methods of objects.
+8.
+
+Create a JavaScript application with Loops to incorporate the concept of Iteration.
+
+9. Create a JavaScript application for random number generation.
+10. Build a unit convertor application using HTML & JavaScript.
+
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 34
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS213/AIML213/IOT213
+L
+T/P Credits
+Subject: Critical Reasoning and Systems Thinking
+2
+0
+2
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university examination norms from time to time
+2. End term Theory Examination: As per university examination norms from time to time
+INSTRUCTIONS TO PAPER SETTERS: Maximum Marks: As per university norms
+1. There should be 9 questions in the end term examination question paper
+2. Question No. 1 should be compulsory and cover the entire syllabus. This question should
+have objective or short answer type questions.
+3. Apart from Question No. 1, the rest of the paper shall consist of four units as per the
+syllabus. Every unit should have two questions. However, students may be asked to
+attempt only 1 question from each unit.
+4. The questions are to be framed keeping in view the learning outcomes of course/paper.
+The standard/ level of the questions to be asked should be at the level of the prescribed
+textbooks.
+5. The requirement of (scientific) calculators/ log-tables/ data-tables may be specified if
+required.
+Course Objectives:
+1. To inculcate critical reasoning and system thinking to take decisions.
+2. To understand Critical reasoning, examine assumptions, uncover hidden values, evaluate
+evidence, accomplish actions, and assess conclusions.
+3. To learn a holistic approach to analysis that focuses on the way a system’s constituent parts
+interrelated and how systems work overtime and within the context of larger systems
+4. To formulate solutions for social and business enterprises using critical thinking and
+brainstorming and covert opportunities into innovation products and services.
+Course Outcomes:
+CO1 Apply critical reasoning so as to have clarity and wisdom while decision making.
+CO2 Apply systems thinking concepts to enhance individual and collaborative skills to
+recognize opportunities and find innovative solutions for the same.
+CO3 Apply and analyse systems thinking, critical thinking, lateral thinking, creative thinking
+to different real-life scenarios.
+CO4 Understand how to translate broadly defined opportunities into innovation products and
+services and create a business or social enterprise.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+CO2
+CO3
+CO4
+3
+2
+2
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+3
+1
+1
+1
+1
+1
+1
+1
+1
+1
+-
+1
+1
+-
+1
+1
+1
+1
+1
+1
+1
+3
+2
+2
+3
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 35
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Course Overview:
+This is a perspective course which exposes students to the disciplines of building and
+evaluating rational arguments and using a system perspective in applied engineering.
+Critical reasoning and system thinking enhances the though process with reasoning and
+critical analysis to take to the final decision in order to solve any specific problems. It
+enables seeing and understanding systems as wholes rather than as collections of parts, as a web of
+interconnections that work together to deliver an outcome.
+UNIT I:
+[8]
+Introduction, foundations and principles of critical reasoning, concepts in critical
+reasoning, analyzing reasoning, evaluating reasoning, Integrated reasoning, uncritical and
+critical reasoning, scientific reasoning, strategic reasoning, analytical reasoning, different
+kinds of biases, recognizing implications, drawing conclusion.
+UNIT II:
+[8]
+Arguments, structure of an argument, premises, claims, Inductive and deductive
+arguments, valid & invalid arguments, sound & unsound arguments, inductive and
+deductive arguments, descriptions, explanations, clarifications, illustrations and summary.
+UNIT III:
+[8]
+What is problem solving, steps in problem solving, problem definition, idea generation,
+brainstorming, fish bone analysis, thinking out of the box, lateral thinking tools &
+techniques, Information and data gathering and analysis, evaluating & prioritizing ideas, six
+thinking hats method, problem solving in teams, planning in teams, Tools and applications
+in project and risk management, problem solving in teams, planning in teams.
+Unit IV:
+[8]
+System structures and behavior, Abilene paradox, fallacies in reasoning, barriers in
+critical thinking, cognition and perception in Indian knowledge systems (Nyaya Darshana),
+systems thinking, operational and design thinking, system thinking for social change,
+critical thinking, the art of asking questions, Tools and applications in project and risk
+management.
+Text Books:
+1. Concise Guide to Critical Thinking by Lewis Vaughn
+2. Critical Thinking by Tom Chatfield
+3. Managing Complex Systems - Thinking Outside the Box by Howard Eisner A
+4. Critical Thinking Tools for Taking Charge of Your Professional and Personal Life
+By Richard Paul, Linda Elder · 2020
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 36
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Reference Books:
+1. Thinking Fast and Slow by Daniel Kahneman
+2. Strategies for creative problem solving by H Scott Fogler and Steven E LeBlanc
+3. Critical Thinking A Concise Guide By Tracy Bowell, Gary Kemp · 2002
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 37
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Semester: 3rd
+Paper code: AIDS215/AIML215/IOT215 (NUES)
+L
+T/P Credits
+Subject: Selected Readings
+1
+0
+1
+Marking Scheme
+1. Teachers Continuous Evaluation: As per university norms from time to time
+Course Objectives:
+1. To enhance comprehension skills.
+2. To learn and enhance communication including reading and speaking skills.
+Course Outcomes:
+CO1 Apply and analyse comprehension and reading skills.
+CO2 Develop presentation and report writing skills.
+CO/PO PO01 PO02 PO03 PO04 PO05 PO06 PO07 PO08 PO09 PO10 PO11 PO12
+CO1
+-
+-
+-
+-
+-
+-
+-
+1
+1
+3
+-
+3
+CO2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+3
+-
+3
+Course Overview:
+Reading books other than one’s curriculum expands the imaginative horizon of a student.
+Under Selected readings, the students will be required to select a book (a non-technical
+book that is not related to engineering) that they want to read in the semester. Reading
+fiction, non-fiction and science books are beneficial for students as it is a vital means to
+imagine a life other than our own, which in turn makes us more empathetic beings. The
+students will prepare a summary of the report and will be evaluated based on the
+presentation that they give on the book read. The whole idea is to present the story in a
+customized manner. That might also include a video/poster created for the same.
+Evaluation Rubrics might be based on:
+• Remembering: Recalling or retrieving previously read information.
+• Understanding: Comprehending the content and expressing in one’s own words.
+• Relating and Interpreting: Relating and interpreting the theme or message of the
+book with a new context or situation.
+• Critical Evaluation: Making critical comments about the choice of subject,
+handling of the subject, author’s style of writing, etc.
+• Communication Skills: Speaking skills, Report writing, Presentation skills.
+
+Sample Books (not limited to these):
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 38
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+S. No
+Title
+Authors
+Language
+1.
+
+Exam Warriors
+Narendra Modi
+English
+2.
+
+Work Ethics
+Narendra Modi
+English
+3.
+
+स्टे फेन हाक िं ग
+महेश शमाा
+Hindi
+4.
+
+English
+5.
+
+Jeff Bezos: Biography of A Billionaire Elliot Reynolds
+Business Titan
+Bill Gates: A Biography
+Michael B. Becraft
+6.
+
+स्टील क िं ग लक्ष्मी कमत्तल
+प्रतीक्षा ऍम कतवारी
+Hindi
+7.
+
+फेसबु
+सिंजय भोला ‘धीर
+Hindi
+8.
+
+Stay हिंगरी Stay फुकलश
+रश्मि बिंसल
+9.
+
+मैं, स्टीव: मेरा जीवन मेरी जुबानी
+नीरू
+Hindi,
+Tamil
+Hindi
+10.
+
+अमीर न १ एलन मस्क
+पूकणामा मजूमदार
+Hindi
+11.
+
+सुन्दर कपचाई : Google
+जगमोहन भानवेरी
+Hindi
+12.
+
+Dream With Your Eyes Open
+Ronnie Screwvala
+English
+13.
+
+डॉट् स
+रश्मि बिंसल
+Hindi
+14.
+
+Take Me Home
+Rashmi Bansal
+English
+15.
+
+Pavitra Kumar
+English
+17.
+
+Bhujia Barons: The Untold Story of
+How Haldiram Built A 5000 Crore
+Empire
+The Z Factor: My Journey as The
+Wrong Man at The Right Time
+The Hard Things About Hard Things
+18.
+
+Blue Ocean Strategy
+16.
+
+कनमााता: मा ा ज़ु े रबगा
+नेक्ट
+ी बायोग्राफी
+ा भकवष्य
+रें
+English
+Subhash Chandra And English
+Pranjal Sharma
+Ben Horowitz
+English
+20.
+
+Harvard
+Business English
+School
+Zero to One: Notes on Start Ups, or Peter Thiel & Blake English
+How to Build the Future
+Masters
+The Holy Book of Luck
+A Saed Alzein
+English
+21.
+
+How To Begin
+22.
+
+Start-up Myths and Models
+23.
+
+Hindi
+25.
+
+80/20 कसद्ािंत - म े साथ अकध प्राप्त ररचडा ोचो
+रने ा रहस्य
+Discover Your Destiny: 7 Stages of Self Robin Sharma
+Awakening
+Hyper Focus
+Chris Bailey
+26.
+
+How To Talk to Anyone
+English
+19.
+
+24.
+
+Gujrati,
+Michael
+Bungay English
+Stanier
+Rizwan Virk
+English
+Leil Lowndes
+English
+English
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 39
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+27.
+
+Never Split the Difference
+Voss, Chris,Raz, Tahl
+English
+28.
+
+Games People Play
+Berne, Eric
+English
+29.
+
+English
+30.
+
+Achieving Meaningful Success Unleash Dr. Vivek Mansubgh
+the Power of Me
+गेकटिं ग टू यस
+रोजर कफशर
+31.
+
+Your Next Five Moves
+Patrick Bet-David
+English
+32.
+
+बड़ी सोच
+श्वाट्ा ज, डे कवड जू
+Hindi
+33.
+
+How To Become a People Magnet
+Marc Reklau
+English
+34.
+
+सबसे मुश्मिल
+ब्रायन टर े सी
+Hindi
+35.
+
+Show Your Work
+Austin Kleon
+English
+36.
+
+How To Find Fulfilling Work
+Roman Krznaric
+English
+37.
+
+जीवन े अद् भुत रहस्य
+गौर गोपाल दास
+Hindi
+38.
+
+Attitude Is Everything
+Jeff Keller
+English
+39.
+
+The World is yours to change
+Daisaku Ikeda
+English
+40.
+
+The Defining Decade: Why Your 20's Jay, Meg
+Matter and How the Make the Most of
+Them Now
+Quiet: The Power of Introvert in A Susan Cain
+World That Can't Stop Talking
+Find Your Why: A Practical Guide for Simon Sinek
+Discovering Purpose You and Your
+Team
+डीप व ा
+ै ल न्यूपोटा
+English
+Hindi
+45.
+
+ै से रे स्टाटा उप कबज़नेस शुरू : कबज़नेस पिं ज गोयल
+ा सपना पूरा रने ी गाइड
+Alex Adventure in Number land
+Alex Bellos
+46.
+
+A Certain Ambiguity
+Gaurav Suri
+English
+47.
+
+The Everyday Hero Manifesto
+Robin Sharma
+English
+48.
+
+The Incredible World of Nichiren
+Buddhism
+My Life in Full: Work, Family, And
+Our Future (With A Special Epilogue
+for India)
+India's Greatest Minds: Spiritual
+Masters, Philosophers, Reformers
+Inspiring Thoughts
+Suraj Jagtani
+English
+Indra Nooyi
+English
+Rao, Mukunda
+English
+Swami Vivekananda
+English
+41.
+42.
+
+43.
+44.
+
+49.
+
+50.
+51.
+52.
+
+ा बड़ा जादू
+ाम सबसे पहले
+The Man Behind the Wheel: How Tim Bouquet
+Onkar S. Kanwar Created a Global
+Hindi
+English
+English
+Hindi
+English
+English
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 40
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+Giant
+53.
+
+Azim Premji: The Man Beyond the
+Billions
+Warren Buffett: Inside the Ultimate
+Money Mind Warren Buffett: Inside the
+Ultimate Money Mind
+Rahul Bajaj: An Extraordinary Life |
+Official Biography of The Chairman of
+Bajaj Group
+5 Am क्लब: अपनी सुबह ा माकल बनें,
+अपना जीवन बढाएिं
+Happiness Becomes You: A Guide to
+Changing Your Life for Good
+एटॉकम हैकबट् स: छोटे बदलाव, असधरन
+पररनाम
+Sundeep
+Khanna, English
+Varun Sood
+Robert G. Hagstrom
+English
+60.
+
+जेम्स श्मक्लयर (लेख ), Hindi
+डॉ
+सुधीर
+दीकक्षत
+(अनुवाद )
+Hindi
+हाउ टू डे वेलोप सेल्फ
+ॉश्मिडें स एिं ड डे ल ारनेगी
+इन्फ्लुएिंस पीपल बी पश्मि स्पीक िं ग
+Hindi
+धन-सिंपकत्त ा मनोकवज्ञान
+मॉगान हाउसेल
+61.
+
+ररच डै ड पुअर डै ड
+रॉबटा टी. क योसा ी
+62.
+
+इक गाई
+63.
+
+आप े अवचेतन मन
+Marathi,
+फ्ािंसेस कमरे लस हेक्टर Hindi,
+Bengali
+गाकसाया
+Hindi, Bengali
+जोसेफ मफी
+64.
+
+सोचा और अमीर हो जाओ
+नेपोकलयन कहल
+Hindi, Bengali
+65.
+
+पसानाकलटी डे वेलोप्मेटन हैंडबु
+डीपी सभरवाल
+Hindi
+66.
+
+पावर ऑफ़ पॉकजकटव ऐकटटू ड
+रोजर कफ्ट् ज
+Hindi
+67.
+
+कचिंता छोडो सुख से कजयो
+डे ल
+68.
+
+मुट्ठी में त दीर
+रॉकबन शमाा
+Hindi,
+Bangla,
+Marathi, Gujrati &
+Oria
+Hindi
+69.
+
+जैसे कवचार, वैसा जीवन
+70.
+
+चाणक्य े टॉप 100 प्रेर
+जेम्स एलन (लेख ), डॉ. Hindi
+सुधीर
+दीकक्षत
+(अनुवाद )
+Hindi
+महेश शमाा
+71.
+
+‘लो
+72.
+
+रहसय
+रोिंडा बना
+73.
+
+मेमोरी: हाउ टू डे वेलोप, टर ै न, एिं ड यूज़ इट
+कवकलयम
+54.
+
+55.
+
+56.
+57.
+58.
+
+59.
+
+ी शश्मि
+कवचार
+व्यवहार’
+Gita Piramal
+English
+रॉकबन शमाा
+Hindi
+Tina Turner
+English
+डे ल
+ारनेगी
+ारनेगी
+Hindi, Bengali
+Hindi,
+Bangla,
+Marathi, Gujrati &
+Oria
+Hindi
+वॉ र Hindi
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 41
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+एटक िं सन
+74.
+
+बड़ा सोचै, बड़ा
+75.
+
+अिं ु र वारर ू
+Hindi
+द लॉ ऑफ अटर ै क्शन
+एस्थर और जेरीकहक्स
+Hindi
+76.
+
+गोरा
+रवीिंद्र नाथ
+Hindi, Bengali
+77.
+
+सफलता शब्ोिं
+डॉ. सुधीर दीकक्षत
+Hindi
+78.
+
+पॉकजकटव कथिंक िं ग
+नेपोकलयन कहल
+Hindi
+79.
+
+हाउ टू एन्फ्जॉय योर लाइफ एिं ड जॉब
+डे ल
+Hindi, Bengali
+80.
+
+Swami Vivekananda Bani O Rachana Swami Vivekananda
+(Set) - 10 Volumes – Bengal
+The Wisdom of Lotus Sutra
+Daisaku Ikeda
+81.
+
+रै
+ा खेल है
+ारनेगी
+Bengali
+English
+83.
+
+स्वामी कववे ानिंद पुस्त : जीवन, कवचार Rajeev Ranjan, Kailas Marathi
+Kalkate
+आकण ाया
+Hindi
+कवश्वगुरु कववे ानिंद
+एम. आई. राजसवे
+84.
+
+कबजनेस
+85.
+
+82.
+
+बी.सी. पाण्डे य
+Hindi
+Rattan Tata
+P M Tiwari
+Bengali
+86.
+
+गीतािंजकल
+रवीिंद्र नाथ
+Hindi, Bengali
+87.
+
+सन्यासी कजसने अपनी सिंपकत बीच दी
+रॉकबन शमाा
+Hindi
+88.
+
+English
+89.
+
+Ignited Minds: Unleashing the Power Dr APJ Abdul Kalam
+Within India: Unleashing the Power
+Within India
+आप ा भकवष्य आप े हाथ में
+ए पीजे लाम
+90.
+
+द स्टोरी ऑफ़ माय एक्सपेररमेंट्स कवथ ट्रुथ
+महात्मा गािंधी
+Hindi
+91.
+
+मैं
+प्रशािंत गुप्ता
+Hindi
+रॉकबन शमाा
+Hindi
+ए पीजे
+Hindi
+92.
+
+ोकहनूर रतन टाटा
+लाम बोल रहा हूँ
+ौन रोयेगा आप ी मृत्यु पर
+93.
+
+अकि
+94.
+
+आनन्द मठ
+बिंक मचिंद्र चटजी
+Hindi
+95.
+
+The Science of Mind Management
+English
+96.
+
+Soak Education
+Swami
+Mukundanadan
+Daisaku Ikeda
+97.
+
+7 Mindsets for Success Fulfilment and
+Happiness
+Business Sutra: A Very Indian
+Approach to Management
+The Five Steps to Success
+Swami
+Mukundanadan
+Devdutt Pattanaik
+English
+Yandamoori
+Veerendranath
+Dr APJ Abdul Kalam
+English
+98.
+99.
+
+ी उड़ान
+100. You Are Born to Blossom
+लाम
+Hindi
+English
+English
+English
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 42
+GURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,
+EAST DELHI CAMPUS,
+SURAJMAL VIHAR-110092
+101. 7 Divine Laws to Awaken Your Best Swami
+Self
+Mukundanadan
+102. The Way of Youth
+Daisaku Ikeda
+English
+103. बेबीलोन
+जॉजा एस. क्लैसन
+Hindi, Telugu
+जोसेफ मफी
+Hindi
+ा सबसे अमीर आदमी
+104. अमीर होना आप ा अकध ारी
+English
+105. Buddha: Spirituality for Leadership & Pranay
+Success
+106. सीक्रेट् स ऑफ़ द कमकलयनेअर माइिं ड
+टी. हावा ए र
+English
+107. The Almanack of Naval Ravikant: A Eric Jorgenson
+Guide to Wealth and Happiness
+108. Ananda: Happiness Without Reason
+Achrya Prashant
+English
+109. The Awakening of Intelligence (New J. Krishnamurti
+Edition)
+110. दु कनया ा महान सेल्समैन
+ओ जी मैंकडनो
+English
+111. कजिंदगी वो जो आप बनायें
+प्रीकत शेनॉय
+Hindi
+112. The White Tiger
+Arvind Adiga
+English
+113. Inspirational Thoughts
+Swami Vivekananda
+English
+114. जीत आप ी: ामयाबी ीऔर ले जाने कशव खेरा
+वाली सीडी
+115. The God of Small Things
+Arundhati Roy
+Hindi
+English
+Hindi
+Hindi
+English
+116. Buddhism A Way of Values
+Prof. Lokesh Chandra English
+and Dr. Daisaku Ikeda
+117. Buddha At Work: Finding Purposes, Geetanjali Pandit
+English
+Balance, And Happiness at Your
+Workplace
+118. Hope Is a Decision
+Daisaku Ikeda
+English
+Approved by BoS of USAR: 15/06/23,
+Approved by AC sub-committee : 04/07/23
+Applicable from Batch Admitted in Academic Session 2022-23 Onwards
+Page | 43
+

@@ -1,0 +1,612 @@
+{
+  "source": "google-drive-sem3",
+  "semester": "SEM3",
+  "lastUpdated": "2025-11-12T16:59:47.144Z",
+  "subjects": {
+    "ds": {
+      "name": "Data Structures",
+      "code": "AIDS201/AIML201/IOT201",
+      "credits": 3,
+      "type": "theory",
+      "description": "This subject gives an overview of data structure concepts including arrays, stack, queues,\r\nlinked lists, trees, and graphs. Discussions shall be held of various implementations of these\r\ndata structures in real life. This subject also examines algorithms for sorting and searching.\r\nThe concepts of trees and graph-based algorithms shall be introduced.",
+      "objectives": [
+        "To understand the basic concepts of data structures.",
+        "To perform basic operations on linked list, stacks and queues.",
+        "To perform sorting and searching on a given set of data items.",
+        "To understand the concepts of trees, hashing, and graph theory."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "access strategies for solving a computational problem.\r\nApply suitable data structure for solving a given problem and differentiate the usage of"
+        },
+        {
+          "code": "CO2",
+          "description": "data structures and their applications.\r\nAnalyse the choice of data structures and their usage for sorting and searching numbers in"
+        },
+        {
+          "code": "CO3",
+          "description": "data structures.\r\nCreate the solution for a particular problem and gain ability to provide"
+        },
+        {
+          "code": "CO4",
+          "description": "solutions/approaches with file handling and tree structures."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 8,
+          "topics": [
+            "Introduction- Introduction to Algorithmic Complexity, Introduction to various data\r\nstructures, Arrays and Strings operations, Stacks and Queues, Operations on Stacks and\r\nQueues, Array representation of Stacks, Applications of Stacks- Recursion, Polish expression\r\nand their compilation conversion of infix expression to prefix and postfix expression,\r\nOperations of Queues, Representations of Queues Applications of Queues, Priority queues,\r\nOverview of the list, set, tuples, and dictionary data structures."
+          ],
+          "content": "Introduction- Introduction to Algorithmic Complexity, Introduction to various data\r\nstructures, Arrays and Strings operations, Stacks and Queues, Operations on Stacks and\r\nQueues, Array representation of Stacks, Applications of Stacks- Recursion, Polish expression\r\nand their compilation conversion of infix expression to prefix and postfix expression,\r\nOperations of Queues, Representations of Queues Applications of Queues, Priority queues,\r\nOverview of the list, set, tuples, and dictionary data structures."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 8,
+          "topics": [
+            "Searching and Sorting- Linear Search, Binary search, Insertion Sort, Quick sort, Radix sort,\r\nMerge sort, Heap sort. Linked Lists- Singly linked lists, Representation of linked list,\r\nOperations of the Linked list such as Traversing, Insertion, and Deletion, Searching, and\r\napplications of Linked List. Concepts of Circular linked list and doubly linked list and their\r\napplications. Stacks and Queues as a linked list."
+          ],
+          "content": "Searching and Sorting- Linear Search, Binary search, Insertion Sort, Quick sort, Radix sort,\r\nMerge sort, Heap sort. Linked Lists- Singly linked lists, Representation of linked list,\r\nOperations of the Linked list such as Traversing, Insertion, and Deletion, Searching, and\r\napplications of Linked List. Concepts of Circular linked list and doubly linked list and their\r\napplications. Stacks and Queues as a linked list."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 8,
+          "topics": [
+            "Trees- Basic Terminology, Binary Trees and their representation, binary search trees,\r\nvarious operations on Binary search trees like traversing, searching, Insertion and Deletion,\r\nApplications of Binary search Trees, Complete Binary trees, Extended binary trees. General\r\ntrees, AVL trees, Threaded trees, B- trees, 2-3 trees, 2-3-4 trees, B* and B+ trees."
+          ],
+          "content": "Trees- Basic Terminology, Binary Trees and their representation, binary search trees,\r\nvarious operations on Binary search trees like traversing, searching, Insertion and Deletion,\r\nApplications of Binary search Trees, Complete Binary trees, Extended binary trees. General\r\ntrees, AVL trees, Threaded trees, B- trees, 2-3 trees, 2-3-4 trees, B* and B+ trees."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 8,
+          "topics": [
+            "File Structure- File Organization, Indexing & Hashing, Hash Functions, GraphsTerminology and Representations, Graphs & Multi-graphs, Directed Graphs, Representation\r\nof graphs and their Transversal, Euler and Hamiltonian paths, Spanning trees, shortest path\r\nand Transitive Closure, Topological Sort, and Critical Paths."
+          ],
+          "content": "File Structure- File Organization, Indexing & Hashing, Hash Functions, GraphsTerminology and Representations, Graphs & Multi-graphs, Directed Graphs, Representation\r\nof graphs and their Transversal, Euler and Hamiltonian paths, Spanning trees, shortest path\r\nand Transitive Closure, Topological Sort, and Critical Paths."
+        }
+      ],
+      "textBooks": [
+        "Tannenbaum. Data Structures, PHI, 2007 (Fifth Impression).",
+        "An introduction to data structures and application by Jean-Paul Tremblay & Pal G.\r\nSorenson (McGraw Hill)."
+      ],
+      "referenceBooks": [
+        "Data Structures with C - By Schaum Series.",
+        "R.L. Kruse, B.P. Leary, C.L. Tondo. Data structure and program design in C, PHI, 2009\r\n(Fourth Impression).",
+        "Gilberg, R. F., & Forouzan, B. A., Data structures: A pseudocode approach with C++.\r\nBrooks/Cole Publishing, 2001."
+      ],
+      "availableIn": [
+        "CSE",
+        "IT",
+        "CST",
+        "ITE",
+        "AIDS",
+        "AIML",
+        "IOT",
+        "ECE",
+        "EEE"
+      ]
+    },
+    "fods": {
+      "name": "Foundations of Data Science",
+      "code": "AIDS203/AIML203/IOT203",
+      "credits": 3,
+      "type": "theory",
+      "description": "Foundations of Data Science is a blend of statistical mathematics, data analysis tools and\r\nvisualization, domain knowledge representation, tools and algorithms and computer science\r\napplications. The hidden insights or patterns are identified and analysed to form a decision.",
+      "objectives": [
+        "To analyse different types of data using Python and .",
+        "To prepare data for analysis and perform simple statistical analysis.",
+        "To create meaningful data visualizations and predict future trends from data."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "Understand and identify the basic concepts of data science for performing data analysis."
+        },
+        {
+          "code": "CO2",
+          "description": "Apply & perform pre-processing steps along with data visualization to get insights from\r\ndata.\r\nAnalyse and apply different modules of data science to evaluate mathematical, and"
+        },
+        {
+          "code": "CO3",
+          "description": "scientific problems of data analysis.\r\nDevelop the model for data analysis and evaluate the model’s performance to optimize"
+        },
+        {
+          "code": "CO4",
+          "description": "business decisions and create competitive advantage with data analytics."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 8,
+          "topics": [
+            "Introduction to data science, applications of data science, data scientist roles and\r\nresponsibilities, skills needed to become a data scientist. Need of Python for data analysis,\r\nIntroduction to Data Understanding and Pre-processing, domain knowledge, Understanding\r\nstructured and unstructured data. Creation of synthetic dataset in MS Excel."
+          ],
+          "content": "Introduction to data science, applications of data science, data scientist roles and\r\nresponsibilities, skills needed to become a data scientist. Need of Python for data analysis,\r\nIntroduction to Data Understanding and Pre-processing, domain knowledge, Understanding\r\nstructured and unstructured data. Creation of synthetic dataset in MS Excel."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 8,
+          "topics": [
+            "Basics of Python programming: Variables, printing values, if condition, arithmetic\r\noperations, loops. Data Analysis process, Dataset generation, Importing Dataset: Importing\r\nand Exporting Data, Basic Insights from Datasets, Cleaning and Preparing the Data: Identify\r\nand Handle Missing Values."
+          ],
+          "content": "Basics of Python programming: Variables, printing values, if condition, arithmetic\r\noperations, loops. Data Analysis process, Dataset generation, Importing Dataset: Importing\r\nand Exporting Data, Basic Insights from Datasets, Cleaning and Preparing the Data: Identify\r\nand Handle Missing Values."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 8,
+          "topics": [
+            "Basics of essential Python libraries: Introduction to NumPy, Pandas, Matplotlib, SciPy.\r\nData Processing, Data Visualization, Basic Visualization Tools, Specialized Visualization\r\nTools, Seaborn Creating and Plotting Maps."
+          ],
+          "content": "Basics of essential Python libraries: Introduction to NumPy, Pandas, Matplotlib, SciPy.\r\nData Processing, Data Visualization, Basic Visualization Tools, Specialized Visualization\r\nTools, Seaborn Creating and Plotting Maps."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 8,
+          "topics": [
+            "Mathematical and scientific applications for data Analysis, Basics of Supervised and\r\nUnsupervised Learning. Decision Making. Trend & predictive mining using Python,\r\nRecommender systems."
+          ],
+          "content": "Mathematical and scientific applications for data Analysis, Basics of Supervised and\r\nUnsupervised Learning. Decision Making. Trend & predictive mining using Python,\r\nRecommender systems."
+        }
+      ],
+      "textBooks": [
+        "Wes Mckinney. Python for Data Analysis, First edition, Publisher O’Reilly Media.",
+        "Foundational Python for Data Science, 1st edition, Kennedy Behrman, Pearson\r\nPublication.",
+        "Data analytics using Python, Bharti Motwani, Wiley Publication."
+      ],
+      "referenceBooks": [
+        "Allen Downey, Jeffrey Elkner, Chris Meyers, Learning with Python, Dreamtech Press.",
+        "Reema Thareja. Python Programming using Problem Solving approach, Oxford University\r\npress."
+      ],
+      "availableIn": [
+        "AIDS",
+        "AIML",
+        "IOT"
+      ]
+    },
+    "dld": {
+      "name": "Digital Logic Design",
+      "code": "AIDS205/AIML205/IOT205",
+      "credits": 3,
+      "type": "theory",
+      "description": "Approved by BoS of USAR: 15/06/23,\r\nApproved by AC sub-committee : 04/07/23\r\nApplicable from Batch Admitted in Academic Session 2022-23 Onwards\r\nPage | 20\r\n\fGURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,\r\nEAST DELHI CAMPUS,\r\nSURAJMAL VIHAR-110092\r\nThe course addresses the concepts of digital systems logic design, and techniques of\r\ndesigning digital systems. The course teaches the fundamentals of digital systems applying\r\nthe logic design and development techniques. This course forms the basis for the study of\r\nadvanced subjects like Computer Organization and Architecture, Microprocessor through\r\nInterfacing, VLSI Designing.",
+      "objectives": [
+        "2.\r\n\r\nTo teach various number systems, binary codes and their applications.\r\nTo familiarize the students with the importance of error detection and error correction\r\ncodes.",
+        "To inculcate concepts of K-MAP to simplify a Boolean expression.",
+        "To facilitate students in designing a logic circuit."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "Understand number systems and complements for the basic functionality of digital\r\nsystems"
+        },
+        {
+          "code": "CO2",
+          "description": "Identify the importance of canonical forms in the minimization or other optimization of\r\nBoolean formulas in general and digital circuits."
+        },
+        {
+          "code": "CO3",
+          "description": "Apply and evaluate circuits of minimizing algorithms (Boolean algebra, Karnaugh map\r\nor tabulation method)."
+        },
+        {
+          "code": "CO4",
+          "description": "Design procedures of combinational and sequential circuits."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 8,
+          "topics": [
+            "Digital systems, binary numbers, number base conversions, octal and hexadecimal\r\nnumbers, complements, signed binary numbers, binary codes, error detection and error\r\ncorrection codes. Boolean Algebra and Logic Gates: Basic definitions, axiomatic definition\r\nof Boolean algebra, basic theorems and properties of Boolean algebra, Boolean functions,\r\ncanonical and standard forms, other logic operations, digital logic gates."
+          ],
+          "content": "Digital systems, binary numbers, number base conversions, octal and hexadecimal\r\nnumbers, complements, signed binary numbers, binary codes, error detection and error\r\ncorrection codes. Boolean Algebra and Logic Gates: Basic definitions, axiomatic definition\r\nof Boolean algebra, basic theorems and properties of Boolean algebra, Boolean functions,\r\ncanonical and standard forms, other logic operations, digital logic gates."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 8,
+          "topics": [
+            "GATE level minimization, Logic gates and Logic families, The K-map method, fourvariable map, five-variable map, product of sums simplification, don’t-care conditions,\r\nNAND and NOR implementation, determination and selection of Prime Implicants,\r\nEssential and Nonessential\r\nprime Implicants."
+          ],
+          "content": "GATE level minimization, Logic gates and Logic families, The K-map method, fourvariable map, five-variable map, product of sums simplification, don’t-care conditions,\r\nNAND and NOR implementation, determination and selection of Prime Implicants,\r\nEssential and Nonessential\r\nprime Implicants."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 8,
+          "topics": [
+            "Combinational logic and their Design procedure, Binary Adder, Binary Subtractor,\r\nBinary Multiplier, Magnitude Comparator, Decoders, Encoders, Multiplexers, and\r\nDemultiplexers.\r\nMemories such as ROM, RAM, EPROM."
+          ],
+          "content": "Combinational logic and their Design procedure, Binary Adder, Binary Subtractor,\r\nBinary Multiplier, Magnitude Comparator, Decoders, Encoders, Multiplexers, and\r\nDemultiplexers.\r\nMemories such as ROM, RAM, EPROM."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 12,
+          "topics": [
+            "Sequential logic and circuits, latches, flip-flops, analysis of clocked sequential circuits,\r\nState reduction and assignment, design procedure. REGISTERS AND COUNTERS:\r\nRegisters, shift registers, ripple counters, synchronous counters, counters with unused\r\nstates, ring counter, Johnson counter. Random access memory, memory decoding, error\r\ndetection and correction, read only memory, programmable logic array, programmable\r\narray logic, sequential programmable devices. A/D and D/A converters."
+          ],
+          "content": "Sequential logic and circuits, latches, flip-flops, analysis of clocked sequential circuits,\r\nState reduction and assignment, design procedure. REGISTERS AND COUNTERS:\r\nRegisters, shift registers, ripple counters, synchronous counters, counters with unused\r\nstates, ring counter, Johnson counter. Random access memory, memory decoding, error\r\ndetection and correction, read only memory, programmable logic array, programmable\r\narray logic, sequential programmable devices. A/D and D/A converters."
+        }
+      ],
+      "textBooks": [
+        "M. Morris Mano, Michael D. Ciletti (2008), Digital Design, 4th edition, Pearson\r\nEducation Inc, India.",
+        "Donald D. Givone (2002), Digital Principles and Design, Tata McGraw Hill, India."
+      ],
+      "referenceBooks": [
+        "C. V. S. Rao (2009), Switching and Logic Design, 3rd Edition, Pearson Education, India.",
+        "Roth (2004), Fundamentals of Logic Design, 5th Edition, Thomson, India."
+      ],
+      "availableIn": [
+        "CSE",
+        "IT",
+        "CST",
+        "ITE",
+        "AIDS",
+        "AIML",
+        "IOT",
+        "ECE",
+        "EEE"
+      ]
+    },
+    "pai": {
+      "name": "Principles of Artificial Intelligence",
+      "code": "AIDS207/AIML207/IOT207",
+      "credits": 3,
+      "type": "theory",
+      "description": "Principles of artificial Intelligence is the simulation of intelligence process by computer\r\nsystems. It gives understanding of the main abstractions and reasoning techniques used in\r\nartificial intelligence including understand of AI, reasoning by machines, planning\r\ntechniques, and basic machine learning methods.",
+      "objectives": [
+        "To understand the basic concepts of Artificial Intelligence, its principles, and\r\ntechniques.",
+        "To analyse the applicability of the basic knowledge representation, reason under\r\nuncertainty, develop a plan for concrete computational problems, and learn from\r\nexperiences to solve various problems",
+        "To Investigate applications of AI techniques in intelligent agents, expert systems,\r\nartificial neural networks and other machine learning models.",
+        "To devise development tools such as prediction models, expert systems, and data\r\nmining tools."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "System for knowledge representation."
+        },
+        {
+          "code": "CO2",
+          "description": "Apply heuristic algorithms to develop better searching algorithms for solving realworld problems.\r\nAnalyse and understand concepts of Neural Networks and Fuzzy data to deal with"
+        },
+        {
+          "code": "CO3",
+          "description": "uncertainty and imprecision, subsequently apply suitable soft-computing technique to\r\ndo approximate reasoning and build computational models capable of learning\r\nmeaningful patterns from data.\r\nCreate logic programming to build systems capable of making decision to solve realCO4\r\nworld problems by applying critical thinking, problem-solving and AI algorithms."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 8,
+          "topics": [
+            "Introduction to AI, History of Artificial Intelligence, Applications of AI in the real world\r\n(Gaming, Computer Vision, Expert Systems, Natural Language Processing, Robotics &\r\nothers). AI techniques, Problem Solving: Production Systems, State Space Search, Depth\r\nFirst Search, Breadth First Search, Heuristic Search, Hill Climbing, Best First Search,\r\nbest-first search, A*, Problem Reduction, AO*, Constraint Satisfaction, Means-End\r\nAnalysis."
+          ],
+          "content": "Introduction to AI, History of Artificial Intelligence, Applications of AI in the real world\r\n(Gaming, Computer Vision, Expert Systems, Natural Language Processing, Robotics &\r\nothers). AI techniques, Problem Solving: Production Systems, State Space Search, Depth\r\nFirst Search, Breadth First Search, Heuristic Search, Hill Climbing, Best First Search,\r\nbest-first search, A*, Problem Reduction, AO*, Constraint Satisfaction, Means-End\r\nAnalysis."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 8,
+          "topics": [
+            "Knowledge representation, Knowledge representation using Predicate logic,\r\nPropositional logic, Inferences, First-Order Logic, Inferences, Unification, Resolution,\r\nNatural Deduction, Procedural versus declarative knowledge, logic programming, forward\r\nversus backward reasoning."
+          ],
+          "content": "Knowledge representation, Knowledge representation using Predicate logic,\r\nPropositional logic, Inferences, First-Order Logic, Inferences, Unification, Resolution,\r\nNatural Deduction, Procedural versus declarative knowledge, logic programming, forward\r\nversus backward reasoning."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 8,
+          "topics": [
+            "Reasoning, Introduction to Uncertainty, Bayesian Theory, Bayesian Network, DempsterShafer Theory. Overview of Planning and its Components. Overview of Learning and\r\nbasic Techniques. Introduction of Fuzzy Reasoning and Neural Networks."
+          ],
+          "content": "Reasoning, Introduction to Uncertainty, Bayesian Theory, Bayesian Network, DempsterShafer Theory. Overview of Planning and its Components. Overview of Learning and\r\nbasic Techniques. Introduction of Fuzzy Reasoning and Neural Networks."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 12,
+          "topics": [
+            "Game Playing and Current Trends in AI, MinMax search procedure, Alpha-Beta\r\nCutoffs, Game Development using AI, Applications of AI, Emerging Trends in AI\r\nResearch in various domains."
+          ],
+          "content": "Game Playing and Current Trends in AI, MinMax search procedure, Alpha-Beta\r\nCutoffs, Game Development using AI, Applications of AI, Emerging Trends in AI\r\nResearch in various domains."
+        }
+      ],
+      "textBooks": [
+        "Rich and Knight. Artificial Intelligence, Tata McGraw Hill, 1992.",
+        "S. Russel and P. Norvig. Artificial Intelligence – A Modern Approach, Second Edition,\r\nPearson Edu."
+      ],
+      "referenceBooks": [
+        "Kheemani, Deepak, A First Course in Artificial Intelligence, McGraw Hill Education,\r\n1 Edition, 2017.",
+        "Artificial Intelligence: foundations of computational agents, Cambridge University\r\nPress, 2017.",
+        "Poole, David L., and Alan K. Mackworth. Artificial Intelligence: foundations of\r\ncomputational agents. Cambridge University Press, 2010.",
+        "Luger, G.F. Artificial Intelligence -Structures and Strategies for Complex Problem\r\nSolving, 6th edition, Pearson, 2008."
+      ],
+      "availableIn": [
+        "AIDS",
+        "AIML",
+        "IOT"
+      ]
+    },
+    "psla": {
+      "name": "Probability, Statistics and Linear Algebra",
+      "code": "AIDS209/AIML209/IOT209",
+      "credits": 4,
+      "type": "theory",
+      "description": "Approved by BoS of USAR: 15/06/23,\r\nApproved by AC sub-committee : 04/07/23\r\nApplicable from Batch Admitted in Academic Session 2022-23 Onwards\r\nPage | 28\r\n1\r\n1\r\n-\r\n\fGURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,\r\nEAST DELHI CAMPUS,\r\nSURAJMAL VIHAR-110092\r\nProbability, statistics and linear algebra gives and allows to access and examine the\r\ncertainty of outcomes of a study or experiment that is executed. The course also addresses\r\nthe statistics to gather, review, analyse and draw conclusion from raw data, as well as\r\nquantified mathematical models to understand machine learning algorithms.",
+      "objectives": [
+        "To build a strong foundation on probabilistic and statistical analysis and linear Algebra.",
+        "To apply tools of statistics, probability, discrete random variables and probability\r\ndistributions, in various applications of engineering and technology.",
+        "To analyse tools of continuous random variables and probability distributions and linear\r\nalgebra in various applications of engineering and technology.",
+        "To create systems using probabilistic and statistical analysis in varied applications of\r\nengineering and science like disease modeling, climate prediction and computer networks\r\netc."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "Understand the fundamentals of probability, Conditional Probability, Baye’s theorem,\r\nrandom variables, sampling distribution, mean, and other statistical row reduced echelon\r\nform, Solutions of system of linear equations, Vector Space, Basis, Linear\r\nTransformations, Eigen values, and Eigen Vectors techniques and apply them to various\r\nreal-life problems."
+        },
+        {
+          "code": "CO2",
+          "description": "Perform hypothesis testing to analyse various Engineering problems."
+        },
+        {
+          "code": "CO3",
+          "description": "Analyse different distributions, systems of linear equations, and linear transformations in\r\nengineering problems."
+        },
+        {
+          "code": "CO4",
+          "description": "Design network models, Markov chain, and their applications."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 10,
+          "topics": [
+            "Probability - Probability spaces, conditional probability, independence; Discrete random\r\nvariables, continuous random variables and their properties, distribution functions and\r\ndensities, exponential and gamma densities. Independent random variables, the multinomial\r\ndistribution, Chebyshev's Inequality, Bayes' rule."
+          ],
+          "content": "Probability - Probability spaces, conditional probability, independence; Discrete random\r\nvariables, continuous random variables and their properties, distribution functions and\r\ndensities, exponential and gamma densities. Independent random variables, the multinomial\r\ndistribution, Chebyshev's Inequality, Bayes' rule."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 10,
+          "topics": [
+            "Basic Statistics- Measures of Central tendency: Moments, skewness and Kurtosis Probability distributions: Binomial, Poisson and Normal - evaluation of statistical\r\nparameters for these three distributions, Correlation and regression – Rank correlation."
+          ],
+          "content": "Basic Statistics- Measures of Central tendency: Moments, skewness and Kurtosis Probability distributions: Binomial, Poisson and Normal - evaluation of statistical\r\nparameters for these three distributions, Correlation and regression – Rank correlation."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 10,
+          "topics": [
+            "Applied Statistics- Curve fitting by the method of least squares- fitting of straight lines,\r\nsecond degree parabolas and more general curves. Test of significance- large sample test\r\nfor single proportion, difference of proportions, single mean, difference of means, and\r\ndifference of standard deviations."
+          ],
+          "content": "Applied Statistics- Curve fitting by the method of least squares- fitting of straight lines,\r\nsecond degree parabolas and more general curves. Test of significance- large sample test\r\nfor single proportion, difference of proportions, single mean, difference of means, and\r\ndifference of standard deviations."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 10,
+          "topics": [
+            "Linear Algebra- Cramer's rule, Singular Value decomposition, Euclidian vector spaces,\r\nProjection. Hermitian and Unitary Matrix, Gram -Schmidt orthogonalization, LUdecomposition."
+          ],
+          "content": "Linear Algebra- Cramer's rule, Singular Value decomposition, Euclidian vector spaces,\r\nProjection. Hermitian and Unitary Matrix, Gram -Schmidt orthogonalization, LUdecomposition."
+        }
+      ],
+      "textBooks": [
+        "P. G. Hoel, S. C. Port and C. J. Stone, Introduction to Probability Theory, Universal\r\nBook Stall, 2003.",
+        "S. Ross, A First Course in Probability, 6th Ed., Pearson Education India, 2002.",
+        "W. Feller, An Introduction to Probability Theory and its Applications, Vol. 1, 3rd Ed.,\r\nWiley, 1968."
+      ],
+      "referenceBooks": [
+        "N.P. Bali and Manish Goyal, A textbook of Engineering Mathematics, Laxmi\r\nPublications, Reprint, 2010.",
+        "B.S. Grewal, Higher Engineering Mathematics, Khanna Publishers, 35th Edition, 2000.",
+        "Veerarajan T. Engineering Mathematics (for semester III), Tata McGraw-Hill, New\r\nDelhi, 2010.",
+        "Mathematics For Machine Learning-Marc Peter Deisenroth, A. Aldo Faisal, Cheng\r\nsoon ong."
+      ],
+      "availableIn": [
+        "AIDS",
+        "AIML",
+        "IOT"
+      ]
+    },
+    "uhv": {
+      "name": "Universal Human Values II",
+      "code": "AIDS211/AIML211/IOT211",
+      "credits": 3,
+      "type": "theory",
+      "description": "This course is aimed at giving inputs that will help to ensure the right understanding and\r\nright feelings in the students in their life and profession, enabling them to lead ethical life.\r\nApproved by BoS of USAR: 15/06/23,\r\nApproved by AC sub-committee : 04/07/23\r\nApplicable from Batch Admitted in Academic Session 2022-23 Onwards\r\nPage | 30\r\n3\r\n3\r\n3\r\n3\r\n\fGURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,\r\nEAST DELHI CAMPUS,\r\nSURAJMAL VIHAR-110092\r\nIn this course, the students learn the process of self-exploration, the difference between the\r\nSelf and the Body, the naturally acceptable feelings in relationships in a family, the\r\ncomprehensive human goal in society, the mutual fulfillment in nature, and the co-existence\r\nin existence.",
+      "objectives": [
+        "To expand the holistic perspective based on self-exploration about themselves (human\r\nbeings), family, society, and nature/existence and to appreciate the essential\r\ncomplementarily between ‘VALUES’ and ‘SKILLS’ to ensure sustained happiness and\r\nthe real meaning of prosperity which are the core aspirations of all human beings.",
+        "To understand the harmony in the human being at all four levels- Individual, family,\r\nsociety, and nature/existence.",
+        "To strengthen the power of self-reflection with the right understanding.",
+        "To develop the right evaluation in terms of actions, reactions, and commitments towards\r\nthe human goal i.e. mutual happiness and mutual prosperity."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "Understand and become more aware of self (individual) and our surroundings (family,\r\nsociety, and nature)."
+        },
+        {
+          "code": "CO2",
+          "description": "Become more responsible in life for handling problems with sustainable solutions while\r\nkeeping human relationships and human nature in mind."
+        },
+        {
+          "code": "CO3",
+          "description": "Enhance critical ability for self-reflection."
+        },
+        {
+          "code": "CO4",
+          "description": "Boost sensitivity to our commitment in terms of human values, human relationships, and\r\nhuman society."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 8,
+          "topics": [
+            "Introduction to Value Education - Need, Basic Guidelines, Content and Process for\r\nValue Education, Self-Exploration, Natural Acceptance, Experiential Validation as the\r\nMechanism for Self-Exploration. Continuous Happiness and Prosperity, Basic Human\r\nAspirations. Right Understanding, Relationship, and Physical Facilities - the basic\r\nrequirements for the fulfillment of aspirations of every human being with their priority,\r\nUnderstanding Happiness and Prosperity, Method to fulfill the above human aspirations:\r\nUnderstanding and living in harmony at various levels."
+          ],
+          "content": "Introduction to Value Education - Need, Basic Guidelines, Content and Process for\r\nValue Education, Self-Exploration, Natural Acceptance, Experiential Validation as the\r\nMechanism for Self-Exploration. Continuous Happiness and Prosperity, Basic Human\r\nAspirations. Right Understanding, Relationship, and Physical Facilities - the basic\r\nrequirements for the fulfillment of aspirations of every human being with their priority,\r\nUnderstanding Happiness and Prosperity, Method to fulfill the above human aspirations:\r\nUnderstanding and living in harmony at various levels."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 8,
+          "topics": [
+            "Understanding Harmony in the Human Being, the human being is a Co-existence of the\r\nsentient ‘I’ and the material ‘Body’. Understanding the needs of the Self (‘I’) and ‘Body’,\r\nhappiness and physical facility, Understanding the Body as an instrument of ‘I’ (I being the\r\ndoer, seer, and enjoyer), Understanding the characteristics and activities of ‘I’ and harmony\r\nin ‘I’, Understanding the harmony of I with the Body: Sanyam and Health, correct appraisal\r\nof Physical needs, the meaning of Prosperity, Programs to ensure Sanyam and Health."
+          ],
+          "content": "Understanding Harmony in the Human Being, the human being is a Co-existence of the\r\nsentient ‘I’ and the material ‘Body’. Understanding the needs of the Self (‘I’) and ‘Body’,\r\nhappiness and physical facility, Understanding the Body as an instrument of ‘I’ (I being the\r\ndoer, seer, and enjoyer), Understanding the characteristics and activities of ‘I’ and harmony\r\nin ‘I’, Understanding the harmony of I with the Body: Sanyam and Health, correct appraisal\r\nof Physical needs, the meaning of Prosperity, Programs to ensure Sanyam and Health."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 8,
+          "topics": [
+            "Harmony in Human-Human Relationships, Understanding values in human-human\r\nrelationships, meaning of Justice (Nine universal values in relationships) and the program\r\nfor its fulfillment to ensure Mutual Happiness, Trust, and Respect as the foundational\r\nvalues of relationship, Understanding the meaning of Trust, Difference between Intention\r\nand Competence, Understanding the meaning of Respect, Difference between Respect\r\nand Differentiation, the other salient values in a relationship, Understanding the harmony\r\nin the society (society being an extension of the family), Resolution, Prosperity,\r\nFearlessness (trust) and Co-existence as comprehensive Human Goals, Visualizing a\r\nuniversal harmonious order in society: Undivided Society, Universal order from family to\r\nworld family."
+          ],
+          "content": "Harmony in Human-Human Relationships, Understanding values in human-human\r\nrelationships, meaning of Justice (Nine universal values in relationships) and the program\r\nfor its fulfillment to ensure Mutual Happiness, Trust, and Respect as the foundational\r\nvalues of relationship, Understanding the meaning of Trust, Difference between Intention\r\nand Competence, Understanding the meaning of Respect, Difference between Respect\r\nand Differentiation, the other salient values in a relationship, Understanding the harmony\r\nin the society (society being an extension of the family), Resolution, Prosperity,\r\nFearlessness (trust) and Co-existence as comprehensive Human Goals, Visualizing a\r\nuniversal harmonious order in society: Undivided Society, Universal order from family to\r\nworld family."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 8,
+          "topics": [
+            "Understanding Harmony in Nature. Interconnectedness: Self-regulation and Mutual\r\nFulfillment among the Four Orders of Nature: Recyclability and Self-regulation in Nature,\r\nRealizing Existence as Co-existence at All Levels. The Holistic Perception of Harmony in\r\nExistence. Natural Acceptance of Human Values. Definitiveness of (Ethical) Human\r\nConduct. A Basis for Humanistic Education, Humanistic Constitution and Universal\r\nHumanistic Order.\r\nApproved by BoS of USAR: 15/06/23,\r\nApproved by AC sub-committee : 04/07/23\r\nApplicable from Batch Admitted in Academic Session 2022-23 Onwards\r\nPage | 31\r\n\fGURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,\r\nEAST DELHI CAMPUS,\r\nSURAJMAL VIHAR-110092"
+          ],
+          "content": "Understanding Harmony in Nature. Interconnectedness: Self-regulation and Mutual\r\nFulfillment among the Four Orders of Nature: Recyclability and Self-regulation in Nature,\r\nRealizing Existence as Co-existence at All Levels. The Holistic Perception of Harmony in\r\nExistence. Natural Acceptance of Human Values. Definitiveness of (Ethical) Human\r\nConduct. A Basis for Humanistic Education, Humanistic Constitution and Universal\r\nHumanistic Order.\r\nApproved by BoS of USAR: 15/06/23,\r\nApproved by AC sub-committee : 04/07/23\r\nApplicable from Batch Admitted in Academic Session 2022-23 Onwards\r\nPage | 31\r\n\fGURU GOBIND SINGH INDRAPRASTHA UNIVERSITY,\r\nEAST DELHI CAMPUS,\r\nSURAJMAL VIHAR-110092"
+        }
+      ],
+      "textBooks": [
+        "R. R. Gaur, R. Asthana & G. P. Bagaria, A Foundation Course in Human Values and\r\nProfessional Ethics, 2nd Revised Edition, Excel Books, New Delhi, 2019. ISBN 978-9387034-47-1. 2. Teacher’s Manual for A Foundation Course in Human Values and\r\nProfessional Ethics, R. R. Gaur, R. Asthana & G. P. Bagaria,2nd Revised Edition, Excel\r\nBooks, New Delhi, 2019, ISBN 978- 93-87034-53-2."
+      ],
+      "referenceBooks": [
+        "A. Nagraj, Jeevan Vidya Ek Parichay, Divya Path Sansthan, Amarkantak, 1999.",
+        "A. N. Tripathy, Human Values, New Age International Publishers, 2004.",
+        "B. L. Bajpai, Indian Ethos and Modern Management, New Royal Book Co., Lucknow.\r\nReprinted 2008.",
+        "P. L. Dhar & R. R. Gaur, 1990, Science and Humanism, Commonwealth Publishers."
+      ],
+      "availableIn": [
+        "CSE",
+        "IT",
+        "CST",
+        "ITE",
+        "AIDS",
+        "AIML",
+        "IOT",
+        "CIVIL",
+        "MECH",
+        "ECE",
+        "EEE"
+      ]
+    },
+    "crst": {
+      "name": "Critical Reasoning and Systems Thinking",
+      "code": "AIDS213/AIML213/IOT213",
+      "credits": 2,
+      "type": "theory",
+      "description": "This is a perspective course which exposes students to the disciplines of building and\r\nevaluating rational arguments and using a system perspective in applied engineering.\r\nCritical reasoning and system thinking enhances the though process with reasoning and\r\ncritical analysis to take to the final decision in order to solve any specific problems. It\r\nenables seeing and understanding systems as wholes rather than as collections of parts, as a web of\r\ninterconnections that work together to deliver an outcome.",
+      "objectives": [
+        "To inculcate critical reasoning and system thinking to take decisions.",
+        "To understand Critical reasoning, examine assumptions, uncover hidden values, evaluate\r\nevidence, accomplish actions, and assess conclusions.",
+        "To learn a holistic approach to analysis that focuses on the way a system’s constituent parts\r\ninterrelated and how systems work overtime and within the context of larger systems",
+        "To formulate solutions for social and business enterprises using critical thinking and\r\nbrainstorming and covert opportunities into innovation products and services."
+      ],
+      "outcomes": [
+        {
+          "code": "CO1",
+          "description": "Apply critical reasoning so as to have clarity and wisdom while decision making."
+        },
+        {
+          "code": "CO2",
+          "description": "Apply systems thinking concepts to enhance individual and collaborative skills to\r\nrecognize opportunities and find innovative solutions for the same."
+        },
+        {
+          "code": "CO3",
+          "description": "Apply and analyse systems thinking, critical thinking, lateral thinking, creative thinking\r\nto different real-life scenarios."
+        },
+        {
+          "code": "CO4",
+          "description": "Understand how to translate broadly defined opportunities into innovation products and\r\nservices and create a business or social enterprise."
+        }
+      ],
+      "units": [
+        {
+          "unit": "I",
+          "title": "Unit I",
+          "hours": 8,
+          "topics": [
+            "Introduction, foundations and principles of critical reasoning, concepts in critical\r\nreasoning, analyzing reasoning, evaluating reasoning, Integrated reasoning, uncritical and\r\ncritical reasoning, scientific reasoning, strategic reasoning, analytical reasoning, different\r\nkinds of biases, recognizing implications, drawing conclusion."
+          ],
+          "content": "Introduction, foundations and principles of critical reasoning, concepts in critical\r\nreasoning, analyzing reasoning, evaluating reasoning, Integrated reasoning, uncritical and\r\ncritical reasoning, scientific reasoning, strategic reasoning, analytical reasoning, different\r\nkinds of biases, recognizing implications, drawing conclusion."
+        },
+        {
+          "unit": "II",
+          "title": "Unit II",
+          "hours": 8,
+          "topics": [
+            "Arguments, structure of an argument, premises, claims, Inductive and deductive\r\narguments, valid & invalid arguments, sound & unsound arguments, inductive and\r\ndeductive arguments, descriptions, explanations, clarifications, illustrations and summary."
+          ],
+          "content": "Arguments, structure of an argument, premises, claims, Inductive and deductive\r\narguments, valid & invalid arguments, sound & unsound arguments, inductive and\r\ndeductive arguments, descriptions, explanations, clarifications, illustrations and summary."
+        },
+        {
+          "unit": "III",
+          "title": "Unit III",
+          "hours": 8,
+          "topics": [
+            "What is problem solving, steps in problem solving, problem definition, idea generation,\r\nbrainstorming, fish bone analysis, thinking out of the box, lateral thinking tools &\r\ntechniques, Information and data gathering and analysis, evaluating & prioritizing ideas, six\r\nthinking hats method, problem solving in teams, planning in teams, Tools and applications\r\nin project and risk management, problem solving in teams, planning in teams."
+          ],
+          "content": "What is problem solving, steps in problem solving, problem definition, idea generation,\r\nbrainstorming, fish bone analysis, thinking out of the box, lateral thinking tools &\r\ntechniques, Information and data gathering and analysis, evaluating & prioritizing ideas, six\r\nthinking hats method, problem solving in teams, planning in teams, Tools and applications\r\nin project and risk management, problem solving in teams, planning in teams."
+        },
+        {
+          "unit": "IV",
+          "title": "Unit IV",
+          "hours": 8,
+          "topics": [
+            "System structures and behavior, Abilene paradox, fallacies in reasoning, barriers in\r\ncritical thinking, cognition and perception in Indian knowledge systems (Nyaya Darshana),\r\nsystems thinking, operational and design thinking, system thinking for social change,\r\ncritical thinking, the art of asking questions, Tools and applications in project and risk\r\nmanagement."
+          ],
+          "content": "System structures and behavior, Abilene paradox, fallacies in reasoning, barriers in\r\ncritical thinking, cognition and perception in Indian knowledge systems (Nyaya Darshana),\r\nsystems thinking, operational and design thinking, system thinking for social change,\r\ncritical thinking, the art of asking questions, Tools and applications in project and risk\r\nmanagement."
+        }
+      ],
+      "textBooks": [
+        "Concise Guide to Critical Thinking by Lewis Vaughn",
+        "Critical Thinking by Tom Chatfield",
+        "Managing Complex Systems - Thinking Outside the Box by Howard Eisner A",
+        "Critical Thinking Tools for Taking Charge of Your Professional and Personal Life\r\nBy Richard Paul, Linda Elder · 2020"
+      ],
+      "referenceBooks": [
+        "Thinking Fast and Slow by Daniel Kahneman",
+        "Strategies for creative problem solving by H Scott Fogler and Steven E LeBlanc",
+        "Critical Thinking A Concise Guide By Tracy Bowell, Gary Kemp · 2002"
+      ],
+      "availableIn": [
+        "CSE",
+        "IT",
+        "CST",
+        "ITE",
+        "AIDS",
+        "AIML",
+        "IOT",
+        "CIVIL",
+        "MECH"
+      ]
+    }
+  }
+}
