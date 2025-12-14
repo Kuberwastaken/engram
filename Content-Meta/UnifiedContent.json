@@ -117278,6 +117278,667 @@
             "appliedToBranch": "IT"
           }
         }
+      },
+      "SEM4": {
+        "subjects": {
+          "probability-statistics-and-linear-programming": {
+            "name": "Probability Statistics and Linear Programming",
+            "materials": {
+              "syllabus": [
+                {
+                  "id": "18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+                  "name": "3rd sem.pdf PDF",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+                  "viewUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/preview",
+                  "originalFolder": "Syllabus Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/view",
+                  "subject": "Syllabus",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 1
+                },
+                {
+                  "id": "18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+                  "name": "3rd sem.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw",
+                  "viewUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/preview",
+                  "originalFolder": "Syllabus Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/18jBaGJgq5MMS9xk_IvnuAE_UhGN12zBw/view",
+                  "subject": "Syllabus",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 2
+                }
+              ],
+              "notes": [
+                {
+                  "id": "17DoORqz49s1JaiXmlZCxwue4kbcrtJHN",
+                  "name": "Assignment",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=17DoORqz49s1JaiXmlZCxwue4kbcrtJHN",
+                  "viewUrl": "https://drive.google.com/file/d/17DoORqz49s1JaiXmlZCxwue4kbcrtJHN/preview",
+                  "originalFolder": "PSLA Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/17DoORqz49s1JaiXmlZCxwue4kbcrtJHN/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 1
+                },
+                {
+                  "id": "1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt",
+                  "name": "Notes",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt",
+                  "viewUrl": "https://drive.google.com/file/d/1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt/preview",
+                  "originalFolder": "PSLA Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1EGdnRhydetOGOxStwXVsv9uc74kZ7wTt/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 2
+                },
+                {
+                  "id": "1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+                  "name": "Aakash PDF",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+                  "viewUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/preview",
+                  "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 3
+                },
+                {
+                  "id": "1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+                  "name": "Aakash",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog",
+                  "viewUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/preview",
+                  "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1j9DG7UGvJ_QCzcspx71OmE7fL0-mxyog/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 4
+                },
+                {
+                  "id": "19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+                  "name": "math assignment 1.pdf PDF",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+                  "viewUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/preview",
+                  "originalFolder": "PSLA Shared folder/Assignment Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 5
+                },
+                {
+                  "id": "19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+                  "name": "math assignment 1.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL",
+                  "viewUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/preview",
+                  "originalFolder": "PSLA Shared folder/Assignment Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/19KQpTNgguT5ouQbbmisw6Z1KHhbN3daL/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 6
+                },
+                {
+                  "id": "1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+                  "name": "All chapter notes PDF",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+                  "viewUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/preview",
+                  "originalFolder": "PSLA Shared folder/Notes Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 7
+                },
+                {
+                  "id": "1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+                  "name": "All chapter notes",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8",
+                  "viewUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/preview",
+                  "originalFolder": "PSLA Shared folder/Notes Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1R8UmoMDiyy4Pwv2zVG8_ZeiJjZH1VIp8/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 8
+                },
+                {
+                  "id": "1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+                  "name": "Unit 1 PDF",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+                  "viewUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/preview",
+                  "originalFolder": "PSLA Shared folder/Notes Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 9
+                },
+                {
+                  "id": "1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+                  "name": "Unit 1",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_",
+                  "viewUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/preview",
+                  "originalFolder": "PSLA Shared folder/Notes Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1PQGxRvWI7UECg-Jb2yt3w4gH6QVDuJ1_/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 10
+                },
+                {
+                  "name": "PSLA.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1iNP2RtkCfD9f4keLemx8slXHsE3D29RB",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1iNP2RtkCfD9f4keLemx8slXHsE3D29RB/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1iNP2RtkCfD9f4keLemx8slXHsE3D29RB",
+                    "webView": "https://drive.google.com/file/d/1iNP2RtkCfD9f4keLemx8slXHsE3D29RB/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "The formulas.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1-U2OASV5kELPnl9Ip-vsVlQ5ci9_o3gU",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1-U2OASV5kELPnl9Ip-vsVlQ5ci9_o3gU/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1-U2OASV5kELPnl9Ip-vsVlQ5ci9_o3gU",
+                    "webView": "https://drive.google.com/file/d/1-U2OASV5kELPnl9Ip-vsVlQ5ci9_o3gU/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "probability_and_statistics_for_engineering_and_the_sciences (1).pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "11As7dJxMDuonBqM3moaQCp13CwiYYchw",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/11As7dJxMDuonBqM3moaQCp13CwiYYchw/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=11As7dJxMDuonBqM3moaQCp13CwiYYchw",
+                    "webView": "https://drive.google.com/file/d/11As7dJxMDuonBqM3moaQCp13CwiYYchw/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "PSLA-lll.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "19fLkyY1GCLNOhbEWgSbAy58xrudrxCAY",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/19fLkyY1GCLNOhbEWgSbAy58xrudrxCAY/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=19fLkyY1GCLNOhbEWgSbAy58xrudrxCAY",
+                    "webView": "https://drive.google.com/file/d/19fLkyY1GCLNOhbEWgSbAy58xrudrxCAY/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "PSLA previous year question paper [22,23].pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1EHe-mdIeCLr2Ae1KZjU5dJyQNXnWYD8F",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1EHe-mdIeCLr2Ae1KZjU5dJyQNXnWYD8F/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1EHe-mdIeCLr2Ae1KZjU5dJyQNXnWYD8F",
+                    "webView": "https://drive.google.com/file/d/1EHe-mdIeCLr2Ae1KZjU5dJyQNXnWYD8F/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "Maths Akash_s.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1LD66sxyIoXUz_9gH7epWJoX7PkegHVfs",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1LD66sxyIoXUz_9gH7epWJoX7PkegHVfs/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1LD66sxyIoXUz_9gH7epWJoX7PkegHVfs",
+                    "webView": "https://drive.google.com/file/d/1LD66sxyIoXUz_9gH7epWJoX7PkegHVfs/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "PSLA book.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1PopDrwPfTu0NPPKCdTu-XO1OioOgtnxs",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1PopDrwPfTu0NPPKCdTu-XO1OioOgtnxs/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1PopDrwPfTu0NPPKCdTu-XO1OioOgtnxs",
+                    "webView": "https://drive.google.com/file/d/1PopDrwPfTu0NPPKCdTu-XO1OioOgtnxs/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "PSLA (by hari arora).pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1YO3bsGDE8vW2nCCufA7TEzXTGey7Y8eu",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1YO3bsGDE8vW2nCCufA7TEzXTGey7Y8eu/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1YO3bsGDE8vW2nCCufA7TEzXTGey7Y8eu",
+                    "webView": "https://drive.google.com/file/d/1YO3bsGDE8vW2nCCufA7TEzXTGey7Y8eu/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "PSLA.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1dJE-6NabkBDs3_fqXRTcI3aHcWw9XYND",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1dJE-6NabkBDs3_fqXRTcI3aHcWw9XYND/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1dJE-6NabkBDs3_fqXRTcI3aHcWw9XYND",
+                    "webView": "https://drive.google.com/file/d/1dJE-6NabkBDs3_fqXRTcI3aHcWw9XYND/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "maths previous year paper solution.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1i1cs-ecrE65-0vGJHfiXLyvLs_s6UVFu",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1i1cs-ecrE65-0vGJHfiXLyvLs_s6UVFu/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1i1cs-ecrE65-0vGJHfiXLyvLs_s6UVFu",
+                    "webView": "https://drive.google.com/file/d/1i1cs-ecrE65-0vGJHfiXLyvLs_s6UVFu/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "psla assignment.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1tUxSMfe0ks3r-v2xEWjaj7B0YnrXBJTD",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1tUxSMfe0ks3r-v2xEWjaj7B0YnrXBJTD/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1tUxSMfe0ks3r-v2xEWjaj7B0YnrXBJTD",
+                    "webView": "https://drive.google.com/file/d/1tUxSMfe0ks3r-v2xEWjaj7B0YnrXBJTD/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "Probability and Stats Amit Sir Notes.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1v76kX2dF9i0IwUWE17erqy7VCFbPa1S3",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1v76kX2dF9i0IwUWE17erqy7VCFbPa1S3/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1v76kX2dF9i0IwUWE17erqy7VCFbPa1S3",
+                    "webView": "https://drive.google.com/file/d/1v76kX2dF9i0IwUWE17erqy7VCFbPa1S3/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "name": "PSLA-IV.pdf",
+                  "type": "notes",
+                  "size": null,
+                  "uploadedAt": "2025-11-12T18:28:10.972Z",
+                  "id": "1z-tuEvap6hjy_zFKBXXj0QEZGX_3X-L_",
+                  "links": {
+                    "preview": "https://drive.google.com/file/d/1z-tuEvap6hjy_zFKBXXj0QEZGX_3X-L_/preview",
+                    "download": "https://drive.google.com/uc?export=download&id=1z-tuEvap6hjy_zFKBXXj0QEZGX_3X-L_",
+                    "webView": "https://drive.google.com/file/d/1z-tuEvap6hjy_zFKBXXj0QEZGX_3X-L_/view?usp=drivesdk"
+                  },
+                  "source": "kamati",
+                  "sourceTag": "Kamati"
+                },
+                {
+                  "id": "1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2",
+                  "name": "B2B PSLA UNIT 1",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2",
+                  "viewUrl": "https://drive.google.com/file/d/1Jm_qDKqp1Jo0B3isQKZILPBGGjJQABT2/preview",
+                  "originalFolder": "Notes",
+                  "source": "B2B",
+                  "sourceTag": "B2B (Bunk to Brains)"
+                },
+                {
+                  "id": "1K6Ue25irhb5rQWgAQ5CM9M_JDo2JRnL5",
+                  "name": "Fit test.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1K6Ue25irhb5rQWgAQ5CM9M_JDo2JRnL5",
+                  "viewUrl": "https://drive.google.com/file/d/1K6Ue25irhb5rQWgAQ5CM9M_JDo2JRnL5/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1UGeh_B6HZ_FK8buE5PTCEjkiqWV2S86p",
+                  "name": "Unit-3 Regression Analysis and Correlation.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1UGeh_B6HZ_FK8buE5PTCEjkiqWV2S86p",
+                  "viewUrl": "https://drive.google.com/file/d/1UGeh_B6HZ_FK8buE5PTCEjkiqWV2S86p/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "161DUN2WCCqG2Vr0gzVGfQ9zjb-RgOAZP",
+                  "name": "Unit 3-Hypothesis Testing.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=161DUN2WCCqG2Vr0gzVGfQ9zjb-RgOAZP",
+                  "viewUrl": "https://drive.google.com/file/d/161DUN2WCCqG2Vr0gzVGfQ9zjb-RgOAZP/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1joQnL4udwgHkuQe1_nlJ5JJwi1dwayvM",
+                  "name": "P&S Unit-3.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1joQnL4udwgHkuQe1_nlJ5JJwi1dwayvM",
+                  "viewUrl": "https://drive.google.com/file/d/1joQnL4udwgHkuQe1_nlJ5JJwi1dwayvM/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1gV7heOyoBW_ZRaF808oF9Lfe0Srapc53",
+                  "name": "PSL Youtube Playlists.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1gV7heOyoBW_ZRaF808oF9Lfe0Srapc53",
+                  "viewUrl": "https://drive.google.com/file/d/1gV7heOyoBW_ZRaF808oF9Lfe0Srapc53/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1qSSJin48_kwr5kg_94hN1OQI_lEftCtY",
+                  "name": "Unit 2 wo int est.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1qSSJin48_kwr5kg_94hN1OQI_lEftCtY",
+                  "viewUrl": "https://drive.google.com/file/d/1qSSJin48_kwr5kg_94hN1OQI_lEftCtY/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "13DAMFUOBRf9coFniLb3BzWyTEwxE8LUT",
+                  "name": "sampling theory.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=13DAMFUOBRf9coFniLb3BzWyTEwxE8LUT",
+                  "viewUrl": "https://drive.google.com/file/d/13DAMFUOBRf9coFniLb3BzWyTEwxE8LUT/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "15oijXLoewTW9ejdXIvbUxOLM-8dqoaQk",
+                  "name": "PSLP Handwritten.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=15oijXLoewTW9ejdXIvbUxOLM-8dqoaQk",
+                  "viewUrl": "https://drive.google.com/file/d/15oijXLoewTW9ejdXIvbUxOLM-8dqoaQk/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "12-LRE__ttDnjYXz9jhh2p-eOaNEhTwny",
+                  "name": "PSL N2.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=12-LRE__ttDnjYXz9jhh2p-eOaNEhTwny",
+                  "viewUrl": "https://drive.google.com/file/d/12-LRE__ttDnjYXz9jhh2p-eOaNEhTwny/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "11y_U--WarkR-xdiQEppgPEqn8YpECi4p",
+                  "name": "PSL N1.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=11y_U--WarkR-xdiQEppgPEqn8YpECi4p",
+                  "viewUrl": "https://drive.google.com/file/d/11y_U--WarkR-xdiQEppgPEqn8YpECi4p/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "11qjOsi8S3vTTBm3upF6f8U_G6MTZFaco",
+                  "name": "PSL N3.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=11qjOsi8S3vTTBm3upF6f8U_G6MTZFaco",
+                  "viewUrl": "https://drive.google.com/file/d/11qjOsi8S3vTTBm3upF6f8U_G6MTZFaco/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16a5hCxhRFr9Ssbk60b0bAX9ipvhSKfx-",
+                  "name": "Continuous distributions 1.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16a5hCxhRFr9Ssbk60b0bAX9ipvhSKfx-",
+                  "viewUrl": "https://drive.google.com/file/d/16a5hCxhRFr9Ssbk60b0bAX9ipvhSKfx-/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16Yor6yKBTd_iGjUue5x_dd77rQpcMSuc",
+                  "name": "normal 2.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16Yor6yKBTd_iGjUue5x_dd77rQpcMSuc",
+                  "viewUrl": "https://drive.google.com/file/d/16Yor6yKBTd_iGjUue5x_dd77rQpcMSuc/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16JOf8_2oQR7HACpRDbUF4BS065X8e93y",
+                  "name": "ppt binomial.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16JOf8_2oQR7HACpRDbUF4BS065X8e93y",
+                  "viewUrl": "https://drive.google.com/file/d/16JOf8_2oQR7HACpRDbUF4BS065X8e93y/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16BRw8KRyTHJB90GUCKwef6LrheQr5r3A",
+                  "name": "Unit 2 PDF, Cond, Ind Prob.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16BRw8KRyTHJB90GUCKwef6LrheQr5r3A",
+                  "viewUrl": "https://drive.google.com/file/d/16BRw8KRyTHJB90GUCKwef6LrheQr5r3A/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1-1Lu-5dtW-132v0ppGt3-Isp9XdkVqkN",
+                  "name": "chapter3  joint probability distribution .pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1-1Lu-5dtW-132v0ppGt3-Isp9XdkVqkN",
+                  "viewUrl": "https://drive.google.com/file/d/1-1Lu-5dtW-132v0ppGt3-Isp9XdkVqkN/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1-0d7_wSh-ecf4bek4BFdL5j91lP-Mb_w",
+                  "name": "bayes theorem numerical.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1-0d7_wSh-ecf4bek4BFdL5j91lP-Mb_w",
+                  "viewUrl": "https://drive.google.com/file/d/1-0d7_wSh-ecf4bek4BFdL5j91lP-Mb_w/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "11HMYxrzuClTLYARir6IvKb5hDAB1W66u",
+                  "name": "continuous probability distribution.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=11HMYxrzuClTLYARir6IvKb5hDAB1W66u",
+                  "viewUrl": "https://drive.google.com/file/d/11HMYxrzuClTLYARir6IvKb5hDAB1W66u/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1zza7n8JF9xb83gcYnM8tl5acM2TVhE8J",
+                  "name": "random variable and probability distribution.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1zza7n8JF9xb83gcYnM8tl5acM2TVhE8J",
+                  "viewUrl": "https://drive.google.com/file/d/1zza7n8JF9xb83gcYnM8tl5acM2TVhE8J/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1gNCf0fSoqQtAIVNiD9u-yzCz_Lbg-XrO",
+                  "name": "Handwritten Probability.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1gNCf0fSoqQtAIVNiD9u-yzCz_Lbg-XrO",
+                  "viewUrl": "https://drive.google.com/file/d/1gNCf0fSoqQtAIVNiD9u-yzCz_Lbg-XrO/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1EixCpFLPZfxnsYnC2xduYxKGlPVnkfcK",
+                  "name": "Digital Notes.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1EixCpFLPZfxnsYnC2xduYxKGlPVnkfcK",
+                  "viewUrl": "https://drive.google.com/file/d/1EixCpFLPZfxnsYnC2xduYxKGlPVnkfcK/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1WHi89Vm402kOcCIgyc5t9Rg38fxROhFz",
+                  "name": "notes.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1WHi89Vm402kOcCIgyc5t9Rg38fxROhFz",
+                  "viewUrl": "https://drive.google.com/file/d/1WHi89Vm402kOcCIgyc5t9Rg38fxROhFz/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1gMdVusLJGEpA1zv1eKHTJlTbQJ8FUqnW",
+                  "name": "Handwritten  Notes.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1gMdVusLJGEpA1zv1eKHTJlTbQJ8FUqnW",
+                  "viewUrl": "https://drive.google.com/file/d/1gMdVusLJGEpA1zv1eKHTJlTbQJ8FUqnW/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1V-Piqvt2fP8ENYtd4j9ePqWRnZI7FOc8",
+                  "name": "Discriptive statistic and probability.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1V-Piqvt2fP8ENYtd4j9ePqWRnZI7FOc8",
+                  "viewUrl": "https://drive.google.com/file/d/1V-Piqvt2fP8ENYtd4j9ePqWRnZI7FOc8/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1HZCeSMQFedichqRJ5JsmJJoXT5YVEuTn",
+                  "name": "random variable.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1HZCeSMQFedichqRJ5JsmJJoXT5YVEuTn",
+                  "viewUrl": "https://drive.google.com/file/d/1HZCeSMQFedichqRJ5JsmJJoXT5YVEuTn/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                }
+              ],
+              "pyqs": [
+                {
+                  "id": "1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+                  "name": "Pyq",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+                  "viewUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/preview",
+                  "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 1
+                },
+                {
+                  "id": "1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+                  "name": "Pyq",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30",
+                  "viewUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/preview",
+                  "originalFolder": "PSLA Shared folder/Aakash  Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1E8gkmAucgzML1N6xPFsYoCSZcLsUN-30/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 2
+                },
+                {
+                  "id": "1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
+                  "name": "QUESTION PAPER ALL SUBJECT",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb",
+                  "viewUrl": "https://drive.google.com/file/d/1ddJllK79zuZq3GeSUXyqnh6P6dRZLwYb/preview",
+                  "originalFolder": "PYQ",
+                  "source": "B2B",
+                  "sourceTag": "B2B (Bunk to Brains)"
+                }
+              ],
+              "books": [
+                {
+                  "id": "1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+                  "name": "Book",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+                  "viewUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/preview",
+                  "originalFolder": "PSLA Shared folder/Notes Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 1
+                },
+                {
+                  "id": "1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+                  "name": "Book",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH",
+                  "viewUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/preview",
+                  "originalFolder": "PSLA Shared folder/Notes Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1EHAelA8FjwTslpUd6MtVunJcg7ihQoqH/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 2
+                },
+                {
+                  "id": "1B_gzHl7XGdPRBqpQWllgY5ZpFR0phKSR",
+                  "name": "Irwin Miller, Marylees Miller - John E. Freund's Mathematical Statistics with Applications-Pearson (2014).pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1B_gzHl7XGdPRBqpQWllgY5ZpFR0phKSR",
+                  "viewUrl": "https://drive.google.com/file/d/1B_gzHl7XGdPRBqpQWllgY5ZpFR0phKSR/preview",
+                  "originalFolder": "Books",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                }
+              ],
+              "lab": [],
+              "akash": [
+                {
+                  "id": "1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne",
+                  "name": "Aakash",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne",
+                  "viewUrl": "https://drive.google.com/file/d/1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne/preview",
+                  "originalFolder": "PSLA Shared folder",
+                  "source": "google-drive-sem3",
+                  "originalUrl": "https://drive.google.com/file/d/1DvhLdcEiA9avsLHEAIK_OMieh2CXwUne/view",
+                  "subject": "PSLA",
+                  "addedAt": "2025-10-05T13:14:15.827Z",
+                  "index": 1
+                }
+              ],
+              "videos": [],
+              "viva": [],
+              "midsem": []
+            }
+          }
+        }
       }
     },
     "CST": {
@@ -129698,6 +130359,231 @@
                   "originalFolder": "Notes",
                   "source": "B2B",
                   "sourceTag": "B2B (Bunk to Brains)"
+                },
+                {
+                  "id": "1K6Ue25irhb5rQWgAQ5CM9M_JDo2JRnL5",
+                  "name": "Fit test.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1K6Ue25irhb5rQWgAQ5CM9M_JDo2JRnL5",
+                  "viewUrl": "https://drive.google.com/file/d/1K6Ue25irhb5rQWgAQ5CM9M_JDo2JRnL5/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1UGeh_B6HZ_FK8buE5PTCEjkiqWV2S86p",
+                  "name": "Unit-3 Regression Analysis and Correlation.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1UGeh_B6HZ_FK8buE5PTCEjkiqWV2S86p",
+                  "viewUrl": "https://drive.google.com/file/d/1UGeh_B6HZ_FK8buE5PTCEjkiqWV2S86p/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "161DUN2WCCqG2Vr0gzVGfQ9zjb-RgOAZP",
+                  "name": "Unit 3-Hypothesis Testing.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=161DUN2WCCqG2Vr0gzVGfQ9zjb-RgOAZP",
+                  "viewUrl": "https://drive.google.com/file/d/161DUN2WCCqG2Vr0gzVGfQ9zjb-RgOAZP/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1joQnL4udwgHkuQe1_nlJ5JJwi1dwayvM",
+                  "name": "P&S Unit-3.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1joQnL4udwgHkuQe1_nlJ5JJwi1dwayvM",
+                  "viewUrl": "https://drive.google.com/file/d/1joQnL4udwgHkuQe1_nlJ5JJwi1dwayvM/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1gV7heOyoBW_ZRaF808oF9Lfe0Srapc53",
+                  "name": "PSL Youtube Playlists.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1gV7heOyoBW_ZRaF808oF9Lfe0Srapc53",
+                  "viewUrl": "https://drive.google.com/file/d/1gV7heOyoBW_ZRaF808oF9Lfe0Srapc53/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1qSSJin48_kwr5kg_94hN1OQI_lEftCtY",
+                  "name": "Unit 2 wo int est.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1qSSJin48_kwr5kg_94hN1OQI_lEftCtY",
+                  "viewUrl": "https://drive.google.com/file/d/1qSSJin48_kwr5kg_94hN1OQI_lEftCtY/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "13DAMFUOBRf9coFniLb3BzWyTEwxE8LUT",
+                  "name": "sampling theory.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=13DAMFUOBRf9coFniLb3BzWyTEwxE8LUT",
+                  "viewUrl": "https://drive.google.com/file/d/13DAMFUOBRf9coFniLb3BzWyTEwxE8LUT/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "15oijXLoewTW9ejdXIvbUxOLM-8dqoaQk",
+                  "name": "PSLP Handwritten.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=15oijXLoewTW9ejdXIvbUxOLM-8dqoaQk",
+                  "viewUrl": "https://drive.google.com/file/d/15oijXLoewTW9ejdXIvbUxOLM-8dqoaQk/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "12-LRE__ttDnjYXz9jhh2p-eOaNEhTwny",
+                  "name": "PSL N2.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=12-LRE__ttDnjYXz9jhh2p-eOaNEhTwny",
+                  "viewUrl": "https://drive.google.com/file/d/12-LRE__ttDnjYXz9jhh2p-eOaNEhTwny/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "11y_U--WarkR-xdiQEppgPEqn8YpECi4p",
+                  "name": "PSL N1.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=11y_U--WarkR-xdiQEppgPEqn8YpECi4p",
+                  "viewUrl": "https://drive.google.com/file/d/11y_U--WarkR-xdiQEppgPEqn8YpECi4p/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "11qjOsi8S3vTTBm3upF6f8U_G6MTZFaco",
+                  "name": "PSL N3.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=11qjOsi8S3vTTBm3upF6f8U_G6MTZFaco",
+                  "viewUrl": "https://drive.google.com/file/d/11qjOsi8S3vTTBm3upF6f8U_G6MTZFaco/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16a5hCxhRFr9Ssbk60b0bAX9ipvhSKfx-",
+                  "name": "Continuous distributions 1.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16a5hCxhRFr9Ssbk60b0bAX9ipvhSKfx-",
+                  "viewUrl": "https://drive.google.com/file/d/16a5hCxhRFr9Ssbk60b0bAX9ipvhSKfx-/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16Yor6yKBTd_iGjUue5x_dd77rQpcMSuc",
+                  "name": "normal 2.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16Yor6yKBTd_iGjUue5x_dd77rQpcMSuc",
+                  "viewUrl": "https://drive.google.com/file/d/16Yor6yKBTd_iGjUue5x_dd77rQpcMSuc/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16JOf8_2oQR7HACpRDbUF4BS065X8e93y",
+                  "name": "ppt binomial.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16JOf8_2oQR7HACpRDbUF4BS065X8e93y",
+                  "viewUrl": "https://drive.google.com/file/d/16JOf8_2oQR7HACpRDbUF4BS065X8e93y/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "16BRw8KRyTHJB90GUCKwef6LrheQr5r3A",
+                  "name": "Unit 2 PDF, Cond, Ind Prob.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=16BRw8KRyTHJB90GUCKwef6LrheQr5r3A",
+                  "viewUrl": "https://drive.google.com/file/d/16BRw8KRyTHJB90GUCKwef6LrheQr5r3A/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1-1Lu-5dtW-132v0ppGt3-Isp9XdkVqkN",
+                  "name": "chapter3  joint probability distribution .pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1-1Lu-5dtW-132v0ppGt3-Isp9XdkVqkN",
+                  "viewUrl": "https://drive.google.com/file/d/1-1Lu-5dtW-132v0ppGt3-Isp9XdkVqkN/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1-0d7_wSh-ecf4bek4BFdL5j91lP-Mb_w",
+                  "name": "bayes theorem numerical.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1-0d7_wSh-ecf4bek4BFdL5j91lP-Mb_w",
+                  "viewUrl": "https://drive.google.com/file/d/1-0d7_wSh-ecf4bek4BFdL5j91lP-Mb_w/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "11HMYxrzuClTLYARir6IvKb5hDAB1W66u",
+                  "name": "continuous probability distribution.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=11HMYxrzuClTLYARir6IvKb5hDAB1W66u",
+                  "viewUrl": "https://drive.google.com/file/d/11HMYxrzuClTLYARir6IvKb5hDAB1W66u/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1zza7n8JF9xb83gcYnM8tl5acM2TVhE8J",
+                  "name": "random variable and probability distribution.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1zza7n8JF9xb83gcYnM8tl5acM2TVhE8J",
+                  "viewUrl": "https://drive.google.com/file/d/1zza7n8JF9xb83gcYnM8tl5acM2TVhE8J/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1gNCf0fSoqQtAIVNiD9u-yzCz_Lbg-XrO",
+                  "name": "Handwritten Probability.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1gNCf0fSoqQtAIVNiD9u-yzCz_Lbg-XrO",
+                  "viewUrl": "https://drive.google.com/file/d/1gNCf0fSoqQtAIVNiD9u-yzCz_Lbg-XrO/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1EixCpFLPZfxnsYnC2xduYxKGlPVnkfcK",
+                  "name": "Digital Notes.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1EixCpFLPZfxnsYnC2xduYxKGlPVnkfcK",
+                  "viewUrl": "https://drive.google.com/file/d/1EixCpFLPZfxnsYnC2xduYxKGlPVnkfcK/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1WHi89Vm402kOcCIgyc5t9Rg38fxROhFz",
+                  "name": "notes.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1WHi89Vm402kOcCIgyc5t9Rg38fxROhFz",
+                  "viewUrl": "https://drive.google.com/file/d/1WHi89Vm402kOcCIgyc5t9Rg38fxROhFz/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1gMdVusLJGEpA1zv1eKHTJlTbQJ8FUqnW",
+                  "name": "Handwritten  Notes.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1gMdVusLJGEpA1zv1eKHTJlTbQJ8FUqnW",
+                  "viewUrl": "https://drive.google.com/file/d/1gMdVusLJGEpA1zv1eKHTJlTbQJ8FUqnW/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1V-Piqvt2fP8ENYtd4j9ePqWRnZI7FOc8",
+                  "name": "Discriptive statistic and probability.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1V-Piqvt2fP8ENYtd4j9ePqWRnZI7FOc8",
+                  "viewUrl": "https://drive.google.com/file/d/1V-Piqvt2fP8ENYtd4j9ePqWRnZI7FOc8/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
+                },
+                {
+                  "id": "1HZCeSMQFedichqRJ5JsmJJoXT5YVEuTn",
+                  "name": "random variable.pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1HZCeSMQFedichqRJ5JsmJJoXT5YVEuTn",
+                  "viewUrl": "https://drive.google.com/file/d/1HZCeSMQFedichqRJ5JsmJJoXT5YVEuTn/preview",
+                  "originalFolder": "Notes",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
                 }
               ],
               "pyqs": [
@@ -129759,6 +130645,15 @@
                   "subject": "PSLA",
                   "addedAt": "2025-10-05T13:14:15.827Z",
                   "index": 2
+                },
+                {
+                  "id": "1B_gzHl7XGdPRBqpQWllgY5ZpFR0phKSR",
+                  "name": "Irwin Miller, Marylees Miller - John E. Freund's Mathematical Statistics with Applications-Pearson (2014).pdf",
+                  "downloadUrl": "https://drive.google.com/uc?export=download&id=1B_gzHl7XGdPRBqpQWllgY5ZpFR0phKSR",
+                  "viewUrl": "https://drive.google.com/file/d/1B_gzHl7XGdPRBqpQWllgY5ZpFR0phKSR/preview",
+                  "originalFolder": "Books",
+                  "source": "studyx",
+                  "sourceTag": "StudyX"
                 }
               ],
               "lab": [],
