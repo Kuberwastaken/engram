@@ -54,7 +54,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Inter", sans-serif;
-    background-image: 
+    background-image:
       radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
       radial-gradient(circle at 40% 80%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
@@ -68,36 +68,35 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-      repeating-linear-gradient(
-        90deg,
+    background-image:
+      repeating-linear-gradient(90deg,
         transparent,
         transparent 2px,
         rgba(255, 255, 255, 0.03) 2px,
-        rgba(255, 255, 255, 0.03) 4px
-      ),
-      repeating-linear-gradient(
-        0deg,
+        rgba(255, 255, 255, 0.03) 4px),
+      repeating-linear-gradient(0deg,
         transparent,
         transparent 2px,
         rgba(255, 255, 255, 0.03) 2px,
-        rgba(255, 255, 255, 0.03) 4px
-      );
+        rgba(255, 255, 255, 0.03) 4px);
     pointer-events: none;
     z-index: 0;
   }
 }
 
-@layer utilities {  .animate-fade-in {
+@layer utilities {
+  .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
     opacity: 0;
-  }  .cosmic-hover {
+  }
+
+  .cosmic-hover {
     position: relative;
     transition: all 0.3s ease;
   }
 
   .cosmic-hover:hover {
-    box-shadow: 
+    box-shadow:
       0 0 20px rgba(255, 255, 255, 0.04),
       0 0 40px rgba(255, 255, 255, 0.02);
   }
@@ -137,56 +136,58 @@
     opacity: 0.05;
     pointer-events: none;
     z-index: 1;
-  }  /* Fullscreen PDF Viewer Styles */
-.pdf-fullscreen {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
-  z-index: 999999 !important;
-  background: #000 !important;
-  display: flex !important;
-  flex-direction: column !important;
-  overflow: hidden !important;
-}
+  }
 
-.pdf-fullscreen iframe {
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-  background: #000 !important;
-  flex: 1 !important;
-}
+  /* Fullscreen PDF Viewer Styles */
+  .pdf-fullscreen {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 999999 !important;
+    background: #000 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+  }
 
-/* Ensure body doesn't scroll when PDF is fullscreen */
-body.pdf-fullscreen-open {
-  overflow: hidden !important;
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
-}
+  .pdf-fullscreen iframe {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+    background: #000 !important;
+    flex: 1 !important;
+  }
 
-/* PDF viewer container styles */
-.pdf-container {
-  position: relative !important;
-  width: 100% !important;
-  height: 100% !important;
-  background: #000 !important;
-  flex: 1 !important;
-}
+  /* Ensure body doesn't scroll when PDF is fullscreen */
+  body.pdf-fullscreen-open {
+    overflow: hidden !important;
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
 
-.pdf-container iframe {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  border: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  background: #000 !important;
-}
+  /* PDF viewer container styles */
+  .pdf-container {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: #000 !important;
+    flex: 1 !important;
+  }
+
+  .pdf-container iframe {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #000 !important;
+  }
 }
 
 @keyframes fadeIn {
@@ -194,6 +195,7 @@ body.pdf-fullscreen-open {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -201,14 +203,17 @@ body.pdf-fullscreen-open {
 }
 
 @keyframes cosmic-pulse {
-  0%, 100% {
-    box-shadow: 
+
+  0%,
+  100% {
+    box-shadow:
       0 10px 25px rgba(0, 0, 0, 0.3),
       0 0 20px rgba(59, 130, 246, 0.1),
       inset 0 1px 0 rgba(255, 255, 255, 0.1);
   }
+
   50% {
-    box-shadow: 
+    box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.4),
       0 0 30px rgba(59, 130, 246, 0.2),
       inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -219,6 +224,7 @@ body.pdf-fullscreen-open {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -230,7 +236,7 @@ body.pdf-fullscreen-open {
 }
 
 .glow-hover:hover {
-  box-shadow: 
+  box-shadow:
     0 0 10px rgba(255, 255, 255, 0.08),
     0 0 20px rgba(255, 255, 255, 0.05),
     0 0 5px rgba(255, 255, 255, 0.1);
@@ -284,6 +290,7 @@ body.pdf-fullscreen-open {
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
   .navbar-smooth,
   .navbar-backdrop,
   .navbar-content {
@@ -293,15 +300,18 @@ body.pdf-fullscreen-open {
 
 /* Hero text animations */
 @keyframes hero-text-glow {
-  0%, 100% {
+
+  0%,
+  100% {
     text-shadow: 0 0 20px rgba(255, 255, 255, 0.1),
-                 0 0 40px rgba(59, 130, 246, 0.1),
-                 0 0 60px rgba(59, 130, 246, 0.05);
+      0 0 40px rgba(59, 130, 246, 0.1),
+      0 0 60px rgba(59, 130, 246, 0.05);
   }
+
   50% {
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.2),
-                 0 0 60px rgba(59, 130, 246, 0.2),
-                 0 0 90px rgba(59, 130, 246, 0.1);
+      0 0 60px rgba(59, 130, 246, 0.2),
+      0 0 90px rgba(59, 130, 246, 0.1);
   }
 }
 
@@ -310,6 +320,7 @@ body.pdf-fullscreen-open {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -317,9 +328,12 @@ body.pdf-fullscreen-open {
 }
 
 @keyframes hero-gradient-shift {
-  0%, 100% {
+
+  0%,
+  100% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
@@ -344,6 +358,7 @@ body.pdf-fullscreen-open {
     transform: translateX(100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -355,6 +370,7 @@ body.pdf-fullscreen-open {
     transform: translateX(0);
     opacity: 1;
   }
+
   100% {
     transform: translateX(100%);
     opacity: 0;
@@ -371,7 +387,7 @@ body.pdf-fullscreen-open {
 
 /* Enhanced shadow effects */
 .shadow-cosmic {
-  box-shadow: 
+  box-shadow:
     0 25px 50px rgba(0, 0, 0, 0.5),
     0 12px 24px rgba(0, 0, 0, 0.3),
     0 0 20px rgba(255, 255, 255, 0.1),
@@ -388,9 +404,17 @@ body.pdf-fullscreen-open {
 
 /* Smooth scale animation for buttons */
 @keyframes gentle-scale {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.02); }
-  100% { transform: scale(1); }
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .animate-gentle-scale {
@@ -403,7 +427,7 @@ body.pdf-fullscreen-open {
     margin-bottom: 2rem;
     margin-top: 1rem;
   }
-  
+
   .dropdown-mobile-spacing {
     padding: 1.5rem;
   }

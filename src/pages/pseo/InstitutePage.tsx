@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { SEO } from '@/components/SEO';
 import institutesData from '@/data/institutes.json';
 import cutoffsData from '@/data/cutoffs.json';
 import feesData from '@/data/fees.json';
@@ -25,6 +26,7 @@ type PageType = 'overview' | 'placements' | 'cutoffs' | 'fees' | 'resources' | '
 
 const InstitutePage = () => {
     const { instituteId, branchId, topic, subjectId, type } = useParams();
+    const navigate = useNavigate();
 
     // Normalize IDs
     const institute = useMemo(() =>
@@ -403,18 +405,22 @@ const InstitutePage = () => {
         );
     };
 
-    if (notFound) {
-        return <div className="p-10 text-center text-white bg-black min-h-screen">404 - Page Not Found</div>;
-    }
-
+    // Use the SEO component for better meta tags
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500/30">
-            <Helmet>
-                <title>{pageTitle} | Engram</title>
-                <meta name="description" content={pageDesc} />
-                <link rel="canonical" href={window.location.href} />
-            </Helmet>
+            <SEO
+                title={pageTitle}
+                description={pageDesc}
+                keywords={[
+                    institute.name, institute.shortName, branch.name, branch.code,
+                    'IPU', 'GGSIPU', 'Cutoffs', 'Fees', 'Placements', 'Syllabus', 'Notes'
+                ]}
+                url={window.location.pathname}
+            />
             <StarField />
+            <Helmet>
+                <link rel="canonical" href={window.location.href} />
+            </Helmet>>
 
             {/* Navigation Bar */}
             <div className="border-b border-gray-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
