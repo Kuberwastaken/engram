@@ -420,7 +420,7 @@ const InstitutePage = () => {
             <StarField />
             <Helmet>
                 <link rel="canonical" href={window.location.href} />
-            </Helmet>>
+            </Helmet>
 
             {/* Navigation Bar */}
             <div className="border-b border-gray-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
