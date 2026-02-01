@@ -53,62 +53,61 @@ export const generateSectionContent = (
     // 1. PLACEMENTS
     if (topic === 'placements') {
         return (
-            <div className="mt-12 prose prose-invert prose-lg max-w-none" >
-                <h2 className="text-3xl font-bold text-blue-100 mb-6 border-b border-gray-800 pb-2" >
-                    {sName} {bCode} Placements 2025: In - Depth Report
+            <div className="mt-12 prose prose-invert prose-lg max-w-none">
+                <h2 className="text-3xl font-bold text-blue-100 mb-6 border-b border-gray-800 pb-2">
+                    {sName} {bCode} Placements 2025: In-Depth Report
                 </h2>
-                < p className="text-gray-300" >
-                    Placement is the single biggest factor for B.Tech aspirants.At < strong > {iName} < /strong>, the Department of <strong>{bName}</strong > has established a {tier === 1 ? "stellar" : "reliable"} track record.
-                        As we move into the 2025 placement season, here is a transparent look at the opportunities waiting for you.
+                <p className="text-gray-300">
+                    Placement is the single biggest factor for B.Tech aspirants. At <strong>{iName}</strong>, the Department of <strong>{bName}</strong> has established a {tier === 1 ? "stellar" : "reliable"} track record.
+                    As we move into the 2025 placement season, here is a transparent look at the opportunities waiting for you.
                 </p>
 
-                < h3 className="text-xl font-semibold text-blue-200 mt-8" > Package Analysis </h3>
-                < div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6 not-prose" >
-                    <Card className="bg-gray-900/50 border-blue-900/30" >
-                        <CardContent className="p-6 text-center" >
-                            <div className="text-gray-400 text-sm mb-1" > Highest Package </div>
-                            < div className="text-2xl font-bold text-white" > {stats.highest} </div>
+                <h3 className="text-xl font-semibold text-blue-200 mt-8">Package Analysis</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6 not-prose">
+                    <Card className="bg-gray-900/50 border-blue-900/30">
+                        <CardContent className="p-6 text-center">
+                            <div className="text-gray-400 text-sm mb-1">Highest Package</div>
+                            <div className="text-2xl font-bold text-white">{stats.highest}</div>
                         </CardContent>
                     </Card>
-                    < Card className="bg-gray-900/50 border-blue-900/30" >
-                        <CardContent className="p-6 text-center" >
-                            <div className="text-gray-400 text-sm mb-1" > Average Package </div>
-                            < div className="text-2xl font-bold text-blue-200" > {stats.avg} </div>
+                    <Card className="bg-gray-900/50 border-blue-900/30">
+                        <CardContent className="p-6 text-center">
+                            <div className="text-gray-400 text-sm mb-1">Average Package</div>
+                            <div className="text-2xl font-bold text-blue-200">{stats.avg}</div>
                         </CardContent>
                     </Card>
-                    < Card className="bg-gray-900/50 border-blue-900/30" >
-                        <CardContent className="p-6 text-center" >
-                            <div className="text-gray-400 text-sm mb-1" > Recruiters </div>
-                            < div className="text-lg font-medium text-gray-300" > 100 + </div>
+                    <Card className="bg-gray-900/50 border-blue-900/30">
+                        <CardContent className="p-6 text-center">
+                            <div className="text-gray-400 text-sm mb-1">Recruiters</div>
+                            <div className="text-lg font-medium text-gray-300">100+</div>
                         </CardContent>
                     </Card>
                 </div>
 
-                < p className="text-gray-300" >
-                    The < strong > Highest Package </strong> figures typically come from off-campus drives or diversity hiring events by top product giants.
-                    However, the < strong > Average Package </strong> is the real indicator of the college's standard. At {sName}, students proficient in MERN Stack, Java, or C++ consistently
-                    crack offers above the average bracket.
+                <p className="text-gray-300">
+                    The <strong>Highest Package</strong> figures typically come from off-campus drives or diversity hiring events by top product giants.
+                    However, the <strong>Average Package</strong> is the real indicator of the college's standard. At {sName}, students proficient in MERN Stack, Java, or C++ consistently crack offers above the average bracket.
                 </p>
 
-                < h3 className="text-xl font-semibold text-blue-200 mt-8" > Top Recruiters </h3>
-                < p className="text-gray-300" >
+                <h3 className="text-xl font-semibold text-blue-200 mt-8">Top Recruiters</h3>
+                <p className="text-gray-300">
                     Companies that frequently visit the {loc} campus include:
                 </p>
-                < ul className="list-disc pl-5 text-gray-400" >
-                    {stats.recruiters.split(', ').map(r => <li key={r} > <strong>{r} < /strong></li >)}
-                    < li > Capgemini </li>
-                    < li > Cognizant </li>
-                    < li > Startups from Gurugram & Noida </li>
+                <ul className="list-disc pl-5 text-gray-400">
+                    {stats.recruiters.split(', ').map(r => <li key={r}><strong>{r}</strong></li>)}
+                    <li>Capgemini</li>
+                    <li>Cognizant</li>
+                    <li>Startups from Gurugram & Noida</li>
                 </ul>
 
-                < h3 className="text-xl font-semibold text-blue-200 mt-8" > Internship Scenario </h3>
-                < p className="text-gray-300" >
+                <h3 className="text-xl font-semibold text-blue-200 mt-8">Internship Scenario</h3>
+                <p className="text-gray-300">
                     {stats.internships} {tier === 1 ? "The college allows 6-month internships in the final semester, which is a massive plus." : "Most students engage in summer training and virtual internships to build their profile."}
                 </p>
 
-                < div className="bg-blue-900/10 border-l-4 border-blue-500 p-4 mt-8" >
-                    <h4 className="font-bold text-blue-100" > Final Verdict on Placements </h4>
-                    < p className="text-gray-300 text-sm mt-1" > {stats.verdict} </p>
+                <div className="bg-blue-900/10 border-l-4 border-blue-500 p-4 mt-8">
+                    <h4 className="font-bold text-blue-100">Final Verdict on Placements</h4>
+                    <p className="text-gray-300 text-sm mt-1">{stats.verdict}</p>
                 </div>
             </div>
         );
