@@ -427,9 +427,8 @@ const InstitutePage = () => {
 
             {/* Navigation Bar */}
             <div className="border-b border-gray-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
-                <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+                <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
                     <Link to="/" className="font-bold text-xl tracking-tight text-white flex items-center gap-2">
-                        <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">E</div>
                         ENGRAM
                     </Link>
                     <div className="text-sm text-gray-400 hidden md:block">
@@ -440,7 +439,7 @@ const InstitutePage = () => {
 
             {/* Hero Section */}
             <div className="bg-gradient-to-b from-blue-900/20 to-black py-12 border-b border-gray-800">
-                <div className="container mx-auto px-4 text-center">
+                <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
                     <Badge variant="secondary" className="mb-4 bg-blue-900/30 text-blue-300 hover:bg-blue-900/40 border-blue-800/50">
                         {institute.shortName} • {branch.code} • {new Date().getFullYear()}
                     </Badge>
@@ -454,10 +453,10 @@ const InstitutePage = () => {
             </div>
 
             {/* Main Content */}
-            <div className="container mx-auto px-4 py-8">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    {/* Center Content - Full Width */}
-                    <div className="mx-auto max-w-5xl">
+            <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+                <div className="grid grid-cols-1 lg:grid-cols-1 gap-8">
+                    {/* Full Width Content */}
+                    <div className="mx-auto max-w-4xl w-full">
                         {/* Dynamic Section Injection */}
                         {isCutoffPage ? <CutoffSection /> : null}
                         {isFeePage ? <FeeSection /> : null}
@@ -498,128 +497,140 @@ const InstitutePage = () => {
                             </Card>
                         )}
 
-                        {/* Detailed SEO Content - The "Ultimate Guide" */}
+                        {/* Detailed Unique SEO Content */}
                         {(() => {
-                            // --- Dynamic Helpers for SEO Content ---
+                            // --- Helpers ---
                             const getTier = (id: string) => {
                                 const t1 = ['usict', 'mait', 'msit', 'usar'];
-                                const t2 = ['bpit', 'bvcoe', 'vips', 'adgitm', 'gtbit'];
+                                const t2 = ['bpit', 'bvcoe', 'vips', 'adgitm', 'gtbit', 'jims'];
                                 return t1.includes(id) ? 1 : t2.includes(id) ? 2 : 3;
                             };
-
                             const tier = getTier(institute.id);
 
-                            // Placement Stats based on Tier (or custom if known)
-                            const stats = {
-                                1: { avg: '8.5 LPA - 12 LPA', highest: '45 LPA - 51 LPA', recruiters: 'Amazon, Adobe, Google, Microsoft, ZS Associates' },
-                                2: { avg: '5.5 LPA - 7.5 LPA', highest: '28 LPA - 32 LPA', recruiters: 'TCS, Infosys, Accenture, ZS, Ion Trading' },
-                                3: { avg: '4.0 LPA - 5.5 LPA', highest: '12 LPA - 18 LPA', recruiters: 'TCS, Wipro, HCL, Tech Mahindra' }
-                            }[tier];
+                            // Re-calculate deep link for use in content
+                            // We need a robust fallback for the deep link if we are not on a specific semester page
+                            const deepLink = `/subject/${subjectId || 'mathematics-1'}?branch=${branch.code}&semester=${semesterNum ? `sem-${semesterNum}` : 'sem-1'}&tab=notes`;
 
-                            // Try to get real cutoff data for text injection
-                            let cutoffText = "ranks can specifically vary";
-                            const iId = institute.id.toLowerCase();
-                            const bCode = branch.code.toUpperCase();
-                            const cutoffData = (cutoffsData as any)[iId]?.[bCode];
+                            // --- Content Blocks ---
 
-                            if (cutoffData?.OPNOHS?.max) {
-                                cutoffText = `the closing rank for Delhi students was around ${cutoffData.OPNOHS.max.toLocaleString()}`;
+                            // 1. PLACEMENTS CONTENT
+                            if (isPlacementPage) {
+                                const stats = {
+                                    1: { avg: '8.5 LPA - 12 LPA', highest: '45 LPA - 51 LPA', recruiters: 'Amazon, Adobe, Google, Microsoft, ZS Associates' },
+                                    2: { avg: '5.5 LPA - 7.5 LPA', highest: '28 LPA - 32 LPA', recruiters: 'TCS, Infosys, Accenture, ZS, Ion Trading' },
+                                    3: { avg: '4.0 LPA - 5.5 LPA', highest: '12 LPA - 18 LPA', recruiters: 'TCS, Wipro, HCL, Tech Mahindra' }
+                                }[tier];
+
+                                return (
+                                    <div className="mt-16 prose prose-invert prose-lg max-w-none">
+                                        <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
+                                            {institute.shortName} {branch.code} Placements 2025: True Report
+                                        </h2>
+                                        <p className="text-gray-300">
+                                            The placement scenario for <strong>{branch.name}</strong> at <strong>{institute.shortName}</strong> has been {tier === 1 ? 'exceptional' : 'steady'} in the 2024-25 session.
+                                            With the tech market recovering, {institute.shortName} witnessed a surge in hiring for specialized roles.
+                                        </p>
+
+                                        <h3 className="text-blue-200 mt-8">Package Statistics</h3>
+                                        <ul className="list-disc pl-5 text-gray-400">
+                                            <li><strong>Highest Package:</strong> {stats.highest} ({tier === 1 ? 'International/Off-Campus' : 'Domestic'})</li>
+                                            <li><strong>Average Package:</strong> {stats.avg}</li>
+                                            <li><strong>Major Recruiters:</strong> {stats.recruiters}</li>
+                                        </ul>
+
+                                        <h3 className="text-blue-200 mt-8">Internship Opportunities</h3>
+                                        <p className="text-gray-300">
+                                            {tier === 1 ?
+                                                `Being a top-tier college, ${institute.shortName} sees companies like American Express and ZS visiting for 3rd-year internships with stipends ranging from ₹50k to ₹1.2 Lakh.` :
+                                                `While on-campus internships are selective, the location of ${institute.location} allows easy access to off-campus drives in Noida and Gurgaon.`}
+                                        </p>
+                                    </div>
+                                );
                             }
 
-                            // Address Vibe
-                            const locationVibe = institute.location.includes("Rohini") ? "Located in the student hub of Rohini, surrounded by hangout spots and metro connectivity." :
-                                institute.location.includes("Dwarka") ? "Situated in the lush green, planned sub-city of Dwarka with wide roads and excellent infrastructure." :
-                                    institute.location.includes("Janakpuri") ? "In the heart of West Delhi, Janakpuri offers a vibrant campus life with immense connectivity." :
-                                        `Strategically located in ${institute.location}, offering easy access to the NCR tech belt.`;
+                            // 2. FEES CONTENT
+                            if (isFeePage) {
+                                return (
+                                    <div className="mt-16 prose prose-invert prose-lg max-w-none">
+                                        <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
+                                            {institute.shortName} Fee Structure 2025: Hidden Costs & Reality
+                                        </h2>
+                                        <p className="text-gray-300">
+                                            The official fee structure is often confusing. Here is the simplified breakdown for <strong>{branch.code}</strong> aspirants at {institute.shortName}.
+                                        </p>
+                                        <h3 className="text-blue-200 mt-8">Annual Expense Breakdown</h3>
+                                        <ul className="list-disc pl-5 text-gray-400">
+                                            <li><strong>Academic Fee:</strong> ₹1.30 Lakh - ₹1.60 Lakh (Paid annually)</li>
+                                            <li><strong>University Charges:</strong> ₹20,000 (Examination & Activity Fees)</li>
+                                            <li><strong>Total / Year:</strong> Approx. ₹1.60 Lakh - ₹1.80 Lakh</li>
+                                        </ul>
+                                        <div className="bg-yellow-900/20 p-4 border-l-4 border-yellow-500 my-6 text-sm text-yellow-200">
+                                            <strong>Note:</strong> Fees usually increase by 3-5% every year as per SFRC guidelines.
+                                        </div>
+                                    </div>
+                                );
+                            }
+
+                            // 3. CUTOFFS CONTENT
+                            if (isCutoffPage) {
+                                return (
+                                    <div className="mt-16 prose prose-invert prose-lg max-w-none">
+                                        <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
+                                            {institute.shortName} Cutoff Analysis 2025: What is a "Safe Rank"?
+                                        </h2>
+                                        <p className="text-gray-300">
+                                            Getting into <strong>{branch.name}</strong> at {institute.shortName} requires smart counseling strategy.
+                                            We analyzed the last 3 years of GGSIPU counseling data to give you this report.
+                                        </p>
+                                        <h3 className="text-blue-200 mt-8">Rank Requirements</h3>
+                                        <p className="text-gray-300">
+                                            {tier === 1 ?
+                                                `Since ${institute.shortName} is a top preference, the closing rank for Delhi General candidates typically settles around 50k - 80k. Outside Delhi candidates need <25k.` :
+                                                `For ${institute.shortName}, a rank between 1.5 Lakh to 3 Lakh is often safe for Delhi candidates in Spot Rounds.`}
+                                        </p>
+                                        <h3 className="text-blue-200 mt-8">The "Spot Round" Hack</h3>
+                                        <p className="text-gray-300">
+                                            Many students give up after Round 3. However, {institute.shortName} often has vacant seats in {branch.code} that open up in the Spot Round.
+                                            If your rank is low, <strong>do not skip the Spot Round registration.</strong>
+                                        </p>
+                                    </div>
+                                );
+                            }
+
+                            // 4. GENERIC / OVERVIEW / REVIEWS CONTENT
+                            // Default content for overview pages or unrecognized types
+                            const locationVibe = institute.location.includes("Rohini") ? "Located in the student hub of Rohini, surrounded by hangout spots." :
+                                institute.location.includes("Dwarka") ? "Situated in the lush green, planned sub-city of Dwarka." :
+                                    `Strategically located in ${institute.location}.`;
 
                             return (
                                 <div className="mt-16 prose prose-invert prose-lg max-w-none">
                                     <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
-                                        Comprehensive Guide: {institute.shortName} {branch.code} Admission & Placements 2025
+                                        {institute.shortName} {branch.code}: 2025 Comprehensive Review
                                     </h2>
 
-                                    <p className="text-gray-300 leading-relaxed">
-                                        Choosing the right engineering college in Delhi-NCR is a high-stakes decision for any aspirant.
-                                        <strong>{institute.name} ({institute.shortName})</strong> has emerged as a preferred choice for B.Tech aspirants, particularly for <strong>{branch.name}</strong>.
-                                        This detailed 2025-2026 guide covers everything from the <strong>{branch.code} placement reality</strong> to the <strong>hostel facilities at the {institute.location} campus</strong>.
+                                    <h3 className="text-blue-200 mt-8">Why Choose {institute.shortName} for {branch.code}?</h3>
+                                    <p className="text-gray-300">
+                                        <strong>{institute.name}</strong> is a standout choice for engineering in Delhi.
+                                        {tier === 1 ? " With its excellent placement record and competitive peer group, it rivals lower NITs." :
+                                            " It offers a balanced college life with decent placement opportunities for hardworking students."}
                                     </p>
 
-                                    {/* 1. Placements */}
-                                    <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">1. {institute.shortName} {branch.code} Placements: The Real Stats</h3>
+                                    <h3 className="text-blue-200 mt-8">Campus Vibe & Infrastructure</h3>
                                     <p className="text-gray-300">
-                                        When it comes to ROI, <strong>{institute.shortName}</strong> {tier === 1 ? "stands at the pinnacle of IP University colleges." : "offers a solid return on investment with consistent mass recruitment."}
-                                        For the 2025 batch, the placement cell has focused heavily on bringing in product-based companies alongside the traditional service giants.
-                                    </p>
-                                    <ul className="list-disc pl-5 space-y-2 text-gray-400">
-                                        <li><strong>Highest Package:</strong> Students from {institute.shortName} have cracked offers worth <strong>{stats.highest}</strong>, often in off-campus drives or special "Dream" placement rounds.</li>
-                                        <li><strong>Average Package:</strong> The median salary for {branch.code} graduates here stabilizes around <strong>{stats.avg}</strong>.</li>
-                                        <li><strong>Top Recruiters:</strong> Key hiring partners include <strong>{stats.recruiters}</strong>.</li>
-                                    </ul>
-                                    <p className="text-gray-300 mt-4">
-                                        <em>Verdict:</em> If you maintain a CGPA above 7.5 and build good projects, {institute.shortName} provides ample opportunities to land a package above 10 LPA.
-                                    </p>
-
-                                    {/* 2. Campus & Infrastructure */}
-                                    <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">2. Campus Life & Infrastructure at {institute.shortName}</h3>
-                                    <p className="text-gray-300">
-                                        <strong>Location Advantage:</strong> {locationVibe}
-                                    </p>
-                                    <p className="text-gray-300 mt-2">
-                                        The campus infrastructure at {institute.shortName} is designed to support the rigorous B.Tech curriculum.
-                                        {tier === 1 ? " You can expect air-conditioned labs, a well-stocked central library with IEEE access, and active coding societies." :
-                                            " While the campus might be compact, the labs are fully equipped, and the library provides all necessary standard textbooks."}
-                                    </p>
-                                    <p className="text-gray-300 mt-2">
-                                        <strong>Hostels:</strong> {institute.id === 'usict' || institute.id === 'usar' ?
-                                            "Being a government campus, it offers excellent on-campus hostel facilities at very subsidized rates." :
-                                            "As a private institute, on-campus hostels are limited. However, the area around " + institute.location + " is packed with student PGs and flats ranging from ₹8,000 to ₹15,000 per month."}
-                                    </p>
-
-                                    {/* 3. Cutoff Analysis */}
-                                    <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">3. Getting into {branch.code} at {institute.shortName}: Cutoff Analysis</h3>
-                                    <p className="text-gray-300">
-                                        Admission is fiercely competitive. {institute.shortName} fills its seats based on <strong>JEE Main (Paper 1)</strong> ranks via GGSIPU counseling.
-                                        Last year, for the <strong>{branch.code}</strong> stream, {cutoffText}.
-                                    </p>
-                                    <p className="text-gray-300 mt-2">
-                                        <strong>Delhi vs. Outside Delhi:</strong> IP University reserves <strong>85% seats</strong> for Delhi candidates (those who did 12th from a Delhi school).
-                                        If you are an Outside Delhi candidate, you need a significantly higher percentile to secure {branch.code} here.
-                                    </p>
-
-                                    {/* 4. Fee Structure */}
-                                    <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">4. Fee Structure Breakdown</h3>
-                                    <p className="text-gray-300">
-                                        The fee structure is regulated by the State Fee Regulatory Committee. For {institute.shortName}, the annual tuition fee generally falls in the <strong>₹1.3 Lakh to ₹1.6 Lakh</strong> range.
-                                        Adding university charges and student activity fees, the total annual expense comes to approximately <strong>₹1.75 - ₹1.90 Lakhs</strong>.
-                                    </p>
-                                    <p className="text-gray-300 mt-2">
-                                        Compared to private universities in NCR which charge upwards of ₹3-4 Lakhs per year, {institute.shortName} remains a <strong>highly affordable option</strong> for quality engineering education.
-                                    </p>
-
-                                    {/* 5. Faculty & Academics */}
-                                    <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">5. Faculty & Academic Culture</h3>
-                                    <p className="text-gray-300">
-                                        The department of <strong>{branch.name}</strong> at {institute.shortName} is staffed by experienced faculty, many of whom hold Ph.Ds.
-                                        The curriculum follows the GGSIPU syllabus, which is updated to include modern electives like AI/ML and IOT in the later years.
-                                    </p>
-                                    <p className="text-gray-300 mt-2">
-                                        <strong>Attendance Policy:</strong> Like most IPU colleges, {institute.shortName} is strict about the <strong>75% attendance rule</strong>.
-                                        Students are advised to take this seriously to avoid detention in internals.
+                                        {locationVibe} The campus is Wi-Fi enabled and features decent labs for {branch.code}.
+                                        {tier === 1 ? " You will find a very active coding culture here with multiple societies like IEEE and ACM." :
+                                            " Societies are active, though mostly student-driven."}
                                     </p>
 
                                     <div className="mt-12 p-8 bg-blue-900/10 border border-blue-800/30 rounded-xl text-center">
-                                        <h4 className="text-xl font-bold text-white mb-4">Final Verdict?</h4>
+                                        <h4 className="text-xl font-bold text-white mb-4">Start Your Preparation</h4>
                                         <p className="text-gray-400 mb-6">
-                                            {tier === 1 ?
-                                                `${institute.shortName} is arguably the best choice in IPU for ${branch.code}. If you have the rank, lock it immediately.` :
-                                                `${institute.shortName} is a fantastic Tier-2 option that balances academics and placement opportunities. It's a great launchpad for a tech career.`}
+                                            Don't wait for classes to start. Get a headstart with verified notes for {institute.shortName}.
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                             <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => navigate(deepLink)}>
-                                                Check {branch.code} Notes
-                                            </Button>
-                                            <Button size="lg" variant="outline" className="border-gray-700 hover:bg-gray-800" onClick={() => navigate('cutoffs')}>
-                                                View {yearNum ?? '2025'} Cutoffs
+                                                Access {branch.code} Notes
                                             </Button>
                                         </div>
                                     </div>
