@@ -20,6 +20,7 @@ import { ChevronRight, Download, ExternalLink, MapPin, BookOpen, FileText, Arrow
 import { StarField } from '@/components/StarField';
 import { unifiedDataService } from '@/services/unifiedDataService';
 import type { SyllabusData } from '@/services/contentFetchingService';
+import { generateSectionContent } from '@/utils/pseoContentGenerator';
 
 // Types
 type PageType = 'overview' | 'placements' | 'cutoffs' | 'fees' | 'resources' | 'timeline';
@@ -56,10 +57,16 @@ const InstitutePage = () => {
     const yearNum = timelineMatch?.[2];
 
     // --- Dynamic Content Generators (Madlibs) ---
+    // --- Dynamic Content Generators (Madlibs) ---
     const generateTitle = () => {
         if (isCutoffPage) return `${institute.shortName} ${branch.code} Cutoff 2025 - JEE Mains & IPU CET Ranks`;
         if (isFeePage) return `${institute.shortName} ${branch.code} Fees Structure 2025-2026`;
         if (isPlacementPage) return `${institute.shortName} ${branch.code} Placements 2025 - Average Package & Recruiters`;
+
+        if (topic === 'reviews') return `Student Reviews: ${institute.shortName} ${branch.code} Reality Check - Faculty, Crowd & Life`;
+        if (topic === 'hostel') return `${institute.shortName} Hostel & PG Guide: Expenses & Facilities near ${institute.location.split(',')[0]}`;
+        if (topic === 'admissions') return `${institute.shortName} ${branch.code} Admission 2025: Process, Eligibility & Documents`;
+
         if (isTimelinePage && semesterNum) return `B.Tech ${branch.code} Semester ${semesterNum} Syllabus & Subjects at ${institute.shortName}`;
         if (isTimelinePage && yearNum) return `B.Tech ${branch.code} ${yearNum === '1' ? '1st' : yearNum + 'th'} Year Syllabus & Notes - ${institute.shortName}`;
         if (isResourcePage) {
@@ -70,6 +77,14 @@ const InstitutePage = () => {
     };
 
     const generateDescription = () => {
+        if (isPlacementPage) return `Detailed placement report for ${branch.code} at ${institute.shortName}. Check highest/average packages, top recruiters and internship details for 2025 batch.`;
+        if (isCutoffPage) return `Check ${institute.shortName} ${branch.code} Cutoffs for 2025. Delhi vs Outside Delhi rank analysis for JEE Mains to estimate your chances.`;
+        if (isFeePage) return `Hidden costs in ${institute.shortName} fee structure? Check detailed 4-year expense breakdown for ${branch.code} including tuition and hostel fees.`;
+
+        if (topic === 'reviews') return `Read honest student reviews for ${branch.name} at ${institute.name}. Know about the crowd, faculty, attendance policy and placements reality before joining.`;
+        if (topic === 'hostel') return `Complete guide to hostels and PGs near ${institute.name}, ${institute.location}. Check prices for single/double seater rooms and mess food quality.`;
+        if (topic === 'admissions') return `Step-by-step admission guide for ${branch.code} at ${institute.shortName}. JEE Main cutoff requirements, counseling process and document list.`;
+
         return `Get latest ${topic || 'details'} for ${branch.name} at ${institute.name}, ${institute.location}. Check 2025 Cutoffs, Fees, Placements and download Study Material/Notes for free.`;
     };
 
@@ -377,8 +392,6 @@ const InstitutePage = () => {
             { label: `Admission Process`, url: `${base}/admissions` },
             { label: `Fees Breakdown`, url: `${base}/fees` },
             { label: `Hostel Facilities`, url: `${base}/hostel` },
-            { label: `Campus Gallery`, url: `${base}/gallery` },
-            { label: `Faculty List`, url: `${base}/faculty` },
             { label: `Student Reviews`, url: `${base}/reviews` },
         ];
 
@@ -507,101 +520,27 @@ const InstitutePage = () => {
                             };
                             const tier = getTier(institute.id);
 
-                            // Re-calculate deep link for use in content
-                            // We need a robust fallback for the deep link if we are not on a specific semester page
-                            const deepLink = `/subject/${subjectId || 'mathematics-1'}?branch=${branch.code}&semester=${semesterNum ? `sem-${semesterNum}` : 'sem-1'}&tab=notes`;
+                            // Call the Generator
+                            const generatedContent = generateSectionContent(
+                                institute,
+                                branch,
+                                topic,
+                                tier,
+                                cutoffsData,
+                                feesData,
+                                navigate
+                            );
 
-                            // --- Content Blocks ---
-
-                            // 1. PLACEMENTS CONTENT
-                            if (isPlacementPage) {
-                                const stats = {
-                                    1: { avg: '8.5 LPA - 12 LPA', highest: '45 LPA - 51 LPA', recruiters: 'Amazon, Adobe, Google, Microsoft, ZS Associates' },
-                                    2: { avg: '5.5 LPA - 7.5 LPA', highest: '28 LPA - 32 LPA', recruiters: 'TCS, Infosys, Accenture, ZS, Ion Trading' },
-                                    3: { avg: '4.0 LPA - 5.5 LPA', highest: '12 LPA - 18 LPA', recruiters: 'TCS, Wipro, HCL, Tech Mahindra' }
-                                }[tier];
-
-                                return (
-                                    <div className="mt-16 prose prose-invert prose-lg max-w-none">
-                                        <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
-                                            {institute.shortName} {branch.code} Placements 2025: True Report
-                                        </h2>
-                                        <p className="text-gray-300">
-                                            The placement scenario for <strong>{branch.name}</strong> at <strong>{institute.shortName}</strong> has been {tier === 1 ? 'exceptional' : 'steady'} in the 2024-25 session.
-                                            With the tech market recovering, {institute.shortName} witnessed a surge in hiring for specialized roles.
-                                        </p>
-
-                                        <h3 className="text-blue-200 mt-8">Package Statistics</h3>
-                                        <ul className="list-disc pl-5 text-gray-400">
-                                            <li><strong>Highest Package:</strong> {stats.highest} ({tier === 1 ? 'International/Off-Campus' : 'Domestic'})</li>
-                                            <li><strong>Average Package:</strong> {stats.avg}</li>
-                                            <li><strong>Major Recruiters:</strong> {stats.recruiters}</li>
-                                        </ul>
-
-                                        <h3 className="text-blue-200 mt-8">Internship Opportunities</h3>
-                                        <p className="text-gray-300">
-                                            {tier === 1 ?
-                                                `Being a top-tier college, ${institute.shortName} sees companies like American Express and ZS visiting for 3rd-year internships with stipends ranging from ₹50k to ₹1.2 Lakh.` :
-                                                `While on-campus internships are selective, the location of ${institute.location} allows easy access to off-campus drives in Noida and Gurgaon.`}
-                                        </p>
-                                    </div>
-                                );
+                            if (generatedContent) {
+                                return generatedContent;
                             }
 
-                            // 2. FEES CONTENT
-                            if (isFeePage) {
-                                return (
-                                    <div className="mt-16 prose prose-invert prose-lg max-w-none">
-                                        <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
-                                            {institute.shortName} Fee Structure 2025: Hidden Costs & Reality
-                                        </h2>
-                                        <p className="text-gray-300">
-                                            The official fee structure is often confusing. Here is the simplified breakdown for <strong>{branch.code}</strong> aspirants at {institute.shortName}.
-                                        </p>
-                                        <h3 className="text-blue-200 mt-8">Annual Expense Breakdown</h3>
-                                        <ul className="list-disc pl-5 text-gray-400">
-                                            <li><strong>Academic Fee:</strong> ₹1.30 Lakh - ₹1.60 Lakh (Paid annually)</li>
-                                            <li><strong>University Charges:</strong> ₹20,000 (Examination & Activity Fees)</li>
-                                            <li><strong>Total / Year:</strong> Approx. ₹1.60 Lakh - ₹1.80 Lakh</li>
-                                        </ul>
-                                        <div className="bg-yellow-900/20 p-4 border-l-4 border-yellow-500 my-6 text-sm text-yellow-200">
-                                            <strong>Note:</strong> Fees usually increase by 3-5% every year as per SFRC guidelines.
-                                        </div>
-                                    </div>
-                                );
-                            }
-
-                            // 3. CUTOFFS CONTENT
-                            if (isCutoffPage) {
-                                return (
-                                    <div className="mt-16 prose prose-invert prose-lg max-w-none">
-                                        <h2 className="text-3xl font-bold text-blue-100 border-b border-gray-800 pb-4 mb-8">
-                                            {institute.shortName} Cutoff Analysis 2025: What is a "Safe Rank"?
-                                        </h2>
-                                        <p className="text-gray-300">
-                                            Getting into <strong>{branch.name}</strong> at {institute.shortName} requires smart counseling strategy.
-                                            We analyzed the last 3 years of GGSIPU counseling data to give you this report.
-                                        </p>
-                                        <h3 className="text-blue-200 mt-8">Rank Requirements</h3>
-                                        <p className="text-gray-300">
-                                            {tier === 1 ?
-                                                `Since ${institute.shortName} is a top preference, the closing rank for Delhi General candidates typically settles around 50k - 80k. Outside Delhi candidates need <25k.` :
-                                                `For ${institute.shortName}, a rank between 1.5 Lakh to 3 Lakh is often safe for Delhi candidates in Spot Rounds.`}
-                                        </p>
-                                        <h3 className="text-blue-200 mt-8">The "Spot Round" Hack</h3>
-                                        <p className="text-gray-300">
-                                            Many students give up after Round 3. However, {institute.shortName} often has vacant seats in {branch.code} that open up in the Spot Round.
-                                            If your rank is low, <strong>do not skip the Spot Round registration.</strong>
-                                        </p>
-                                    </div>
-                                );
-                            }
-
-                            // 4. GENERIC / OVERVIEW / REVIEWS CONTENT
-                            // Default content for overview pages or unrecognized types
+                            // 5. GENERIC / OVERVIEW (Fallback)
                             const locationVibe = institute.location.includes("Rohini") ? "Located in the student hub of Rohini, surrounded by hangout spots." :
                                 institute.location.includes("Dwarka") ? "Situated in the lush green, planned sub-city of Dwarka." :
                                     `Strategically located in ${institute.location}.`;
+                            // Re-calc deep link
+                            const deepLink = `/subject/${subjectId || 'mathematics-1'}?branch=${branch.code}&semester=${semesterNum ? `sem-${semesterNum}` : 'sem-1'}&tab=notes`;
 
                             return (
                                 <div className="mt-16 prose prose-invert prose-lg max-w-none">
