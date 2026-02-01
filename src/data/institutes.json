@@ -1,0 +1,456 @@
+[
+    {
+        "id": "bpit",
+        "name": "Bhagwan Parshuram Institute of Technology",
+        "shortName": "BPIT",
+        "location": "Rohini, Delhi",
+        "address": "P.S.P.-4, Sector 17, Rohini, Delhi- 110085",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 120
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 180
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 180
+            },
+            {
+                "code": "EEE",
+                "name": "Electrical & Electronics Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "bvcoe",
+        "name": "Bharati Vidyapeeth's College of Engineering",
+        "shortName": "BVCOE",
+        "location": "Pashchim Vihar, New Delhi",
+        "address": "A-4, Pashchim Vihar, New Delhi-110063",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 180
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 120
+            },
+            {
+                "code": "ICE",
+                "name": "Instrumentation & Control Engineering",
+                "intake": 60
+            },
+            {
+                "code": "EEE",
+                "name": "Electrical & Electronics Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "bmiet",
+        "name": "BM Institute of Engineering & Technology",
+        "shortName": "BMIET",
+        "location": "Sonepat, Haryana",
+        "address": "Behind Fazilpur Power Station Sonepat, Bahalgarh Road, Village Raipur, Sonepat, Haryana",
+        "programs": [
+            {
+                "code": "CVE",
+                "name": "Civil Engineering",
+                "intake": 30
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 180
+            },
+            {
+                "code": "ME",
+                "name": "Mechanical Engineering",
+                "intake": 60
+            },
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "ditm",
+        "name": "Delhi Institute of Technology & Management",
+        "shortName": "DITM",
+        "location": "Sonepat, Haryana",
+        "address": "NH-1, Village Barot, Tehsil Gannaur, Sonepat, Haryana",
+        "programs": [
+            {
+                "code": "CVE",
+                "name": "Civil Engineering",
+                "intake": 90
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            },
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 90
+            },
+            {
+                "code": "ME",
+                "name": "Mechanical Engineering",
+                "intake": 90
+            }
+        ]
+    },
+    {
+        "id": "dtc",
+        "name": "Delhi Technical Campus",
+        "shortName": "DTC",
+        "location": "Greater Noida, UP",
+        "address": "28/1, Knowledge Park- III, Greater Noida, (U.P.)",
+        "programs": [
+            {
+                "code": "AI-DS",
+                "name": "Artificial Intelligence & Data Science",
+                "intake": 60
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 180
+            },
+            {
+                "code": "AI-ML",
+                "name": "Artificial Intelligence & Machine Learning",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "adgitm",
+        "name": "Dr. Akhilesh Das Gupta Institute of Technology & Management",
+        "shortName": "ADGITM",
+        "alias": [
+            "NIEC",
+            "Northern India Engineering College"
+        ],
+        "location": "Shastri Park, New Delhi",
+        "address": "FC-26, Shastri Park, New Delhi- 110053",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 60
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 180
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 180
+            },
+            {
+                "code": "CVE",
+                "name": "Civil Engineering",
+                "intake": 60
+            },
+            {
+                "code": "ME",
+                "name": "Mechanical Engineering",
+                "intake": 60
+            },
+            {
+                "code": "AI-ML",
+                "name": "Artificial Intelligence & Machine Learning",
+                "intake": 60
+            },
+            {
+                "code": "AI-DS",
+                "name": "Artificial Intelligence & Data Science",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "gnit",
+        "name": "Greater Noida Institute of Technology",
+        "shortName": "GNIT",
+        "location": "Greater Noida, UP",
+        "address": "Plot No. 6-C, Knowledge Park II, Greater Noida, Distt. Gautam Budh Nagar, UP",
+        "programs": [
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            },
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 60
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 60
+            },
+            {
+                "code": "ME",
+                "name": "Mechanical Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "gtbit",
+        "name": "Guru Teg Bahadur Institute of Technology",
+        "shortName": "GTBIT",
+        "location": "Rajouri Garden, New Delhi",
+        "address": "G-8 Area, Rajouri Garden, New Delhi 110064",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 120
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 120
+            },
+            {
+                "code": "EEE",
+                "name": "Electrical & Electronics Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "hmr",
+        "name": "HMR Institute of Technology & Management",
+        "shortName": "HMR",
+        "location": "Hameedpur, Delhi",
+        "address": "Hameedpur, Delhi- 110036",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 120
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "jims",
+        "name": "JIMS Engineering Management Technical Campus",
+        "shortName": "JIMS",
+        "location": "Greater Noida, UP",
+        "address": "48/4, Knowledge Park-III, Greater Noida",
+        "programs": [
+            {
+                "code": "ME",
+                "name": "Mechanical Engineering",
+                "intake": 60
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            }
+        ]
+    },
+    {
+        "id": "mait",
+        "name": "Maharaja Agrasen Institute of Technology",
+        "shortName": "MAIT",
+        "location": "Rohini, Delhi",
+        "address": "Sector - 22, Rohini, Delhi- 110085",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 180
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 180
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 180
+            },
+            {
+                "code": "MAE",
+                "name": "Mechanical & Automation Engineering",
+                "intake": 180
+            },
+            {
+                "code": "EEE",
+                "name": "Electrical & Electronics Engineering",
+                "intake": 180
+            },
+            {
+                "code": "ME",
+                "name": "Mechanical Engineering",
+                "intake": 60
+            },
+            {
+                "code": "CST",
+                "name": "Computer Science & Technology",
+                "intake": 60
+            },
+            {
+                "code": "ITE",
+                "name": "Information Technology & Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "msit",
+        "name": "Maharaja Surajmal Institute of Technology",
+        "shortName": "MSIT",
+        "location": "Janakpuri, New Delhi",
+        "address": "C-4, Janak puri, New Delhi- 110085",
+        "programs": [
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering",
+                "intake": 120
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 180
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology",
+                "intake": 120
+            },
+            {
+                "code": "EEE",
+                "name": "Electrical & Electronics Engineering",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "usict",
+        "name": "University School of Information & Communication Technology",
+        "shortName": "USICT",
+        "location": "Dwarka, New Delhi",
+        "address": "GGSIP University Campus, Sector 16 C, Dwarka, New Delhi - 110078",
+        "programs": [
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering (Dual Degree)",
+                "intake": 60
+            },
+            {
+                "code": "IT",
+                "name": "Information Technology (Dual Degree)",
+                "intake": 60
+            },
+            {
+                "code": "ECE",
+                "name": "Electronics & Communication Engineering (Dual Degree)",
+                "intake": 60
+            }
+        ]
+    },
+    {
+        "id": "usar",
+        "name": "University School of Automation & Robotics",
+        "shortName": "USAR",
+        "location": "East Delhi",
+        "address": "GGSIP University, East Campus, Surajmal Vihar, Delhi-110092",
+        "programs": [
+            {
+                "code": "AI-DS",
+                "name": "Artificial Intelligence & Data Science",
+                "intake": 132
+            },
+            {
+                "code": "AI-ML",
+                "name": "Artificial Intelligence & Machine Learning",
+                "intake": 132
+            },
+            {
+                "code": "IIOT",
+                "name": "Industrial Internet of Things",
+                "intake": 132
+            },
+            {
+                "code": "AR",
+                "name": "Automation & Robotics",
+                "intake": 132
+            }
+        ]
+    },
+    {
+        "id": "vips",
+        "name": "Vivekananda Institute of Professional Studies",
+        "shortName": "VIPS",
+        "location": "Pitampura, New Delhi",
+        "address": "Outer Ring Road, Pitampura, New Delhi",
+        "programs": [
+            {
+                "code": "AI-ML",
+                "name": "Artificial Intelligence & Machine Learning",
+                "intake": 120
+            },
+            {
+                "code": "AI-DS",
+                "name": "Artificial Intelligence & Data Science",
+                "intake": 120
+            },
+            {
+                "code": "IIOT",
+                "name": "Industrial Internet of Things",
+                "intake": 60
+            },
+            {
+                "code": "CSE",
+                "name": "Computer Science & Engineering",
+                "intake": 120
+            }
+        ]
+    }
+]

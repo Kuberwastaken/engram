@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Resources from "./pages/Resources";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
+import InstitutePage from "./pages/pseo/InstitutePage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +28,11 @@ const App = () => (
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/:branch/:semester" element={<BranchSemester />} />
           <Route path="/subject/:name" element={<Subject />} />
+
+          {/* pSEO Routes */}
+          <Route path="/ipu/:instituteId/:branchId" element={<InstitutePage />} />
+          <Route path="/ipu/:instituteId/:branchId/:topic" element={<InstitutePage />} />
+          <Route path="/ipu/:instituteId/:branchId/resources/:subjectId/:type?" element={<InstitutePage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

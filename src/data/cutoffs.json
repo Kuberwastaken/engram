@@ -1,0 +1,132 @@
+{
+    "bpit": {
+        "CSE": {
+            "OPNOHS": {
+                "min": 62808,
+                "max": 142454
+            },
+            "OPNOOS": {
+                "min": 58557,
+                "max": 66003
+            }
+        },
+        "ECE": {
+            "OPNOHS": {
+                "min": 149805,
+                "max": 215304
+            },
+            "OPNOOS": {
+                "min": 72044,
+                "max": 77700
+            }
+        },
+        "IT": {
+            "OPNOHS": {
+                "min": 126003,
+                "max": 164525
+            },
+            "OPNOOS": {
+                "min": 67258,
+                "max": 71889
+            }
+        }
+    },
+    "bvcoe": {
+        "CSE": {
+            "OPNOHS": {
+                "min": 36702,
+                "max": 132350
+            },
+            "OPNOOS": {
+                "min": 56715,
+                "max": 65760
+            }
+        },
+        "ECE": {
+            "OPNOHS": {
+                "min": 109486,
+                "max": 199005
+            },
+            "OPNOOS": {
+                "min": 70101,
+                "max": 77127
+            }
+        },
+        "IT": {
+            "OPNOHS": {
+                "min": 102406,
+                "max": 151132
+            },
+            "OPNOOS": {
+                "min": 67100,
+                "max": 69746
+            }
+        }
+    },
+    "mait": {
+        "CSE": {
+            "OPNOHS": {
+                "min": 9420,
+                "max": 70889
+            },
+            "OPNOOS": {
+                "min": 9203,
+                "max": 42413
+            }
+        },
+        "IT": {
+            "OPNOHS": {
+                "min": 56621,
+                "max": 107346
+            },
+            "OPNOOS": {
+                "min": 47244,
+                "max": 53494
+            }
+        }
+    },
+    "msit": {
+        "CSE": {
+            "OPNOHS": {
+                "min": 6832,
+                "max": 96135
+            },
+            "OPNOOS": {
+                "min": 18685,
+                "max": 54501
+            }
+        },
+        "IT": {
+            "OPNOHS": {
+                "min": 103745,
+                "max": 118049
+            },
+            "OPNOOS": {
+                "min": 54566,
+                "max": 58187
+            }
+        }
+    },
+    "usict": {
+        "CSE": {
+            "OPNOHS": {
+                "min": 3782,
+                "max": 38638
+            },
+            "OPNOOS": {
+                "min": 4145,
+                "max": 27680
+            }
+        },
+        "ECE": {
+            "OPNOHS": {
+                "min": 44500,
+                "max": 62058
+            },
+            "OPNOOS": {
+                "min": 9692,
+                "max": 45204
+            }
+        }
+    }
+}

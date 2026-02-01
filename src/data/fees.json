@@ -1,0 +1,111 @@
+{
+    "USS": {
+        "B.Tech": {
+            "2024-25": {
+                "tuition": 140000,
+                "total": 175500
+            },
+            "2025-26": {
+                "tuition": 154000,
+                "total": 187500
+            },
+            "2026-27": {
+                "tuition": 169400,
+                "total": 202900
+            },
+            "2027-28": {
+                "tuition": 186340,
+                "total": 219840
+            }
+        }
+    },
+    "mait": {
+        "B.Tech": {
+            "note": "Based on previous year trends. Final fees subject to GGSIPU notification.",
+            "2024-25": {
+                "tuition": 142000,
+                "dev_charges": 15000,
+                "total": 178000
+            },
+            "2025-26": {
+                "tuition": 156000,
+                "dev_charges": 15000,
+                "total": 195000
+            }
+        }
+    },
+    "msit": {
+        "B.Tech": {
+            "note": "Based on previous year trends. Final fees subject to GGSIPU notification.",
+            "2024-25": {
+                "tuition": 153000,
+                "dev_charges": 12000,
+                "total": 190000
+            },
+            "2025-26": {
+                "tuition": 168000,
+                "dev_charges": 12000,
+                "total": 205000
+            }
+        }
+    },
+    "bpit": {
+        "B.Tech": {
+            "note": "Based on previous year trends. Final fees subject to GGSIPU notification.",
+            "2024-25": {
+                "tuition": 128000,
+                "dev_charges": 12000,
+                "total": 155000
+            },
+            "2025-26": {
+                "tuition": 140000,
+                "dev_charges": 12000,
+                "total": 170000
+            }
+        }
+    },
+    "bvcoe": {
+        "B.Tech": {
+            "note": "Based on previous year trends. Final fees subject to GGSIPU notification.",
+            "2024-25": {
+                "tuition": 145000,
+                "dev_charges": 15000,
+                "total": 182000
+            },
+            "2025-26": {
+                "tuition": 159000,
+                "dev_charges": 15000,
+                "total": 200000
+            }
+        }
+    },
+    "vips": {
+        "B.Tech": {
+            "note": "Based on previous year trends. Final fees subject to GGSIPU notification.",
+            "2024-25": {
+                "tuition": 135000,
+                "dev_charges": 12000,
+                "total": 165000
+            },
+            "2025-26": {
+                "tuition": 148000,
+                "dev_charges": 12000,
+                "total": 180000
+            }
+        }
+    },
+    "default_affiliate": {
+        "B.Tech": {
+            "note": "Indicative Free Structure for GGSIPU Affiliated Colleges.",
+            "range": {
+                "min": 120000,
+                "max": 160000
+            },
+            "breakdown": [
+                "Tuition Fee: ₹1.1L - ₹1.4L",
+                "University Charges: ₹20k",
+                "Student Fund: ₹2k"
+            ]
+        }
+    }
+}
