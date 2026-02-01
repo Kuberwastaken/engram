@@ -56,6 +56,22 @@ const InstitutePage = () => {
     const semesterNum = timelineMatch?.[1];
     const yearNum = timelineMatch?.[2];
 
+    // SEO Anti-Duplicate Logic: Validate Topic
+    const validTopics = ['placements', 'cutoffs', 'fees', 'reviews', 'hostel', 'admissions'];
+    const isValidTopic = !topic || validTopics.includes(topic.toLowerCase()) || isTimelinePage;
+
+    if (!isValidTopic) {
+        return (
+            <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4">
+                <h1 className="text-4xl font-bold text-red-500 mb-4">404</h1>
+                <p className="text-gray-400 mb-8">Page topic "{topic}" not found for this institute.</p>
+                <Button onClick={() => navigate(`/ipu/${instituteId}/${branchId}`)} variant="secondary">
+                    Go to Overview
+                </Button>
+            </div>
+        );
+    }
+
     // --- Dynamic Content Generators (Madlibs) ---
     // --- Dynamic Content Generators (Madlibs) ---
     const generateTitle = () => {
