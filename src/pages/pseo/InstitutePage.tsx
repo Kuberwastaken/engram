@@ -57,8 +57,9 @@ const InstitutePage = () => {
     const yearNum = timelineMatch?.[2];
 
     // SEO Anti-Duplicate Logic: Validate Topic
-    const validTopics = ['placements', 'cutoffs', 'fees', 'reviews', 'hostel', 'admissions'];
-    const isValidTopic = !topic || validTopics.includes(topic.toLowerCase()) || isTimelinePage;
+    // 'resources' is a valid topic, as are the explicit list
+    const validTopics = ['placements', 'cutoffs', 'fees', 'reviews', 'hostel', 'admissions', 'resources'];
+    const isValidTopic = !topic || validTopics.includes(topic.toLowerCase()) || isTimelinePage || isResourcePage;
 
     if (!isValidTopic) {
         return (
