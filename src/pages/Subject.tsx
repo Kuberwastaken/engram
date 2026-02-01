@@ -178,9 +178,19 @@ const AutoOpenPDFCard: React.FC<{
 
 const Subject = () => {
   const { name } = useParams<{ name: string }>();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const navigate = useNavigate();
-  const [activeTab, setActiveTab] = useState('syllabus');
+  // Initialize tab from URL or default to 'syllabus'
+  const [activeTab, setActiveTab] = useState(searchParams.get('tab') || 'syllabus');
+
+  // Sync state changes back to URL without reloading
+  const handleTabChange = (value: string) => {
+    setActiveTab(value);
+    setSearchParams(params => {
+      params.set('tab', value);
+      return params;
+    }, { replace: true });
+  };
   const [materials, setMaterials] = useState<Record<string, GoogleDriveFile[]>>({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -691,7 +701,7 @@ const Subject = () => {
 
           {/* Mobile-only Tab Navigation */}
           <div className="md:hidden mb-4">
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+            <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
               <TabsList className="grid grid-cols-4 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-0.5 gap-1">
                 {tabs.slice(0, 4).map((tab) => (
                   <TabsTrigger
@@ -720,7 +730,7 @@ const Subject = () => {
           {/* Tabbed Interface (Desktop) */}
           <Card className="bg-gray-900/20 border border-gray-800/30 backdrop-blur-xl">
             <CardContent className="p-6">
-              <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
+              <Tabs value={activeTab} onValueChange={handleTabChange} className="w-full">
                 {/* Desktop-only tab list */}
                 <div className="hidden md:block">
                   <TabsList className="grid grid-cols-7 w-full rounded-lg bg-gray-900/40 border border-gray-800/30 p-0.5">

@@ -15,7 +15,10 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import { Button } from '@/components/ui/button';
-import { ChevronRight, Download, ExternalLink, MapPin } from 'lucide-react';
+import { ChevronRight, Download, ExternalLink, MapPin, BookOpen, FileText, ArrowRight, Loader2 } from 'lucide-react';
+import { StarField } from '@/components/StarField';
+import { unifiedDataService } from '@/services/unifiedDataService';
+import type { SyllabusData } from '@/services/contentFetchingService';
 
 // Types
 type PageType = 'overview' | 'placements' | 'cutoffs' | 'fees' | 'resources' | 'timeline';
@@ -71,34 +74,66 @@ const InstitutePage = () => {
     // --- Components ---
 
     const CutoffSection = () => {
-        const data = cutoffsData[institute.id as keyof typeof cutoffsData]?.[branch.code as keyof typeof cutoffsData];
-        if (!data) return <div className="p-4 border rounded-lg bg-gray-50">Cutoff data specifically for {branch.code} at {institute.shortName} is being updated for 2025. Generally, ranks close between 40k - 90k for top branches.</div>;
+        const instituteId = institute.id.toLowerCase();
+
+        // Handle "named" alias lookups or default
+        let cutoffInfo: any = [];
+        if (institute.alias) {
+            for (const alias of institute.alias) {
+                // simple logic to try and find match in cutoffs
+                // In reality, cutoffs.json keys match institute IDs usually.
+            }
+        }
+
+        // Direct match
+        if (cutoffsData[instituteId as keyof typeof cutoffsData]) {
+            cutoffInfo = cutoffsData[instituteId as keyof typeof cutoffsData];
+        }
 
         return (
-            <Card className="mb-8">
+            <Card className="mb-8 bg-gray-900/40 border-gray-800 backdrop-blur-sm">
                 <CardHeader>
-                    <CardTitle>JEE Mains Cutoff 2024-2025</CardTitle>
+                    <CardTitle className="text-gray-200">Cutoff Trends (Rank Analysis)</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <Table>
-                        <TableHeader>
-                            <TableRow>
-                                <TableHead>Category</TableHead>
-                                <TableHead>Min Rank</TableHead>
-                                <TableHead>Max Rank</TableHead>
-                            </TableRow>
-                        </TableHeader>
-                        <TableBody>
-                            {Object.entries(data).map(([cat, ranks]: [string, any]) => (
-                                <TableRow key={cat}>
-                                    <TableCell className="font-medium">{cat === 'OPNOHS' ? 'Delhi General' : cat === 'OPNOOS' ? 'Outside Delhi General' : cat}</TableCell>
-                                    <TableCell>{ranks.min}</TableCell>
-                                    <TableCell>{ranks.max}</TableCell>
-                                </TableRow>
-                            ))}
-                        </TableBody>
-                    </Table>
-                    <p className="text-sm text-gray-500 mt-4">* Data based on Round 1 GGSIPU allotments.</p>
+                    {cutoffInfo.length > 0 ? (
+                        <div className="overflow-x-auto">
+                            <Table>
+                                <TableHeader>
+                                    <TableRow className="border-gray-800 hover:bg-gray-800/50">
+                                        <TableHead className="text-gray-400">Program</TableHead>
+                                        <TableHead className="text-gray-400">Quota</TableHead>
+                                        <TableHead className="text-gray-400">Category</TableHead>
+                                        <TableHead className="text-gray-400">Min Rank</TableHead>
+                                        <TableHead className="text-gray-400">Max Rank</TableHead>
+                                    </TableRow>
+                                </TableHeader>
+                                <TableBody>
+                                    {cutoffInfo.slice(0, 10).map((row: any, idx: number) => (
+                                        <TableRow key={idx} className="border-gray-800 hover:bg-gray-800/50">
+                                            <TableCell className="font-medium text-gray-300">{row.program}</TableCell>
+                                            <TableCell className="text-gray-400">{row.quota}</TableCell>
+                                            <TableCell className="text-gray-400">{row.category}</TableCell>
+                                            <TableCell className="text-gray-400">{row.min}</TableCell>
+                                            <TableCell className="text-blue-400 font-bold">{row.max}</TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                            <div className="mt-4 text-center">
+                                <Button variant="ghost" className="text-blue-400 hover:text-blue-300 hover:bg-gray-800">
+                                    View Complete Cutoff List <ChevronRight className="ml-2 w-4 h-4" />
+                                </Button>
+                            </div>
+                        </div>
+                    ) : (
+                        <div className="text-center py-8">
+                            <p className="text-gray-400">Detailed cutoff data for {institute.name} is being updated for 2025.</p>
+                            <Button className="mt-4" variant="outline" onClick={() => window.open('https://ipu.admissions.nic.in', '_blank')}>
+                                Check Official Website <ExternalLink className="ml-2 w-4 h-4" />
+                            </Button>
+                        </div>
+                    )}
                 </CardContent>
             </Card>
         );
@@ -122,19 +157,19 @@ const InstitutePage = () => {
 
         if (isDefault) {
             return (
-                <Card className="mb-8">
-                    <CardHeader><CardTitle>Annual Fee Structure (Estimates)</CardTitle></CardHeader>
+                <Card className="mb-8 bg-gray-900/40 border-gray-800 backdrop-blur-sm">
+                    <CardHeader><CardTitle className="text-gray-200">Annual Fee Structure (Estimates)</CardTitle></CardHeader>
                     <CardContent>
-                        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
-                            <p className="text-yellow-700 text-sm">
+                        <div className="bg-yellow-900/20 border-l-4 border-yellow-600 p-4 mb-4">
+                            <p className="text-yellow-200 text-sm">
                                 <strong>Note:</strong> Official 2025 fee notification for {institute.shortName} is pending. Below is the indicative structure based on GGSIPU norms.
                             </p>
                         </div>
-                        <div className="prose">
-                            <ul className="list-disc pl-5">
+                        <div className="prose prose-invert">
+                            <ul className="list-disc pl-5 text-gray-400">
                                 {(feeInfo as any).breakdown.map((item: string, idx: number) => <li key={idx}>{item}</li>)}
                             </ul>
-                            <p className="mt-4 font-medium">Expected Total: ₹1.40 Lakhs - ₹1.70 Lakhs / Annum</p>
+                            <p className="mt-4 font-medium text-gray-200">Expected Total: ₹1.40 Lakhs - ₹1.70 Lakhs / Annum</p>
                         </div>
                     </CardContent>
                 </Card>
@@ -142,30 +177,30 @@ const InstitutePage = () => {
         }
 
         return (
-            <Card className="mb-8">
+            <Card className="mb-8 bg-gray-900/40 border-gray-800 backdrop-blur-sm">
                 <CardHeader>
-                    <CardTitle>Annual Fee Structure {instituteId === 'usict' ? '(USS)' : ''}</CardTitle>
+                    <CardTitle className="text-gray-200">Annual Fee Structure {instituteId === 'usict' ? '(USS)' : ''}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                    <div className="bg-blue-50 border-l-4 border-blue-500 p-4 mb-4">
-                        <p className="text-blue-700 text-sm">
+                    <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 mb-4">
+                        <p className="text-blue-200 text-sm">
                             <strong>Verified:</strong> {(feeInfo as any).note || "Official GGSIPU Fee Structure."}
                         </p>
                     </div>
                     <Table>
                         <TableHeader>
-                            <TableRow>
-                                <TableHead>Academic Year</TableHead>
-                                <TableHead>Tuition Fee</TableHead>
-                                <TableHead>Total Fee</TableHead>
+                            <TableRow className="border-gray-800 hover:bg-gray-800/50">
+                                <TableHead className="text-gray-400">Academic Year</TableHead>
+                                <TableHead className="text-gray-400">Tuition Fee</TableHead>
+                                <TableHead className="text-gray-400">Total Fee</TableHead>
                             </TableRow>
                         </TableHeader>
                         <TableBody>
                             {Object.entries((feeInfo as any)).filter(([key]) => key.includes('-')).map(([year, amount]: [string, any]) => (
-                                <TableRow key={year}>
-                                    <TableCell>{year}</TableCell>
-                                    <TableCell>₹{amount.tuition.toLocaleString()}</TableCell>
-                                    <TableCell className="font-bold">₹{amount.total.toLocaleString()}</TableCell>
+                                <TableRow key={year} className="border-gray-800 hover:bg-gray-800/50">
+                                    <TableCell className="text-gray-300">{year}</TableCell>
+                                    <TableCell className="text-gray-300">₹{amount.tuition.toLocaleString()}</TableCell>
+                                    <TableCell className="font-bold text-blue-400">₹{amount.total.toLocaleString()}</TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
@@ -176,65 +211,153 @@ const InstitutePage = () => {
     };
 
     const ResourceSection = () => {
-        // In a real scenario, we would `useQuery` to fetch specific materials from `SyllabusX.json`
-        // For pSEO static generation, we show a rich placeholder that invites user to download.
-        const resourceType = type ? type.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'Study Material';
+        const [syllabusContent, setSyllabusContent] = React.useState<SyllabusData | null>(null);
+        const [loading, setLoading] = React.useState(false);
 
-        return (
-            <div className="space-y-6">
-                <Card className="border-blue-100 shadow-md">
-                    <CardHeader className="pb-3">
-                        <CardTitle className="text-xl text-blue-900">{subjectId} {resourceType}</CardTitle>
-                    </CardHeader>
-                    <CardContent className="space-y-4">
-                        <div className="bg-blue-50 border-1 border-blue-200 rounded-md p-4 mb-4 flex gap-3">
-                            <div className="shrink-0">
-                                <Download className="h-5 w-5 text-blue-600" />
-                            </div>
-                            <p className="text-blue-800 text-sm">
-                                <strong>Success!</strong> verified resources found for <strong>{institute.shortName}</strong> students.
+        // Map pSEO resource type to Subject Page Tab ID
+        const typeMapping: Record<string, string> = {
+            'notes': 'notes',
+            'syllabus': 'syllabus',
+            'pyq': 'pyqs',
+            'books': 'books',
+            'unit-1': 'syllabus',
+            'unit-2': 'syllabus',
+            'unit-3': 'syllabus',
+            'unit-4': 'syllabus'
+        };
+
+        const targetTab = typeMapping[type || ''] || 'syllabus';
+        const resourceTitle = type ? type.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) : 'Resources';
+        const isSyllabus = targetTab === 'syllabus';
+
+        // Construct Deep Link
+        const deepLink = `/subject/${subjectId}?branch=${branch.code}&semester=${semesterNum ? `sem-${semesterNum}` : 'sem-1'}&tab=${targetTab}`;
+
+        // Fetch Syllabus Data if applicable
+        React.useEffect(() => {
+            if (isSyllabus && !syllabusContent) {
+                setLoading(true);
+                const fetch = async () => {
+                    // Try to get real data
+                    const data = await unifiedDataService.fetchSyllabusData(branch.code, semesterNum ? `sem-${semesterNum}` : 'sem-1', subjectId as string);
+                    setSyllabusContent(data);
+                    setLoading(false);
+                };
+                fetch();
+            }
+        }, [isSyllabus, subjectId, branch.code, semesterNum]);
+
+        // Case 1: Real Syllabus Content Found (Text Mode)
+        if (isSyllabus && syllabusContent && !loading) {
+            const units = Object.entries(syllabusContent).filter(([key]) => !key.startsWith('_'));
+
+            // If we actually have text units
+            if (units.length > 0) {
+                return (
+                    <div className="space-y-6">
+                        <div className="bg-blue-900/20 border-l-4 border-blue-500 p-4 mb-8">
+                            <p className="text-blue-200 text-sm">
+                                <strong>Official Syllabus:</strong> Below is the verified syllabus for <strong>{subjectId}</strong>.
                             </p>
                         </div>
 
+                        {units.map(([unitKey, unitContent], index) => {
+                            let contentToDisplay: string;
+                            if (typeof unitContent === 'string') {
+                                contentToDisplay = unitContent;
+                            } else if (unitContent && typeof unitContent === 'object' && 'content' in unitContent) {
+                                contentToDisplay = (unitContent as any).content;
+                            } else {
+                                return null;
+                            }
+
+                            return (
+                                <Card key={unitKey} className="bg-gray-900/40 border-gray-800 backdrop-blur-sm mb-6">
+                                    <CardHeader className="bg-gray-800/20 border-b border-gray-800/50 pb-3">
+                                        <CardTitle className="text-xl text-blue-300 font-mono tracking-tight">{unitKey}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="pt-6">
+                                        <div className="prose prose-invert prose-lg max-w-none text-gray-300 leading-relaxed font-mono whitespace-pre-line">
+                                            {contentToDisplay}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            );
+                        })}
+
+                        {/* Engram Tip at Bottom */}
+                        <div className="bg-gradient-to-r from-purple-900/20 to-blue-900/20 border border-purple-500/30 rounded-md p-6 mt-8 flex gap-4 items-center">
+                            <div className="shrink-0 text-3xl">💡</div>
+                            <div className="text-purple-200 text-sm leading-relaxed">
+                                <h4 className="font-bold text-purple-100 mb-1">Looking for Notes?</h4>
+                                <p>Engram has the biggest aggregated collection of IPU notes, PYQs, and books. We're the #1 aggregator built by students, for students.</p>
+                                <Button size="sm" variant="secondary" className="mt-3" onClick={() => navigate(deepLink)}>
+                                    View Subject Notes <ArrowRight className="ml-2 w-4 h-4" />
+                                </Button>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+        }
+
+        // Case 2: Loading State
+        if (isSyllabus && loading) {
+            return (
+                <div className="flex flex-col items-center justify-center py-20">
+                    <Loader2 className="w-10 h-10 animate-spin text-blue-500 mb-4" />
+                    <p className="text-gray-400">Fetching latest syllabus...</p>
+                </div>
+            );
+        }
+
+        // Case 3: Notes / PYQs / Books OR Fallback (No Syllabus Text Found)
+        return (
+            <div className="space-y-6">
+                <Card className="border-blue-900/50 bg-blue-900/10 backdrop-blur-sm shadow-md">
+                    <CardHeader className="pb-3">
+                        <CardTitle className="text-xl text-blue-100 flex items-center gap-2">
+                            <BookOpen className="w-5 h-5 text-blue-400" />
+                            {subjectId} {resourceTitle}
+                        </CardTitle>
+                    </CardHeader>
+                    <CardContent className="space-y-4">
                         {/* Engram Tip */}
-                        <div className="bg-gradient-to-r from-purple-50 to-blue-50 border border-purple-100 rounded-md p-4 mb-4 flex gap-3">
+                        <div className="bg-gradient-to-r from-purple-900/20 to-blue-900/20 border border-purple-500/30 rounded-md p-4 mb-4 flex gap-3">
                             <div className="shrink-0">
                                 <span className="text-xl">💡</span>
                             </div>
-                            <p className="text-purple-900 text-sm">
+                            <p className="text-purple-200 text-sm leading-relaxed">
                                 <strong>Did you know?</strong> Engram has the <strong>biggest aggregated collection</strong> of IPU notes, PYQs, and syllabus copies. We're the #1 aggregator built by students, for students.
                             </p>
                         </div>
 
-                        {/* Simulated File List */}
-                        {[1, 2, 3].map((i) => (
-                            <div key={i} className="flex items-center justify-between p-4 border rounded-xl bg-white hover:bg-gray-50 transition-all cursor-pointer group">
-                                <div className="flex items-center gap-4">
-                                    <div className="h-12 w-12 bg-red-50 rounded-lg flex items-center justify-center text-red-600 font-bold text-xs border border-red-100 group-hover:scale-105 transition-transform">PDF</div>
-                                    <div>
-                                        <div className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">{subjectId} - {resourceType} - Unit {i}</div>
-                                        <div className="text-xs text-gray-500 mt-1">2.4 MB • Updated for 2025 Exams</div>
-                                    </div>
-                                </div>
-                                <Button variant="ghost" size="sm" className="text-gray-400 group-hover:text-blue-600">
-                                    <Download className="w-5 h-5" />
-                                </Button>
-                            </div>
-                        ))}
+                        <div className="text-center py-8">
+                            <h3 className="text-lg font-semibold text-white mb-2">Access Full Repository</h3>
+                            <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
+                                Click below to view the official verified {resourceTitle} for {subjectId} on the main Engram dashboard.
+                            </p>
+
+                            <Button
+                                size="lg"
+                                className="bg-blue-600 hover:bg-blue-700 text-white gap-2 shadow-lg shadow-blue-900/20"
+                                onClick={() => navigate(deepLink)}
+                            >
+                                <ExternalLink className="w-5 h-5" />
+                                Open {resourceTitle} on Engram
+                            </Button>
+                        </div>
                     </CardContent>
                 </Card>
 
                 {/* Upsell / Context */}
-                <div className="prose max-w-none bg-white p-6 rounded-xl border shadow-sm">
-                    <h3 className="text-lg font-bold text-gray-800">Syllabus Coverage</h3>
-                    <p className="text-gray-600">
-                        This collection for <strong>{branch.name}</strong> at <strong>{institute.name}</strong> is designed to help you score high in end-term exams. It covers:
-                    </p>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Unit 1: Introduction & Basics</li>
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Unit 2: Core Concepts</li>
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Unit 3: Advanced Applications</li>
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Previous Year Questions (2020-2024)</li>
+                <div className="prose prose-invert max-w-none bg-gray-900/40 p-6 rounded-xl border border-gray-800 shadow-sm">
+                    <h3 className="text-lg font-bold text-gray-200">Why use Engram?</h3>
+                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-400">
+                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Zero Ads & Trackers</li>
+                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Open Source Platform</li>
+                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Community Verified Notes</li>
+                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 rounded-full bg-green-500"></div> Direct Download Links</li>
                     </ul>
                 </div>
             </div>
@@ -258,20 +381,20 @@ const InstitutePage = () => {
         ];
 
         return (
-            <div className="mt-12 pt-8 border-t">
-                <h3 className="text-xl font-bold mb-6">Explore {institute.shortName} {branch.code}</h3>
+            <div className="mt-12 pt-8 border-t border-gray-800">
+                <h3 className="text-xl font-bold mb-6 text-gray-200">Explore {institute.shortName} {branch.code}</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {links.map(link => (
-                        <Link key={link.label} to={link.url} className="text-blue-600 hover:underline text-sm flex items-center">
+                        <Link key={link.label} to={link.url} className="text-blue-400 hover:text-blue-300 hover:underline text-sm flex items-center transition-colors">
                             <ChevronRight className="w-3 h-3 mr-1" /> {link.label}
                         </Link>
                     ))}
                 </div>
 
-                <h3 className="text-xl font-bold mb-6 mt-8">Related Institutes</h3>
+                <h3 className="text-xl font-bold mb-6 mt-8 text-gray-200">Related Institutes</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {institutesData.filter(i => i.id !== institute.id).slice(0, 8).map(other => (
-                        <Link key={other.id} to={`/ipu/${other.id}/${branch.code.toLowerCase()}/cutoffs`} className="text-gray-600 hover:text-blue-600 text-sm">
+                        <Link key={other.id} to={`/ipu/${other.id}/${branch.code.toLowerCase()}/cutoffs`} className="text-gray-400 hover:text-blue-400 text-sm">
                             {other.shortName} {branch.code} Cutoff
                         </Link>
                     ))}
@@ -280,148 +403,152 @@ const InstitutePage = () => {
         );
     };
 
-    return (
-        <div className="min-h-screen bg-gray-50 pb-20">
-            <Helmet>
-                <title>{generateTitle()} | Engram</title>
-                <meta name="description" content={generateDescription()} />
-            </Helmet>
+    if (notFound) {
+        return <div className="p-10 text-center text-white bg-black min-h-screen">404 - Page Not Found</div>;
+    }
 
-            {/* Header */}
-            <div className="bg-white border-b py-8 px-4 md:px-8">
-                <div className="max-w-6xl mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-                        <div>
-                            <div className="flex items-center gap-2 text-sm text-gray-500 mb-2">
-                                <Link to="/" className="hover:underline">Home</Link> /
-                                <Link to="/ipu" className="hover:underline">IPU</Link> /
-                                <span className="font-medium text-gray-900">{institute.shortName}</span>
-                            </div>
-                            <h1 className="text-2xl md:text-4xl font-bold text-gray-900">{generateTitle()}</h1>
-                            <div className="flex flex-wrap gap-4 mt-4">
-                                <Badge variant="secondary" className="flex items-center gap-1">
-                                    <MapPin className="w-3 h-3" /> {institute.location}
-                                </Badge>
-                                <Badge variant="outline">Intake: {branch.intake}</Badge>
-                                <Badge variant="outline">Duration: 4 Years</Badge>
-                            </div>
-                        </div>
-                        <Button asChild>
-                            <a href="#resources">Get Notes</a>
-                        </Button>
+    return (
+        <div className="min-h-screen bg-black text-white selection:bg-blue-500/30">
+            <Helmet>
+                <title>{pageTitle} | Engram</title>
+                <meta name="description" content={pageDesc} />
+                <link rel="canonical" href={window.location.href} />
+            </Helmet>
+            <StarField />
+
+            {/* Navigation Bar */}
+            <div className="border-b border-gray-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+                <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+                    <Link to="/" className="font-bold text-xl tracking-tight text-white flex items-center gap-2">
+                        <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white">E</div>
+                        ENGRAM
+                    </Link>
+                    <div className="text-sm text-gray-400 hidden md:block">
+                        {institute.name}
                     </div>
                 </div>
             </div>
 
+            {/* Hero Section */}
+            <div className="bg-gradient-to-b from-blue-900/20 to-black py-12 border-b border-gray-800">
+                <div className="container mx-auto px-4 text-center">
+                    <Badge variant="secondary" className="mb-4 bg-blue-900/30 text-blue-300 hover:bg-blue-900/40 border-blue-800/50">
+                        {institute.shortName} • {branch.code} • {new Date().getFullYear()}
+                    </Badge>
+                    <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
+                        {pageTitle}
+                    </h1>
+                    <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+                        {pageDesc}
+                    </p>
+                </div>
+            </div>
+
             {/* Main Content */}
-            <div className="max-w-6xl mx-auto px-4 md:px-8 py-8">
+            <div className="container mx-auto px-4 py-8">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    {/* Left Sidebar (Navigation) */}
+                    <div className="hidden lg:block space-y-4">
+                        <Card className="bg-gray-900/40 border-gray-800 backdrop-blur-sm sticky top-24">
+                            <CardHeader>
+                                <CardTitle className="text-gray-200">Quick Navigation</CardTitle>
+                            </CardHeader>
+                            <CardContent className="grid gap-2">
+                                <Link to={`/ipu/${institute.id}/${branch.code.toLowerCase()}/fees`} className="p-2 hover:bg-gray-800/50 rounded flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+                                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> Fees
+                                </Link>
+                                <Link to={`/ipu/${institute.id}/${branch.code.toLowerCase()}/cutoffs`} className="p-2 hover:bg-gray-800/50 rounded flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+                                    <span className="w-2 h-2 bg-purple-500 rounded-full mr-3"></span> Cutoffs
+                                </Link>
+                                <Link to={`/ipu/${institute.id}/${branch.code.toLowerCase()}/placements`} className="p-2 hover:bg-gray-800/50 rounded flex items-center text-gray-400 hover:text-blue-400 transition-colors">
+                                    <span className="w-2 h-2 bg-green-500 rounded-full mr-3"></span> Placements
+                                </Link>
+                            </CardContent>
+                        </Card>
+                    </div>
+
+                    {/* Center Content */}
                     <div className="lg:col-span-2">
                         {/* Dynamic Section Injection */}
                         {isCutoffPage ? <CutoffSection /> : null}
                         {isFeePage ? <FeeSection /> : null}
                         {isResourcePage ? <ResourceSection /> : null}
                         {isTimelinePage ? (
-                            <div className="prose max-w-none bg-white p-6 rounded-lg shadow-sm border">
-                                <h2>Syllabus for {semesterNum ? `Semester ${semesterNum}` : `Year ${yearNum}`}</h2>
-                                <p>Detailed syllabus and subject list for {branch.name} students at {institute.name}.</p>
-                                <div className="not-prose grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                                    <Card>
-                                        <CardHeader><CardTitle className="text-base">Applied Mathematics</CardTitle></CardHeader>
-                                        <CardContent><Button variant="outline" className="w-full">View Notes</Button></CardContent>
-                                    </Card>
-                                    <Card>
-                                        <CardHeader><CardTitle className="text-base">Engineering Physics</CardTitle></CardHeader>
-                                        <CardContent><Button variant="outline" className="w-full">View Notes</Button></CardContent>
-                                    </Card>
+                            <div className="prose prose-invert max-w-none bg-gray-900/20 p-6 rounded-lg shadow-sm border border-gray-800">
+                                <h2 className="text-gray-100">Syllabus for {semesterNum ? `Semester ${semesterNum}` : `Year ${yearNum}`}</h2>
+                                <p className="text-gray-400">
+                                    Access the complete syllabus, notes, and study materials for {branch.name} {semesterNum ? `Semester ${semesterNum}` : `Year ${yearNum}`} at {institute.shortName}.
+                                </p>
+                                <div className="mt-6 flex flex-col gap-3">
+                                    <Button className="w-full justify-between" variant="secondary" onClick={() => navigate(`/branch/${branch.code}/semester/${semesterNum ? `sem-${semesterNum}` : `year-${yearNum}`}`)}>
+                                        View Full Semester Resources <ArrowRight className="w-4 h-4" />
+                                    </Button>
                                 </div>
                             </div>
                         ) : null}
 
-                        {/* Default Overview if no specific topic */}
-                        {!isCutoffPage && !isFeePage && !isPlacementPage && !isResourcePage && !isTimelinePage && (
-                            <div className="prose max-w-none bg-white p-6 rounded-lg shadow-sm border">
-                                <h2>About {branch.name} at {institute.shortName}</h2>
-                                <p>
-                                    The <strong>{branch.name} ({branch.code})</strong> program at <strong>{institute.name}</strong> is one of the most sought-after courses in the GGSIPU university network.
-                                    Located in {institute.location}, the institute offers a {branch.intake} seat intake for this stream.
-                                </p>
-                                <h3>Key Highlights</h3>
-                                <ul>
-                                    <li><strong>Admission:</strong> Through JEE Mains Rank followed by IPU Counselling.</li>
-                                    <li><strong>Cutoffs:</strong> Generally closes around 50k-1L rank for General Delhi candidates.</li>
-                                    <li><strong>Placements:</strong> {institute.shortName} is known for its decent placement record in {branch.code} with companies like Amazon, ZS, and TCS visiting campus.</li>
-                                </ul>
-                            </div>
+                        {!isCutoffPage && !isFeePage && !isResourcePage && !isTimelinePage && (
+                            <Card className="bg-gray-900/20 border-gray-800">
+                                <CardHeader><CardTitle className="text-gray-200">Overview</CardTitle></CardHeader>
+                                <CardContent>
+                                    <p className="text-gray-400 leading-relaxed">
+                                        Welcome to the comprehensive resource hub for <strong>{branch.name}</strong> at <strong>{institute.name}</strong>.
+                                        Here you can access verified notes, check cutoff trends, view fee structures, and explore placement statistics.
+                                        Everything is aggregated by students to help you navigate your B.Tech journey at IPU.
+                                    </p>
+                                    <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                        <Button variant="outline" className="h-24 flex flex-col items-center justify-center gap-2 border-gray-700 hover:bg-gray-800 hover:text-white" onClick={() => navigate('fees')}>
+                                            <span className="text-lg font-bold">Fees</span>
+                                            <span className="text-xs text-gray-500">Structure & Breakdown</span>
+                                        </Button>
+                                        <Button variant="outline" className="h-24 flex flex-col items-center justify-center gap-2 border-gray-700 hover:bg-gray-800 hover:text-white" onClick={() => navigate('cutoffs')}>
+                                            <span className="text-lg font-bold">Cutoffs</span>
+                                            <span className="text-xs text-gray-500">Rank Analysis</span>
+                                        </Button>
+                                    </div>
+                                </CardContent>
+                            </Card>
                         )}
 
                         <InterlinkGrid />
-                    </div>
-
-                    {/* Sidebar / Quick TOC */}
-                    <div className="lg:col-span-1">
-                        <Card className="sticky top-4">
-                            <CardHeader>
-                                <CardTitle className="text-lg">Quick Links</CardTitle>
-                            </CardHeader>
-                            <CardContent className="flex flex-col gap-2">
-                                <Link to={`/ipu/${institute.id}/${branchId}/cutoffs`} className={`px-4 py-2 rounded-md text-sm ${isCutoffPage ? 'bg-blue-50 text-blue-700 font-medium' : 'hover:bg-gray-50'}`}>
-                                    Cutoffs 2025
-                                </Link>
-                                <Link to={`/ipu/${institute.id}/${branchId}/fees`} className={`px-4 py-2 rounded-md text-sm ${isFeePage ? 'bg-blue-50 text-blue-700 font-medium' : 'hover:bg-gray-50'}`}>
-                                    Fees Structure
-                                </Link>
-                                <Link to={`/ipu/${institute.id}/${branchId}/placements`} className={`px-4 py-2 rounded-md text-sm ${isPlacementPage ? 'bg-blue-50 text-blue-700 font-medium' : 'hover:bg-gray-50'}`}>
-                                    Placements
-                                </Link>
-                                <div className="h-px bg-gray-100 my-2" />
-                                <span className="text-xs font-semibold text-gray-500 uppercase px-4">Resources</span>
-                                <Link to={`/ipu/${institute.id}/${branchId}/resources/syllabus`} className="px-4 py-2 rounded-md text-sm hover:bg-gray-50 flex items-center justify-between">
-                                    Syllabus <Download className="w-3 h-3 text-gray-400" />
-                                </Link>
-                                <Link to={`/ipu/${institute.id}/${branchId}/resources/notes`} className="px-4 py-2 rounded-md text-sm hover:bg-gray-50 flex items-center justify-between">
-                                    Notes <Download className="w-3 h-3 text-gray-400" />
-                                </Link>
-                            </CardContent>
-                        </Card>
                     </div>
                 </div>
             </div>
 
             {/* Universal Footer - Matching Home Page */}
-            <footer className="border-t border-gray-200 bg-white mt-20">
+            <footer className="border-t border-gray-800 bg-gray-900/30 mt-20 backdrop-blur-lg">
                 <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12">
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                         {/* Brand */}
                         <div className="md:col-span-1">
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">ENGRAM</h3>
-                            <p className="text-gray-500 text-sm leading-relaxed">
+                            <h3 className="text-xl font-bold text-white mb-4">ENGRAM</h3>
+                            <p className="text-gray-400 text-sm leading-relaxed">
                                 The centralized hub for IP University study materials. Built by students, for students.
                             </p>
                         </div>
 
                         {/* Quick Links */}
                         <div>
-                            <h4 className="text-lg font-semibold text-gray-900 mb-4">Quick Links</h4>
+                            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
                             <div className="space-y-2">
-                                <Link to="/" className="block text-gray-500 hover:text-blue-600 transition-colors text-sm">Home</Link>
-                                <Link to="/resources" className="block text-gray-500 hover:text-blue-600 transition-colors text-sm">Resources</Link>
-                                <Link to="/about" className="block text-gray-500 hover:text-blue-600 transition-colors text-sm">About</Link>
-                                <Link to="/privacy" className="block text-gray-500 hover:text-blue-600 transition-colors text-sm">Privacy Policy</Link>
+                                <Link to="/" className="block text-gray-400 hover:text-blue-400 transition-colors text-sm">Home</Link>
+                                <Link to="/resources" className="block text-gray-400 hover:text-blue-400 transition-colors text-sm">Resources</Link>
+                                <Link to="/about" className="block text-gray-400 hover:text-blue-400 transition-colors text-sm">About</Link>
+                                <Link to="/privacy" className="block text-gray-400 hover:text-blue-400 transition-colors text-sm">Privacy Policy</Link>
                             </div>
                         </div>
 
                         {/* Contribute */}
                         <div>
-                            <h4 className="text-lg font-semibold text-gray-900 mb-4">Contribute</h4>
+                            <h4 className="text-lg font-semibold text-white mb-4">Contribute</h4>
                             <div className="space-y-2">
-                                <a href="https://github.com/kuberwastaken/engram/issues" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-500 hover:text-blue-600 transition-colors text-sm">
+                                <a href="https://github.com/kuberwastaken/engram/issues" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-blue-400 transition-colors text-sm">
                                     Raise an Issue
                                 </a>
-                                <a href="https://github.com/kuberwastaken/engram/pulls" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-500 hover:text-blue-600 transition-colors text-sm">
+                                <a href="https://github.com/kuberwastaken/engram/pulls" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-blue-400 transition-colors text-sm">
                                     Add Content
                                 </a>
-                                <a href="https://github.com/kuberwastaken/engram" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-500 hover:text-blue-600 transition-colors text-sm">
+                                <a href="https://github.com/kuberwastaken/engram" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-blue-400 transition-colors text-sm">
                                     Help Make it Better
                                 </a>
                             </div>
@@ -429,9 +556,9 @@ const InstitutePage = () => {
 
                         {/* Connect */}
                         <div>
-                            <h4 className="text-lg font-semibold text-gray-900 mb-4">Connect</h4>
+                            <h4 className="text-lg font-semibold text-white mb-4">Connect</h4>
                             <div className="space-y-2">
-                                <a href="https://github.com/kuberwastaken/engram" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-500 hover:text-blue-600 transition-colors text-sm">
+                                <a href="https://github.com/kuberwastaken/engram" target="_blank" rel="noopener noreferrer" className="flex items-center text-gray-400 hover:text-blue-400 transition-colors text-sm">
                                     GitHub Repository
                                 </a>
                             </div>
@@ -439,13 +566,13 @@ const InstitutePage = () => {
                     </div>
 
                     {/* Bottom Section */}
-                    <div className="border-t border-gray-100 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                    <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-500 text-sm">
                             © 2026 Engram. Open source and always free.
                         </p>
                         <p className="text-gray-400 text-sm mt-4 md:mt-0 flex items-center">
-                            Made with <span className="mx-1 text-red-400">❤️</span> by{' '}
-                            <a href="https://kuber.studio/" target="_blank" rel="noopener noreferrer" className="ml-1 text-gray-600 hover:text-blue-600 transition-colors">
+                            Made with <span className="mx-1 text-red-500">❤️</span> by{' '}
+                            <a href="https://kuber.studio/" target="_blank" rel="noopener noreferrer" className="ml-1 text-white hover:text-blue-400 transition-colors">
                                 Kuber Mehta
                             </a>
                         </p>
