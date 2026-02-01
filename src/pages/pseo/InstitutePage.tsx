@@ -481,7 +481,7 @@ const InstitutePage = () => {
                                 <CardHeader><CardTitle className="text-gray-200">Overview</CardTitle></CardHeader>
                                 <CardContent>
                                     <p className="text-gray-400 leading-relaxed text-lg">
-                                        Welcome to the <strong>ultimate aggregated resource hub</strong> for <strong>{branch.name}</strong> at <strong>{institute.name}</strong>. 
+                                        Welcome to the <strong>ultimate aggregated resource hub</strong> for <strong>{branch.name}</strong> at <strong>{institute.name}</strong>.
                                         Engram is built by IPU students to provide what the official websites don't: <strong>Real verified notes, honest placement stats, and transparent fee structures.</strong>
                                     </p>
                                     <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -508,7 +508,7 @@ const InstitutePage = () => {
                             };
 
                             const tier = getTier(institute.id);
-                            
+
                             // Placement Stats based on Tier (or custom if known)
                             const stats = {
                                 1: { avg: '8.5 LPA - 12 LPA', highest: '45 LPA - 51 LPA', recruiters: 'Amazon, Adobe, Google, Microsoft, ZS Associates' },
@@ -521,16 +521,16 @@ const InstitutePage = () => {
                             const iId = institute.id.toLowerCase();
                             const bCode = branch.code.toUpperCase();
                             const cutoffData = (cutoffsData as any)[iId]?.[bCode];
-                            
+
                             if (cutoffData?.OPNOHS?.max) {
                                 cutoffText = `the closing rank for Delhi students was around ${cutoffData.OPNOHS.max.toLocaleString()}`;
                             }
 
                             // Address Vibe
                             const locationVibe = institute.location.includes("Rohini") ? "Located in the student hub of Rohini, surrounded by hangout spots and metro connectivity." :
-                                               institute.location.includes("Dwarka") ? "Situated in the lush green, planned sub-city of Dwarka with wide roads and excellent infrastructure." :
-                                               institute.location.includes("Janakpuri") ? "In the heart of West Delhi, Janakpuri offers a vibrant campus life with immense connectivity." :
-                                               `Strategically located in ${institute.location}, offering easy access to the NCR tech belt.`;
+                                institute.location.includes("Dwarka") ? "Situated in the lush green, planned sub-city of Dwarka with wide roads and excellent infrastructure." :
+                                    institute.location.includes("Janakpuri") ? "In the heart of West Delhi, Janakpuri offers a vibrant campus life with immense connectivity." :
+                                        `Strategically located in ${institute.location}, offering easy access to the NCR tech belt.`;
 
                             return (
                                 <div className="mt-16 prose prose-invert prose-lg max-w-none">
@@ -539,15 +539,15 @@ const InstitutePage = () => {
                                     </h2>
 
                                     <p className="text-gray-300 leading-relaxed">
-                                        Choosing the right engineering college in Delhi-NCR is a high-stakes decision for any aspirant. 
-                                        <strong>{institute.name} ({institute.shortName})</strong> has emerged as a preferred choice for B.Tech aspirants, particularly for <strong>{branch.name}</strong>. 
+                                        Choosing the right engineering college in Delhi-NCR is a high-stakes decision for any aspirant.
+                                        <strong>{institute.name} ({institute.shortName})</strong> has emerged as a preferred choice for B.Tech aspirants, particularly for <strong>{branch.name}</strong>.
                                         This detailed 2025-2026 guide covers everything from the <strong>{branch.code} placement reality</strong> to the <strong>hostel facilities at the {institute.location} campus</strong>.
                                     </p>
 
                                     {/* 1. Placements */}
                                     <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">1. {institute.shortName} {branch.code} Placements: The Real Stats</h3>
                                     <p className="text-gray-300">
-                                        When it comes to ROI, <strong>{institute.shortName}</strong> {tier === 1 ? "stands at the pinnacle of IP University colleges." : "offers a solid return on investment with consistent mass recruitment."} 
+                                        When it comes to ROI, <strong>{institute.shortName}</strong> {tier === 1 ? "stands at the pinnacle of IP University colleges." : "offers a solid return on investment with consistent mass recruitment."}
                                         For the 2025 batch, the placement cell has focused heavily on bringing in product-based companies alongside the traditional service giants.
                                     </p>
                                     <ul className="list-disc pl-5 space-y-2 text-gray-400">
@@ -565,14 +565,14 @@ const InstitutePage = () => {
                                         <strong>Location Advantage:</strong> {locationVibe}
                                     </p>
                                     <p className="text-gray-300 mt-2">
-                                        The campus infrastructure at {institute.shortName} is designed to support the rigorous B.Tech curriculum. 
-                                        {tier === 1 ? " You can expect air-conditioned labs, a well-stocked central library with IEEE access, and active coding societies." : 
-                                        " While the campus might be compact, the labs are fully equipped, and the library provides all necessary standard textbooks."}
+                                        The campus infrastructure at {institute.shortName} is designed to support the rigorous B.Tech curriculum.
+                                        {tier === 1 ? " You can expect air-conditioned labs, a well-stocked central library with IEEE access, and active coding societies." :
+                                            " While the campus might be compact, the labs are fully equipped, and the library provides all necessary standard textbooks."}
                                     </p>
                                     <p className="text-gray-300 mt-2">
-                                        <strong>Hostels:</strong> {institute.id === 'usict' || institute.id === 'usar' ? 
-                                        "Being a government campus, it offers excellent on-campus hostel facilities at very subsidized rates." : 
-                                        "As a private institute, on-campus hostels are limited. However, the area around " + institute.location + " is packed with student PGs and flats ranging from ₹8,000 to ₹15,000 per month."}
+                                        <strong>Hostels:</strong> {institute.id === 'usict' || institute.id === 'usar' ?
+                                            "Being a government campus, it offers excellent on-campus hostel facilities at very subsidized rates." :
+                                            "As a private institute, on-campus hostels are limited. However, the area around " + institute.location + " is packed with student PGs and flats ranging from ₹8,000 to ₹15,000 per month."}
                                     </p>
 
                                     {/* 3. Cutoff Analysis */}
@@ -582,14 +582,14 @@ const InstitutePage = () => {
                                         Last year, for the <strong>{branch.code}</strong> stream, {cutoffText}.
                                     </p>
                                     <p className="text-gray-300 mt-2">
-                                        <strong>Delhi vs. Outside Delhi:</strong> IP University reserves <strong>85% seats</strong> for Delhi candidates (those who did 12th from a Delhi school). 
+                                        <strong>Delhi vs. Outside Delhi:</strong> IP University reserves <strong>85% seats</strong> for Delhi candidates (those who did 12th from a Delhi school).
                                         If you are an Outside Delhi candidate, you need a significantly higher percentile to secure {branch.code} here.
                                     </p>
 
                                     {/* 4. Fee Structure */}
                                     <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">4. Fee Structure Breakdown</h3>
                                     <p className="text-gray-300">
-                                        The fee structure is regulated by the State Fee Regulatory Committee. For {institute.shortName}, the annual tuition fee generally falls in the <strong>₹1.3 Lakh to ₹1.6 Lakh</strong> range. 
+                                        The fee structure is regulated by the State Fee Regulatory Committee. For {institute.shortName}, the annual tuition fee generally falls in the <strong>₹1.3 Lakh to ₹1.6 Lakh</strong> range.
                                         Adding university charges and student activity fees, the total annual expense comes to approximately <strong>₹1.75 - ₹1.90 Lakhs</strong>.
                                     </p>
                                     <p className="text-gray-300 mt-2">
@@ -599,20 +599,20 @@ const InstitutePage = () => {
                                     {/* 5. Faculty & Academics */}
                                     <h3 className="text-2xl font-semibold text-blue-200 mt-12 mb-4">5. Faculty & Academic Culture</h3>
                                     <p className="text-gray-300">
-                                        The department of <strong>{branch.name}</strong> at {institute.shortName} is staffed by experienced faculty, many of whom hold Ph.Ds. 
+                                        The department of <strong>{branch.name}</strong> at {institute.shortName} is staffed by experienced faculty, many of whom hold Ph.Ds.
                                         The curriculum follows the GGSIPU syllabus, which is updated to include modern electives like AI/ML and IOT in the later years.
                                     </p>
                                     <p className="text-gray-300 mt-2">
-                                        <strong>Attendance Policy:</strong> Like most IPU colleges, {institute.shortName} is strict about the <strong>75% attendance rule</strong>. 
+                                        <strong>Attendance Policy:</strong> Like most IPU colleges, {institute.shortName} is strict about the <strong>75% attendance rule</strong>.
                                         Students are advised to take this seriously to avoid detention in internals.
                                     </p>
 
                                     <div className="mt-12 p-8 bg-blue-900/10 border border-blue-800/30 rounded-xl text-center">
                                         <h4 className="text-xl font-bold text-white mb-4">Final Verdict?</h4>
                                         <p className="text-gray-400 mb-6">
-                                            {tier === 1 ? 
-                                            `${institute.shortName} is arguably the best choice in IPU for ${branch.code}. If you have the rank, lock it immediately.` : 
-                                            `${institute.shortName} is a fantastic Tier-2 option that balances academics and placement opportunities. It's a great launchpad for a tech career.`}
+                                            {tier === 1 ?
+                                                `${institute.shortName} is arguably the best choice in IPU for ${branch.code}. If you have the rank, lock it immediately.` :
+                                                `${institute.shortName} is a fantastic Tier-2 option that balances academics and placement opportunities. It's a great launchpad for a tech career.`}
                                         </p>
                                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                             <Button size="lg" className="bg-blue-600 hover:bg-blue-700" onClick={() => navigate(deepLink)}>
@@ -626,9 +626,6 @@ const InstitutePage = () => {
                                 </div>
                             );
                         })()}
-
-                        <InterlinkGrid />
-                    </div>
 
                         <InterlinkGrid />
                     </div>
