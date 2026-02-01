@@ -406,6 +406,9 @@ const InstitutePage = () => {
     };
 
     // Use the SEO component for better meta tags
+    const pageTitle = generateTitle();
+    const pageDesc = generateDescription();
+
     return (
         <div className="min-h-screen bg-black text-white selection:bg-blue-500/30">
             <SEO
